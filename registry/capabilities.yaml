@@ -1,0 +1,64 @@
+# CEH taxonomy. Data, not code: add a capability, type or category here and every command picks it up.
+# Matching is keyword-based over a resource's name, description, topics and README head.
+# A keyword is a lowercase phrase; it matches on word boundaries.
+
+resource_types:
+  repository: {}
+  agent-skill: {keywords: [skill.md, agent skill, claude skill, claude code skill, skills]}
+  npm-package: {}
+  python-package: {}
+  mcp-server: {keywords: [mcp server, model context protocol, mcp]}
+  agent-extension: {keywords: [plugin, extension, marketplace]}
+  tutorial: {keywords: [tutorial, how to, guide, course]}
+  website: {}
+  template: {keywords: [template, starter, boilerplate, starter kit]}
+  model: {keywords: [model weights, huggingface, checkpoint]}
+  technique: {}
+  workflow: {keywords: [pipeline, workflow, automation]}
+  asset-library: {keywords: [stock footage, stock video, free stock, sound effects library, cc0]}
+  renderer: {keywords: [renderer, render engine, video rendering framework, programmatic video]}
+
+categories:
+  motion: Motion design and animation
+  explainer: Explainers and storytelling
+  social: Social and platform formats
+  production: Production craft
+  audio: Audio and voice
+  pipeline: Rendering, QA and pipeline
+  research: Research and intelligence
+
+capabilities:
+  motion-graphics: {category: motion, keywords: [motion graphics, motion design, mograph, motion-graphics, animated graphics]}
+  kinetic-typography: {category: motion, keywords: [kinetic typography, kinetic type, animated text, text animation, lyric video, kinetic-typography]}
+  logo-animation: {category: motion, keywords: [logo animation, logo reveal, animated logo]}
+  transitions: {category: motion, keywords: [transition, transitions, morph, match cut, wipe]}
+  camera-movement: {category: motion, keywords: [camera movement, camera move, parallax, dolly, zoom, 3d camera]}
+  2d-animation: {category: motion, keywords: [2d animation, canvas animation, svg animation, gsap, animation]}
+  3d-animation: {category: motion, keywords: [3d animation, three.js, blender, webgl, 3d]}
+  character-animation: {category: motion, keywords: [character animation, lip-sync, lip sync, avatar, animated host, rigging]}
+  procedural-animation: {category: motion, keywords: [procedural, generative, particles, p5.js, p5, creative coding]}
+  hand-drawn-animation: {category: motion, keywords: [hand-drawn, hand drawn, sketch, brush, doodle, pencil]}
+  whiteboard-animation: {category: motion, keywords: [whiteboard, doodle video, drawing hand]}
+  explainer-videos: {category: explainer, keywords: [explainer, explainer video, explain, educational video]}
+  documentary-storytelling: {category: explainer, keywords: [documentary, vox-style, video essay, storytelling, narrative]}
+  data-visualization: {category: explainer, keywords: [data visualization, data viz, chart, charts, infographic, data-driven]}
+  storyboarding: {category: production, keywords: [storyboard, storyboarding, shot list, shotlist]}
+  cinematography: {category: production, keywords: [cinematography, cinematic, shot design, framing, shotcraft]}
+  video-editing: {category: production, keywords: [video editing, video editor, editing, cut, timeline editor, edl]}
+  compositing: {category: production, keywords: [compositing, composite, layers, green screen, rotoscope]}
+  festive-cultural-videos: {category: social, keywords: [festival, festive, greeting, celebration, wishes, cultural]}
+  indian-regional-festival-content: {category: social, keywords: [diwali, holi, navratri, durga puja, pongal, onam, ganesh, eid, aarti, indian festival, raksha bandhan]}
+  social-media-videos: {category: social, keywords: [social media, social video, tiktok, short-form, short form, viral]}
+  youtube-shorts: {category: social, keywords: [youtube shorts, shorts, youtube]}
+  instagram-reels: {category: social, keywords: [instagram reels, reels, reel, instagram]}
+  music-visualization: {category: audio, keywords: [music visualization, audio visualizer, music video, beat sync, beat-synced]}
+  sound-design: {category: audio, keywords: [sound design, sfx, sound effects, foley]}
+  voiceover: {category: audio, keywords: [voiceover, voice over, tts, text-to-speech, text to speech, voice cloning, narration]}
+  subtitles: {category: audio, keywords: [subtitles, captions, transcription, speech-to-text, asr, whisper]}
+  rendering: {category: pipeline, keywords: [render, rendering, renderer, mp4, ffmpeg, headless]}
+  visual-qa: {category: pipeline, keywords: [visual qa, quality check, lint, frame check, visual regression, review]}
+  audio-qa: {category: pipeline, keywords: [audio qa, loudness, lufs, audio check]}
+  ai-video-generation: {category: pipeline, keywords: [ai video, text-to-video, video generation, veo, sora, kling, runway]}
+  image-generation: {category: pipeline, keywords: [image generation, text-to-image, stable diffusion, flux, midjourney]}
+  publishing: {category: research, keywords: [publish, posting, scheduler, social media scheduling, upload]}
+  content-research: {category: research, keywords: [research, trends, scraping, scraper, crawl, analytics]}

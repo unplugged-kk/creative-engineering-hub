@@ -1,0 +1,12 @@
+# Renderers CEH knows about. `detect` keywords mark a resource as compatible with that renderer.
+# `video_factory` mirrors the provider id in ~/git/video-factory/contentos/renderers/registry.py.
+renderers:
+  hyperframes: {video_factory: hyperframes, default: true, detect: [hyperframes, npx hyperframes]}
+  remotion: {video_factory: remotion, detect: [remotion, "@remotion"]}
+  moneyprinterturbo: {video_factory: mpt, detect: [moneyprinterturbo]}
+  ffmpeg: {detect: [ffmpeg]}
+  browser: {detect: [playwright, puppeteer, headless chromium, seek(t), renderat]}
+  p5js: {detect: [p5.js, p5.brush, "p5 "]}
+  canvas: {detect: [canvas api, html canvas, <canvas]}
+  lottie: {detect: [lottie, bodymovin]}
+  blender: {detect: [blender, bpy]}

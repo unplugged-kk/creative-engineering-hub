@@ -1,0 +1,25 @@
+# Coding agents CEH installs skills into. Verified on this machine 2026-11-10:
+# each directory exists and already holds per-skill symlinks (Agent Skills SKILL.md format).
+# `home` is relative to $CEH_AGENT_HOME (default: the user's home directory).
+# `detect` keywords mark an upstream resource as written for that agent.
+agents:
+  claude-code:
+    home: .claude/skills
+    detect: [claude code, claude-code, .claude/skills, claude skill]
+    frontmatter: [name, description, allowed-tools]
+  codex:
+    home: .codex/skills
+    detect: [codex, agents.md]
+    frontmatter: [name, description]
+  opencode:
+    home: .config/opencode/skills
+    detect: [opencode]
+    frontmatter: [name, description]
+  antigravity:
+    home: .gemini/antigravity/skills
+    detect: [antigravity, gemini]
+    frontmatter: [name, description]
+  generic:
+    home: .agents/skills
+    detect: [agent skills, skills.sh, agentskills]
+    frontmatter: [name, description]

@@ -1,0 +1,57 @@
+# Machine-readable governance. Prose and rationale: policies/*.md and docs/adr/.
+
+lifecycle:
+  states: [DISCOVERED, INSPECTING, SANDBOXED, TESTING, CANDIDATE, APPROVED, PRODUCTION, PARKED, REJECTED, RESTRICTED, DEPRECATED]
+  # Only `ceh approve` may enter APPROVED and only `ceh integrate` may enter PRODUCTION; both check the gates.
+  gated: {APPROVED: approve, PRODUCTION: integrate}
+
+licensing:
+  # SPDX id -> commercial class. Anything not listed is `unknown` and blocks approval until reviewed.
+  classes:
+    permissive: [MIT, MIT-0, Apache-2.0, BSD-2-Clause, BSD-3-Clause, ISC, 0BSD, Unlicense, CC0-1.0, Zlib, BSL-1.0, MPL-2.0, CC-BY-4.0, Python-2.0, PSF-2.0]
+    copyleft: [GPL-2.0, GPL-3.0, GPL-2.0-only, GPL-3.0-only, GPL-2.0-or-later, GPL-3.0-or-later, LGPL-2.1, LGPL-3.0, AGPL-3.0, AGPL-3.0-only, AGPL-3.0-or-later, CC-BY-SA-4.0, LGPL-2.1-or-later, LGPL-3.0-or-later]
+    non-commercial: [CC-BY-NC-4.0, CC-BY-NC-SA-4.0, CC-BY-NC-ND-4.0, PolyForm-Noncommercial-1.0.0]
+  # Text fingerprints for LICENSE files GitHub reports as NOASSERTION.
+  fingerprints:
+    PolyForm-Noncommercial-1.0.0: [polyform noncommercial]
+    CC-BY-NC-4.0: [noncommercial 4.0, attribution-noncommercial]
+    Remotion-License: [remotion license, company license]
+  gate:
+    permissive: pass
+    copyleft: review        # allowed only as an isolated external process; needs --licence-reviewed
+    unknown: review         # needs --licence-reviewed with a note
+    custom: review
+    non-commercial: block   # never commercially approved, no override
+
+security:
+  max_blob_bytes: 1000000
+  gate: {high: block, medium: review, low: pass}
+
+evaluation:
+  # Weights sum to 1. A criterion without evidence scores null and is reported, never guessed.
+  weights:
+    visual_quality: 0.20
+    workflow_completeness: 0.10
+    reusability: 0.10
+    agent_compatibility: 0.10
+    performance: 0.10
+    maintainability: 0.10
+    documentation: 0.10
+    licence_suitability: 0.10
+    security: 0.05
+    integration_complexity: 0.05
+  stale_days: 180
+
+video_factory:
+  path: ~/git/video-factory
+  # Run by `ceh integrate --test` and `ceh upstream report --run-tests`, in the Video Factory checkout.
+  test_command: [uv, run, --no-sync, python, -m, pytest, -q, -x]
+
+local_copies:
+  # Searched (depth 5) for an existing clone before CEH ever clones into lab/. Override with CEH_LOCAL_ROOTS.
+  roots: [~/git, ~/Desktop, ~/audit-scratch, ~/.agents/skill-repos, ~/Downloads]
+
+upstream:
+  # Scheduled checks: `ceh upstream check --all --report`. Default weekly; advisories daily.
+  schedule: {default: weekly, security_advisories: daily}
+  strategies: [PINNED, TRACKED, FORKED, VENDORED]
