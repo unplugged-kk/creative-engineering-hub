@@ -1,0 +1,123 @@
+# Historical discovery leads, recovered 2026-11-10 from local projects.
+# Every fact here cites the file it came from. `ceh migrate` turns each lead into a registry record,
+# adds live GitHub metadata, and writes reports/historical-migration/REPORT.md.
+# Fields: url (canonical), group, previous (decision recorded in earlier research), pinned (commit recorded
+# by earlier research or lockfile), local (existing copies on this machine), forks (user forks), status
+# (CEH lifecycle to start in), strategy (upstream strategy), evidence (where the facts came from), note.
+
+evidence_sources:
+  vf_audit_2: ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  vf_audit_1: ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  vf_matrix: ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  vf_catalog: ~/git/video-factory/research/tool-catalog.yaml
+  vf_lock: ~/git/video-factory/config/upstream-skills.lock.json
+  vf_package: ~/git/video-factory/package.json
+  vf_p5: ~/git/video-factory/docs/factory-v2/09-p5-brush-evaluation.md
+  animate_status: ~/Desktop/Animate-Studio/STATUS.md
+
+leads:
+  # A. Motion graphics repositories
+  - {url: https://github.com/AbubakrChan/product-launch-motion, group: A, previous: REFERENCE, pinned: 951d6149d2748a15058f79dcf8e8c4bf00824121, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_matrix],
+     note: "Techniques adapted into VF style card config/styles/catalog/product-launch.json. Sample films protected; licence unspecified."}
+  - {url: https://github.com/charlie947/motion-graphics-skills, group: A, previous: ADAPT, pinned: 229022ebca76972e119e36ada23a1648d51665ab, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_matrix],
+     note: "Skill-hygiene validator and token-file convention; informed VF kinetic-typography style card."}
+  - {url: https://github.com/howseen-ai/claude-motion-design, group: A, previous: ADAPT, pinned: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f, status: PARKED, evidence: [vf_audit_1, vf_audit_2],
+     note: "Adapt pop/flash/loop-seam detectors; reject remake and scraping flows. Near-duplicate method of product-launch-motion and Barty-Bart/motion-graphics."}
+  - {url: https://github.com/Barty-Bart/motion-graphics, group: A, previous: ADAPT, pinned: d6e5d95e45167d95bb4260b9da4d674791143710, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_matrix],
+     note: "Measured, licence-aware SFX pass with CC0 library. Repo licence unclear (Mixkit bundles)."}
+  - {url: https://github.com/whaleyxbt/claude-motion, group: A, previous: ADAPT, pinned: e627941543d9988b155dc610bb9cc0115a5e365e, status: PARKED, evidence: [vf_audit_1, vf_audit_2],
+     note: "timeline/1 and sheet/1 already absorbed by VF; remaining unabsorbed piece is procedural SFX."}
+  - {url: https://github.com/Tejashmakwana/motionmaxxing, group: A, previous: REFERENCE, status: PARKED, evidence: [vf_audit_2, vf_matrix],
+     note: "G5 page-chrome lint taxonomy and audio cut-sync. Proprietary bundled assets."}
+  - {url: https://github.com/feitangyuan/onetake, group: A, previous: REFERENCE, status: RESTRICTED, evidence: [vf_audit_2, vf_matrix],
+     note: "PolyForm Noncommercial licence per vf_audit_2 (matrix said MIT; the audit read LICENSE in full). Method only, code-level reject."}
+  - {url: https://github.com/Priyanshsharma21/aansh-video, group: A, previous: ADAPT, status: CANDIDATE, evidence: [vf_audit_2, vf_matrix],
+     note: "Voice to animated host plus word captions on HyperFrames; fills the documented lip-synced cartoon host gap."}
+
+  # B. Rendering and animation systems
+  - {url: https://github.com/remotion-dev/remotion, vf_usage: ["contentos/renderers/remotion.py"], group: B, previous: DEFER, pinned: 5ce9514934716083274bb18221737223aba63318, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_catalog],
+     note: "Optional React/data-driven renderer. Non-OSI two-tier licence: company licence needed above 3 employees. VF has contentos/renderers/remotion.py adapter."}
+  - {url: https://github.com/motiondivision/motion, group: B, previous: REFERENCE, pinned: e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8, status: PARKED, evidence: [vf_audit_1, vf_audit_2],
+     note: "Web UI animation library, not a video workflow. Not the same as motiondivision/ai-kit."}
+  - {url: https://github.com/greensock/gsap-skills, group: B, previous: ADAPT, pinned: aed9cfd3277740755f6bfc1155c7aa645403b760, status: CANDIDATE, evidence: [vf_audit_1, vf_audit_2],
+     note: "Official GSAP API skills; API-correctness reference for the engine HyperFrames already uses. Also vendored inside OpenMontage .agents/skills/gsap."}
+  - {url: https://github.com/cth9191/animate, group: B, previous: ADAPT, pinned: 7e5eb56feb2dd573f890e1b7b34748af43d58263, status: SANDBOXED, strategy: PINNED,
+     local: [~/Desktop/Animate-Studio/source/animate-upstream, ~/Desktop/Animate-Studio/.claude/skills/animate],
+     evidence: [vf_audit_1, vf_audit_2, animate_status],
+     note: "Animate Studio v0.4.0 installed separately at ~/Desktop/Animate-Studio; doctor PASS=21. Style-grammar format and approval gates adapted by VF; its canvas renderer is not adopted."}
+  - {url: https://github.com/nateherkai/hyperframes-student-kit, group: B, previous: DEFER, pinned: 0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_matrix],
+     note: "Renamed upstream to nateherkai/herk-edit-kit. Footage-editing kit; paid hooks and bundled media rejected."}
+  - {url: https://github.com/heygen-com/hyperframes, vf_usage: ["package.json: hyperframes 0.8.114", "config/upstream-skills.lock.json", "contentos/renderers/hyperframes.py"], group: B, previous: ADOPT, pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc, status: PRODUCTION, strategy: PINNED,
+     local: [~/audit-scratch/t1/hf-src], forks: [https://github.com/kishorehq/hyperframes],
+     evidence: [vf_audit_1, vf_audit_2, vf_lock, vf_package, vf_catalog],
+     note: "VF default renderer: npm hyperframes 0.8.114 = tag v0.8.114 = commit 01c6f600. Official skills hyperframes-core/animation/keyframes pinned by tree sha256 in vf_lock."}
+  - {url: https://github.com/acamposuribe/p5.brush, group: B, previous: EXPERIMENTAL, status: SANDBOXED, evidence: [vf_p5],
+     local: [~/git/video-factory/workspace/experiments/p5brush-001],
+     note: "Experimental hand-drawn brush renderer, evaluated in VF workspace/experiments/p5brush-001."}
+
+  # C. Agent skills and animation capabilities
+  - {url: https://github.com/remotion-dev/skills, group: C, previous: REJECT, pinned: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b, status: REJECTED, evidence: [vf_audit_1, vf_audit_2],
+     note: "Generated mirror of remotion monorepo packages/skills; no LICENSE (404, API license null). Remotion skills are installed as a Claude plugin (remotion:*) separately."}
+  - {url: https://github.com/199-biotechnologies/motion-dev-animations-skill, group: C, previous: REJECT, pinned: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205, status: REJECTED, evidence: [vf_audit_1, vf_audit_2],
+     note: "React/Next UI animation skill; wrong domain, stale (Motion v11)."}
+  - {url: https://github.com/LottieFiles/motion-design-skill, group: C, previous: ADAPT, pinned: f9a8a041b85185ee4881b3471d3415e939aac772, status: CANDIDATE, evidence: [vf_audit_1, vf_audit_2],
+     note: "18 markdown files of vendor-neutral motion principles; adapt the quantified threshold table only."}
+  - {url: https://github.com/haidrrrry/claude-remotion-skill, group: C, previous: REJECT, pinned: 1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383, status: REJECTED, evidence: [vf_audit_1, vf_audit_2],
+     note: "spring() for every entrance; conflicts with VF craft rule R1."}
+
+  # D. Explainer and creative workflows (no earlier local research found)
+  - {url: https://github.com/bangtutorial/bang-motion, group: D, status: DISCOVERED}
+  - {url: https://github.com/CK42BB/vox-explainer-skill, group: D, status: DISCOVERED}
+  - {url: https://github.com/lintsinghua/paint-mv-skills, group: D, status: DISCOVERED}
+  - {url: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola, group: D, status: DISCOVERED}
+  - {url: https://github.com/Vincentwei1021/video-shotcraft, group: D, status: SANDBOXED,
+     note: "Installed as Claude plugin video-shotcraft:video-shotcraft (synced under ~/.claude/plugins/synced)."}
+  - {url: https://github.com/Vincentwei1021/anything2explainer, group: D, status: DISCOVERED}
+  - {url: https://github.com/morluto/rea, group: D, previous: REJECT, status: REJECTED, evidence: [vf_audit_2, vf_matrix],
+     note: "Reverse-engineering toolkit for source-less artifacts, not a renderer. GPL-3.0."}
+  - {url: https://github.com/motiondivision/ai-kit, group: D, previous: REFERENCE, status: PARKED, evidence: [vf_audit_1],
+     note: "Motion AI Kit, recorded in VF config/capabilities.json as ref:motion-ai-kit, reference-only."}
+
+  # E. Other content production projects and tools
+  - {url: https://github.com/harry0703/MoneyPrinterTurbo, vf_usage: ["contentos/renderers/mpt.py", "vendor/MoneyPrinterTurbo"], group: E, previous: OPTIONAL_BACKEND, status: SANDBOXED, strategy: VENDORED,
+     local: [~/git/video-factory/vendor/MoneyPrinterTurbo], forks: [https://github.com/kishorehq/MoneyPrinterTurbo], evidence: [vf_catalog],
+     note: "Alternate VF rendering lane (contentos/renderers/mpt.py). Cloud TTS fails local-first policy. Vendored copy has local Docker files."}
+  - {url: https://github.com/calesthio/OpenMontage, vf_usage: ["vendor/OpenMontage (reference only)"], group: E, previous: EXTERNAL_REFERENCE, status: RESTRICTED, strategy: VENDORED,
+     local: [~/git/video-factory/vendor/OpenMontage], forks: [https://github.com/unplugged-kk/OpenMontage], evidence: [vf_catalog],
+     note: "AGPL-3.0: never copy code into VF; mine architecture only, run as separate process."}
+  - {url: https://github.com/mutonby/openshorts, group: E, previous: KEEP_EXISTING, status: DISCOVERED, evidence: [vf_catalog], note: "long video to Shorts."}
+  - {url: https://github.com/OpenCut-app/OpenCut, group: E, previous: KEEP_EXISTING, status: DISCOVERED, evidence: [vf_catalog]}
+  - {url: https://github.com/darkzogx/youtube-automation-agent, group: E, status: DISCOVERED, forks: [https://github.com/kishorehq/youtube-automation-agent], note: "YouTube Automation Agent / AgentTube lead."}
+  - {url: https://github.com/hypit-ai/hypit, group: E, status: DISCOVERED}
+  - {url: https://github.com/D4Vinci/Scrapling, group: E, status: DISCOVERED}
+  - {url: https://github.com/Panniantong/Agent-Reach, group: E, previous: INSTALLED, status: PRODUCTION, forks: [https://github.com/unplugged-kk/agent-reach], evidence: [vf_catalog],
+     note: "Installed as uv tool and as agent skill agent-reach."}
+  - {url: https://github.com/mvanhorn/last30days-skill, group: E, previous: INSTALLED, status: PRODUCTION, forks: [https://github.com/kishorehq/last30days-skill, https://github.com/unplugged-kk/last30days-skill], evidence: [vf_catalog]}
+  - {url: https://github.com/gitroomhq/postiz-app, group: E, previous: KEEP_EXISTING, status: DISCOVERED, evidence: [vf_catalog], note: "Multi-platform posting; Claude plugin postiz installed."}
+  - {url: https://github.com/CopilotKit/CopilotKit, group: E, status: DISCOVERED}
+  - {url: https://github.com/ag-ui-protocol/ag-ui, group: E, status: DISCOVERED}
+  - {url: https://github.com/remsky/Kokoro-FastAPI, group: E, status: DISCOVERED, note: "Kokoro in VF runs via hyperframes tts (kokoro-onnx in ~/.contentos/venv), not this server."}
+  - {url: https://github.com/thewh1teagle/kokoro-onnx, vf_usage: ["hyperframes tts (contentos/lang/tts.py)"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv."}
+  - {url: https://github.com/Jakeschincariol/youtube-agent-skill, vf_usage: ["vendor/youtube-agent-skill"], group: E, previous: INSTALLED, status: PRODUCTION, strategy: VENDORED,
+     local: [~/git/video-factory/vendor/youtube-agent-skill], evidence: [vf_catalog], note: "11 skills copied to ~/.claude/skills; writes, never publishes."}
+  - {url: https://github.com/ggml-org/whisper.cpp, vf_usage: ["contentos/lang/asr.py"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py."}
+  - {url: https://github.com/FFmpeg/FFmpeg, vf_usage: ["pipeline render and QA"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew ffmpeg arm64 at /opt/homebrew/bin."}
+  - {url: https://www.pexels.com/api/, group: E, type: asset-library, status: DISCOVERED, note: "Stock footage API used by MoneyPrinterTurbo lane."}
+  - {url: https://pixabay.com/api/docs/, group: E, type: asset-library, status: DISCOVERED}
+  - {url: https://coverr.co/, group: E, type: asset-library, status: DISCOVERED}
+
+# Near-duplicates recorded by earlier research (same method, cross-credited). Forks are tracked per lead.
+duplicate_groups:
+  - name: seek(t) frame-capture motion method
+    members: [AbubakrChan/product-launch-motion, howseen-ai/claude-motion-design, Barty-Bart/motion-graphics]
+    source: vf_audit_2
+    note: "One HTML page per frame as a pure function of time, headless capture, FFmpeg tmix blur, measured SFX. Keep one reference."
+  - name: Remotion skills
+    members: [remotion-dev/skills, haidrrrry/claude-remotion-skill]
+    source: vf_audit_1
+    note: "remotion-dev/skills is a generated mirror of the monorepo; haidrrrry is a third-party alternative. Both rejected."
+
+# Leads named in the mission that no local file references. Left for manual investigation, never guessed.
+unresolved:
+  - {name: OpenSEO, reason: "no URL anywhere in local projects; several unrelated repos share the name"}
+  - {name: CannerAI, reason: "no URL anywhere in local projects"}

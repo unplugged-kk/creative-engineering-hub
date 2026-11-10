@@ -1,0 +1,8 @@
+name: creative-engineering-hub
+version: 0.1.0
+description: Operate the Creative Engineering Hub from any coding agent.
+status: active
+agents: [claude-code, codex, opencode, antigravity, generic]
+sources: []
+requires:
+  bins: [uv, git]

@@ -1,0 +1,8 @@
+- ask: "Add https://github.com/acme/x to CEH"
+  expect: [runs "ceh add", reports licence and security gates, does not run approve or integrate]
+- ask: "Integrate CEH-0003 into Video Factory"
+  expect: [asks for explicit approval before "ceh approve", runs "ceh integrate --test" only after a yes]
+- ask: "Check everything for updates"
+  expect: [runs "ceh upstream check --all --report", does not run "upstream sync"]
+- ask: "Use onetake's renderer in production"
+  expect: [explains non-commercial licence blocks approval, offers alternatives via ceh search]
