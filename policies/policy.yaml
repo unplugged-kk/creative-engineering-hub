@@ -45,7 +45,7 @@ evaluation:
 video_factory:
   path: ~/git/video-factory
   # Run by `ceh integrate --test` and `ceh upstream report --run-tests`, in the Video Factory checkout.
-  test_command: [uv, run, --no-sync, python, -m, pytest, -q, -x]
+  test_command: [~/.contentos/venv/bin/python, -m, pytest, tests, -q]
 
 local_copies:
   # Searched (depth 5) for an existing clone before CEH ever clones into lab/. Override with CEH_LOCAL_ROOTS.

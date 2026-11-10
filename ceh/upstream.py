@@ -19,6 +19,7 @@ from .store import CehError, Registry, github_slug, now, policy, root, write_yam
 MANIFESTS = ("package.json", "package-lock.json", "requirements.txt", "pyproject.toml", "Cargo.toml", "go.mod")
 FLAG_TEXT = {
     "up-to-date": "Upstream matches the pin",
+    "unpinned": "No pinned commit recorded; run ceh inspect to pin",
     "new-commits": "Upstream has new commits",
     "new-release": "New release available",
     "security-update": "Security update available",
@@ -59,6 +60,8 @@ def check(rec: dict) -> dict:
         flags.append("new-commits")
     elif latest == up.get("pinned_commit"):
         flags.append("up-to-date")
+    else:
+        flags.append("unpinned")
     slug = github_slug(up["remote"])
     if slug:
         repo = gh_api(f"repos/{slug}") or {}

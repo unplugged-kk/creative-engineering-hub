@@ -83,10 +83,11 @@ def evaluate(ref: str, *, scores: dict[str, float] | None = None, evidence: str 
         "evidence_coverage": round(wsum, 2),
         "gates": {"licence": rec["licence"]["gate"], "security": rec["security"]["gate"]},
     })
-    if promote and rec["status"] in PRE_EVAL:
-        if rec["licence"]["gate"] == "block":
-            set_status(rec, "RESTRICTED", by="ceh evaluate", note=f"licence {rec['licence']['spdx']} blocks commercial use")
-        elif rec["security"]["gate"] != "block":
+    if rec["status"] in PRE_EVAL + ("PARKED", "CANDIDATE") and rec["licence"]["gate"] == "block":
+        # A fact, not a promotion: applies on every evaluation, including during migration.
+        set_status(rec, "RESTRICTED", by="ceh evaluate", note=f"licence {rec['licence']['spdx']} blocks commercial use")
+    elif promote and rec["status"] in PRE_EVAL:
+        if rec["security"]["gate"] != "block":
             set_status(rec, "CANDIDATE", by="ceh evaluate", note=f"score {ev['weighted_score']} at coverage {ev['evidence_coverage']}")
     reg.save(rec)
     write_reports(rec)

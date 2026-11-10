@@ -37,27 +37,33 @@ def corpus(tree: Tree | None, meta: dict, name: str) -> str:
     return "\n".join(parts).lower()
 
 
+HEAD_CHARS = 2500
+
+
 def classify(text: str, url: str, files: list[str], hint: str | None = None) -> dict:
     tax = data("registry/capabilities.yaml")
+    head = text[:HEAD_CHARS]
     caps = []
     for cid, c in tax["capabilities"].items():
-        hits = sum(_kw_match(k, text) for k in c["keywords"])
-        if hits:
-            caps.append((hits, cid))
+        # A keyword in the name, description, topics or README opening counts 3; elsewhere 1. Keep at >= 3,
+        # so one passing mention deep in a SKILL.md cannot assign a capability.
+        score = sum(3 if _kw_match(k, head) else len(re.findall(r"(?<![\w-])" + re.escape(k) + r"(?![\w-])", text[HEAD_CHARS:]))
+                    for k in c["keywords"])
+        if score >= 3:
+            caps.append((score, cid))
     caps = [cid for hits, cid in sorted(caps, key=lambda x: (-x[0], x[1]))]
-    names = {PurePosixPath(f).name for f in files}
     if hint:
         rtype = hint
     elif "youtube.com/watch" in url:
         rtype = "tutorial"
     elif not url.startswith(("https://github.com/", "file://", "/")):
         rtype = next((t for t, v in tax["resource_types"].items() if any(_kw_match(k, text) for k in v.get("keywords", []))), "website")
-    elif "SKILL.md" in names:
-        rtype = "agent-skill"
-    elif any(_kw_match(k, text[:5000]) for k in tax["resource_types"]["mcp-server"]["keywords"]):
-        rtype = "mcp-server"
-    elif any(_kw_match(k, text[:5000]) for k in tax["resource_types"]["renderer"]["keywords"]) and "rendering" in caps:
+    elif any(_kw_match(k, head) for k in tax["resource_types"]["renderer"]["keywords"]) and "rendering" in caps:
         rtype = "renderer"
+    elif any(PurePosixPath(f).name == "SKILL.md" and f.count("/") <= 2 for f in files):  # not a monorepo's nested docs
+        rtype = "agent-skill"
+    elif any(_kw_match(k, head) for k in tax["resource_types"]["mcp-server"]["keywords"]):
+        rtype = "mcp-server"
     elif any(_kw_match(k, text[:3000]) for k in tax["resource_types"]["template"]["keywords"]):
         rtype = "template"
     else:
@@ -213,6 +219,10 @@ SECRET_PATTERNS = [
     ("medium", "hardcoded credential", re.compile(
         r"(?i)\b(api[_-]?key|secret|token|password)\b\s*[:=]\s*['\"](?!your|xxx|<|\$\{|placeholder|changeme|example)[A-Za-z0-9_\-/+=]{24,}['\"]")),
 ]
+SECRET_KINDS = {(sev, kind) for sev, kind, _ in SECRET_PATTERNS}
+PLACEHOLDER = re.compile(r"(?i)example|dummy|fake|placeholder|redact|xxxx|this-is|test-?key|not-a-real")
+TEST_PATH = re.compile(r"(?i)(^|/)(tests?|__tests__|fixtures?|spec|e2e)/|\.(test|spec)\.[a-z]+$")
+DOC_PATH = re.compile(r"(?i)(^|/)(docs?|examples?|samples?)/|\.mdx?$")
 RISKY_PATTERNS = [
     ("high", "obfuscated execution", re.compile(r"eval\s*\(\s*(atob|Buffer\.from)\(|base64\s+(-d|--decode)[^|\n]*\|\s*(ba)?sh")),
     ("medium", "pipe remote script to shell", re.compile(r"(curl|wget)\s[^|\n]*\|\s*(sudo\s+)?(ba|z)?sh\b")),
@@ -236,11 +246,18 @@ def security(tree: Tree | None, deps: dict, check_vulns: bool = True) -> dict:
             skipped += 1
             continue
         scanned += 1
+        soft_path = TEST_PATH.search(name) or DOC_PATH.search(name)
         for sev, kind, rx in SECRET_PATTERNS + RISKY_PATTERNS:
-            m = rx.search(text)
-            if m:
+            for m in rx.finditer(text):
+                finding_sev, finding_kind = sev, kind
+                if (sev, kind) in SECRET_KINDS and PLACEHOLDER.search(m.group(0)):
+                    continue  # documented example keys, e.g. AKIAIOSFODNN7EXAMPLE
+                line_text = text[text.rfind("\n", 0, m.start()) + 1:m.start()].lstrip()
+                if (sev, kind) in SECRET_KINDS and (soft_path or line_text.startswith(("*", "//", "#", "<!--"))):
+                    # tests, docs and comments: worth a human look, not proof of a leaked credential
+                    finding_sev, finding_kind = "medium", f"secret-shaped string in test, docs or comment ({kind})"
                 line = text.count("\n", 0, m.start()) + 1
-                findings.append({"severity": sev, "kind": kind, "path": f"{name}:{line}"})
+                findings.append({"severity": finding_sev, "kind": finding_kind, "path": f"{name}:{line}"})
     for hook, cmd in deps.get("install_hooks", {}).items():
         findings.append({"severity": "medium", "kind": f"npm {hook} hook runs on install", "path": f"package.json: {cmd[:120]}"})
     notes = [f"{skipped} large or binary files not scanned"] if skipped else []

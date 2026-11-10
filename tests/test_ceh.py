@@ -204,3 +204,75 @@ unresolved: [{{name: Mystery, reason: no url}}]
     assert len(reg.all()) == 1
     _, res, _ = run_ceh("upstream", "check", rec["id"])
     assert "new-commits" in res[0]["flags"]
+
+
+@pytest.mark.parametrize("path,body,gate", [
+    ("deploy.sh", "export K=AKIAIOSFODNN7EXAMPLE\n", "pass"),
+    ("tests/auth.py", "K = 'AKIAABCDEFGHIJKLMNOP'\n", "review"),
+    ("docs/auth.md", "K = 'AKIAABCDEFGHIJKLMNOP'\n", "review"),
+    ("auth.py", "# K = 'AKIAABCDEFGHIJKLMNOP'\n", "review"),
+    ("auth.py", "K = 'AKIAABCDEFGHIJKLMNOP'\n", "block"),
+    ("docs/run.md", "eval(Buffer.from('payload', 'base64'))\n", "block"),
+    ("deploy.sh", "export K=AKIAIOSFODNN7EXAMPLE\nexport K=AKIAABCDEFGHIJKLMNOP\n", "block"),
+])
+def test_static_security_context(ceh, run_ceh, path, body, gate):
+    up = make_repo(ceh["tmp"] / "up" / "security", {**SKILL_REPO, path: body})
+    code, rec, err = run_ceh("add", f"file://{up}")
+    assert code == 0, err
+    assert rec["security_gate"] == gate
+
+
+@pytest.mark.parametrize("opening,tail,expected", [
+    ("A toolkit for kinetic typography.\n", "", True),
+    ("A general toolkit.\n", "kinetic typography", False),
+])
+def test_capability_requires_prominent_evidence(ceh, run_ceh, opening, tail, expected):
+    up = make_repo(ceh["tmp"] / "up" / "generic", {"README.md": opening + "x" * 4000 + "\n" + tail})
+    code, rec, err = run_ceh("add", f"file://{up}")
+    assert code == 0, err
+    assert ("kinetic-typography" in rec["capabilities"]) == expected
+
+
+@pytest.mark.parametrize("path,expected", [
+    ("SKILL.md", "agent-skill"),
+    ("skills/demo/SKILL.md", "agent-skill"),
+    ("packages/docs/demo/SKILL.md", "repository"),
+])
+def test_skill_classification_depth(ceh, run_ceh, path, expected):
+    up = make_repo(ceh["tmp"] / "up" / "generic", {"README.md": "General toolkit", path: "Instructions"})
+    code, rec, err = run_ceh("add", f"file://{up}")
+    assert code == 0, err
+    assert rec["type"] == expected
+
+
+def test_metadata_only_resource_stays_discovered_and_keeps_type(ceh, run_ceh):
+    code, rec, err = run_ceh("add", "https://example.com/library", "--type", "asset-library")
+    assert code == 0, err
+    code, rec, err = run_ceh("inspect", rec["id"])
+    assert code == 0, err
+    assert rec["status"] == "DISCOVERED" and rec["type"] == "asset-library"
+
+
+def test_unpinned_upstream_is_not_an_update(ceh, run_ceh):
+    up = make_repo(ceh["tmp"] / "up" / "generic", SKILL_REPO)
+    _, rec, _ = run_ceh("add", f"file://{up}", "--no-inspect")
+    code, results, err = run_ceh("upstream", "check", rec["id"])
+    assert code == 0, err
+    assert results[0]["flags"] == ["unpinned"]
+    assert results[0]["pinned"] is None
+
+
+def test_json_flag_after_subcommand(ceh, capsys):
+    from ceh.cli import main
+    assert main(["status", "--json"]) == 0
+    assert json.loads(capsys.readouterr().out)["resources"] == 0
+
+
+def test_comment_does_not_hide_executable_credential(ceh, run_ceh):
+    up = make_repo(ceh["tmp"] / "up" / "mixed", {
+        **SKILL_REPO,
+        "auth.py": "# K = 'AKIAABCDEFGHIJKLMNOP'\nK = 'AKIAQRSTUVWXYZABCDEF'\n",
+    })
+    code, rec, err = run_ceh("add", f"file://{up}")
+    assert code == 0, err
+    assert rec["security_gate"] == "block"

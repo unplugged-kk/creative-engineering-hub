@@ -42,6 +42,10 @@ def _apply_history(rec: dict, lead: dict, sources: dict, created: bool) -> None:
         "group": lead.get("group"), "previous_decision": lead.get("previous"),
         "evidence": [sources.get(e, e) for e in lead.get("evidence", [])], "note": lead.get("note"),
     }
+    if lead.get("capabilities"):
+        rec["capabilities_manual"] = sorted(set(rec.get("capabilities_manual", [])) | set(lead["capabilities"]))
+    if lead.get("type"):
+        rec["type_manual"] = lead["type"]
     if lead.get("vf_usage"):
         rec["video_factory_usage"] = lead["vf_usage"]
     paths = [str(Path(p).expanduser()) for p in lead.get("local", [])] + find_local_copies(rec["url"])

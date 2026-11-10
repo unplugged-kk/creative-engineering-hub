@@ -273,6 +273,9 @@ def run_upstream(args, reg: Registry, j: bool) -> int:
 
 
 def main(argv=None) -> int:
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if "--json" in argv:  # accept --json anywhere, not only before the subcommand
+        argv = ["--json"] + [a for a in argv if a != "--json"]
     args = build().parse_args(argv)
     try:
         return run(args)

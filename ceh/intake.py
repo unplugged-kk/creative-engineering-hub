@@ -34,6 +34,7 @@ def add(url: str, *, type_hint: str | None = None, note: str = "", inspect_now: 
         "url": url,
         "aliases": aliases,
         "type": type_hint,
+        "type_manual": type_hint,  # an explicit --type survives re-inspection
         "status": None,
         "created": now(),
         "description": meta.get("description", ""),
@@ -55,7 +56,8 @@ def inspect(ref: str, *, reg: Registry | None = None, type_hint: str | None = No
     """Read the resource (local copy first, else an isolated lab clone) and fill in every static field."""
     reg = reg or Registry()
     rec = reg.get(ref)
-    first = rec["status"] == "DISCOVERED"
+    readable = bool(rec.get("upstream")) or bool(rec.get("local", {}).get("paths"))
+    first = rec["status"] == "DISCOVERED" and readable  # websites and asset libraries stay DISCOVERED: metadata only
     if first:
         set_status(rec, "INSPECTING", by="ceh inspect")
     if rec["url"].startswith("https://github.com/") and not rec["meta"]:
@@ -63,7 +65,7 @@ def inspect(ref: str, *, reg: Registry | None = None, type_hint: str | None = No
     tree = open_tree(rec, clone=True)
     files = [f for f, _ in tree.files()] if tree else []
     text = analyze.corpus(tree, rec["meta"], rec["name"])
-    cls = analyze.classify(text, rec["url"], files, type_hint or (rec["type"] if rec.get("type") else None))
+    cls = analyze.classify(text, rec["url"], files, type_hint or rec.get("type_manual"))
     rec["type"] = cls["type"]
     # Manually curated capabilities (ceh tag) always survive re-inspection.
     rec["capabilities"] = list(dict.fromkeys(cls["capabilities"][:8] + rec.get("capabilities_manual", [])))
