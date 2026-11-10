@@ -195,7 +195,7 @@ def osv_lookup(pkgs: list[dict]) -> list[dict] | None:
                 results = json.load(r)["results"]
         except (OSError, ValueError, KeyError):
             return None
-        for p, res in zip(chunk, results):
+        for p, res in zip(chunk, results, strict=False):
             if res.get("vulns"):
                 found.append({**p, "ids": [v["id"] for v in res["vulns"]][:10]})
     return found
@@ -231,7 +231,7 @@ def security(tree: Tree | None, deps: dict, check_vulns: bool = True) -> dict:
             continue
         if suffix not in TEXT_EXT or "node_modules/" in name or name.endswith((".min.js", "package-lock.json")):
             continue
-        text = tree.read(name)
+        text = tree.read(name) if size <= policy()["security"]["max_blob_bytes"] else None
         if text is None:
             skipped += 1
             continue

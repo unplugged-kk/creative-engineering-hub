@@ -129,7 +129,7 @@ def diff(rec: dict) -> dict:
     if subprocess.run(["git", "cat-file", "-e", f"{pin}^{{commit}}"], cwd=repo, env=GIT_ENV).returncode:
         raise CehError(f"pinned commit {pin[:10]} is not in upstream history (force-push or wrong pin)")
     log = git("log", "--format=%H%x09%ad%x09%s", "--date=short", f"{pin}..{latest}", cwd=repo).splitlines()
-    commits = [dict(zip(("sha", "date", "subject"), l.split("\t", 2))) for l in log]
+    commits = [dict(zip(("sha", "date", "subject"), l.split("\t", 2), strict=False)) for l in log]
     changes = [l.split("\t") for l in git("diff", "--name-status", "--no-renames", pin, latest, cwd=repo).splitlines()]
     files = [{"status": c[0], "path": c[-1]} for c in changes]
     paths = {f["path"] for f in files}
@@ -198,7 +198,7 @@ def analysis_markdown(rec: dict, d: dict | None = None) -> str:
     up = rec.get("upstream") or {}
     if not up.get("remote"):
         return "Not a git resource; no upstream tracking.\n"
-    lines = [f"| Field | Value |\n|---|---|",
+    lines = ["| Field | Value |\n|---|---|",
              *(f"| {k} | {v} |" for k, v in (
                  ("Strategy", up.get("strategy")), ("Remote", up.get("remote")), ("Default branch", up.get("default_branch")),
                  ("Pinned commit", up.get("pinned_commit")), ("Latest observed", up.get("latest_commit")),

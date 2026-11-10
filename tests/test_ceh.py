@@ -1,7 +1,6 @@
 """End-to-end behaviour of the ceh CLI against local git upstreams. No network."""
 import json
 import subprocess
-from pathlib import Path
 
 import pytest
 
@@ -133,7 +132,6 @@ def test_upstream_update_detected_compared_and_local_work_preserved(ceh, run_ceh
 
 
 def test_skill_exposed_to_every_agent_without_overwriting(ceh, run_ceh):
-    from ceh.cli import main
     sk = ceh["root"] / "library" / "skills" / "demo-skill"
     for d in ("references", "scripts", "examples", "evals"):
         (sk / d).mkdir(parents=True)

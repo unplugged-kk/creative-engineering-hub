@@ -11,7 +11,7 @@ from pathlib import Path
 from .evaluate import evaluate
 from .intake import add, inspect
 from .sources import find_local_copies, scan_local_clones
-from .store import CehError, Registry, github_slug, now, policy, read_yaml, root, set_status, url_key
+from .store import Registry, now, policy, read_yaml, root, set_status, url_key
 
 
 def migrate(leads_file: Path | None = None, *, reg: Registry | None = None, inspect_now: bool = True, log=print) -> Path:
@@ -92,7 +92,7 @@ def write_report(rows: list[dict], failures: list[dict], doc: dict, reg: Registr
     inv = _vf_inventory()
     clones = scan_local_clones()
     dup_clones = {k: v for k, v in clones.items() if len(v) > 1}
-    lines = [f"# Historical migration report\n", f"Generated {now()} by `ceh migrate`.\n",
+    lines = ["# Historical migration report\n", f"Generated {now()} by `ceh migrate`.\n",
              f"{len(rows)} leads registered, {len(failures)} failed, {len(doc.get('unresolved', []))} unresolved.\n",
              "## Inventory\n",
              "| ID | Name | Type | Group | Previous decision | CEH status | Licence | Pinned | Latest | Local copies | Local mods | Upstream | Recommended action |",
@@ -116,7 +116,7 @@ def write_report(rows: list[dict], failures: list[dict], doc: dict, reg: Registr
     lines += ["\n### Near-duplicate groups (same method)"]
     for g in doc.get("duplicate_groups", []):
         ids = [by_key.get(url_key("https://github.com/" + m), {}).get("id", "?") for m in g["members"]]
-        lines.append(f"- **{g['name']}**: {', '.join(f'{i} {m}' for i, m in zip(ids, g['members']))}. {g['note']}")
+        lines.append(f"- **{g['name']}**: {', '.join(f'{i} {m}' for i, m in zip(ids, g['members'], strict=False))}. {g['note']}")
     lines += ["\n### Duplicate local clones (same origin cloned more than once)"]
     lines += [f"- {k}: " + "; ".join(v) for k, v in sorted(dup_clones.items())] or ["- none"]
     lines += ["\n## Video Factory first-party inventory (accounted for, not re-registered)\n",

@@ -44,7 +44,7 @@ def compare(ids: list[str], reg: Registry) -> dict:
     caps = [set(r.get("capabilities", [])) for r in recs]
     common = set.intersection(*caps) if caps else set()
     rows = []
-    for r, c in zip(recs, caps):
+    for r, c in zip(recs, caps, strict=False):
         ev = r.get("evaluation", {})
         rows.append({
             "id": r["id"], "name": r["name"], "status": r["status"], "type": r["type"],

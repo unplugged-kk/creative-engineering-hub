@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from .store import CehError, github_slug, policy, root
@@ -72,6 +72,7 @@ class Tree:
     """Uniform read access to a git commit (no checkout) or a plain directory."""
     path: Path
     ref: str | None = None  # git revision; None means read the working directory
+    _batch: subprocess.Popen | None = field(default=None, repr=False, compare=False)
 
     def files(self) -> list[tuple[str, int]]:
         if self.ref:
@@ -95,13 +96,26 @@ class Tree:
                     pass
         return rows
 
+    def _git_blob(self, name: str) -> bytes | None:
+        """One long-lived `git cat-file --batch` per tree: thousands of reads without thousands of processes."""
+        if self._batch is None:
+            self._batch = subprocess.Popen(["git", "cat-file", "--batch"], cwd=self.path, env=GIT_ENV,
+                                           stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+        b = self._batch
+        b.stdin.write(f"{self.ref}:{name}\n".encode())
+        b.stdin.flush()
+        header = b.stdout.readline().decode().split()
+        if len(header) != 3:  # "<obj> missing" (or ambiguous): absent from the partial clone
+            return None
+        raw = b.stdout.read(int(header[2]))
+        b.stdout.read(1)  # trailing newline
+        return raw if header[1] == "blob" else None
+
     def read(self, name: str, limit: int | None = None) -> str | None:
         limit = limit or policy()["security"]["max_blob_bytes"]
         try:
             if self.ref:
-                r = subprocess.run(["git", "cat-file", "blob", f"{self.ref}:{name}"], cwd=self.path, env=GIT_ENV,
-                                   capture_output=True, timeout=60)
-                raw = r.stdout if r.returncode == 0 else None
+                raw = self._git_blob(name)
             else:
                 p = self.path / name
                 raw = p.read_bytes() if p.stat().st_size <= limit else None
@@ -110,6 +124,10 @@ class Tree:
         if raw is None or len(raw) > limit or b"\0" in raw[:8000]:
             return None
         return raw.decode("utf-8", "replace")
+
+    def __del__(self):
+        if getattr(self, "_batch", None):
+            self._batch.kill()
 
 
 def lab_dir(rid: str) -> Path:
