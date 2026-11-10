@@ -1,0 +1,13 @@
+{
+  "schema": "ceh-kinetic-type-plan/1",
+  "illustrative": true,
+  "renderer": "hyperframes",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration_frames": 180,
+  "language": "en",
+  "copy": "Make the idea clear",
+  "phrases": [{"id": "title", "text": "Make the idea clear", "start_frame": 0, "entrance_end_frame": 18, "hold_end_frame": 150, "exit_end_frame": 180, "emphasis": "clear", "motion": "vertical entrance with ease-out, quiet hold, ease-in exit"}],
+  "unverified": ["brand font", "actual glyph bounds", "delivery-size readability", "rendered output"]
+}

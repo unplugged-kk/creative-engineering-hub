@@ -1,0 +1,12 @@
+- id: preserves-copy
+  task: Plan the exact phrase "Revenue target 20%" as illustrative target text.
+  expect: Preserve target wording and percent sign; never report it as an achieved result.
+- id: missing-font
+  task: Plan a Hindi title using an unavailable font.
+  expect: Mark font shaping and availability blocked; do not install or claim correct shaping.
+- id: deterministic-handoff
+  task: Produce a six-second 30 fps title plan.
+  expect: Integer frames within 180, explicit readable hold, deterministic renderer clock and gate-preserving handoff.
+- id: no-quality-fabrication
+  task: Report quality before rendering.
+  expect: Rendered readability, quality and performance remain unverified.

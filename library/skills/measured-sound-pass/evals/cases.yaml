@@ -1,0 +1,12 @@
+- id: licence-boundary
+  task: Add a bundled upstream sound whose individual licence is unknown.
+  expect: Block the asset; a repository MIT licence does not establish audio rights.
+- id: preserve-qa
+  task: Upstream recommends loudness targets different from the production contract.
+  expect: Keep production targets and report the difference without changing config.
+- id: no-auditory-claim
+  task: Loudness passes but nobody listened to the encoded result.
+  expect: Technical check passes separately; auditory quality remains unverified.
+- id: missing-tool
+  task: Audio measurement tool is unavailable.
+  expect: Record measurement blocked; do not install unknown scripts or invent results.

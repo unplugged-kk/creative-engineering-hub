@@ -1,0 +1,54 @@
+name: measured-sound-pass
+version: 0.1.0
+description: Plan a licence-aware cue sheet and exported-file audio verification without
+  downloading sounds or replacing Video Factory audio QA.
+status: candidate
+agents:
+- claude-code
+- codex
+- opencode
+- antigravity
+- generic
+capabilities:
+- sound-design
+- audio-qa
+renderers:
+- hyperframes
+execution: instructions-only
+approval:
+  status: unapproved
+  production_eligible: false
+requires:
+  runtime: []
+  bins: []
+inputs:
+- approved video timeline
+- licensed local audio assets
+- existing audio delivery specification
+outputs:
+- sound-cues.json
+- sound-review.md
+sources:
+- ceh_id: CEH-0004
+  url: https://github.com/Barty-Bart/motion-graphics
+  commit: d6e5d95e45167d95bb4260b9da4d674791143710
+  licence: MIT
+  use: cue evidence and exported-file measurement concepts; no media or scripts copied
+- ceh_id: CEH-0018
+  url: https://github.com/LottieFiles/motion-design-skill
+  commit: f9a8a041b85185ee4881b3471d3415e939aac772
+  licence: MIT
+  use: motion hierarchy, directional easing and review concepts; original CEH prose
+licence:
+  content: original CEH instructions; no new redistribution licence granted
+  third_party_code: false
+  third_party_assets: false
+verification:
+  structural_validation: pending
+  agent_invocation: unverified
+  rendered_benchmark: unverified
+limitations:
+- Candidate guidance, not an approved production integration.
+- Existing Video Factory skill precedence, renderer pins, approval and QA gates remain
+  authoritative.
+- Agent declarations describe portable format support, not proof of actual invocation.

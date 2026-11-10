@@ -1,0 +1,10 @@
+{
+  "schema": "ceh-sound-cues/1",
+  "illustrative": true,
+  "fps": 30,
+  "duration_frames": 180,
+  "assets": [],
+  "cues": [{"id": "title-reveal", "frame": 18, "duration_frames": 12, "event": "title settles", "asset_ref": null, "status": "blocked: no rights-verified local asset"}],
+  "mix_specification": "use consuming project's existing audio QA contract",
+  "unverified": ["asset rights", "encoded loudness", "human listening", "cue synchronization"]
+}

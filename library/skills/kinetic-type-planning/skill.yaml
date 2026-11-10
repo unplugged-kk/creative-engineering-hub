@@ -1,0 +1,57 @@
+name: kinetic-type-planning
+version: 0.1.0
+description: Plan readable kinetic typography for the existing HyperFrames renderer
+  with deterministic timing and evidence checks.
+status: candidate
+agents:
+- claude-code
+- codex
+- opencode
+- antigravity
+- generic
+capabilities:
+- kinetic-typography
+- motion-graphics
+renderers:
+- hyperframes
+execution: instructions-only
+approval:
+  status: unapproved
+  production_eligible: false
+requires:
+  runtime: []
+  bins: []
+inputs:
+- approved copy
+- dimensions
+- fps
+- duration_seconds
+- brand specification
+- language
+outputs:
+- kinetic-type-plan.json
+- review checklist
+sources:
+- ceh_id: CEH-0018
+  url: https://github.com/LottieFiles/motion-design-skill
+  commit: f9a8a041b85185ee4881b3471d3415e939aac772
+  licence: MIT
+  use: motion hierarchy, directional easing and review concepts; original CEH prose
+- ceh_id: CEH-0002
+  url: https://github.com/charlie947/motion-graphics-skills
+  commit: 229022ebca76972e119e36ada23a1648d51665ab
+  licence: MIT
+  use: deterministic seek and content verification concepts; no implementation copied
+licence:
+  content: original CEH instructions; no new redistribution licence granted
+  third_party_code: false
+  third_party_assets: false
+verification:
+  structural_validation: pending
+  agent_invocation: unverified
+  rendered_benchmark: unverified
+limitations:
+- Candidate guidance, not an approved production integration.
+- Existing Video Factory skill precedence, renderer pins, approval and QA gates remain
+  authoritative.
+- Agent declarations describe portable format support, not proof of actual invocation.
