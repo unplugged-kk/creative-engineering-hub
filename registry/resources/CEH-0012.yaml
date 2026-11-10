@@ -1,0 +1,250 @@
+id: CEH-0012
+name: cth9191/animate
+url: https://github.com/cth9191/animate
+aliases: []
+type: renderer
+status: SANDBOXED
+created: '2026-11-10T15:28:44+00:00'
+description: 'Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard
+  check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots,
+  every format from one piece.'
+capabilities:
+- audio-qa
+- procedural-animation
+- hand-drawn-animation
+- explainer-videos
+- motion-graphics
+- voiceover
+- 3d-animation
+- rendering
+local:
+  paths:
+  - /Users/kishore/Desktop/Animate-Studio/source/animate-upstream
+  - /Users/kishore/Desktop/Animate-Studio/.claude/skills/animate
+  state:
+    /Users/kishore/Desktop/Animate-Studio/source/animate-upstream:
+      git: true
+      head: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+      branch: main
+      origin: https://github.com/cth9191/animate
+      uncommitted:
+      - ?? .DS_Store
+      uncommitted_count: 1
+    /Users/kishore/Desktop/Animate-Studio/.claude/skills/animate:
+      git: false
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/cth9191/animate
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    at: '2026-11-10T15:28:44+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, animate_status'
+  pinned_commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+  latest_commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+  latest_release: null
+  last_checked: '2026-11-10T16:03:09+00:00'
+  checks:
+  - at: '2026-11-10T15:35:44+00:00'
+    latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:09+00:00'
+    latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: cth9191/animate
+  description: 'Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard
+    check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots,
+    every format from one piece.'
+  topics:
+  - animation
+  - canvas
+  - claude-code
+  - claude-code-plugin
+  - claude-code-skill
+  - explainer-video
+  - generative-art
+  - motion-graphics
+  - procedural-animation
+  - storyboard
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-10-05T20:31:48Z'
+  archived: false
+  stars: 1725
+  is_fork: false
+  parent: null
+  language: JavaScript
+notes:
+- Animate Studio v0.4.0 installed separately at ~/Desktop/Animate-Studio; doctor PASS=21. Style-grammar format and approval
+  gates adapted by VF; its canvas renderer is not adopted.
+history:
+- at: '2026-11-10T15:28:44+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Animate Studio v0.4.0 installed separately at ~/Desktop/Animate-Studio; doctor PASS=21. Style-grammar format and approval
+    gates adapted by VF; its canvas renderer is not adopted.
+- at: '2026-11-10T15:28:44+00:00'
+  from: DISCOVERED
+  to: SANDBOXED
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:03:09+00:00'
+historical:
+  group: B
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/Animate-Studio/STATUS.md
+  note: Animate Studio v0.4.0 installed separately at ~/Desktop/Animate-Studio; doctor PASS=21. Style-grammar format and approval
+    gates adapted by VF; its canvas renderer is not adopted.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 9
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 105
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - claude-code-plugin
+  renderers:
+  - ffmpeg
+  - browser
+  - canvas
+files:
+  count: 114
+  skills:
+  - plugins/animate/skills/animate/SKILL.md
+analysed_commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - explainer-videos
+  - motion-graphics
+  - rendering
+  - voiceover
+  overlap: 0.62
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - voiceover
+  overlap: 0.25
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - rendering
+  overlap: 0.25
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.12
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.12
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - explainer-videos
+  - motion-graphics
+  - procedural-animation
+  - rendering
+  overlap: 0.5
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  status: PARKED
+  shared:
+  - audio-qa
+  - explainer-videos
+  - motion-graphics
+  - procedural-animation
+  overlap: 0.5
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - 3d-animation
+  - audio-qa
+  - motion-graphics
+  - procedural-animation
+  overlap: 0.5
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on 3d-animation, explainer-videos,
+  motion-graphics, rendering, voiceover. Run `ceh compare CEH-0012 CEH-0014`.'
+inspected: '2026-11-10T15:47:54+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:54+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type renderer
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, claude-code-plugin'
+    maintainability:
+      score: 4
+      basis: last push 35 days ago
+    documentation:
+      score: 5
+      basis: top-level README 8248 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

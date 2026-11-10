@@ -1,0 +1,98 @@
+{
+  "id": "CEH-0011",
+  "name": "greensock/gsap-skills",
+  "url": "https://github.com/greensock/gsap-skills",
+  "type": "agent-skill",
+  "status": "CANDIDATE",
+  "capabilities": [
+    "2d-animation"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 0,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": []
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 37,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "generic",
+      "opencode"
+    ],
+    "renderers": []
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:51+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, False, True, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic, opencode"
+      },
+      "maintainability": {
+        "score": 3,
+        "basis": "last push 103 days ago"
+      },
+      "documentation": {
+        "score": 4,
+        "basis": "top-level README 7654 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.14,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation. Run `ceh compare CEH-0011 CEH-0008`."
+}

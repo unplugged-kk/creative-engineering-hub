@@ -1,0 +1,191 @@
+{
+  "id": "CEH-0043",
+  "name": "ggml-org/whisper.cpp",
+  "url": "https://github.com/ggml-org/whisper.cpp",
+  "type": "repository",
+  "status": "PRODUCTION",
+  "capabilities": [
+    "subtitles"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 27,
+      "font_files": 0,
+      "model_files": 12,
+      "nested_licence_files": [
+        "bindings/go/LICENSE",
+        "examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/LICENSE.md",
+        "tests/earnings21/normalizers/LICENSE",
+        "tests/librispeech-parakeet/normalizers/LICENSE",
+        "tests/librispeech/normalizers/LICENSE"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-clang.yml:127"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-cpu.yml:65"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-freebsd.yml:53"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-gcc.yml:117"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-sanitize.yml:61"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/build-sycl.yml:68"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/docker.yml:44"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/examples.yml:26"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/release.yml:111"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "README.md:547"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "README_sycl.md:63"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "bindings/java/gradle/wrapper/gradle-wrapper.jar"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "examples/command/README.md:42"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "examples/stream/README.md:65"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "examples/talk-llama/README.md:20"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/whisper.android.java/gradle/wrapper/gradle-wrapper.jar"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/whisper.android/gradle/wrapper/gradle-wrapper.jar"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "examples/whisper.swiftui/README.md:15"
+      }
+    ],
+    "finding_count": 18,
+    "scanned_files": 345,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [],
+    "renderers": [
+      "ffmpeg"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:49:40+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 4,
+        "basis": "skills, scripts, examples, tests present: [False, True, True, True]"
+      },
+      "reusability": {
+        "score": 3,
+        "basis": "resource type repository"
+      },
+      "agent_compatibility": {
+        "score": 0,
+        "basis": "agents detected: none"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 41029 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "18 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.71,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on subtitles. Run `ceh compare CEH-0043 CEH-0008`."
+}

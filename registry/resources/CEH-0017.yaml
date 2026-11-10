@@ -1,0 +1,246 @@
+id: CEH-0017
+name: 199-biotechnologies/motion-dev-animations-skill
+url: https://github.com/199-biotechnologies/motion-dev-animations-skill
+aliases: []
+type: agent-skill
+status: REJECTED
+created: '2026-11-10T15:30:09+00:00'
+description: Claude Code skill for Motion.dev -- 120fps web animations, spring physics, scroll effects, gesture interactions
+capabilities:
+- transitions
+- camera-movement
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0017
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0017:
+      git: true
+      head: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+      branch: main
+      origin: https://github.com/199-biotechnologies/motion-dev-animations-skill
+      uncommitted:
+      - D  ACTIVATION_TEST.md
+      - D  CONTRIBUTING.md
+      - D  DEPLOYMENT_STATUS.md
+      - D  LICENSE
+      - D  README.md
+      - D  RESEARCH_SYNTHESIS.md
+      - D  SKILL.md
+      - D  SKILL.md.backup
+      - D  VALIDATION_V3.md
+      - D  examples/card-hover.md
+      - D  examples/example-config.json
+      - D  examples/hero-fade-up.md
+      - D  examples/magnetic-button.md
+      - D  examples/parallax-layers.md
+      - D  examples/scroll-reveal.md
+      - D  reference/api-reference.md
+      - D  reference/spring-physics.md
+      - D  schema/motion-config.schema.json
+      - D  scripts/validate_motion_config.py
+      - D  templates/component-library.tsx
+      - D  templates/nextjs-page.tsx
+      uncommitted_count: 21
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/199-biotechnologies/motion-dev-animations-skill
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+    at: '2026-11-10T15:30:09+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2'
+  pinned_commit: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+  latest_commit: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+  latest_release: null
+  last_checked: '2026-11-10T16:03:23+00:00'
+  checks:
+  - at: '2026-11-10T15:35:57+00:00'
+    latest: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+    flags:
+    - up-to-date
+    - unmaintained
+  - at: '2026-11-10T16:03:23+00:00'
+    latest: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+    flags: &id001
+    - up-to-date
+    - unmaintained
+  flags: *id001
+meta:
+  full_name: 199-biotechnologies/motion-dev-animations-skill
+  description: Claude Code skill for Motion.dev -- 120fps web animations, spring physics, scroll effects, gesture interactions
+  topics:
+  - accessibility
+  - animation-library
+  - claude-code
+  - claude-code-skill
+  - css-animations
+  - developer-tools
+  - framer-motion
+  - gesture-interactions
+  - gpu-accelerated
+  - motion-dev
+  - motion-one
+  - nextjs
+  - parallax
+  - react
+  - react-animations
+  - scroll-animations
+  - spring-physics
+  - svelte
+  - typescript
+  - web-animations
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-03-30T22:38:57Z'
+  archived: false
+  stars: 229
+  is_fork: false
+  parent: null
+  language: TypeScript
+notes:
+- React/Next UI animation skill; wrong domain, stale (Motion v11).
+history:
+- at: '2026-11-10T15:30:09+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: React/Next UI animation skill; wrong domain, stale (Motion v11).
+- at: '2026-11-10T15:30:09+00:00'
+  from: DISCOVERED
+  to: REJECTED
+  by: ceh migrate
+  note: recorded from historical evidence (REJECT)
+updated: '2026-11-10T16:03:23+00:00'
+historical:
+  group: C
+  previous_decision: REJECT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  note: React/Next UI animation skill; wrong domain, stale (Motion v11).
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 20
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  renderers: []
+files:
+  count: 21
+  skills:
+  - SKILL.md
+analysed_commit: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+alternatives:
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - camera-movement
+  - transitions
+  overlap: 1.0
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - transitions
+  overlap: 0.5
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - transitions
+  overlap: 0.5
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - transitions
+  overlap: 0.5
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  status: PARKED
+  shared:
+  - camera-movement
+  overlap: 0.5
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - transitions
+  overlap: 0.5
+- id: CEH-0007
+  name: feitangyuan/onetake
+  status: RESTRICTED
+  shared:
+  - transitions
+  overlap: 0.5
+- id: CEH-0010
+  name: motiondivision/motion
+  status: PARKED
+  shared:
+  - transitions
+  overlap: 0.5
+recommendation: 'COMPARE before adopting: overlaps LottieFiles/motion-design-skill (CANDIDATE) on camera-movement, transitions.
+  Run `ceh compare CEH-0017 CEH-0018`.'
+inspected: '2026-11-10T15:48:13+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:13+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 4
+      basis: 'agents detected: agent-skills-format, claude-code'
+    maintainability:
+      score: 2
+      basis: last push 224 days ago
+    documentation:
+      score: 4
+      basis: top-level README 7811 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.0
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

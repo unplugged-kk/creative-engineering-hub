@@ -1,0 +1,666 @@
+id: CEH-0038
+name: CopilotKit/CopilotKit
+url: https://github.com/CopilotKit/CopilotKit
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:33:07+00:00'
+description: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI
+  Protocol
+capabilities:
+- data-visualization
+- rendering
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0038
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0038:
+      git: true
+      head: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+      branch: main
+      origin: https://github.com/CopilotKit/CopilotKit
+      uncommitted:
+      - D  .browserslistrc
+      - D  .claude-plugin/marketplace.json
+      - D  .claude-plugin/plugin.json
+      - D  .claude/docs/aeo-synthetics.md
+      - D  .claude/docs/architecture.md
+      - D  .claude/docs/documentation.md
+      - D  .claude/docs/git.md
+      - D  .claude/docs/hooks.md
+      - D  .claude/docs/workflow.md
+      - D  .coderabbit.yaml
+      - D  .cursor/rules/agent-development.mdc
+      - D  .cursor/rules/copilotkit-architecture.mdc
+      - D  .cursor/rules/development-workflow.mdc
+      - D  .cursor/rules/examples-and-demos.mdc
+      - D  .cursor/rules/frontend-development.mdc
+      - D  .cursor/rules/quick-reference.mdc
+      - D  .cursor/rules/suggestions-development.mdc
+      - D  .cursor/rules/working-with-rules.mdc
+      - D  .dockerignore
+      - D  .gitattributes
+      - D  .github/CODEOWNERS
+      - D  .github/ISSUE_TEMPLATE/1-bug-report.yml
+      - D  .github/ISSUE_TEMPLATE/2-feature-request.yml
+      - D  .github/ISSUE_TEMPLATE/3-documentation.yml
+      - D  .github/ISSUE_TEMPLATE/config.yml
+      - D  .github/PULL_REQUEST_TEMPLATE.md
+      - D  .github/config-allowlist.txt
+      - D  .github/scripts/check-config-allowlist.sh
+      - D  .github/scripts/print-pyproject-deps.mjs
+      - D  .github/scripts/starter-clean-install-known-broken.txt
+      - D  .github/scripts/starter-clean-install-matrix.mjs
+      - D  .github/scripts/starter-clean-install.sh
+      - D  .github/workflows/aeo_synthetics.yml
+      - D  .github/workflows/auto_merge_showcases.yml
+      - D  .github/workflows/canary.yml
+      - D  .github/workflows/cleanup_pr-caches.yml
+      - D  .github/workflows/docs_open_release_pr.yml
+      - D  .github/workflows/docs_promote.yml
+      - D  .github/workflows/ghcr_unlinked_packages.yml
+      - D  .github/workflows/integrations_parity.yml
+      - D  .github/workflows/intelligence-browser-upgrade.yml
+      - D  .github/workflows/intelligence-compatibility-monitor.yml
+      - D  .github/workflows/intelligence-rich-threads-deploy.yml
+      - D  .github/workflows/intelligence-rich-threads-dev.yml
+      - D  .github/workflows/intelligence-rich-threads.yml
+      - D  .github/workflows/intelligence-runtimes.yml
+      - D  .github/workflows/intelligence-skill-adapters.yml
+      - D  .github/workflows/intelligence-smoke.yml
+      - D  .github/workflows/lint-release-workflows.yml
+      - D  .github/workflows/package-licenses.yml
+      uncommitted_count: 24728
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/CopilotKit/CopilotKit
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+    at: '2026-11-10T15:33:31+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  latest_commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  latest_release: &id002
+    tag: v1.85.0
+    published_at: '2026-11-06T15:47:49Z'
+  last_checked: '2026-11-10T16:04:24+00:00'
+  checks:
+  - at: '2026-11-10T15:36:57+00:00'
+    latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:24+00:00'
+    latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: CopilotKit/CopilotKit
+  description: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI
+    Protocol
+  topics:
+  - agent
+  - agent-native
+  - agentic-ai
+  - agents
+  - ai
+  - ai-agent
+  - ai-assistant
+  - assistant
+  - assistant-chat-bots
+  - copilot
+  - copilot-chat
+  - generative-ui
+  - js
+  - llm
+  - nextjs
+  - open-source
+  - react
+  - reactjs
+  - ts
+  - typescript
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-10T15:27:11Z'
+  archived: false
+  stars: 38598
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:33:07+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:33:07+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:33:32+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:04:24+00:00'
+historical:
+  group: E
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 307
+    font_files: 31
+    model_files: 0
+    nested_licence_files:
+    - examples/canvas/langgraph-python/LICENSE
+    - examples/canvas/llamaindex-composio/LICENSE
+    - examples/canvas/llamaindex/LICENSE
+    - examples/canvas/mastra-pm/LICENSE
+    - examples/canvas/mastra/LICENSE
+    - examples/canvas/pydantic-ai/LICENSE
+    - examples/integrations/adk-angular/LICENSE
+    - examples/integrations/adk/LICENSE
+    - examples/integrations/agent-spec/LICENSE
+    - examples/integrations/agno/LICENSE
+    - examples/integrations/antigravity/LICENSE
+    - examples/integrations/claude-managed-agents/LICENSE
+    - examples/integrations/claude-sdk-python/LICENSE
+    - examples/integrations/claude-sdk-typescript/LICENSE
+    - examples/integrations/crewai-crews/LICENSE
+    - examples/integrations/crewai-flows/LICENSE
+    - examples/integrations/langgraph-fastapi/LICENSE
+    - examples/integrations/langgraph-js/LICENSE
+    - examples/integrations/langgraph-python/LICENSE
+    - examples/integrations/llamaindex/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - examples/e2e/package.json
+  - examples/shadcn/package.json
+  - examples/slack/package.json
+  - examples/teams/package.json
+  - package.json
+  - packages/a2ui-renderer/package.json
+  - packages/agentcore-runner/package.json
+  - packages/angular/package.json
+  - packages/channels-core/package.json
+  - packages/channels-discord/package.json
+  - packages/channels-intelligence/package.json
+  - packages/channels-slack/package.json
+  - packages/channels-teams/package.json
+  - packages/channels-ui/package.json
+  - packages/channels-whatsapp/package.json
+  - packages/channels/package.json
+  - packages/core/package.json
+  - packages/demo-agents/package.json
+  - packages/intelligence-adk-python/pyproject.toml
+  - packages/intelligence-agent-framework-dotnet/package.json
+  - packages/intelligence-delivery-core/package.json
+  - packages/intelligence-delivery-python-core/pyproject.toml
+  - packages/intelligence-langgraph-python/pyproject.toml
+  - packages/intelligence-langgraph/package.json
+  - packages/intelligence-mastra/package.json
+  - packages/learning/package.json
+  - packages/mcp-apps-renderer/package.json
+  - packages/react-core/package.json
+  - packages/react-native/package.json
+  - packages/react-textarea/package.json
+  - packages/react-ui/package.json
+  - packages/runtime-client-gql/package.json
+  - packages/runtime-dotnet/package.json
+  - packages/runtime-go/go.mod
+  - packages/runtime-go/package.json
+  - packages/runtime-python/package.json
+  - packages/runtime-python/pyproject.toml
+  - packages/runtime-ruby/package.json
+  - packages/runtime/package.json
+  - packages/sdk-js/package.json
+  - packages/shared/package.json
+  - packages/sqlite-runner/package.json
+  - packages/tailwind-config/package.json
+  - packages/tsconfig/package.json
+  - packages/typescript-config/package.json
+  - packages/voice/package.json
+  - packages/vue/package.json
+  - packages/web-components/package.json
+  - packages/web-inspector/package.json
+  - sdk-python/pyproject.toml
+  - showcase/angular/package.json
+  - showcase/eval-webhook/package.json
+  - showcase/harness/package.json
+  - showcase/scripts/package.json
+  - showcase/shell-dashboard/package.json
+  - showcase/shell-docs/package.json
+  - showcase/shell-dojo/package.json
+  - showcase/shell/package.json
+  - showcase/tests/package.json
+  - showcase/vue/package.json
+  - templates/claude-managed-agents-flutter/package.json
+  - tools/genui-eval/package.json
+  - tools/learned-skill-conformance/package.json
+  - tools/learned-skill-conformance/pyproject.toml
+  - tools/runtime-conformance/package.json
+  npm: {}
+  npm_dev:
+    '@anthropic-ai/claude-code': 2.1.207
+    '@arethetypeswrong/cli': ^0.18.2
+    '@commitlint/cli': ^20.3.0
+    '@commitlint/config-conventional': ^20.3.0
+    '@size-limit/file': 12.1.0
+    '@storybook/addon-docs': ^10.2.10
+    '@storybook/addon-webpack5-compiler-swc': ^4.0.2
+    '@storybook/react-webpack5': ^10.2.10
+    '@types/jscodeshift': ^17.3.0
+    '@types/node': ^18.11.17
+    '@types/semver': ^7.7.1
+    '@vitest/coverage-v8': ^3.2.4
+    browserslist: ^4.24.0
+    danger: ^12.3.3
+    es-check: 9.6.4
+    glob: ^10.3.12
+    install: ^0.13.0
+    jscodeshift: ^17.3.0
+    lefthook: ^2.1.1
+    npm: ^10.7.0
+    nx: 22.7.5
+    oxfmt: ^0.36.0
+    oxlint: ^1.51.0
+    publint: ^0.3.17
+    remark: ^15.0.1
+    remark-mdx: ^3.1.1
+    remark-parse: ^11.0.0
+    semver: ^7.8.1
+    size-limit: 12.1.0
+    storybook: ^10.2.10
+    ts-node: ^10.9.2
+    tsdown: ^0.20.3
+    tsx: ^4.21.0
+    typescript: ^5.2.3
+    unified: ^11.0.5
+    unist-util-visit: ^5.1.0
+    vitest: ^4.1.3
+  install_hooks:
+    prepare: lefthook install
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/showcase_validate.yml:709
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/canvas/llamaindex/README.md:56
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/adk/Dockerfile:21
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/adk/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/agno/Dockerfile:28
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/agno/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/antigravity/Dockerfile:27
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/antigravity/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/claude-sdk-python/Dockerfile:29
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/claude-sdk-python/docker/Dockerfile.app
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/claude-sdk-typescript/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/crewai-crews/Dockerfile:21
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/crewai-crews/docker/Dockerfile.app
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/crewai-flows/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/langgraph-fastapi/Dockerfile:31
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/langgraph-fastapi/docker/Dockerfile.app
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/langgraph-js/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/langgraph-python/Dockerfile:31
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/langgraph-python/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/llamaindex/Dockerfile:28
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/llamaindex/docker/Dockerfile.app
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/mastra/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/ms-agent-framework-dotnet/Dockerfile:35
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/ms-agent-framework-dotnet/README.md:15
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/ms-agent-framework-dotnet/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/ms-agent-framework-python/Dockerfile:25
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/ms-agent-framework-python/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/pydantic-ai/Dockerfile:28
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/pydantic-ai/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/integrations/strands-python/Dockerfile:29
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/strands-python/docker/Dockerfile.app
+  - severity: medium
+    kind: committed binary
+    path: examples/integrations/strands-typescript/docker/Dockerfile.app
+  - severity: medium
+    kind: pipe remote script to shell
+    path: examples/showcases/antigravity-repo-doctor/agent/tests/test_tools.py:295
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: examples/showcases/reskinnable-demo/src/app/api/commerce/v1/dev/reset/route.test.ts:447
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: examples/showcases/reskinnable-demo/src/lib/redact-secrets.test.ts:13
+  - severity: medium
+    kind: committed binary
+    path: examples/v2/react-native/demo/android/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: packages/channels-intelligence/src/delivery-transport.test.ts:1456
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: packages/runtime/src/v2/runtime/core/__tests__/channel-activation-config.test.ts:67
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: packages/runtime/src/v2/runtime/core/__tests__/channel-activation-config.test.ts:67
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: packages/runtime/tests/service-adapters/unify/unify-adapter-language-model.test.ts:23
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: scripts/__tests__/integration-intelligence-migration.test.ts:2833
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/angular/scripts/check-browser-artifact.test.ts:30
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: showcase/harness/src/cvdiag/ab-hmac.test.ts:25
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/emit.test.ts:510
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/raw-byte-capture.test.ts:157
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: showcase/harness/src/cvdiag/raw-byte-capture.test.ts:87
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/schema.test.ts:178
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/scrub.test.ts:74
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/harness/src/cvdiag/staged-ts-scrub-parity.test.ts:21
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/ag2/Dockerfile:32
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/agno/Dockerfile:31
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/integrations/built-in-agent/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/claude-sdk-python/Dockerfile:31
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/integrations/claude-sdk-typescript/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/crewai-conversational-flows/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/crewai-crews/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/google-adk/Dockerfile:32
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/google-antigravity/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/langgraph-fastapi/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/langgraph-python/Dockerfile:31
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/integrations/langgraph-typescript/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/langroid/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/llamaindex/Dockerfile:33
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/integrations/mastra/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/ms-agent-dotnet/Dockerfile:28
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/ms-agent-harness-dotnet/Dockerfile:26
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/ms-agent-python/Dockerfile:33
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/openai-agents-python/Dockerfile:31
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/pydantic-ai/Dockerfile:33
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/spring-ai/Dockerfile:58
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (OpenAI/Anthropic key)
+    path: showcase/integrations/strands-typescript/src/cvdiag/scrub.ts:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/integrations/strands/Dockerfile:35
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: showcase/pocketbase/tests/result-capacity.integration.mjs:98
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: showcase/pocketbase/tests/retention.integration.mjs:126
+  - severity: medium
+    kind: pipe remote script to shell
+    path: showcase/scripts/create-integration/index.ts:1216
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: showcase/scripts/lib/__tests__/railway-token.test.ts:31
+  - severity: medium
+    kind: hardcoded credential
+    path: tools/runtime-conformance/platform.mjs:80
+  - severity: medium
+    kind: npm prepare hook runs on install
+    path: 'package.json: lefthook install'
+  finding_count: 79
+  scanned_files: 21975
+  notes:
+  - 2 large or binary files not scanned
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  renderers: []
+files:
+  count: 24728
+  skills:
+  - examples/showcases/a2ui-playground/skills/a2ui-catalog/SKILL.md
+  - examples/showcases/a2ui-playground/skills/generated/express/a2ui-core/SKILL.md
+  - examples/showcases/a2ui-playground/skills/generated/express/a2ui-playground/SKILL.md
+  - examples/showcases/a2ui-playground/skills/generated/json/a2ui-core/SKILL.md
+  - examples/showcases/a2ui-playground/skills/generated/json/a2ui-playground/SKILL.md
+  - examples/showcases/open-mcp-client/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md
+  - examples/showcases/open-mcp-client/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md
+  - examples/showcases/open-mcp-client/apps/mcp-use-server/.agent/skills/mcp-builder/SKILL.md
+  - examples/showcases/reskinnable-demo/.claude/skills/reskin/SKILL.md
+  - skills/channels-setup/SKILL.md
+  - skills/copilotkit-channels/SKILL.md
+  - skills/copilotkit-cli/SKILL.md
+  - skills/copilotkit/SKILL.md
+  - skills/inspector-docs/SKILL.md
+  - skills/inspector-workbench/SKILL.md
+  - skills/intelligence-docs/SKILL.md
+  - skills/intelligence-vocabulary/SKILL.md
+  - skills/setup-slack-channel/SKILL.md
+analysed_commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - rendering
+  overlap: 0.5
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  overlap: 0.5
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  overlap: 0.5
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - rendering
+  overlap: 0.5
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - data-visualization
+  - rendering
+  overlap: 1.0
+- id: CEH-0009
+  name: remotion-dev/remotion
+  status: PARKED
+  shared:
+  - data-visualization
+  - rendering
+  overlap: 1.0
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - rendering
+  overlap: 0.5
+- id: CEH-0024
+  name: Vincentwei1021/video-shotcraft
+  status: SANDBOXED
+  shared:
+  - data-visualization
+  overlap: 0.5
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on rendering. Run `ceh compare CEH-0038
+  CEH-0014`.'
+inspected: '2026-11-10T15:49:25+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:25+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 21968 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 79 findings, worst medium
+    integration_complexity:
+      score: 4
+      basis: '0 runtime dependencies; install hooks: [''prepare'']'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.5
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

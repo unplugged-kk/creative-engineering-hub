@@ -1,0 +1,271 @@
+id: CEH-0023
+name: hi-nikola/hand-drawn-explainer-video-nikola
+url: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:30:33+00:00'
+description: 中文手绘知识讲解视频 Codex Skill：逐笔故事、双语义岛、让怪诞小黑动起来与程序动画
+capabilities:
+- explainer-videos
+- hand-drawn-animation
+- 2d-animation
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0023
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0023:
+      git: true
+      head: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+      branch: main
+      origin: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola
+      uncommitted:
+      - D  .env.example
+      - D  .gitattributes
+      - D  .gitignore
+      - D  CONTRIBUTING.md
+      - D  LICENSE
+      - D  LICENSE-MEDIA.md
+      - D  README.md
+      - D  SECURITY.md
+      - D  SKILL.md
+      - D  SKILL.zh-CN.md
+      - D  THIRD_PARTY_NOTICES.md
+      - D  agents/openai.yaml
+      - D  config/runtime.example.json
+      - D  docs/ARCHITECTURE.md
+      - D  docs/CONFIGURATION.md
+      - D  docs/INSTALL.md
+      - D  docs/STYLES.md
+      - D  docs/TROUBLESHOOTING.md
+      - D  docs/assets/volcengine-seed-tts-2-setup.png
+      - D  evals/evals.json
+      - D  examples/program-animation/skill-demo/DESIGN.md
+      - D  examples/program-animation/skill-demo/README.md
+      - D  examples/program-animation/skill-demo/assets/narration.wav
+      - D  examples/program-animation/skill-demo/hyperframes.json
+      - D  examples/program-animation/skill-demo/index.html
+      - D  examples/program-animation/skill-demo/package-lock.json
+      - D  examples/program-animation/skill-demo/package.json
+      - D  examples/program-animation/skill-demo/preview.png
+      - D  examples/program-animation/skill-demo/script.txt
+      - D  examples/program-animation/skill-demo/timeline.json
+      - D  examples/program-animation/skill-demo/what-is-skill-sample.mp4
+      - D  "examples/program-animation/skill-demo/\344\275\277\347\224\250\350\257\264\346\230\216.txt"
+      - D  examples/stroke-story/steve-jobs/README.md
+      - D  examples/stroke-story/steve-jobs/annotation.json
+      - D  examples/stroke-story/steve-jobs/regions-preview.png
+      - D  examples/stroke-story/steve-jobs/semantic-island-sample.mp4
+      - D  examples/stroke-story/steve-jobs/source.png
+      - D  examples/stroke-story/steve-jobs/steve-jobs-biography.mp4
+      - D  examples/stroke-story/steve-jobs/transition-contact.jpg
+      - D  examples/stroke-story/yuefa-sanzhang/README.md
+      - D  examples/stroke-story/yuefa-sanzhang/editable-project.zip
+      - D  examples/stroke-story/yuefa-sanzhang/hand-speed-contact-sheet.jpg
+      - D  examples/stroke-story/yuefa-sanzhang/seven-scenes-final-frames.jpg
+      - D  examples/stroke-story/yuefa-sanzhang/timeline.json
+      - D  examples/stroke-story/yuefa-sanzhang/verification.json
+      - D  examples/stroke-story/yuefa-sanzhang/yuefa-sanzhang-16x9-stroke-story.mp4
+      - D  preferences.json
+      - D  references/automation-workflow.md
+      - D  references/hand-drawn-video-prompts-LICENSE.txt
+      - D  references/output-example.md
+      uncommitted_count: 86
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    at: '2026-11-10T15:30:35+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+  latest_commit: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+  latest_release: &id002
+    tag: v1.1.0
+    published_at: '2026-09-03T04:25:05Z'
+  last_checked: '2026-11-10T16:03:41+00:00'
+  checks:
+  - at: '2026-11-10T15:36:14+00:00'
+    latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:41+00:00'
+    latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: hi-nikola/hand-drawn-explainer-video-nikola
+  description: 中文手绘知识讲解视频 Codex Skill：逐笔故事、双语义岛、让怪诞小黑动起来与程序动画
+  topics:
+  - chinese
+  - codex-skill
+  - explainer-video
+  - hand-drawn-animation
+  - whiteboard-animation
+  licence_spdx: Apache-2.0
+  default_branch: main
+  pushed_at: '2026-09-03T04:25:04Z'
+  archived: false
+  stars: 466
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:30:33+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:30:33+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:30:36+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:03:41+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: Apache-2.0
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 13
+    font_files: 0
+    model_files: 0
+    nested_licence_files:
+    - vendor/srt-whiteboard-animation/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 69
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - codex
+  renderers:
+  - hyperframes
+  - ffmpeg
+files:
+  count: 86
+  skills:
+  - SKILL.md
+analysed_commit: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  - explainer-videos
+  overlap: 0.67
+- id: CEH-0011
+  name: greensock/gsap-skills
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.33
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  overlap: 0.33
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.33
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  - explainer-videos
+  - hand-drawn-animation
+  overlap: 1.0
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  - hand-drawn-animation
+  overlap: 0.67
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - explainer-videos
+  overlap: 0.33
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  status: PARKED
+  shared:
+  - explainer-videos
+  overlap: 0.33
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation, explainer-videos.
+  Run `ceh compare CEH-0023 CEH-0008`.'
+inspected: '2026-11-10T15:48:24+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:24+00:00'
+  criteria:
+    workflow_completeness:
+      score: 5
+      basis: 'skills, scripts, examples, tests present: [True, True, True, True]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 4
+      basis: 'agents detected: agent-skills-format, codex'
+    maintainability:
+      score: 4
+      basis: last push 68 days ago
+    documentation:
+      score: 4
+      basis: top-level README 6127 chars
+    licence_suitability:
+      score: 5
+      basis: Apache-2.0 (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.43
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

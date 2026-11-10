@@ -1,0 +1,315 @@
+id: CEH-0024
+name: Vincentwei1021/video-shotcraft
+url: https://github.com/Vincentwei1021/video-shotcraft
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:30:37+00:00'
+description: 'AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards,
+  150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.'
+capabilities:
+- sound-design
+- cinematography
+- data-visualization
+- ai-video-generation
+- social-media-videos
+- instagram-reels
+- motion-graphics
+- music-visualization
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0024
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0024:
+      git: true
+      head: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+      branch: main
+      origin: https://github.com/Vincentwei1021/video-shotcraft
+      uncommitted:
+      - D  .claude-plugin/plugin.json
+      - D  .github/ISSUE_TEMPLATE/showcase.yml
+      - D  .github/scripts/showcase-publish.py
+      - D  .github/workflows/contact-sheet-tests.yml
+      - D  .github/workflows/deploy-pages.yml
+      - D  .github/workflows/pr-checks.yml
+      - D  .github/workflows/showcase-publish.yml
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  README_CN.md
+      - D  README_JA.md
+      - D  README_RU.md
+      - D  README_TW.md
+      - D  SKILL.md
+      - D  agents/openai.yaml
+      - D  assets/audio/ATTRIBUTION.md
+      - D  assets/audio/bgm/bgm-tech-house.mp3
+      - D  assets/audio/bgm/cat-walk.mp3
+      - D  assets/audio/bgm/g-eazy-nba-type.mp3
+      - D  assets/audio/bgm/house-vibez.mp3
+      - D  assets/audio/bgm/tonight-hiphop.mp3
+      - D  assets/brand/BRAND.md
+      - D  assets/brand/brand-board.svg
+      - D  assets/brand/logo-lockup-reverse.svg
+      - D  assets/brand/logo-lockup.svg
+      - D  assets/brand/logo-mark-mono.svg
+      - D  assets/brand/logo-mark-reverse.svg
+      - D  assets/brand/logo-mark.svg
+      - D  assets/lib/Caption.tsx
+      - D  assets/lib/ClipCard.tsx
+      - D  assets/lib/DigitRoll.tsx
+      - D  assets/lib/FlashCut.tsx
+      - D  assets/lib/FlatPanel.tsx
+      - D  assets/lib/PageCam.tsx
+      - D  assets/lib/VerticalTicker.tsx
+      - D  assets/lib/helpers/__tests__/helpers.test.ts
+      - D  assets/lib/helpers/camera.tsx
+      - D  assets/lib/helpers/motion.ts
+      - D  assets/lib/helpers/rand.ts
+      - D  assets/lib/helpers/shake.ts
+      - D  assets/readme/cover.webp
+      - D  assets/readme/examples/camera.webp
+      - D  assets/readme/examples/data.webp
+      - D  assets/readme/examples/effects.webp
+      - D  assets/readme/examples/interaction.webp
+      - D  assets/readme/examples/opening.webp
+      - D  assets/readme/examples/outro.webp
+      - D  assets/readme/examples/rhythm.webp
+      - D  assets/readme/examples/transition.webp
+      uncommitted_count: 1221
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/Vincentwei1021/video-shotcraft
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    at: '2026-11-10T15:30:41+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+  latest_commit: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+  latest_release: &id002
+    tag: showcase-media
+    published_at: '2026-09-01T16:47:16Z'
+  last_checked: '2026-11-10T16:03:43+00:00'
+  checks:
+  - at: '2026-11-10T15:36:17+00:00'
+    latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:43+00:00'
+    latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: Vincentwei1021/video-shotcraft
+  description: 'AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe
+    cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.'
+  topics:
+  - agent-skills
+  - ai-agents
+  - ai-video
+  - claude-code
+  - claude-code-skills
+  - claude-skills
+  - codex
+  - motion-design
+  - motion-graphics
+  - product-video
+  - promo-video
+  - remotion
+  - video-generation
+  - video-production
+  licence_spdx: Apache-2.0
+  default_branch: main
+  pushed_at: '2026-11-09T15:59:44Z'
+  archived: false
+  stars: 18408
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes:
+- Installed as Claude plugin video-shotcraft:video-shotcraft (synced under ~/.claude/plugins/synced).
+history:
+- at: '2026-11-10T15:30:37+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Installed as Claude plugin video-shotcraft:video-shotcraft (synced under ~/.claude/plugins/synced).
+- at: '2026-11-10T15:30:37+00:00'
+  from: DISCOVERED
+  to: SANDBOXED
+  by: ceh migrate
+  note: recorded from historical evidence
+updated: '2026-11-10T16:03:43+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: Installed as Claude plugin video-shotcraft:video-shotcraft (synced under ~/.claude/plugins/synced).
+licence:
+  spdx: Apache-2.0
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 170
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - template/package.json
+  - videos/readme-workflow/package.json
+  - workbench/package.json
+  npm: {}
+  npm_dev:
+    vitest: ^3.2.4
+  install_hooks: {}
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: known vulnerability
+    path: npm:@vitest/mocker@3.2.7 GHSA-82fw-gwwq-j7x9, GHSA-qxg6-89mg-rqv8
+  - severity: medium
+    kind: known vulnerability
+    path: npm:source-map-js@1.2.1 GHSA-68fv-2mgg-jv7q
+  - severity: medium
+    kind: known vulnerability
+    path: npm:tinypool@1.1.1 GHSA-5gmw-xhrv-c9v3, GHSA-85c8-ppgw-ccpr
+  - severity: medium
+    kind: known vulnerability
+    path: npm:vite@7.3.6 GHSA-587h-7wmj-h5pm, GHSA-698v-4r3x-3vcv, GHSA-9jrq-w75r-8gcw, GHSA-r825-w8mm-5pxw, GHSA-rq7h-c2jc-7f22
+  - severity: medium
+    kind: known vulnerability
+    path: npm:vitest@3.2.7 GHSA-82fw-gwwq-j7x9
+  finding_count: 5
+  scanned_files: 1038
+  notes:
+  - osv.dev checked 101 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  renderers:
+  - remotion
+  - ffmpeg
+  - browser
+files:
+  count: 1221
+  skills:
+  - SKILL.md
+analysed_commit: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.25
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - cinematography
+  - motion-graphics
+  overlap: 0.25
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  - motion-graphics
+  overlap: 0.25
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  - social-media-videos
+  overlap: 0.25
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.25
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.12
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - data-visualization
+  - instagram-reels
+  - motion-graphics
+  - social-media-videos
+  overlap: 0.5
+- id: CEH-0019
+  name: haidrrrry/claude-remotion-skill
+  status: REJECTED
+  shared:
+  - ai-video-generation
+  - instagram-reels
+  - motion-graphics
+  - sound-design
+  overlap: 0.5
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0024`. Gates needing review: security.'
+inspected: '2026-11-10T15:48:27+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:27+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, claude-code-plugin, codex, generic'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 19536 chars
+    licence_suitability:
+      score: 5
+      basis: Apache-2.0 (permissive)
+    security:
+      score: 3
+      basis: 5 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

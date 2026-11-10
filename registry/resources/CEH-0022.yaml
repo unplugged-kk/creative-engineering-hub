@@ -1,0 +1,293 @@
+id: CEH-0022
+name: lintsinghua/paint-mv-skills
+url: https://github.com/lintsinghua/paint-mv-skills
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:30:29+00:00'
+description: Agent skills that turn a song and its lyrics into a hand-painted watercolour music video (p5.brush + headless
+  Chrome + ffmpeg), following PDoomVideo's pipeline
+capabilities:
+- 3d-animation
+- hand-drawn-animation
+- music-visualization
+- procedural-animation
+- storyboarding
+- transitions
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0022
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0022:
+      git: true
+      head: ca8f5f75f186d590e687542b106aa73ceff9133c
+      branch: main
+      origin: https://github.com/lintsinghua/paint-mv-skills
+      uncommitted:
+      - D  .claude/skills
+      - D  .cursor/skills
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  demo/cast.jpg
+      - D  demo/cover.jpg
+      - D  demo/midnight-studio.mp4
+      - D  demo/project/STORYBOARD.md
+      - D  demo/project/assets/song.mp3
+      - D  demo/project/src/ch/c01_street.js
+      - D  demo/project/src/ch/c02_chorus1.js
+      - D  demo/project/src/ch/c03_ownpace.js
+      - D  demo/project/src/ch/c04_chorus2.js
+      - D  demo/project/src/ch/c05_dawn.js
+      - D  demo/project/src/characters.js
+      - D  demo/project/src/lyrics.js
+      - D  demo/project/src/poster.js
+      - D  demo/project/src/sets.js
+      - D  demo/project/src/song.js
+      - D  demo/stills.jpg
+      - D  skills/paint-mv-animate/SKILL.md
+      - D  skills/paint-mv-animate/api.md
+      - D  skills/paint-mv-animate/characters.md
+      - D  skills/paint-mv-animate/examples/README.md
+      - D  skills/paint-mv-animate/techniques.md
+      - D  skills/paint-mv-render/SKILL.md
+      - D  skills/paint-mv-storyboard/SKILL.md
+      - D  skills/paint-mv/SKILL.md
+      - D  skills/paint-mv/reference/timing.md
+      - D  skills/paint-mv/scripts/align_lyrics.py
+      - D  skills/paint-mv/scripts/analyze_audio.mjs
+      - D  skills/paint-mv/scripts/fetch_upstream.mjs
+      - D  skills/paint-mv/scripts/lyrics_to_ly.mjs
+      - D  skills/paint-mv/scripts/new_project.mjs
+      - D  skills/paint-mv/template.patch
+      - D  skills/paint-mv/template/.gitignore
+      - D  skills/paint-mv/template/assets/.gitkeep
+      - D  skills/paint-mv/template/package-lock.json
+      - D  skills/paint-mv/template/package.json
+      - D  skills/paint-mv/template/src/ch/.gitkeep
+      - D  skills/paint-mv/template/src/characters.js
+      - D  skills/paint-mv/template/src/lyrics.js
+      - D  skills/paint-mv/template/src/sets.js
+      - D  skills/paint-mv/template/src/song.js
+      uncommitted_count: 45
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/lintsinghua/paint-mv-skills
+  default_branch: main
+  forks: []
+  pins:
+  - commit: ca8f5f75f186d590e687542b106aa73ceff9133c
+    at: '2026-11-10T15:30:31+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: ca8f5f75f186d590e687542b106aa73ceff9133c
+  latest_commit: ca8f5f75f186d590e687542b106aa73ceff9133c
+  latest_release: &id002
+    tag: v0.0.1
+    published_at: '2026-09-25T12:33:18Z'
+  last_checked: '2026-11-10T16:03:37+00:00'
+  checks:
+  - at: '2026-11-10T15:36:12+00:00'
+    latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:37+00:00'
+    latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: lintsinghua/paint-mv-skills
+  description: Agent skills that turn a song and its lyrics into a hand-painted watercolour music video (p5.brush + headless
+    Chrome + ffmpeg), following PDoomVideo's pipeline
+  topics:
+  - agent-skills
+  - ai-agent
+  - aigc
+  - animation
+  - claude-skills
+  - creative-coding
+  - cursor-skills
+  - ffmpeg
+  - generative-art
+  - lyrics
+  - music-video
+  - mv
+  - p5-brush
+  - p5js
+  - puppeteer
+  - watercolor
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-09-29T08:30:01Z'
+  archived: false
+  stars: 56
+  is_fork: false
+  parent: null
+  language: JavaScript
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:30:29+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:30:29+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:30:32+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:03:37+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: text:LICENSE
+  assets:
+    media_files: 5
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 38
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - generic
+  renderers:
+  - ffmpeg
+  - browser
+  - p5js
+files:
+  count: 45
+  skills:
+  - skills/paint-mv-animate/SKILL.md
+  - skills/paint-mv-render/SKILL.md
+  - skills/paint-mv-storyboard/SKILL.md
+  - skills/paint-mv/SKILL.md
+analysed_commit: ca8f5f75f186d590e687542b106aa73ceff9133c
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - transitions
+  overlap: 0.33
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - transitions
+  overlap: 0.17
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - 3d-animation
+  - procedural-animation
+  - storyboarding
+  - transitions
+  overlap: 0.67
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - 3d-animation
+  - music-visualization
+  - transitions
+  overlap: 0.5
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - hand-drawn-animation
+  - procedural-animation
+  overlap: 0.5
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - hand-drawn-animation
+  - transitions
+  overlap: 0.5
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - storyboarding
+  - transitions
+  overlap: 0.33
+- id: CEH-0006
+  name: Tejashmakwana/motionmaxxing
+  status: PARKED
+  shared:
+  - 3d-animation
+  - storyboarding
+  overlap: 0.33
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0022`.'
+inspected: '2026-11-10T15:48:22+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:22+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, generic'
+    maintainability:
+      score: 4
+      basis: last push 42 days ago
+    documentation:
+      score: 4
+      basis: top-level README 4950 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

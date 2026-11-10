@@ -1,0 +1,102 @@
+{
+  "id": "CEH-0015",
+  "name": "acamposuribe/p5.brush",
+  "url": "https://github.com/acamposuribe/p5.brush",
+  "type": "renderer",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "hand-drawn-animation",
+    "procedural-animation",
+    "voiceover"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 175,
+      "font_files": 5,
+      "model_files": 0,
+      "nested_licence_files": [
+        "_dl/package/LICENSE.md"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 94,
+    "notes": [
+      "1 large or binary files not scanned",
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [],
+    "renderers": [
+      "hyperframes",
+      "ffmpeg",
+      "browser",
+      "p5js"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:10+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 1,
+        "basis": "skills, scripts, examples, tests present: [False, False, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type renderer"
+      },
+      "agent_compatibility": {
+        "score": 0,
+        "basis": "agents detected: none"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 13 days ago"
+      },
+      "documentation": {
+        "score": 3,
+        "basis": "top-level README 2527 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.29,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0015`."
+}

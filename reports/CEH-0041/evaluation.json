@@ -1,0 +1,96 @@
+{
+  "id": "CEH-0041",
+  "name": "thewh1teagle/kokoro-onnx",
+  "url": "https://github.com/thewh1teagle/kokoro-onnx",
+  "type": "repository",
+  "status": "PRODUCTION",
+  "capabilities": [
+    "voiceover"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 0,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": []
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "examples/with_quant.py:7"
+      }
+    ],
+    "finding_count": 1,
+    "scanned_files": 57,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [],
+    "renderers": []
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:49:36+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [False, True, True, False]"
+      },
+      "reusability": {
+        "score": 3,
+        "basis": "resource type repository"
+      },
+      "agent_compatibility": {
+        "score": 0,
+        "basis": "agents detected: none"
+      },
+      "maintainability": {
+        "score": 4,
+        "basis": "last push 69 days ago"
+      },
+      "documentation": {
+        "score": 3,
+        "basis": "top-level README 2700 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "1 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 4,
+        "basis": "4 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.07,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on voiceover. Run `ceh compare CEH-0041 CEH-0008`."
+}

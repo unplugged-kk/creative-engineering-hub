@@ -1,0 +1,104 @@
+{
+  "id": "CEH-0027",
+  "name": "motiondivision/ai-kit",
+  "url": "https://github.com/motiondivision/ai-kit",
+  "type": "mcp-server",
+  "status": "PARKED",
+  "capabilities": [
+    "2d-animation"
+  ],
+  "licence": {
+    "spdx": null,
+    "class": "unknown",
+    "gate": "review",
+    "source": "no licence file",
+    "assets": {
+      "media_files": 5,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:js-yaml@4.3.0 GHSA-2883-xcg3-v3hh, GHSA-5p4m-2wfm-xmqj"
+      }
+    ],
+    "finding_count": 1,
+    "scanned_files": 34,
+    "notes": [
+      "osv.dev checked 17 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "codex",
+      "opencode"
+    ],
+    "renderers": []
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:42+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, True, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type mcp-server"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, codex, opencode"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 6 days ago"
+      },
+      "documentation": {
+        "score": 3,
+        "basis": "top-level README 2900 chars"
+      },
+      "licence_suitability": {
+        "score": 1,
+        "basis": "None (unknown)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "1 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.57,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "review",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation. Run `ceh compare CEH-0027 CEH-0008`."
+}

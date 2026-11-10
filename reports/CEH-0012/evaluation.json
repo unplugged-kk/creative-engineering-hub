@@ -1,0 +1,107 @@
+{
+  "id": "CEH-0012",
+  "name": "cth9191/animate",
+  "url": "https://github.com/cth9191/animate",
+  "type": "renderer",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "audio-qa",
+    "procedural-animation",
+    "hand-drawn-animation",
+    "explainer-videos",
+    "motion-graphics",
+    "voiceover",
+    "3d-animation",
+    "rendering"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 9,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 105,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "claude-code-plugin"
+    ],
+    "renderers": [
+      "ffmpeg",
+      "browser",
+      "canvas"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:54+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 2,
+        "basis": "skills, scripts, examples, tests present: [True, False, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type renderer"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, claude-code-plugin"
+      },
+      "maintainability": {
+        "score": 4,
+        "basis": "last push 35 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 8248 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.29,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on 3d-animation, explainer-videos, motion-graphics, rendering, voiceover. Run `ceh compare CEH-0012 CEH-0014`."
+}

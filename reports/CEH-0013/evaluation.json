@@ -1,0 +1,139 @@
+{
+  "id": "CEH-0013",
+  "name": "nateherkai/herk-edit-kit",
+  "url": "https://github.com/nateherkai/herk-edit-kit",
+  "type": "template",
+  "status": "PARKED",
+  "capabilities": [
+    "transitions",
+    "voiceover",
+    "subtitles",
+    "storyboarding",
+    "sound-design",
+    "motion-graphics",
+    "instagram-reels",
+    "youtube-shorts"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "text:LICENSE",
+    "assets": {
+      "media_files": 97,
+      "font_files": 7,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:@hono/node-server@2.1.1 GHSA-rmxm-3fg6-px4f"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:adm-zip@0.6.0 GHSA-7q85-xj36-vmfc, GHSA-8238-w5pm-2374, GHSA-c6fg-446q-cg94, GHSA-j5f4-cc29-5x44, GHSA-p634-w6r4-rjp2, GHSA-rcw4-f5rp-g42v, GHSA-vwc7-r8mq-g2x9"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:hono@4.13.2 GHSA-5r4p-p66f-jhc7, GHSA-crvj-82cr-hjcx, GHSA-g6gw-c38x-mqfc, GHSA-gqvv-2mrq-wpjv, GHSA-hxh3-vqpv-xpqv"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:sharp@0.35.3 GHSA-rgj7-g3m4-5g8c, GHSA-wq5f-xc86-pv6w"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:source-map-js@1.2.1 GHSA-68fv-2mgg-jv7q"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:zod@3.25.76 GHSA-mrhx-c7xc-m3w5"
+      }
+    ],
+    "finding_count": 6,
+    "scanned_files": 930,
+    "notes": [
+      "1 large or binary files not scanned",
+      "osv.dev checked 189 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "codex"
+    ],
+    "renderers": [
+      "hyperframes",
+      "ffmpeg",
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:58+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 5,
+        "basis": "skills, scripts, examples, tests present: [True, True, True, True]"
+      },
+      "reusability": {
+        "score": 3,
+        "basis": "resource type template"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, codex"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 27 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 8053 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "6 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.57,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, subtitles, transitions, voiceover. Run `ceh compare CEH-0013 CEH-0014`."
+}

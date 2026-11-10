@@ -1,0 +1,135 @@
+{
+  "id": "CEH-0024",
+  "name": "Vincentwei1021/video-shotcraft",
+  "url": "https://github.com/Vincentwei1021/video-shotcraft",
+  "type": "agent-skill",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "sound-design",
+    "cinematography",
+    "data-visualization",
+    "ai-video-generation",
+    "social-media-videos",
+    "instagram-reels",
+    "motion-graphics",
+    "music-visualization"
+  ],
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 170,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:@vitest/mocker@3.2.7 GHSA-82fw-gwwq-j7x9, GHSA-qxg6-89mg-rqv8"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:source-map-js@1.2.1 GHSA-68fv-2mgg-jv7q"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:tinypool@1.1.1 GHSA-5gmw-xhrv-c9v3, GHSA-85c8-ppgw-ccpr"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:vite@7.3.6 GHSA-587h-7wmj-h5pm, GHSA-698v-4r3x-3vcv, GHSA-9jrq-w75r-8gcw, GHSA-r825-w8mm-5pxw, GHSA-rq7h-c2jc-7f22"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:vitest@3.2.7 GHSA-82fw-gwwq-j7x9"
+      }
+    ],
+    "finding_count": 5,
+    "scanned_files": 1038,
+    "notes": [
+      "osv.dev checked 101 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "generic"
+    ],
+    "renderers": [
+      "remotion",
+      "ffmpeg",
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:27+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 2,
+        "basis": "skills, scripts, examples, tests present: [True, False, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, claude-code-plugin, codex, generic"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 19536 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "Apache-2.0 (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "5 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.29,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0024`. Gates needing review: security."
+}

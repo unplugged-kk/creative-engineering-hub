@@ -1,0 +1,104 @@
+{
+  "id": "CEH-0016",
+  "name": "remotion-dev/skills",
+  "url": "https://github.com/remotion-dev/skills",
+  "type": "agent-skill",
+  "status": "REJECTED",
+  "capabilities": [
+    "subtitles",
+    "transitions",
+    "voiceover",
+    "sound-design",
+    "video-editing"
+  ],
+  "licence": {
+    "spdx": null,
+    "class": "unknown",
+    "gate": "review",
+    "source": "no licence file",
+    "assets": {
+      "media_files": 0,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": []
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 270,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "codex",
+      "generic"
+    ],
+    "renderers": [
+      "remotion",
+      "ffmpeg",
+      "canvas",
+      "lottie"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:12+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, True, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, codex, generic"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 1 days ago"
+      },
+      "documentation": {
+        "score": 4,
+        "basis": "top-level README 3024 chars"
+      },
+      "licence_suitability": {
+        "score": 1,
+        "basis": "None (unknown)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.86,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "review",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on subtitles, transitions, voiceover. Run `ceh compare CEH-0016 CEH-0014`."
+}

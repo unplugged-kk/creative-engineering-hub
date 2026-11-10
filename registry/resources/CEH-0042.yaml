@@ -1,0 +1,180 @@
+id: CEH-0042
+name: Jakeschincariol/youtube-agent-skill
+url: https://github.com/Jakeschincariol/youtube-agent-skill
+aliases: []
+type: agent-skill
+status: PRODUCTION
+created: '2026-11-10T15:33:59+00:00'
+description: 'Eleven Claude skills that run a YouTube channel: scripts off 21 hook formulas with a scored hook, title and
+  thumbnail linted as one pairing, an edit decision list from your transcript, a retention reader that finds where viewers
+  actually leave, a Shorts cutter, and a virality engine. Free, MIT.'
+capabilities:
+- youtube-shorts
+local:
+  paths:
+  - /Users/kishore/git/video-factory/vendor/youtube-agent-skill
+  state:
+    /Users/kishore/git/video-factory/vendor/youtube-agent-skill:
+      git: true
+      head: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+      branch: main
+      origin: https://github.com/Jakeschincariol/youtube-agent-skill.git
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
+upstream:
+  strategy: VENDORED
+  remote: https://github.com/Jakeschincariol/youtube-agent-skill
+  default_branch: main
+  forks: []
+  pins:
+  - commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+    at: '2026-11-10T15:34:00+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+  latest_commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+  latest_release: null
+  last_checked: '2026-11-10T16:04:38+00:00'
+  checks:
+  - at: '2026-11-10T15:37:08+00:00'
+    latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:38+00:00'
+    latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: Jakeschincariol/youtube-agent-skill
+  description: 'Eleven Claude skills that run a YouTube channel: scripts off 21 hook formulas with a scored hook, title and
+    thumbnail linted as one pairing, an edit decision list from your transcript, a retention reader that finds where viewers
+    actually leave, a Shorts cutter, and a virality engine. Free, MIT.'
+  topics: []
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-09-16T13:32:08Z'
+  archived: false
+  stars: 5402
+  is_fork: false
+  parent: null
+  language: Python
+notes:
+- 11 skills copied to ~/.claude/skills; writes, never publishes.
+history:
+- at: '2026-11-10T15:33:59+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: 11 skills copied to ~/.claude/skills; writes, never publishes.
+- at: '2026-11-10T15:33:59+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:38+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: 11 skills copied to ~/.claude/skills; writes, never publishes.
+video_factory_usage:
+- vendor/youtube-agent-skill
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 24
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - claude-code-plugin
+  renderers: []
+files:
+  count: 24
+  skills:
+  - skills/yt-audit/SKILL.md
+  - skills/yt-chapters/SKILL.md
+  - skills/yt-comment/SKILL.md
+  - skills/yt-edit/SKILL.md
+  - skills/yt-package/SKILL.md
+  - skills/yt-plan/SKILL.md
+  - skills/yt-retention/SKILL.md
+  - skills/yt-script/SKILL.md
+  - skills/yt-seo/SKILL.md
+  - skills/yt-shorts/SKILL.md
+  - skills/yt-viral/SKILL.md
+analysed_commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+alternatives:
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - youtube-shorts
+  overlap: 1.0
+- id: CEH-0030
+  name: mutonby/openshorts
+  status: SANDBOXED
+  shared:
+  - youtube-shorts
+  overlap: 1.0
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0042`.'
+inspected: '2026-11-10T15:49:37+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:37+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, claude-code-plugin'
+    maintainability:
+      score: 4
+      basis: last push 55 days ago
+    documentation:
+      score: 4
+      basis: top-level README 5292 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

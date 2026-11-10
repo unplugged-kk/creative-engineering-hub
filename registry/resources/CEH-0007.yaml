@@ -1,0 +1,286 @@
+id: CEH-0007
+name: feitangyuan/onetake
+url: https://github.com/feitangyuan/onetake
+aliases: []
+type: agent-skill
+status: RESTRICTED
+created: '2026-11-10T15:25:23+00:00'
+description: 'Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera,
+  continuity measured by an oracle. Product launch films and feature demos, made with a coding agent.'
+capabilities:
+- voiceover
+- sound-design
+- motion-graphics
+- transitions
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0007
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0007:
+      git: true
+      head: abb6d17279cdc749e27e99aa534a062d8fd01ced
+      branch: main
+      origin: https://github.com/feitangyuan/onetake
+      uncommitted:
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  SKILL.md
+      - D  assets/cases/clawd.gif
+      - D  assets/cases/clearing.gif
+      - D  assets/cases/domino.gif
+      - D  assets/cases/ebb.gif
+      - D  assets/cases/infra.gif
+      - D  assets/cases/knockon.gif
+      - D  assets/cases/motion-web.gif
+      - D  assets/cases/one-dot.gif
+      - D  assets/cases/onetake-launch.gif
+      - D  assets/cases/overlap.gif
+      - D  assets/cases/pith.gif
+      - D  assets/cases/skill-demo.gif
+      - D  assets/cases/unbroken.gif
+      - D  assets/hero.gif
+      - D  assets/logo/favicon.ico
+      - D  assets/logo/onetake-icon-1024.png
+      - D  assets/logo/onetake-icon-16.png
+      - D  assets/logo/onetake-icon-180.png
+      - D  assets/logo/onetake-icon-32.png
+      - D  assets/logo/onetake-icon-48.png
+      - D  assets/logo/onetake-icon-512.png
+      - D  assets/logo/onetake-icon.svg
+      - D  assets/logo/onetake-mark.svg
+      - D  assets/logo/onetake-wordmark-on-cream.svg
+      - D  assets/logo/onetake-wordmark.png
+      - D  assets/logo/onetake-wordmark.svg
+      - D  cases/clawd-desktop-19s/README.md
+      - D  cases/clawd-desktop-19s/clawd.mp4
+      - D  cases/clearing-15s/README.md
+      - D  cases/clearing-15s/clearing.mp4
+      - D  cases/domino-25s/README.md
+      - D  cases/domino-25s/domino.mp4
+      - D  cases/ebb-15s/README.md
+      - D  cases/ebb-15s/ebb.mp4
+      - D  cases/infra-25s/README.md
+      - D  cases/infra-25s/infra.mp4
+      - D  cases/knockon-15s/README.md
+      - D  cases/knockon-15s/knockon.mp4
+      - D  cases/motion-web-15s/README.md
+      - D  cases/motion-web-15s/motion-web.mp4
+      - D  cases/one-dot-15s/README.md
+      - D  cases/one-dot-15s/one-dot.mp4
+      - D  cases/onetake-launch-30s/README.md
+      - D  cases/onetake-launch-30s/onetake-launch.mp4
+      - D  cases/overlap-15s/README.md
+      - D  cases/overlap-15s/overlap.mp4
+      uncommitted_count: 114
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/feitangyuan/onetake
+  default_branch: main
+  forks: []
+  pins:
+  - commit: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    at: '2026-11-10T15:25:26+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: abb6d17279cdc749e27e99aa534a062d8fd01ced
+  latest_commit: abb6d17279cdc749e27e99aa534a062d8fd01ced
+  latest_release: &id002
+    tag: v1.1.0-lite
+    published_at: '2026-10-08T16:26:45Z'
+  last_checked: '2026-11-10T16:02:52+00:00'
+  checks:
+  - at: '2026-11-10T15:35:30+00:00'
+    latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:02:52+00:00'
+    latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: feitangyuan/onetake
+  description: 'Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera,
+    continuity measured by an oracle. Product launch films and feature demos, made with a coding agent.'
+  topics:
+  - agent-skill
+  - animation
+  - canvas
+  - claude-skill
+  - launch-video
+  - motion-graphics
+  - video
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-11-05T03:52:15Z'
+  archived: false
+  stars: 4004
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes:
+- PolyForm Noncommercial licence per vf_audit_2 (matrix said MIT; the audit read LICENSE in full). Method only, code-level
+  reject.
+history:
+- at: '2026-11-10T15:25:23+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: PolyForm Noncommercial licence per vf_audit_2 (matrix said MIT; the audit read LICENSE in full). Method only, code-level
+    reject.
+- at: '2026-11-10T15:25:23+00:00'
+  from: DISCOVERED
+  to: RESTRICTED
+  by: ceh migrate
+  note: recorded from historical evidence (REFERENCE)
+updated: '2026-11-10T16:02:52+00:00'
+historical:
+  group: A
+  previous_decision: REFERENCE
+  evidence:
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: PolyForm Noncommercial licence per vf_audit_2 (matrix said MIT; the audit read LICENSE in full). Method only, code-level
+    reject.
+licence:
+  spdx: PolyForm-Noncommercial-1.0.0
+  class: non-commercial
+  gate: block
+  source: fingerprint:LICENSE
+  assets:
+    media_files: 58
+    font_files: 7
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 44
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - remotion
+  - ffmpeg
+  - browser
+files:
+  count: 114
+  skills:
+  - SKILL.md
+analysed_commit: abb6d17279cdc749e27e99aa534a062d8fd01ced
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - motion-graphics
+  - transitions
+  - voiceover
+  overlap: 0.75
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.5
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - voiceover
+  overlap: 0.25
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.25
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.25
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - motion-graphics
+  - sound-design
+  - transitions
+  - voiceover
+  overlap: 1.0
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - motion-graphics
+  - sound-design
+  - transitions
+  - voiceover
+  overlap: 1.0
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - motion-graphics
+  - sound-design
+  - transitions
+  overlap: 0.75
+recommendation: 'RESTRICT: PolyForm-Noncommercial-1.0.0 forbids commercial use. Reference the method only; never copy code
+  or assets.'
+inspected: '2026-11-10T15:47:35+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:36+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 5 days ago
+    documentation:
+      score: 5
+      basis: top-level README 13418 chars
+    licence_suitability:
+      score: 0
+      basis: PolyForm-Noncommercial-1.0.0 (non-commercial)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.0
+  evidence_coverage: 0.7
+  gates:
+    licence: block
+    security: pass

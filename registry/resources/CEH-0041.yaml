@@ -1,0 +1,267 @@
+id: CEH-0041
+name: thewh1teagle/kokoro-onnx
+url: https://github.com/thewh1teagle/kokoro-onnx
+aliases: []
+type: repository
+status: PRODUCTION
+created: '2026-11-10T15:33:55+00:00'
+description: TTS with kokoro and onnx runtime
+capabilities:
+- voiceover
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0041
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0041:
+      git: true
+      head: 3596b26764286a7de9d90c363e988d50578918e5
+      branch: main
+      origin: https://github.com/thewh1teagle/kokoro-onnx
+      uncommitted:
+      - D  .github/FUNDING.yml
+      - D  .github/ISSUE_TEMPLATE/bug_report.yaml
+      - D  .github/ISSUE_TEMPLATE/feature_request.yaml
+      - D  .github/PULL_REQUEST_TEMPLATE.md
+      - D  .github/workflows/check.yml
+      - D  .github/workflows/fetch_voices.yml
+      - D  .github/workflows/publish-to-pypi.yml
+      - D  .github/workflows/test.yml
+      - D  .gitignore
+      - D  .python-version
+      - D  .vscode/extensions.json
+      - D  .vscode/settings.json
+      - D  BUILDING.md
+      - D  CONTRIBUTE.md
+      - D  LICENSE
+      - D  README.md
+      - D  examples/app.py
+      - D  examples/chinese.py
+      - D  examples/english.py
+      - D  examples/french.py
+      - D  examples/hebrew.py
+      - D  examples/hindi.py
+      - D  examples/italian.py
+      - D  examples/japanese.py
+      - D  examples/play.py
+      - D  examples/podcast.py
+      - D  examples/portuguese.py
+      - D  examples/save.py
+      - D  examples/spanish.py
+      - D  examples/with_blending.py
+      - D  examples/with_continuous.py
+      - D  examples/with_cuda.py
+      - D  examples/with_espeak_data.py
+      - D  examples/with_espeak_lib.py
+      - D  examples/with_log.py
+      - D  examples/with_phonemes.py
+      - D  examples/with_provider.py
+      - D  examples/with_quant.py
+      - D  examples/with_session.py
+      - D  examples/with_stream.py
+      - D  examples/with_stream_save.py
+      - D  examples/with_timestamps.py
+      - D  examples/with_video_subtitles.py
+      - D  examples/with_voice.py
+      - D  pyproject.toml
+      - D  scripts/export.py
+      - D  scripts/fetch_voices.py
+      - D  src/kokoro_onnx/__init__.py
+      - D  src/kokoro_onnx/chunker.py
+      - D  src/kokoro_onnx/config.json
+      uncommitted_count: 59
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/thewh1teagle/kokoro-onnx
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 3596b26764286a7de9d90c363e988d50578918e5
+    at: '2026-11-10T15:33:57+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 3596b26764286a7de9d90c363e988d50578918e5
+  latest_commit: 3596b26764286a7de9d90c363e988d50578918e5
+  latest_release: &id002
+    tag: model-files-v1.1
+    published_at: '2025-03-01T14:13:38Z'
+  last_checked: '2026-11-10T16:04:36+00:00'
+  checks:
+  - at: '2026-11-10T15:37:05+00:00'
+    latest: 3596b26764286a7de9d90c363e988d50578918e5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:36+00:00'
+    latest: 3596b26764286a7de9d90c363e988d50578918e5
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: thewh1teagle/kokoro-onnx
+  description: TTS with kokoro and onnx runtime
+  topics:
+  - kokoro
+  - onnxruntime
+  - python
+  - tts
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-09-01T20:26:36Z'
+  archived: false
+  stars: 2874
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes:
+- Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv.
+history:
+- at: '2026-11-10T15:33:55+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv.
+- at: '2026-11-10T15:33:55+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:36+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv.
+video_factory_usage:
+- hyperframes tts (contentos/lang/tts.py)
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests:
+  - pyproject.toml
+  python:
+  - onnxruntime>=1.20.1
+  - espeakng-loader>=0.2.4
+  - phonemizer>=3.4.0
+  - numpy>=2.0.2
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: examples/with_quant.py:7
+  finding_count: 1
+  scanned_files: 57
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents: []
+  renderers: []
+files:
+  count: 59
+  skills: []
+analysed_commit: 3596b26764286a7de9d90c363e988d50578918e5
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0007
+  name: feitangyuan/onetake
+  status: RESTRICTED
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0015
+  name: acamposuribe/p5.brush
+  status: SANDBOXED
+  shared:
+  - voiceover
+  overlap: 1.0
+- id: CEH-0016
+  name: remotion-dev/skills
+  status: REJECTED
+  shared:
+  - voiceover
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on voiceover. Run `ceh compare
+  CEH-0041 CEH-0008`.'
+inspected: '2026-11-10T15:49:36+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:36+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [False, True, True, False]'
+    reusability:
+      score: 3
+      basis: resource type repository
+    agent_compatibility:
+      score: 0
+      basis: 'agents detected: none'
+    maintainability:
+      score: 4
+      basis: last push 69 days ago
+    documentation:
+      score: 3
+      basis: top-level README 2700 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 1 findings, worst medium
+    integration_complexity:
+      score: 4
+      basis: '4 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.07
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review
+capabilities_manual:
+- voiceover

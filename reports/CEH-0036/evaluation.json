@@ -1,0 +1,150 @@
+{
+  "id": "CEH-0036",
+  "name": "mvanhorn/last30days-skill",
+  "url": "https://github.com/mvanhorn/last30days-skill",
+  "type": "agent-skill",
+  "status": "PRODUCTION",
+  "capabilities": [
+    "instagram-reels",
+    "content-research",
+    "social-media-videos"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 7,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": [
+        "skills/last30days/scripts/lib/vendor/bird-search/LICENSE"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "CHANGELOG.md:480"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "CONFIGURATION.md:222"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "skills/last30days/references/setup-wizard.md:193"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "skills/last30days/scripts/lib/backends.py:306"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "skills/last30days/scripts/lib/grok_x.py:8"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "skills/last30days/scripts/lib/health.py:211"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "skills/last30days/scripts/lib/prescriptions.py:136"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/test_corpus_source.py:572"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/test_http_v3.py:398"
+      }
+    ],
+    "finding_count": 9,
+    "scanned_files": 602,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "generic",
+      "opencode"
+    ],
+    "renderers": []
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:49:06+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, False, False, True]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic, opencode"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 31798 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "9 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.43,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on instagram-reels, social-media-videos. Run `ceh compare CEH-0036 CEH-0008`."
+}

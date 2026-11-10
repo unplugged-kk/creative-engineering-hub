@@ -1,0 +1,111 @@
+id: CEH-0047
+name: coverr.co/
+url: https://coverr.co/
+aliases: []
+type: asset-library
+status: DISCOVERED
+created: '2026-11-10T15:34:21+00:00'
+description: ''
+capabilities: []
+local:
+  paths: []
+  state: {}
+  modified: false
+upstream: {}
+meta: {}
+notes: []
+history:
+- at: '2026-11-10T15:34:21+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:34:21+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:34:22+00:00'
+  from: INSPECTING
+  to: INSPECTING
+  by: ceh inspect
+  note: no readable copy
+- at: '2026-11-10T15:34:22+00:00'
+  from: INSPECTING
+  to: DISCOVERED
+  by: fix
+  note: 'non-git resource: metadata only, nothing to inspect'
+updated: '2026-11-10T15:49:47+00:00'
+historical:
+  group: E
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: null
+  class: unknown
+  gate: review
+  source: null
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies: {}
+security:
+  gate: review
+  findings: []
+  scanned_files: 0
+  notes:
+  - no readable copy; nothing scanned
+compatibility:
+  agents: []
+  renderers: []
+files:
+  count: 0
+  skills: []
+analysed_commit: null
+alternatives: []
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0047`. Gates needing review: licence, security.'
+inspected: '2026-11-10T15:49:47+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:47+00:00'
+  criteria:
+    workflow_completeness:
+      score: null
+      basis: no readable copy
+    reusability:
+      score: 3
+      basis: resource type asset-library
+    agent_compatibility:
+      score: 0
+      basis: 'agents detected: none'
+    maintainability:
+      score: null
+      basis: no push date
+    documentation:
+      score: null
+      basis: no readable copy
+    licence_suitability:
+      score: 1
+      basis: None (unknown)
+    security:
+      score: null
+      basis: 0 findings, worst None
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 1.86
+  evidence_coverage: 0.35
+  gates:
+    licence: review
+    security: review
+type_manual: asset-library

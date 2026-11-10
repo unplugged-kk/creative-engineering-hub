@@ -1,0 +1,102 @@
+{
+  "id": "CEH-0023",
+  "name": "hi-nikola/hand-drawn-explainer-video-nikola",
+  "url": "https://github.com/hi-nikola/hand-drawn-explainer-video-nikola",
+  "type": "agent-skill",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "explainer-videos",
+    "hand-drawn-animation",
+    "2d-animation"
+  ],
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 13,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": [
+        "vendor/srt-whiteboard-animation/LICENSE"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 69,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "codex"
+    ],
+    "renderers": [
+      "hyperframes",
+      "ffmpeg"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:24+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 5,
+        "basis": "skills, scripts, examples, tests present: [True, True, True, True]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 4,
+        "basis": "agents detected: agent-skills-format, codex"
+      },
+      "maintainability": {
+        "score": 4,
+        "basis": "last push 68 days ago"
+      },
+      "documentation": {
+        "score": 4,
+        "basis": "top-level README 6127 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "Apache-2.0 (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.43,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation, explainer-videos. Run `ceh compare CEH-0023 CEH-0008`."
+}

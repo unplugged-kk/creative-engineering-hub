@@ -1,0 +1,56 @@
+# CEH-0028 · harry0703/MoneyPrinterTurbo
+
+https://github.com/harry0703/MoneyPrinterTurbo
+
+```json
+{
+  "manifests": [
+    "pyproject.toml",
+    "requirements.txt"
+  ],
+  "python": [
+    "moviepy==2.2.1",
+    "streamlit==1.59.1",
+    "streamlit-tour==1.1.0",
+    "edge_tts==7.2.7",
+    "fastapi==0.136.3",
+    "uvicorn==0.32.1",
+    "openai==2.24.0",
+    "faster-whisper==1.1.0",
+    "loguru==0.7.3",
+    "google-genai==2.11.0",
+    "dashscope==1.20.14",
+    "azure-cognitiveservices-speech==1.41.1",
+    "redis==5.2.0",
+    "python-multipart==0.0.27",
+    "pyyaml==6.0.3",
+    "requests==2.33.1",
+    "packaging==24.2",
+    "socksio==1.0.0",
+    "pydub==0.25.1",
+    "audioop-lts==0.2.2; python_version >= \"3.13\"",
+    "litellm==1.86.2",
+    "moviepy==2.2.1",
+    "streamlit==1.59.1",
+    "streamlit-tour==1.1.0",
+    "edge-tts==7.2.7",
+    "fastapi==0.136.3",
+    "uvicorn==0.32.1",
+    "openai==2.24.0",
+    "faster-whisper==1.1.0",
+    "loguru==0.7.3",
+    "dashscope==1.20.14",
+    "azure-cognitiveservices-speech==1.41.1",
+    "redis==5.2.0",
+    "python-multipart==0.0.27",
+    "pyyaml==6.0.3",
+    "requests==2.33.1",
+    "packaging==24.2",
+    "socksio==1.0.0",
+    "pydub==0.25.1",
+    "audioop-lts==0.2.2; python_version >= '3.13'",
+    "litellm==1.86.2",
+    "google-genai==2.11.0"
+  ]
+}
+```

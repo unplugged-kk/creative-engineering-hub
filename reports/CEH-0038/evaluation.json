@@ -1,0 +1,517 @@
+{
+  "id": "CEH-0038",
+  "name": "CopilotKit/CopilotKit",
+  "url": "https://github.com/CopilotKit/CopilotKit",
+  "type": "agent-skill",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "data-visualization",
+    "rendering"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 307,
+      "font_files": 31,
+      "model_files": 0,
+      "nested_licence_files": [
+        "examples/canvas/langgraph-python/LICENSE",
+        "examples/canvas/llamaindex-composio/LICENSE",
+        "examples/canvas/llamaindex/LICENSE",
+        "examples/canvas/mastra-pm/LICENSE",
+        "examples/canvas/mastra/LICENSE",
+        "examples/canvas/pydantic-ai/LICENSE",
+        "examples/integrations/adk-angular/LICENSE",
+        "examples/integrations/adk/LICENSE",
+        "examples/integrations/agent-spec/LICENSE",
+        "examples/integrations/agno/LICENSE",
+        "examples/integrations/antigravity/LICENSE",
+        "examples/integrations/claude-managed-agents/LICENSE",
+        "examples/integrations/claude-sdk-python/LICENSE",
+        "examples/integrations/claude-sdk-typescript/LICENSE",
+        "examples/integrations/crewai-crews/LICENSE",
+        "examples/integrations/crewai-flows/LICENSE",
+        "examples/integrations/langgraph-fastapi/LICENSE",
+        "examples/integrations/langgraph-js/LICENSE",
+        "examples/integrations/langgraph-python/LICENSE",
+        "examples/integrations/llamaindex/LICENSE"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/showcase_validate.yml:709"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/canvas/llamaindex/README.md:56"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/adk/Dockerfile:21"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/adk/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/agno/Dockerfile:28"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/agno/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/antigravity/Dockerfile:27"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/antigravity/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/claude-sdk-python/Dockerfile:29"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/claude-sdk-python/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/claude-sdk-typescript/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/crewai-crews/Dockerfile:21"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/crewai-crews/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/crewai-flows/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/langgraph-fastapi/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/langgraph-fastapi/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/langgraph-js/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/langgraph-python/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/langgraph-python/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/llamaindex/Dockerfile:28"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/llamaindex/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/mastra/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/ms-agent-framework-dotnet/Dockerfile:35"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/ms-agent-framework-dotnet/README.md:15"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/ms-agent-framework-dotnet/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/ms-agent-framework-python/Dockerfile:25"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/ms-agent-framework-python/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/pydantic-ai/Dockerfile:28"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/pydantic-ai/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/integrations/strands-python/Dockerfile:29"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/strands-python/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/integrations/strands-typescript/docker/Dockerfile.app"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "examples/showcases/antigravity-repo-doctor/agent/tests/test_tools.py:295"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "examples/showcases/reskinnable-demo/src/app/api/commerce/v1/dev/reset/route.test.ts:447"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "examples/showcases/reskinnable-demo/src/lib/redact-secrets.test.ts:13"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "examples/v2/react-native/demo/android/gradle/wrapper/gradle-wrapper.jar"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "packages/channels-intelligence/src/delivery-transport.test.ts:1456"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "packages/runtime/src/v2/runtime/core/__tests__/channel-activation-config.test.ts:67"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "packages/runtime/src/v2/runtime/core/__tests__/channel-activation-config.test.ts:67"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "packages/runtime/tests/service-adapters/unify/unify-adapter-language-model.test.ts:23"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "scripts/__tests__/integration-intelligence-migration.test.ts:2833"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/angular/scripts/check-browser-artifact.test.ts:30"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "showcase/harness/src/cvdiag/ab-hmac.test.ts:25"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/emit.test.ts:510"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/raw-byte-capture.test.ts:157"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "showcase/harness/src/cvdiag/raw-byte-capture.test.ts:87"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/schema.test.ts:178"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/scrub.test.ts:74"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/harness/src/cvdiag/staged-ts-scrub-parity.test.ts:21"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/ag2/Dockerfile:32"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/agno/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/integrations/built-in-agent/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/claude-sdk-python/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/integrations/claude-sdk-typescript/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/crewai-conversational-flows/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/crewai-crews/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/google-adk/Dockerfile:32"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/google-antigravity/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/langgraph-fastapi/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/langgraph-python/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/integrations/langgraph-typescript/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/langroid/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/llamaindex/Dockerfile:33"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/integrations/mastra/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/ms-agent-dotnet/Dockerfile:28"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/ms-agent-harness-dotnet/Dockerfile:26"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/ms-agent-python/Dockerfile:33"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/openai-agents-python/Dockerfile:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/pydantic-ai/Dockerfile:33"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/spring-ai/Dockerfile:58"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (OpenAI/Anthropic key)",
+        "path": "showcase/integrations/strands-typescript/src/cvdiag/scrub.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/integrations/strands/Dockerfile:35"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "showcase/pocketbase/tests/result-capacity.integration.mjs:98"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "showcase/pocketbase/tests/retention.integration.mjs:126"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "showcase/scripts/create-integration/index.ts:1216"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "showcase/scripts/lib/__tests__/railway-token.test.ts:31"
+      },
+      {
+        "severity": "medium",
+        "kind": "hardcoded credential",
+        "path": "tools/runtime-conformance/platform.mjs:80"
+      },
+      {
+        "severity": "medium",
+        "kind": "npm prepare hook runs on install",
+        "path": "package.json: lefthook install"
+      }
+    ],
+    "finding_count": 79,
+    "scanned_files": 21975,
+    "notes": [
+      "2 large or binary files not scanned",
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "claude-code-plugin",
+      "codex"
+    ],
+    "renderers": []
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:49:25+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 4,
+        "basis": "skills, scripts, examples, tests present: [True, True, True, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 21968 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "79 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 4,
+        "basis": "0 runtime dependencies; install hooks: ['prepare']"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.5,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on rendering. Run `ceh compare CEH-0038 CEH-0014`."
+}

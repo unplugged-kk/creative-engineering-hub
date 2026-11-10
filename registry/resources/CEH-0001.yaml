@@ -1,0 +1,290 @@
+id: CEH-0001
+name: AbubakrChan/product-launch-motion
+url: https://github.com/AbubakrChan/product-launch-motion
+aliases: []
+type: agent-skill
+status: PARKED
+created: '2026-11-10T15:24:53+00:00'
+description: 'Claude Code skill for Dribbble-level product launch videos from code. One shape that never cuts, springs, a
+  cursor that drives every change, beat-synced SFX, 60 fps motion blur. v2: use with Claude Opus 5.5.'
+capabilities:
+- transitions
+- sound-design
+- storyboarding
+- motion-graphics
+- audio-qa
+- instagram-reels
+- voiceover
+- subtitles
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0001
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0001:
+      git: true
+      head: edbfb105382f21507bad895d8b5f6e0faa67487c
+      branch: main
+      origin: https://github.com/AbubakrChan/product-launch-motion
+      uncommitted:
+      - D  .github/FUNDING.yml
+      - D  .gitignore
+      - D  LICENSE
+      - D  NOTICE
+      - D  README.md
+      - D  SKILL.md
+      - D  examples/film-preview.webp
+      - D  examples/hoopoe-preview.webp
+      - D  examples/one-shape-loop.webp
+      - D  legacy/CASE-STUDY.md
+      - D  legacy/SKILL.md
+      - D  legacy/assets/BRIEF.md
+      - D  legacy/assets/STORYBOARD.md
+      - D  legacy/assets/cues.example.json
+      - D  legacy/assets/film.example.json
+      - D  legacy/assets/frame-skeleton.html
+      - D  legacy/evals/BASELINE.md
+      - D  legacy/evals/evals.json
+      - D  legacy/film-preview.webp
+      - D  legacy/references/01-renderer-contract.md
+      - D  legacy/references/02-story-and-truth.md
+      - D  legacy/references/03-word-locked-sync.md
+      - D  legacy/references/04-motion-grammar.md
+      - D  legacy/references/05-camera-3d-cursor.md
+      - D  legacy/references/06-look-and-grade.md
+      - D  legacy/references/07-sound-and-master.md
+      - D  legacy/references/08-qa-and-direction.md
+      - D  legacy/references/09-shot-catalog.md
+      - D  legacy/references/10-traps.md
+      - D  legacy/references/11-creative-direction.md
+      - D  legacy/references/12-deliverables.md
+      - D  legacy/scripts/assemble.mjs
+      - D  legacy/scripts/level-sfx.mjs
+      - D  legacy/scripts/master.sh
+      - D  legacy/scripts/transitions.mjs
+      - D  legacy/scripts/verify-cue.sh
+      - D  legacy/scripts/wire-audio.mjs
+      - D  legacy/scripts/wire-grade.mjs
+      - D  legacy/scripts/word-timings.mjs
+      - D  legacy/still-1.jpg
+      - D  references/prompts.md
+      - D  references/technique.md
+      uncommitted_count: 42
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/AbubakrChan/product-launch-motion
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 951d6149d2748a15058f79dcf8e8c4bf00824121
+    at: '2026-11-10T15:24:53+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_matrix'
+  pinned_commit: 951d6149d2748a15058f79dcf8e8c4bf00824121
+  latest_commit: edbfb105382f21507bad895d8b5f6e0faa67487c
+  latest_release: &id002
+    tag: v2.0.0
+    published_at: '2026-10-12T19:43:53Z'
+  last_checked: '2026-11-10T16:02:37+00:00'
+  checks:
+  - at: '2026-11-10T15:35:14+00:00'
+    latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:02:37+00:00'
+    latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: AbubakrChan/product-launch-motion
+  description: 'Claude Code skill for Dribbble-level product launch videos from code. One shape that never cuts, springs,
+    a cursor that drives every change, beat-synced SFX, 60 fps motion blur. v2: use with Claude Opus 5.5.'
+  topics:
+  - agent-skill
+  - agent-skills
+  - ai-agents
+  - anthropic
+  - claude
+  - claude-code
+  - claude-skill
+  - ffmpeg
+  - html-to-video
+  - launch-video
+  - marketing-video
+  - motion-design
+  - motion-graphics
+  - playwright
+  - product-launch
+  - programmatic-video
+  - skill
+  - skills
+  - ui-animation
+  - video-generation
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-10-21T19:36:06Z'
+  archived: false
+  stars: 445
+  is_fork: false
+  parent: null
+  language: JavaScript
+  latest_release: *id002
+notes:
+- Techniques adapted into VF style card config/styles/catalog/product-launch.json. Sample films protected; licence unspecified.
+history:
+- at: '2026-11-10T15:24:53+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Techniques adapted into VF style card config/styles/catalog/product-launch.json. Sample films protected; licence unspecified.
+- at: '2026-11-10T15:24:53+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (REFERENCE)
+updated: '2026-11-10T16:02:37+00:00'
+historical:
+  group: A
+  previous_decision: REFERENCE
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: Techniques adapted into VF style card config/styles/catalog/product-launch.json. Sample films protected; licence unspecified.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 5
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 37
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  renderers:
+  - hyperframes
+  - remotion
+  - ffmpeg
+  - browser
+files:
+  count: 42
+  skills:
+  - SKILL.md
+  - legacy/SKILL.md
+analysed_commit: edbfb105382f21507bad895d8b5f6e0faa67487c
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - motion-graphics
+  - subtitles
+  - transitions
+  - voiceover
+  overlap: 0.5
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - instagram-reels
+  - subtitles
+  - voiceover
+  overlap: 0.38
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.25
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - instagram-reels
+  overlap: 0.12
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.12
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.12
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, subtitles, transitions,
+  voiceover. Run `ceh compare CEH-0001 CEH-0014`.'
+inspected: '2026-11-10T15:47:23+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:23+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 4
+      basis: 'agents detected: agent-skills-format, claude-code'
+    maintainability:
+      score: 5
+      basis: last push 19 days ago
+    documentation:
+      score: 5
+      basis: top-level README 8263 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.43
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

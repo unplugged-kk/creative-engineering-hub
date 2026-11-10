@@ -1,0 +1,307 @@
+id: CEH-0028
+name: harry0703/MoneyPrinterTurbo
+url: https://github.com/harry0703/MoneyPrinterTurbo
+aliases: []
+type: workflow
+status: SANDBOXED
+created: '2026-11-10T15:31:15+00:00'
+description: 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
+capabilities:
+- voiceover
+- explainer-videos
+- social-media-videos
+- subtitles
+- rendering
+local:
+  paths:
+  - /Users/kishore/git/video-factory/vendor/MoneyPrinterTurbo
+  state:
+    /Users/kishore/git/video-factory/vendor/MoneyPrinterTurbo:
+      git: true
+      head: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
+      branch: main
+      origin: https://github.com/harry0703/MoneyPrinterTurbo
+      uncommitted:
+      - ?? Dockerfile.dory
+      - ?? docker-compose.override.yml
+      - ?? docker-compose.override.yml.pre-external-storage.bak
+      uncommitted_count: 3
+  modified: true
+upstream:
+  strategy: VENDORED
+  remote: https://github.com/harry0703/MoneyPrinterTurbo
+  default_branch: main
+  forks:
+  - https://github.com/kishorehq/MoneyPrinterTurbo
+  pins:
+  - commit: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
+    at: '2026-11-10T15:31:17+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
+  latest_commit: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+  latest_release: &id002
+    tag: v1.3.10
+    published_at: '2026-11-07T00:43:54Z'
+  last_checked: '2026-11-10T16:03:55+00:00'
+  checks:
+  - at: '2026-11-10T15:36:28+00:00'
+    latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:03:55+00:00'
+    latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: harry0703/MoneyPrinterTurbo
+  description: 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
+  topics:
+  - ai-video-generator
+  - content-creation
+  - ffmpeg
+  - instagram-reels
+  - llm
+  - python
+  - short-video
+  - subtitles
+  - text-to-speech
+  - tiktok
+  - video-automation
+  - video-workflow
+  - workflow-automation
+  - youtube-shorts
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-10T02:52:35Z'
+  archived: false
+  stars: 141886
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes:
+- Alternate VF rendering lane (contentos/renderers/mpt.py). Cloud TTS fails local-first policy. Vendored copy has local Docker
+  files.
+history:
+- at: '2026-11-10T15:31:15+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Alternate VF rendering lane (contentos/renderers/mpt.py). Cloud TTS fails local-first policy. Vendored copy has local
+    Docker files.
+- at: '2026-11-10T15:31:15+00:00'
+  from: DISCOVERED
+  to: SANDBOXED
+  by: ceh migrate
+  note: recorded from historical evidence (OPTIONAL_BACKEND)
+updated: '2026-11-10T16:03:55+00:00'
+historical:
+  group: E
+  previous_decision: OPTIONAL_BACKEND
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: Alternate VF rendering lane (contentos/renderers/mpt.py). Cloud TTS fails local-first policy. Vendored copy has local
+    Docker files.
+video_factory_usage:
+- contentos/renderers/mpt.py
+- vendor/MoneyPrinterTurbo
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 47
+    font_files: 5
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - pyproject.toml
+  - requirements.txt
+  python:
+  - moviepy==2.2.1
+  - streamlit==1.59.1
+  - streamlit-tour==1.1.0
+  - edge_tts==7.2.7
+  - fastapi==0.136.3
+  - uvicorn==0.32.1
+  - openai==2.24.0
+  - faster-whisper==1.1.0
+  - loguru==0.7.3
+  - google-genai==2.11.0
+  - dashscope==1.20.14
+  - azure-cognitiveservices-speech==1.41.1
+  - redis==5.2.0
+  - python-multipart==0.0.27
+  - pyyaml==6.0.3
+  - requests==2.33.1
+  - packaging==24.2
+  - socksio==1.0.0
+  - pydub==0.25.1
+  - audioop-lts==0.2.2; python_version >= "3.13"
+  - litellm==1.86.2
+  - moviepy==2.2.1
+  - streamlit==1.59.1
+  - streamlit-tour==1.1.0
+  - edge-tts==7.2.7
+  - fastapi==0.136.3
+  - uvicorn==0.32.1
+  - openai==2.24.0
+  - faster-whisper==1.1.0
+  - loguru==0.7.3
+  - dashscope==1.20.14
+  - azure-cognitiveservices-speech==1.41.1
+  - redis==5.2.0
+  - python-multipart==0.0.27
+  - pyyaml==6.0.3
+  - requests==2.33.1
+  - packaging==24.2
+  - socksio==1.0.0
+  - pydub==0.25.1
+  - audioop-lts==0.2.2; python_version >= '3.13'
+  - litellm==1.86.2
+  - google-genai==2.11.0
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: docs/skill/SKILL.md:50
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: test/services/test_mpt_agent_skill.py:514
+  - severity: medium
+    kind: known vulnerability
+    path: PyPI:python-multipart@0.0.27 GHSA-5rvq-cxj2-64vf, GHSA-6jv3-5f52-599m, GHSA-v9pg-7xvm-68hf, GHSA-vffw-93wf-4j4q,
+      PYSEC-2026-3036, PYSEC-2026-3037, PYSEC-2026-3040, PYSEC-2026-3041
+  - severity: medium
+    kind: known vulnerability
+    path: PyPI:litellm@1.86.2 GHSA-3cv6-jpf6-8222, GHSA-g5ff-637f-6q2m, PYSEC-2026-4066
+  finding_count: 4
+  scanned_files: 246
+  notes:
+  - osv.dev checked 21 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  renderers:
+  - moneyprinterturbo
+  - ffmpeg
+files:
+  count: 313
+  skills:
+  - docs/skill/SKILL.md
+analysed_commit: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - social-media-videos
+  - subtitles
+  - voiceover
+  overlap: 0.8
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  - rendering
+  - subtitles
+  - voiceover
+  overlap: 0.8
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - social-media-videos
+  overlap: 0.2
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - social-media-videos
+  overlap: 0.2
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.2
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - rendering
+  overlap: 0.2
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on explainer-videos, social-media-videos,
+  subtitles, voiceover. Run `ceh compare CEH-0028 CEH-0008`.'
+inspected: '2026-11-10T15:48:45+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:45+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, False, True]'
+    reusability:
+      score: 3
+      basis: resource type workflow
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 27360 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 4 findings, worst medium
+    integration_complexity:
+      score: 2
+      basis: '42 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.07
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review
+capabilities_manual:
+- rendering
+- social-media-videos
+- subtitles
+- voiceover
+type_manual: workflow

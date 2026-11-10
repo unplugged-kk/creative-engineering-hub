@@ -1,0 +1,320 @@
+id: CEH-0036
+name: mvanhorn/last30days-skill
+url: https://github.com/mvanhorn/last30days-skill
+aliases: []
+type: agent-skill
+status: PRODUCTION
+created: '2026-11-10T15:32:51+00:00'
+description: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes
+  a grounded summary
+capabilities:
+- instagram-reels
+- content-research
+- social-media-videos
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0036
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0036:
+      git: true
+      head: c567827c3d25865fafa6b1ad33a173346da8cdcb
+      branch: main
+      origin: https://github.com/mvanhorn/last30days-skill
+      uncommitted:
+      - D  .agents/plugins/marketplace.json
+      - D  .claude-plugin/marketplace.json
+      - D  .claude-plugin/plugin.json
+      - D  .clawhubignore
+      - D  .codex-plugin/plugin.json
+      - D  .gitattributes
+      - D  .github/ISSUE_TEMPLATE/bug_report.yml
+      - D  .github/ISSUE_TEMPLATE/config.yml
+      - D  .github/ISSUE_TEMPLATE/feature_request.yml
+      - D  .github/PULL_REQUEST_TEMPLATE.md
+      - D  .github/copilot-instructions.md
+      - D  .github/dependabot.yml
+      - D  .github/scripts/prepare_release.py
+      - D  .github/scripts/read_manifest_version.py
+      - D  .github/workflows/changelog-guard.yml
+      - D  .github/workflows/osv-scanner.yml
+      - D  .github/workflows/prepare-release.yml
+      - D  .github/workflows/release.yml
+      - D  .github/workflows/scorecard.yml
+      - D  .github/workflows/security.yml
+      - D  .github/workflows/tag-release.yml
+      - D  .github/workflows/validate.yml
+      - D  .github/workflows/zizmor.yml
+      - D  .gitignore
+      - D  .grok-plugin/marketplace.json
+      - D  .grok-plugin/plugin.json
+      - D  .skillignore
+      - D  AGENTS.md
+      - D  CHANGELOG.md
+      - D  CLAUDE.md
+      - D  CONCEPTS.md
+      - D  CONFIGURATION.md
+      - D  CONTRIBUTING.md
+      - D  CONTRIBUTORS.md
+      - D  HERMES_SETUP.md
+      - D  LICENSE
+      - D  README.ar.md
+      - D  README.de.md
+      - D  README.es.md
+      - D  README.fr.md
+      - D  README.ja.md
+      - D  README.md
+      - D  README.pt-BR.md
+      - D  README.zh-CN.md
+      - D  SECURITY.md
+      - D  changelog.d/.gitkeep
+      - D  changelog.d/README.md
+      - D  docs/how-search-works.md
+      - D  docs/plans/2026-08-14-demote-grok-cli-opt-in-plan.md
+      - D  docs/plans/2026-08-14-feat-x-retrieve-judge-retry-plan.md
+      uncommitted_count: 612
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/mvanhorn/last30days-skill
+  default_branch: main
+  forks:
+  - https://github.com/kishorehq/last30days-skill
+  - https://github.com/unplugged-kk/last30days-skill
+  pins:
+  - commit: c567827c3d25865fafa6b1ad33a173346da8cdcb
+    at: '2026-11-10T15:32:54+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: c567827c3d25865fafa6b1ad33a173346da8cdcb
+  latest_commit: c567827c3d25865fafa6b1ad33a173346da8cdcb
+  latest_release: &id002
+    tag: v3.33.2
+    published_at: '2026-11-10T08:28:04Z'
+  last_checked: '2026-11-10T16:04:18+00:00'
+  checks:
+  - at: '2026-11-10T15:36:50+00:00'
+    latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:18+00:00'
+    latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: mvanhorn/last30days-skill
+  description: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes
+    a grounded summary
+  topics:
+  - ai-prompts
+  - ai-skill
+  - bluesky
+  - claude
+  - claude-code
+  - clawhub
+  - deep-research
+  - hackernews
+  - instagram
+  - openclaw
+  - polymarket
+  - recency
+  - reddit
+  - research
+  - social-media
+  - tiktok
+  - trends
+  - twitter
+  - web-search
+  - youtube
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-10T08:31:44Z'
+  archived: false
+  stars: 67199
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:32:51+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:32:51+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:18+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 7
+    font_files: 0
+    model_files: 0
+    nested_licence_files:
+    - skills/last30days/scripts/lib/vendor/bird-search/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - mcp/go.mod
+  - pyproject.toml
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: CHANGELOG.md:480
+  - severity: medium
+    kind: pipe remote script to shell
+    path: CONFIGURATION.md:222
+  - severity: medium
+    kind: pipe remote script to shell
+    path: skills/last30days/references/setup-wizard.md:193
+  - severity: medium
+    kind: pipe remote script to shell
+    path: skills/last30days/scripts/lib/backends.py:306
+  - severity: medium
+    kind: pipe remote script to shell
+    path: skills/last30days/scripts/lib/grok_x.py:8
+  - severity: medium
+    kind: pipe remote script to shell
+    path: skills/last30days/scripts/lib/health.py:211
+  - severity: medium
+    kind: pipe remote script to shell
+    path: skills/last30days/scripts/lib/prescriptions.py:136
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/test_corpus_source.py:572
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/test_http_v3.py:398
+  finding_count: 9
+  scanned_files: 602
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  - opencode
+  renderers: []
+files:
+  count: 612
+  skills:
+  - skills/last30days/SKILL.md
+analysed_commit: c567827c3d25865fafa6b1ad33a173346da8cdcb
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - content-research
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0024
+  name: Vincentwei1021/video-shotcraft
+  status: SANDBOXED
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0030
+  name: mutonby/openshorts
+  status: SANDBOXED
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0037
+  name: gitroomhq/postiz-app
+  status: SANDBOXED
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - instagram-reels
+  overlap: 0.33
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - content-research
+  overlap: 0.33
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on instagram-reels, social-media-videos.
+  Run `ceh compare CEH-0036 CEH-0008`.'
+inspected: '2026-11-10T15:49:06+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:06+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, False, True]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic, opencode'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 31798 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 9 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.43
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

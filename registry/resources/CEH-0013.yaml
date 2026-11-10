@@ -1,0 +1,339 @@
+id: CEH-0013
+name: nateherkai/herk-edit-kit
+url: https://github.com/nateherkai/herk-edit-kit
+aliases:
+- https://github.com/nateherkai/hyperframes-student-kit
+type: template
+status: PARKED
+created: '2026-11-10T15:28:48+00:00'
+description: 'Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, transcript-driven
+  cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates.'
+capabilities:
+- transitions
+- voiceover
+- subtitles
+- storyboarding
+- sound-design
+- motion-graphics
+- instagram-reels
+- youtube-shorts
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0013
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0013:
+      git: true
+      head: 10511e5af86fc47756ea89803b397422e2d89284
+      branch: main
+      origin: https://github.com/nateherkai/herk-edit-kit
+      uncommitted:
+      - D  .agents/skills/cut-mistakes/SKILL.md
+      - D  .agents/skills/cut-mistakes/scripts/apply-cuts.mjs
+      - D  .agents/skills/cut-mistakes/scripts/find-cut-candidates.mjs
+      - D  .agents/skills/cut-silences/SKILL.md
+      - D  .agents/skills/cut-silences/scripts/cut-silences.mjs
+      - D  .agents/skills/edit-video/SKILL.md
+      - D  .agents/skills/gsap/NOTICE.txt
+      - D  .agents/skills/gsap/SKILL.md
+      - D  .agents/skills/gsap/references/effects.md
+      - D  .agents/skills/gsap/scripts/extract-audio-data.py
+      - D  .agents/skills/hyperframes-cli/NOTICE.txt
+      - D  .agents/skills/hyperframes-cli/SKILL.md
+      - D  .agents/skills/hyperframes-registry/NOTICE.txt
+      - D  .agents/skills/hyperframes-registry/SKILL.md
+      - D  .agents/skills/hyperframes-registry/examples/add-block.md
+      - D  .agents/skills/hyperframes-registry/examples/add-component.md
+      - D  .agents/skills/hyperframes-registry/references/demo-html-pattern.md
+      - D  .agents/skills/hyperframes-registry/references/discovery.md
+      - D  .agents/skills/hyperframes-registry/references/install-locations.md
+      - D  .agents/skills/hyperframes-registry/references/wiring-blocks.md
+      - D  .agents/skills/hyperframes-registry/references/wiring-components.md
+      - D  .agents/skills/hyperframes-video-beats/SKILL.md
+      - D  .agents/skills/hyperframes-video-beats/agents/openai.yaml
+      - D  .agents/skills/hyperframes/NOTICE.txt
+      - D  .agents/skills/hyperframes/SKILL.md
+      - D  .agents/skills/hyperframes/data-in-motion.md
+      - D  .agents/skills/hyperframes/house-style.md
+      - D  .agents/skills/hyperframes/palettes/bold-energetic.md
+      - D  .agents/skills/hyperframes/palettes/clean-corporate.md
+      - D  .agents/skills/hyperframes/palettes/dark-premium.md
+      - D  .agents/skills/hyperframes/palettes/jewel-rich.md
+      - D  .agents/skills/hyperframes/palettes/monochrome.md
+      - D  .agents/skills/hyperframes/palettes/nature-earth.md
+      - D  .agents/skills/hyperframes/palettes/neon-electric.md
+      - D  .agents/skills/hyperframes/palettes/pastel-soft.md
+      - D  .agents/skills/hyperframes/palettes/warm-editorial.md
+      - D  .agents/skills/hyperframes/patterns.md
+      - D  .agents/skills/hyperframes/references/audio-reactive.md
+      - D  .agents/skills/hyperframes/references/captions.md
+      - D  .agents/skills/hyperframes/references/css-patterns.md
+      - D  .agents/skills/hyperframes/references/dynamic-techniques.md
+      - D  .agents/skills/hyperframes/references/motion-principles.md
+      - D  .agents/skills/hyperframes/references/transcript-guide.md
+      - D  .agents/skills/hyperframes/references/transitions.md
+      - D  .agents/skills/hyperframes/references/transitions/catalog.md
+      - D  .agents/skills/hyperframes/references/transitions/css-3d.md
+      - D  .agents/skills/hyperframes/references/transitions/css-blur.md
+      - D  .agents/skills/hyperframes/references/transitions/css-cover.md
+      - D  .agents/skills/hyperframes/references/transitions/css-destruction.md
+      - D  .agents/skills/hyperframes/references/transitions/css-dissolve.md
+      uncommitted_count: 1050
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/nateherkai/herk-edit-kit
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86
+    at: '2026-11-10T15:28:48+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_matrix'
+  pinned_commit: 0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86
+  latest_commit: 10511e5af86fc47756ea89803b397422e2d89284
+  latest_release: null
+  last_checked: '2026-11-10T16:03:12+00:00'
+  checks:
+  - at: '2026-11-10T15:35:47+00:00'
+    latest: 10511e5af86fc47756ea89803b397422e2d89284
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:03:12+00:00'
+    latest: 10511e5af86fc47756ea89803b397422e2d89284
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: nateherkai/herk-edit-kit
+  description: 'Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, transcript-driven
+    cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates.'
+  topics:
+  - claude-code
+  - codex
+  - herk-edit-kit
+  - hyperframes
+  - motion-graphics
+  - nate-herk
+  - reels
+  - video-editing
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-10-14T12:51:12Z'
+  archived: false
+  stars: 2719
+  is_fork: false
+  parent: null
+  language: HTML
+notes:
+- Renamed upstream to nateherkai/herk-edit-kit. Footage-editing kit; paid hooks and bundled media rejected.
+history:
+- at: '2026-11-10T15:28:48+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Renamed upstream to nateherkai/herk-edit-kit. Footage-editing kit; paid hooks and bundled media rejected.
+- at: '2026-11-10T15:28:48+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (DEFER)
+updated: '2026-11-10T16:03:12+00:00'
+historical:
+  group: B
+  previous_decision: DEFER
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: Renamed upstream to nateherkai/herk-edit-kit. Footage-editing kit; paid hooks and bundled media rejected.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: text:LICENSE
+  assets:
+    media_files: 97
+    font_files: 7
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - style-templates/dark-graph-paper-template/package.json
+  npm: {}
+  npm_dev:
+    hyperframes: 0.7.109
+    gsap: 3.14.2
+    playwright: ^1.59.1
+  install_hooks: {}
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: known vulnerability
+    path: npm:@hono/node-server@2.1.1 GHSA-rmxm-3fg6-px4f
+  - severity: medium
+    kind: known vulnerability
+    path: npm:adm-zip@0.6.0 GHSA-7q85-xj36-vmfc, GHSA-8238-w5pm-2374, GHSA-c6fg-446q-cg94, GHSA-j5f4-cc29-5x44, GHSA-p634-w6r4-rjp2,
+      GHSA-rcw4-f5rp-g42v, GHSA-vwc7-r8mq-g2x9
+  - severity: medium
+    kind: known vulnerability
+    path: npm:hono@4.13.2 GHSA-5r4p-p66f-jhc7, GHSA-crvj-82cr-hjcx, GHSA-g6gw-c38x-mqfc, GHSA-gqvv-2mrq-wpjv, GHSA-hxh3-vqpv-xpqv
+  - severity: medium
+    kind: known vulnerability
+    path: npm:sharp@0.35.3 GHSA-rgj7-g3m4-5g8c, GHSA-wq5f-xc86-pv6w
+  - severity: medium
+    kind: known vulnerability
+    path: npm:source-map-js@1.2.1 GHSA-68fv-2mgg-jv7q
+  - severity: medium
+    kind: known vulnerability
+    path: npm:zod@3.25.76 GHSA-mrhx-c7xc-m3w5
+  finding_count: 6
+  scanned_files: 930
+  notes:
+  - 1 large or binary files not scanned
+  - osv.dev checked 189 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - ffmpeg
+  - browser
+files:
+  count: 1050
+  skills:
+  - .agents/skills/cut-mistakes/SKILL.md
+  - .agents/skills/cut-silences/SKILL.md
+  - .agents/skills/edit-video/SKILL.md
+  - .agents/skills/gsap/SKILL.md
+  - .agents/skills/hyperframes-cli/SKILL.md
+  - .agents/skills/hyperframes-registry/SKILL.md
+  - .agents/skills/hyperframes-video-beats/SKILL.md
+  - .agents/skills/hyperframes/SKILL.md
+  - .agents/skills/make-a-video/SKILL.md
+  - .agents/skills/motion-showreel/SKILL.md
+  - .agents/skills/short-form-edit/SKILL.md
+  - .agents/skills/short-form-video/SKILL.md
+  - .agents/skills/style-library/SKILL.md
+  - .agents/skills/video-storytelling/SKILL.md
+  - .agents/skills/website-to-hyperframes/SKILL.md
+  - .claude/skills/cut-mistakes/SKILL.md
+  - .claude/skills/cut-silences/SKILL.md
+  - .claude/skills/edit-video/SKILL.md
+  - .claude/skills/gsap/SKILL.md
+  - .claude/skills/hyperframes-cli/SKILL.md
+  - .claude/skills/hyperframes-registry/SKILL.md
+  - .claude/skills/hyperframes-video-beats/SKILL.md
+  - .claude/skills/hyperframes/SKILL.md
+  - .claude/skills/make-a-video/SKILL.md
+  - .claude/skills/motion-showreel/SKILL.md
+  - .claude/skills/short-form-edit/SKILL.md
+  - .claude/skills/short-form-video/SKILL.md
+  - .claude/skills/style-library/SKILL.md
+  - .claude/skills/video-storytelling/SKILL.md
+  - .claude/skills/website-to-hyperframes/SKILL.md
+analysed_commit: 10511e5af86fc47756ea89803b397422e2d89284
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - motion-graphics
+  - subtitles
+  - transitions
+  - voiceover
+  overlap: 0.5
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - instagram-reels
+  - subtitles
+  - voiceover
+  overlap: 0.38
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.25
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - instagram-reels
+  overlap: 0.12
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.12
+- id: CEH-0042
+  name: Jakeschincariol/youtube-agent-skill
+  status: PRODUCTION
+  shared:
+  - youtube-shorts
+  overlap: 0.12
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, subtitles, transitions,
+  voiceover. Run `ceh compare CEH-0013 CEH-0014`.'
+inspected: '2026-11-10T15:47:58+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:58+00:00'
+  criteria:
+    workflow_completeness:
+      score: 5
+      basis: 'skills, scripts, examples, tests present: [True, True, True, True]'
+    reusability:
+      score: 3
+      basis: resource type template
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 27 days ago
+    documentation:
+      score: 5
+      basis: top-level README 8053 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 6 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.57
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

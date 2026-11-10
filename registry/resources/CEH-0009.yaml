@@ -1,0 +1,722 @@
+id: CEH-0009
+name: remotion-dev/remotion
+url: https://github.com/remotion-dev/remotion
+aliases: []
+type: renderer
+status: PARKED
+created: '2026-11-10T15:25:33+00:00'
+description: 🎥      Make videos programmatically with React
+capabilities:
+- sound-design
+- rendering
+- subtitles
+- video-editing
+- data-visualization
+- motion-graphics
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0009
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0009:
+      git: true
+      head: d4457db99b1737f1596f7a02c9d588eb77265904
+      branch: main
+      origin: https://github.com/remotion-dev/remotion
+      uncommitted:
+      - D  .agents/skills/accept-web-renderer-prs/SKILL.md
+      - D  .agents/skills/add-bug/SKILL.md
+      - D  .agents/skills/add-cli-option/SKILL.md
+      - D  .agents/skills/add-effect/SKILL.md
+      - D  .agents/skills/add-expert/SKILL.md
+      - D  .agents/skills/add-new-package/SKILL.md
+      - D  .agents/skills/add-sfx/SKILL.md
+      - D  .agents/skills/add-webcodecs-bug/SKILL.md
+      - D  .agents/skills/canvas-capture-extension/SKILL.md
+      - D  .agents/skills/canvas-capture-extension/agents/openai.yaml
+      - D  .agents/skills/canvas-capture-extension/scripts/rebuild-extension.sh
+      - D  .agents/skills/checkout/SKILL.md
+      - D  .agents/skills/convert/SKILL.md
+      - D  .agents/skills/convert/agents/openai.yaml
+      - D  .agents/skills/deprecate-api/SKILL.md
+      - D  .agents/skills/docs-demo/SKILL.md
+      - D  .agents/skills/docs/SKILL.md
+      - D  .agents/skills/docs/agents/openai.yaml
+      - D  .agents/skills/experts/SKILL.md
+      - D  .agents/skills/experts/agents/openai.yaml
+      - D  .agents/skills/find-unplanned-issues/SKILL.md
+      - D  .agents/skills/find-unplanned-issues/agents/openai.yaml
+      - D  .agents/skills/find-unplanned-issues/scripts/find-unplanned-issues.ts
+      - D  .agents/skills/find-unplanned-issues/scripts/prune-closed-masterplan-issues.ts
+      - D  .agents/skills/fix-dependabot/SKILL.md
+      - D  .agents/skills/fix-root-cause/SKILL.md
+      - D  .agents/skills/flake/SKILL.md
+      - D  .agents/skills/formatting/SKILL.md
+      - D  .agents/skills/gh-stack/SKILL.md
+      - D  .agents/skills/gh-stack/references/commands.md
+      - D  .agents/skills/gh-stack/references/stack-design.md
+      - D  .agents/skills/gh-stack/references/troubleshooting.md
+      - D  .agents/skills/homepage-video-assets/SKILL.md
+      - D  .agents/skills/import-canvas-capture/SKILL.md
+      - D  .agents/skills/interactivity-best-practices/SKILL.md
+      - D  .agents/skills/issue-management/SKILL.md
+      - D  .agents/skills/issue/SKILL.md
+      - D  .agents/skills/merge/SKILL.md
+      - D  .agents/skills/no-comments/SKILL.md
+      - D  .agents/skills/no-pointer/SKILL.md
+      - D  .agents/skills/no-pointer/agents/openai.yaml
+      - D  .agents/skills/nullable-new-params/SKILL.md
+      - D  .agents/skills/nullable-new-params/agents/openai.yaml
+      - D  .agents/skills/nullable-new-params/scripts/find-new-optional-params.ts
+      - D  .agents/skills/offload-r2/SKILL.md
+      - D  .agents/skills/offload-r2/agents/openai.yaml
+      - D  .agents/skills/player-example/SKILL.md
+      - D  .agents/skills/player-example/agents/openai.yaml
+      - D  .agents/skills/pr-name/SKILL.md
+      - D  .agents/skills/pr-ready/SKILL.md
+      uncommitted_count: 14807
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/remotion-dev/remotion
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 5ce9514934716083274bb18221737223aba63318
+    at: '2026-11-10T15:25:33+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_catalog'
+  pinned_commit: 5ce9514934716083274bb18221737223aba63318
+  latest_commit: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
+  latest_release: &id002
+    tag: v4.0.542
+    published_at: '2026-11-09T09:25:39Z'
+  last_checked: '2026-11-10T16:03:00+00:00'
+  checks:
+  - at: '2026-11-10T15:35:36+00:00'
+    latest: e0c7c81bab5232c5589d9ff11c970369f626cf06
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:03:00+00:00'
+    latest: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: remotion-dev/remotion
+  description: 🎥      Make videos programmatically with React
+  topics:
+  - javascript
+  - react
+  - video
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-11-10T15:23:43Z'
+  archived: false
+  stars: 72179
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes:
+- 'Optional React/data-driven renderer. Non-OSI two-tier licence: company licence needed above 3 employees. VF has contentos/renderers/remotion.py
+  adapter.'
+history:
+- at: '2026-11-10T15:25:33+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: 'Optional React/data-driven renderer. Non-OSI two-tier licence: company licence needed above 3 employees. VF has contentos/renderers/remotion.py
+    adapter.'
+- at: '2026-11-10T15:25:33+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (DEFER)
+updated: '2026-11-10T16:03:00+00:00'
+historical:
+  group: B
+  previous_decision: DEFER
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: 'Optional React/data-driven renderer. Non-OSI two-tier licence: company licence needed above 3 employees. VF has contentos/renderers/remotion.py
+    adapter.'
+video_factory_usage:
+- contentos/renderers/remotion.py
+licence:
+  spdx: Remotion-License
+  class: custom
+  gate: review
+  source: fingerprint:LICENSE.md
+  assets:
+    media_files: 1020
+    font_files: 25
+    model_files: 0
+    nested_licence_files:
+    - packages/agent-plugin/LICENSE
+    - packages/animation-utils/LICENSE.md
+    - packages/compositor/ffmpeg/build/LICENSE
+    - packages/compositor/ffmpeg/wrapper/LICENSE
+    - packages/core/LICENSE.md
+    - packages/google-fonts/LICENSE.md
+    - packages/lambda-python/LICENSE
+    - packages/media-utils/LICENSE.md
+    - packages/paths/LICENSE.md
+    - packages/preload/LICENSE.md
+    - packages/renderer/vendor/yauzl-patched/LICENSE
+    - packages/shapes/LICENSE.md
+    - packages/template-three/LICENSE.md
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - packages/agent-plugin/package.json
+  - packages/animated-emoji/package.json
+  - packages/animation-utils/package.json
+  - packages/astro-example/package.json
+  - packages/babel-loader/package.json
+  - packages/brand/package.json
+  - packages/browser-bundler/package.json
+  - packages/browser-studio/package.json
+  - packages/bugs/package.json
+  - packages/bundler/package.json
+  - packages/canvas-capture-extension/package.json
+  - packages/captions/package.json
+  - packages/chrome-compile/package.json
+  - packages/claude-code-plugin/package.json
+  - packages/cli/package.json
+  - packages/cloudrun/package.json
+  - packages/codemods/package.json
+  - packages/compositor-darwin-arm64/package.json
+  - packages/compositor-darwin-x64/package.json
+  - packages/compositor-linux-arm64-gnu/package.json
+  - packages/compositor-linux-arm64-musl/package.json
+  - packages/compositor-linux-x64-gnu/package.json
+  - packages/compositor-linux-x64-musl/package.json
+  - packages/compositor-win32-x64-msvc/package.json
+  - packages/compositor/Cargo.toml
+  - packages/compositor/package.json
+  - packages/convert/package.json
+  - packages/core/package.json
+  - packages/create-video/package.json
+  - packages/design/package.json
+  - packages/discord-poster/package.json
+  - packages/docs/package.json
+  - packages/docusaurus-plugin/package.json
+  - packages/effects/package.json
+  - packages/elevenlabs/package.json
+  - packages/enable-scss/package.json
+  - packages/eslint-config-flat/package.json
+  - packages/eslint-config-internal/package.json
+  - packages/eslint-config/package.json
+  - packages/eslint-plugin/package.json
+  - packages/example-videos/package.json
+  - packages/example-without-zod/package.json
+  - packages/example/package.json
+  - packages/fonts/package.json
+  - packages/gif/package.json
+  - packages/google-fonts/package.json
+  - packages/gsap/package.json
+  - packages/install-whisper-cpp/package.json
+  - packages/it-tests/package.json
+  - packages/jonnys-videos/package.json
+  - packages/kimi-code-plugin/package.json
+  - packages/lambda-binaries/package.json
+  - packages/lambda-client/package.json
+  - packages/lambda-go-example/go.mod
+  - packages/lambda-go-example/package.json
+  - packages/lambda-go/go.mod
+  - packages/lambda-go/package.json
+  - packages/lambda-php/package.json
+  - packages/lambda-python/package.json
+  - packages/lambda-python/requirements.txt
+  - packages/lambda-ruby/package.json
+  - packages/lambda/package.json
+  - packages/layout-utils/package.json
+  - packages/licensing/package.json
+  - packages/light-leaks/package.json
+  - packages/lottie/package.json
+  - packages/mac-cursors/package.json
+  - packages/maptiler/package.json
+  - packages/media-parser/package.json
+  - packages/media-utils/package.json
+  - packages/media/package.json
+  - packages/motion-blur/package.json
+  - packages/noise/package.json
+  - packages/openai-whisper/package.json
+  - packages/paths/package.json
+  - packages/player-a11y/package.json
+  - packages/player-example/package.json
+  - packages/player/package.json
+  - packages/preload/package.json
+  - packages/promo-pages/package.json
+  - packages/react18-tests/package.json
+  - packages/remotion-media/package.json
+  - packages/renderer/package.json
+  - packages/rive/package.json
+  - packages/rough-notation/package.json
+  - packages/rounded-text-box/package.json
+  - packages/sdk/package.json
+  - packages/sfx/package.json
+  - packages/shapes/package.json
+  - packages/skia/package.json
+  - packages/skills-evals/package.json
+  - packages/skills/package.json
+  - packages/starburst/package.json
+  - packages/streaming/package.json
+  - packages/studio-protocol/package.json
+  - packages/studio-server/package.json
+  - packages/studio-shared/package.json
+  - packages/studio/package.json
+  - packages/svg-3d-engine/package.json
+  - packages/tailwind-v4/package.json
+  - packages/tailwind/package.json
+  - packages/template-audiogram/package.json
+  - packages/template-blank/package.json
+  - packages/template-code-hike/package.json
+  - packages/template-electron/package.json
+  - packages/template-element-library/package.json
+  - packages/template-helloworld/package.json
+  - packages/template-music-visualization/package.json
+  - packages/template-next-app-tailwind/package.json
+  - packages/template-overlay/package.json
+  - packages/template-prompt-to-motion-graphics/package.json
+  - packages/template-prompt-to-video/package.json
+  - packages/template-react-router/package.json
+  - packages/template-recorder/package.json
+  - packages/template-render-server/package.json
+  - packages/template-skia/package.json
+  - packages/template-stargazer/package.json
+  - packages/template-still/package.json
+  - packages/template-three/package.json
+  - packages/template-tiktok/package.json
+  - packages/template-vercel/package.json
+  - packages/template-vibe-code/package.json
+  - packages/test-utils/package.json
+  - packages/three/package.json
+  - packages/timeline-utils/package.json
+  - packages/transitions/package.json
+  - packages/typescript-tools/package.json
+  - packages/vercel/package.json
+  - packages/video-matting/package.json
+  - packages/web-renderer/package.json
+  - packages/webcodecs/package.json
+  - packages/whisper-web/package.json
+  - packages/whisper-webgpu/package.json
+  - packages/zod-types-v3/package.json
+  - packages/zod-types/package.json
+  npm:
+    p-limit: 7.2.0
+    turbo: 2.11.6
+    tsrs: 'catalog:'
+    typescript: 'catalog:'
+  npm_dev:
+    '@types/babel__standalone': 7.1.9
+    '@types/bun': 'catalog:'
+    '@types/deno': 2.0.0
+    '@types/react': 'catalog:'
+    '@types/react-dom': 'catalog:'
+    oxfmt: 0.35.0
+    prettier: 'catalog:'
+    react-scan: 0.5.7
+    vite: 6.4.5
+  install_hooks:
+    prepare: git config core.hooksPath .githooks
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: .circleci/config.yml:20
+  - severity: medium
+    kind: pipe remote script to shell
+    path: .github/workflows/ffmpeg.yml:38
+  - severity: medium
+    kind: privilege escalation
+    path: packages/chrome-compile/linux-arm64/Dockerfile:30
+  - severity: medium
+    kind: privilege escalation
+    path: packages/chrome-compile/linux-arm64/README.md:74
+  - severity: medium
+    kind: privilege escalation
+    path: packages/chrome-compile/linux-x64/Dockerfile:30
+  - severity: medium
+    kind: privilege escalation
+    path: packages/chrome-compile/linux-x64/README.md:60
+  - severity: medium
+    kind: privilege escalation
+    path: packages/chrome-compile/mac-arm64/build-chromium.sh:47
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libavcodec.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libavdevice.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libavfilter.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libavformat.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libavutil.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libswresample.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-arm64/libswscale.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libavcodec.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libavdevice.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libavfilter.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libavformat.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libavutil.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libswresample.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-darwin-x64/libswscale.dylib
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libavcodec.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libavdevice.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libavfilter.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libavformat.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libavutil.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libswresample.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-gnu/libswscale.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libavcodec.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libavdevice.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libavfilter.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libavformat.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libavutil.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libswresample.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-arm64-musl/libswscale.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libavcodec.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libavdevice.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libavfilter.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libavformat.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libavutil.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libswresample.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-gnu/libswscale.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libavcodec.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libavdevice.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libavfilter.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libavformat.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libavutil.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libswresample.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-linux-x64-musl/libswscale.so
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/avcodec-61.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/avdevice-61.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/avfilter-10.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/avformat-61.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/avutil-59.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/ffmpeg.exe
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/ffprobe.exe
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/libgcc_s_seh-1.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/libssp-0.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/libstdc++-6.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/libvpx-1.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/libwinpthread-1.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/msvcr100.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/remotion.exe
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/swresample-5.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/swscale-8.dll
+  - severity: medium
+    kind: committed binary
+    path: packages/compositor-win32-x64-msvc/zlib1.dll
+  - severity: medium
+    kind: pipe remote script to shell
+    path: packages/compositor/ffmpeg/build/Dockerfile:17
+  - severity: medium
+    kind: pipe remote script to shell
+    path: packages/compositor/ffmpeg/build/Dockerfile-aws:17
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: packages/docs/docusaurus.config.ts:93
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (Google API key)
+    path: packages/docs/src/components/GoogleMaps.tsx:22
+  - severity: medium
+    kind: pipe remote script to shell
+    path: packages/docs/vercel.ts:741
+  - severity: medium
+    kind: pipe remote script to shell
+    path: packages/lambda-binaries/build-chrome.sh:409
+  - severity: medium
+    kind: privilege escalation
+    path: packages/lambda-binaries/build-chrome.sh:6
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: packages/licensing/src/test/register.test.ts:10
+  - severity: medium
+    kind: privilege escalation
+    path: packages/template-stargazer/.github/workflows/render-video.yml:34
+  - severity: medium
+    kind: npm prepare hook runs on install
+    path: 'package.json: git config core.hooksPath .githooks'
+  finding_count: 76
+  scanned_files: 12108
+  notes:
+  - 29 large or binary files not scanned
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - codex
+  - generic
+  renderers:
+  - remotion
+  - ffmpeg
+  - browser
+  - canvas
+files:
+  count: 14807
+  skills:
+  - .agents/skills/accept-web-renderer-prs/SKILL.md
+  - .agents/skills/add-bug/SKILL.md
+  - .agents/skills/add-cli-option/SKILL.md
+  - .agents/skills/add-effect/SKILL.md
+  - .agents/skills/add-expert/SKILL.md
+  - .agents/skills/add-new-package/SKILL.md
+  - .agents/skills/add-sfx/SKILL.md
+  - .agents/skills/add-webcodecs-bug/SKILL.md
+  - .agents/skills/canvas-capture-extension/SKILL.md
+  - .agents/skills/checkout/SKILL.md
+  - .agents/skills/convert/SKILL.md
+  - .agents/skills/deprecate-api/SKILL.md
+  - .agents/skills/docs-demo/SKILL.md
+  - .agents/skills/docs/SKILL.md
+  - .agents/skills/experts/SKILL.md
+  - .agents/skills/find-unplanned-issues/SKILL.md
+  - .agents/skills/fix-dependabot/SKILL.md
+  - .agents/skills/fix-root-cause/SKILL.md
+  - .agents/skills/flake/SKILL.md
+  - .agents/skills/formatting/SKILL.md
+  - .agents/skills/gh-stack/SKILL.md
+  - .agents/skills/homepage-video-assets/SKILL.md
+  - .agents/skills/import-canvas-capture/SKILL.md
+  - .agents/skills/interactivity-best-practices/SKILL.md
+  - .agents/skills/issue-management/SKILL.md
+  - .agents/skills/issue/SKILL.md
+  - .agents/skills/merge/SKILL.md
+  - .agents/skills/no-comments/SKILL.md
+  - .agents/skills/no-pointer/SKILL.md
+  - .agents/skills/nullable-new-params/SKILL.md
+  - .agents/skills/offload-r2/SKILL.md
+  - .agents/skills/player-example/SKILL.md
+  - .agents/skills/pr-name/SKILL.md
+  - .agents/skills/pr-ready/SKILL.md
+  - .agents/skills/pr/SKILL.md
+  - .agents/skills/product-recording/SKILL.md
+  - .agents/skills/react-scan/SKILL.md
+  - .agents/skills/release/SKILL.md
+  - .agents/skills/remotion-new-markup/SKILL.md
+  - .agents/skills/scaffold-element/SKILL.md
+analysed_commit: d4457db99b1737f1596f7a02c9d588eb77265904
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - motion-graphics
+  - rendering
+  - subtitles
+  overlap: 0.5
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  - motion-graphics
+  overlap: 0.33
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - rendering
+  overlap: 0.33
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  overlap: 0.17
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  overlap: 0.17
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.17
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.17
+- id: CEH-0019
+  name: haidrrrry/claude-remotion-skill
+  status: REJECTED
+  shared:
+  - motion-graphics
+  - sound-design
+  - subtitles
+  - video-editing
+  overlap: 0.67
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, rendering, subtitles.
+  Run `ceh compare CEH-0009 CEH-0014`.'
+inspected: '2026-11-10T15:47:47+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:47+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, True, False, False]'
+    reusability:
+      score: 4
+      basis: resource type renderer
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, codex, generic'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 4
+      basis: top-level README 4616 chars
+    licence_suitability:
+      score: 1
+      basis: Remotion-License (custom)
+    security:
+      score: 3
+      basis: 76 findings, worst medium
+    integration_complexity:
+      score: 3
+      basis: '4 runtime dependencies; install hooks: [''prepare'']'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.57
+  evidence_coverage: 0.7
+  gates:
+    licence: review
+    security: review
+capabilities_manual:
+- data-visualization
+- motion-graphics
+- rendering
+type_manual: renderer

@@ -1,0 +1,259 @@
+id: CEH-0003
+name: howseen-ai/claude-motion-design
+url: https://github.com/howseen-ai/claude-motion-design
+aliases: []
+type: agent-skill
+status: PARKED
+created: '2026-11-10T15:25:03+00:00'
+description: 'A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects,
+  no Remotion license.'
+capabilities:
+- subtitles
+- 3d-animation
+- motion-graphics
+- sound-design
+- audio-qa
+- music-visualization
+- transitions
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0003
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0003:
+      git: true
+      head: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+      branch: main
+      origin: https://github.com/howseen-ai/claude-motion-design
+      uncommitted:
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  examples/howseen-launch/assets/logo-mark.png
+      - D  examples/howseen-launch/audio.py
+      - D  examples/howseen-launch/fetch_assets.py
+      - D  examples/howseen-launch/film.html
+      - D  examples/howseen-launch/preview.gif
+      - D  examples/howseen-launch/render.py
+      - D  skill/motion-design/SKILL.md
+      - D  skill/motion-design/scripts/analyze_song.py
+      - D  skill/motion-design/scripts/audio_template.py
+      - D  skill/motion-design/scripts/mcp21_client.py
+      - D  skill/motion-design/scripts/mixkit_sfx_search.py
+      - D  skill/motion-design/scripts/remake/BRIEF_TEMPLATE.md
+      - D  skill/motion-design/scripts/remake/core.js
+      - D  skill/motion-design/scripts/remake/index.html
+      - D  skill/motion-design/scripts/remake/remake_analyze.py
+      - D  skill/motion-design/scripts/remake/remake_qa.py
+      - D  skill/motion-design/scripts/remake/remake_render.py
+      - D  skill/motion-design/scripts/remake/remake_stub.py
+      - D  skill/motion-design/scripts/remake/remake_sync.py
+      - D  skill/motion-design/scripts/render_template.py
+      - D  skill/motion-design/scripts/svgl_logos.py
+      uncommitted_count: 24
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/howseen-ai/claude-motion-design
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    at: '2026-11-10T15:25:03+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2'
+  pinned_commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+  latest_commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+  latest_release: null
+  last_checked: '2026-11-10T16:02:42+00:00'
+  checks:
+  - at: '2026-11-10T15:35:19+00:00'
+    latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:02:42+00:00'
+    latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: howseen-ai/claude-motion-design
+  description: 'A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects,
+    no Remotion license.'
+  topics:
+  - claude-code
+  - claude-skills
+  - ffmpeg
+  - motion-design
+  - playwright
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-10-04T05:56:51Z'
+  archived: false
+  stars: 808
+  is_fork: false
+  parent: null
+  language: Python
+notes:
+- Adapt pop/flash/loop-seam detectors; reject remake and scraping flows. Near-duplicate method of product-launch-motion and
+  Barty-Bart/motion-graphics.
+history:
+- at: '2026-11-10T15:25:03+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Adapt pop/flash/loop-seam detectors; reject remake and scraping flows. Near-duplicate method of product-launch-motion
+    and Barty-Bart/motion-graphics.
+- at: '2026-11-10T15:25:03+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:02:42+00:00'
+historical:
+  group: A
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  note: Adapt pop/flash/loop-seam detectors; reject remake and scraping flows. Near-duplicate method of product-launch-motion
+    and Barty-Bart/motion-graphics.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 2
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 22
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  renderers:
+  - remotion
+  - ffmpeg
+  - browser
+  - blender
+files:
+  count: 24
+  skills:
+  - skill/motion-design/SKILL.md
+analysed_commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - motion-graphics
+  - subtitles
+  - transitions
+  overlap: 0.57
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.29
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  overlap: 0.14
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.14
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.14
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.14
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - audio-qa
+  - motion-graphics
+  - sound-design
+  - subtitles
+  - transitions
+  overlap: 0.71
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - 3d-animation
+  - audio-qa
+  - motion-graphics
+  - sound-design
+  - transitions
+  overlap: 0.71
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on 3d-animation, motion-graphics, subtitles,
+  transitions. Run `ceh compare CEH-0003 CEH-0014`.'
+inspected: '2026-11-10T15:47:27+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:27+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code'
+    maintainability:
+      score: 4
+      basis: last push 37 days ago
+    documentation:
+      score: 4
+      basis: top-level README 4884 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

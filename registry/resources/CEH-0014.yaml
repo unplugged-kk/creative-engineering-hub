@@ -1,0 +1,369 @@
+id: CEH-0014
+name: heygen-com/hyperframes
+url: https://github.com/heygen-com/hyperframes
+aliases: []
+type: renderer
+status: PRODUCTION
+created: '2026-11-10T15:28:55+00:00'
+description: Write HTML. Render video. Built for agents.
+capabilities:
+- subtitles
+- voiceover
+- transitions
+- explainer-videos
+- 3d-animation
+- rendering
+- cinematography
+- motion-graphics
+- kinetic-typography
+local:
+  paths:
+  - /Users/kishore/audit-scratch/t1/hf-src
+  state:
+    /Users/kishore/audit-scratch/t1/hf-src:
+      git: true
+      head: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+      branch: HEAD
+      origin: https://github.com/heygen-com/hyperframes
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
+upstream:
+  strategy: PINNED
+  remote: https://github.com/heygen-com/hyperframes
+  default_branch: main
+  forks:
+  - https://github.com/kishorehq/hyperframes
+  pins:
+  - commit: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+    at: '2026-11-10T15:28:55+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_lock, vf_package, vf_catalog'
+  pinned_commit: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+  latest_commit: cda84222aa12716f2ceb92b45629487be81a0601
+  latest_release: &id002
+    tag: v0.9.30
+    published_at: '2026-11-10T12:44:28Z'
+  last_checked: '2026-11-10T16:03:15+00:00'
+  checks:
+  - at: '2026-11-10T15:35:49+00:00'
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:03:15+00:00'
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
+    flags: &id001
+    - new-commits
+  flags: *id001
+  last_report:
+    at: '2026-11-10T16:03:42+00:00'
+    pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
+    commit_count: 1858
+    files_changed: 5654
+    licence_files_changed: []
+    breaking: 3
+    regression: null
+meta:
+  full_name: heygen-com/hyperframes
+  description: Write HTML. Render video. Built for agents.
+  topics:
+  - ai
+  - ai-agents
+  - animation
+  - claude-code
+  - ffmpeg
+  - framework
+  - gsap
+  - html
+  - html-to-video
+  - mcp
+  - motion-graphics
+  - puppeteer
+  - rendering
+  - typescript
+  - video-editor
+  licence_spdx: Apache-2.0
+  default_branch: main
+  pushed_at: '2026-11-10T15:22:25Z'
+  archived: false
+  stars: 82105
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes:
+- 'VF default renderer: npm hyperframes 0.8.114 = tag v0.8.114 = commit 01c6f600. Official skills hyperframes-core/animation/keyframes
+  pinned by tree sha256 in vf_lock.'
+history:
+- at: '2026-11-10T15:28:55+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: 'VF default renderer: npm hyperframes 0.8.114 = tag v0.8.114 = commit 01c6f600. Official skills hyperframes-core/animation/keyframes
+    pinned by tree sha256 in vf_lock.'
+- at: '2026-11-10T15:28:55+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (ADOPT)
+updated: '2026-11-10T16:03:42+00:00'
+historical:
+  group: B
+  previous_decision: ADOPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/git/video-factory/config/upstream-skills.lock.json
+  - ~/git/video-factory/package.json
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: 'VF default renderer: npm hyperframes 0.8.114 = tag v0.8.114 = commit 01c6f600. Official skills hyperframes-core/animation/keyframes
+    pinned by tree sha256 in vf_lock.'
+video_factory_usage:
+- 'package.json: hyperframes 0.8.114'
+- config/upstream-skills.lock.json
+- contentos/renderers/hyperframes.py
+licence:
+  spdx: Apache-2.0
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 599
+    font_files: 210
+    model_files: 24
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - packages/aws-lambda/package.json
+  - packages/cli/package.json
+  - packages/core/package.json
+  - packages/engine/package.json
+  - packages/gcp-cloud-run/package.json
+  - packages/lint/package.json
+  - packages/parsers/package.json
+  - packages/player/package.json
+  - packages/producer/package.json
+  - packages/sdk-playground/package.json
+  - packages/sdk/package.json
+  - packages/shader-transitions/package.json
+  - packages/studio-server/package.json
+  - packages/studio/package.json
+  npm: {}
+  npm_dev:
+    '@commitlint/cli': ^20.5.0
+    '@commitlint/config-conventional': ^20.5.0
+    '@hyperframes/player': workspace:*
+    '@types/node': ^25.0.10
+    concurrently: ^8.2.0
+    fallow: ^2.75.0
+    happy-dom: ^20.9.0
+    knip: ^6.0.3
+    lefthook: ^2.1.4
+    oxfmt: ^0.41.0
+    oxlint: ^1.56.0
+    tsx: ^4.21.0
+    typescript: ^5.0.0
+    vitest: ^4.1.11
+    yaml: ^2.9.0
+  install_hooks:
+    prepare: test -d .git && lefthook install || true
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: DOCS_GUIDELINES.md:105
+  - severity: medium
+    kind: privilege escalation
+    path: README.md:346
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (private key)
+    path: packages/cli/src/capture/contentExtractor.test.ts:477
+  - severity: medium
+    kind: pipe remote script to shell
+    path: packages/gcp-cloud-run/Dockerfile:81
+  - severity: medium
+    kind: pipe remote script to shell
+    path: scripts/test-skills-fresh.sh:109
+  - severity: medium
+    kind: npm prepare hook runs on install
+    path: 'package.json: test -d .git && lefthook install || true'
+  finding_count: 6
+  scanned_files: 7162
+  notes:
+  - 18 large or binary files not scanned
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  - opencode
+  renderers:
+  - hyperframes
+  - remotion
+  - ffmpeg
+  - browser
+  - lottie
+files:
+  count: 8649
+  skills:
+  - .agents/skills/captions-overlay/SKILL.md
+  - .agents/skills/changelog-video/SKILL.md
+  - .agents/skills/cut-the-curve/SKILL.md
+  - .agents/skills/motion-doctrine/SKILL.md
+  - .agents/skills/oversized-cursor/SKILL.md
+  - .agents/skills/seam-craft/SKILL.md
+  - .claude/skills/captions-overlay/SKILL.md
+  - .claude/skills/changelog-video/SKILL.md
+  - .claude/skills/cut-the-curve/SKILL.md
+  - .claude/skills/motion-doctrine/SKILL.md
+  - .claude/skills/oversized-cursor/SKILL.md
+  - .claude/skills/seam-craft/SKILL.md
+  - registry/blocks/canopy-part-title/SKILL.md
+  - registry/blocks/code-slice-hero/SKILL.md
+  - registry/blocks/cuboid-carousel/SKILL.md
+  - registry/blocks/frost-sequence-camera-orbit/SKILL.md
+  - registry/blocks/glass-shard-title/SKILL.md
+  - registry/blocks/orbit-card/SKILL.md
+  - registry/blocks/wireframe-portal-title/SKILL.md
+  - skills/embedded-captions/SKILL.md
+  - skills/faceless-explainer/SKILL.md
+  - skills/figma/SKILL.md
+  - skills/general-video/SKILL.md
+  - skills/hyperframes-animation/SKILL.md
+  - skills/hyperframes-audio/SKILL.md
+  - skills/hyperframes-cli/SKILL.md
+  - skills/hyperframes-core/SKILL.md
+  - skills/hyperframes-creative/SKILL.md
+  - skills/hyperframes-keyframes/SKILL.md
+  - skills/hyperframes-registry/SKILL.md
+  - skills/hyperframes-studio/SKILL.md
+  - skills/hyperframes/SKILL.md
+  - skills/media-use/SKILL.md
+  - skills/motion-graphics/SKILL.md
+  - skills/music-to-video/SKILL.md
+  - skills/pr-to-video/SKILL.md
+  - skills/product-launch-video/SKILL.md
+  - skills/remotion-to-hyperframes/SKILL.md
+  - skills/slideshow/SKILL.md
+  - skills/talking-head-recut/SKILL.md
+analysed_commit: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - kinetic-typography
+  - subtitles
+  - voiceover
+  overlap: 0.44
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.22
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - rendering
+  overlap: 0.22
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.11
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.11
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.11
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - explainer-videos
+  - motion-graphics
+  - rendering
+  - voiceover
+  overlap: 0.56
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - explainer-videos
+  - kinetic-typography
+  - motion-graphics
+  - transitions
+  overlap: 0.56
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0014`. Gates needing review: security.'
+inspected: '2026-11-10T15:48:08+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:08+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 4
+      basis: resource type renderer
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic, opencode'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 28809 chars
+    licence_suitability:
+      score: 5
+      basis: Apache-2.0 (permissive)
+    security:
+      score: 3
+      basis: 6 findings, worst medium
+    integration_complexity:
+      score: 4
+      basis: '0 runtime dependencies; install hooks: [''prepare'']'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.5
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review
+capabilities_manual:
+- kinetic-typography
+- motion-graphics
+- rendering
+- subtitles
+- voiceover
+type_manual: renderer

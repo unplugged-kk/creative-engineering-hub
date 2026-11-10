@@ -1,0 +1,282 @@
+id: CEH-0044
+name: FFmpeg/FFmpeg
+url: https://github.com/FFmpeg/FFmpeg
+aliases: []
+type: repository
+status: PRODUCTION
+created: '2026-11-10T15:34:09+00:00'
+description: Mirror of https://git.ffmpeg.org/ffmpeg.git
+capabilities:
+- subtitles
+- audio-qa
+- compositing
+- rendering
+- video-editing
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0044
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0044:
+      git: true
+      head: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+      branch: master
+      origin: https://github.com/FFmpeg/FFmpeg
+      uncommitted:
+      - D  .forgejo/CODEOWNERS
+      - D  .forgejo/ISSUE_TEMPLATE.md
+      - D  .forgejo/PULL_REQUEST_TEMPLATE.md
+      - D  .forgejo/actions/rebase-pr/action.yml
+      - D  .forgejo/inject-pr-samples.py
+      - D  .forgejo/labeler/labeler.js
+      - D  .forgejo/labeler/labeler.yml
+      - D  .forgejo/pre-commit/config.yaml
+      - D  .forgejo/pre-commit/ignored-words.txt
+      - D  .forgejo/workflows/autolabel.yml
+      - D  .forgejo/workflows/backports.yml
+      - D  .forgejo/workflows/lint.yml
+      - D  .forgejo/workflows/test.yml
+      - D  .gitattributes
+      - D  .gitignore
+      - D  .mailmap
+      - D  CONTRIBUTING.md
+      - D  COPYING.GPLv2
+      - D  COPYING.GPLv3
+      - D  COPYING.LGPLv2.1
+      - D  COPYING.LGPLv3
+      - D  CREDITS
+      - D  Changelog
+      - D  FUNDING.json
+      - D  INSTALL.md
+      - D  LICENSE.md
+      - D  MAINTAINERS
+      - D  Makefile
+      - D  README.md
+      - D  RELEASE
+      - D  compat/aix/math.h
+      - D  compat/android/binder.c
+      - D  compat/android/binder.h
+      - D  compat/android/math.h
+      - D  compat/atomics/dummy/stdatomic_impl.h
+      - D  compat/atomics/stdatomic.h
+      - D  compat/atomics/win32/stdatomic_impl.h
+      - D  compat/cuda/cuda_runtime.h
+      - D  compat/cuda/dynlink_loader.h
+      - D  compat/dispatch_semaphore/semaphore.h
+      - D  compat/djgpp/math.c
+      - D  compat/djgpp/math.h
+      - D  compat/float/float.h
+      - D  compat/float/limits.h
+      - D  compat/getopt.c
+      - D  compat/os2threads.h
+      - D  compat/solaris/make_sunver.pl
+      - D  compat/stdbit/stdbit.h
+      - D  compat/strtod.c
+      - D  compat/w32dlfcn.h
+      uncommitted_count: 11195
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/FFmpeg/FFmpeg
+  default_branch: master
+  forks: []
+  pins:
+  - commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+    at: '2026-11-10T15:34:19+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+  latest_commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+  latest_release: null
+  last_checked: '2026-11-10T16:04:44+00:00'
+  checks:
+  - at: '2026-11-10T15:37:14+00:00'
+    latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:44+00:00'
+    latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: FFmpeg/FFmpeg
+  description: Mirror of https://git.ffmpeg.org/ffmpeg.git
+  topics:
+  - audio
+  - c
+  - ffmpeg
+  - fft
+  - hevc
+  - hls
+  - matroska
+  - mp4
+  - mpeg
+  - multimedia
+  - rtmp
+  - rtsp
+  - streaming
+  - video
+  - webm
+  licence_spdx: NOASSERTION
+  default_branch: master
+  pushed_at: '2026-11-10T15:13:04Z'
+  archived: false
+  stars: 66879
+  is_fork: false
+  parent: null
+  language: C
+notes:
+- brew ffmpeg arm64 at /opt/homebrew/bin.
+history:
+- at: '2026-11-10T15:34:09+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: brew ffmpeg arm64 at /opt/homebrew/bin.
+- at: '2026-11-10T15:34:09+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:44+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: brew ffmpeg arm64 at /opt/homebrew/bin.
+video_factory_usage:
+- pipeline render and QA
+licence:
+  spdx: LGPL-3.0
+  class: copyleft
+  gate: review
+  source: text:LICENSE.md
+  assets:
+    media_files: 17
+    font_files: 0
+    model_files: 0
+    nested_licence_files:
+    - tests/checkasm/ext/LICENSE
+    - tests/checkasm/ext/src/html_data/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 5467
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents: []
+  renderers:
+  - ffmpeg
+files:
+  count: 11195
+  skills: []
+analysed_commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - rendering
+  - subtitles
+  overlap: 0.4
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - rendering
+  overlap: 0.2
+- id: CEH-0009
+  name: remotion-dev/remotion
+  status: PARKED
+  shared:
+  - rendering
+  - subtitles
+  - video-editing
+  overlap: 0.6
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - audio-qa
+  - subtitles
+  overlap: 0.4
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - audio-qa
+  - subtitles
+  overlap: 0.4
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - audio-qa
+  - rendering
+  overlap: 0.4
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0044`. Gates needing review: licence.'
+inspected: '2026-11-10T15:49:45+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:45+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [False, False, False, True]'
+    reusability:
+      score: 3
+      basis: resource type repository
+    agent_compatibility:
+      score: 0
+      basis: 'agents detected: none'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 3
+      basis: top-level README 2026 chars
+    licence_suitability:
+      score: 2
+      basis: LGPL-3.0 (copyleft)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 2.86
+  evidence_coverage: 0.7
+  gates:
+    licence: review
+    security: pass
+capabilities_manual:
+- audio-qa
+- compositing
+- rendering
+- video-editing

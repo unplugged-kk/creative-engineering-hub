@@ -1,0 +1,336 @@
+id: CEH-0029
+name: OpenMontageInc/OpenMontage
+url: https://github.com/OpenMontageInc/OpenMontage
+aliases:
+- https://github.com/calesthio/OpenMontage
+type: repository
+status: RESTRICTED
+created: '2026-11-10T15:31:20+00:00'
+description: World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill
+  and production-knowledge files. Turn your AI coding assistant into a full video production studio.
+capabilities:
+- ai-video-generation
+- voiceover
+- subtitles
+- procedural-animation
+- cinematography
+- image-generation
+- 3d-animation
+- character-animation
+local:
+  paths:
+  - /Users/kishore/git/video-factory/vendor/OpenMontage
+  state:
+    /Users/kishore/git/video-factory/vendor/OpenMontage:
+      git: true
+      head: 08e2151fa02de28a5d6a312b3d575692bf147ad7
+      branch: main
+      origin: https://github.com/calesthio/OpenMontage
+      uncommitted:
+      - ?? .dockerignore
+      - ?? Dockerfile
+      - ?? docker-compose.dory.yml
+      uncommitted_count: 3
+  modified: true
+upstream:
+  strategy: VENDORED
+  remote: https://github.com/OpenMontageInc/OpenMontage
+  default_branch: main
+  forks:
+  - https://github.com/unplugged-kk/OpenMontage
+  pins:
+  - commit: 08e2151fa02de28a5d6a312b3d575692bf147ad7
+    at: '2026-11-10T15:31:22+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 08e2151fa02de28a5d6a312b3d575692bf147ad7
+  latest_commit: fecb9a1e3cc23ef84de30b272059457a427f16f8
+  latest_release: null
+  last_checked: '2026-11-10T16:03:58+00:00'
+  checks:
+  - at: '2026-11-10T15:36:31+00:00'
+    latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:03:58+00:00'
+    latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: OpenMontageInc/OpenMontage
+  description: World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent
+    skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.
+  topics:
+  - agent
+  - agentic-ai
+  - ai
+  - claude
+  - copilot
+  - cursor
+  - elevenlabs
+  - ffmpeg
+  - flux
+  - image-generation
+  - open-source
+  - openai
+  - python
+  - remotion
+  - stable-diffusion
+  - text-to-speech
+  - text-to-video
+  - video-generation
+  - video-production
+  licence_spdx: AGPL-3.0
+  default_branch: main
+  pushed_at: '2026-11-09T06:23:55Z'
+  archived: false
+  stars: 79343
+  is_fork: false
+  parent: null
+  language: Python
+notes:
+- 'AGPL-3.0: never copy code into VF; mine architecture only, run as separate process.'
+history:
+- at: '2026-11-10T15:31:20+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: 'AGPL-3.0: never copy code into VF; mine architecture only, run as separate process.'
+- at: '2026-11-10T15:31:20+00:00'
+  from: DISCOVERED
+  to: RESTRICTED
+  by: ceh migrate
+  note: recorded from historical evidence (EXTERNAL_REFERENCE)
+updated: '2026-11-10T16:03:58+00:00'
+historical:
+  group: E
+  previous_decision: EXTERNAL_REFERENCE
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: 'AGPL-3.0: never copy code into VF; mine architecture only, run as separate process.'
+video_factory_usage:
+- vendor/OpenMontage (reference only)
+licence:
+  spdx: AGPL-3.0
+  class: copyleft
+  gate: review
+  source: github-api
+  assets:
+    media_files: 127
+    font_files: 3
+    model_files: 0
+    nested_licence_files:
+    - .agents/skills/manimce-best-practices/LICENSE.txt
+    - .agents/skills/manimgl-best-practices/LICENSE.txt
+    - .claude/skills/manimce-best-practices/LICENSE.txt
+    - .claude/skills/manimgl-best-practices/LICENSE.txt
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - remotion-composer/package.json
+  - requirements.txt
+  python:
+  - pyyaml>=6.0
+  - pydantic>=2.0
+  - jsonschema>=4.20
+  - python-dotenv>=1.0
+  - Pillow>=10.0
+  - numpy>=1.24
+  - requests>=2.31
+  - 'google-auth>=2.0       # service-account auth for Google TTS + Imagen (Vertex AI)'
+  - 'google-genai>=1.0.0    # Gemini Developer API clients for Lyria, Veo, and Gemini Omni'
+  - 'openai>=2.44.0         # Videos API support for Sora 2'
+  - fastapi>=0.110
+  - uvicorn>=0.29
+  - watchfiles>=0.21
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: .agents/skills/media-use/SKILL.md:119
+  - severity: medium
+    kind: privilege escalation
+    path: .agents/skills/video-edit/SKILL.md:22
+  - severity: medium
+    kind: privilege escalation
+    path: .claude/skills/video-edit/SKILL.md:22
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/tools/test_fal_elevenlabs_music.py:94
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/tools/test_fal_elevenlabs_tts.py:125
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/tools/test_google_tts_scoped_key.py:18
+  finding_count: 6
+  scanned_files: 1972
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - remotion
+  - ffmpeg
+  - browser
+  - p5js
+  - blender
+files:
+  count: 2115
+  skills:
+  - .agents/skills/3d-asset-generation/SKILL.md
+  - .agents/skills/acestep/SKILL.md
+  - .agents/skills/agents/SKILL.md
+  - .agents/skills/ai-video-gen/SKILL.md
+  - .agents/skills/atlas-cloud/SKILL.md
+  - .agents/skills/avatar-video/SKILL.md
+  - .agents/skills/azure-speech-to-text/SKILL.md
+  - .agents/skills/azure-text-to-speech/SKILL.md
+  - .agents/skills/beautiful-mermaid/SKILL.md
+  - .agents/skills/bfl-api/SKILL.md
+  - .agents/skills/canvas-procedural-animation/SKILL.md
+  - .agents/skills/character-animation-qa/SKILL.md
+  - .agents/skills/character-rigging/SKILL.md
+  - .agents/skills/comfyui/SKILL.md
+  - .agents/skills/create-video/SKILL.md
+  - .agents/skills/d3-viz/SKILL.md
+  - .agents/skills/dashscope/SKILL.md
+  - .agents/skills/doubao-tts/SKILL.md
+  - .agents/skills/elevenlabs/SKILL.md
+  - .agents/skills/faceswap/SKILL.md
+  - .agents/skills/ffmpeg/SKILL.md
+  - .agents/skills/fish-audio-tts/SKILL.md
+  - .agents/skills/flux-best-practices/SKILL.md
+  - .agents/skills/framer-motion/SKILL.md
+  - .agents/skills/gemini-omni/SKILL.md
+  - .agents/skills/grok-media/SKILL.md
+  - .agents/skills/gsap-core/SKILL.md
+  - .agents/skills/gsap-frameworks/SKILL.md
+  - .agents/skills/gsap-performance/SKILL.md
+  - .agents/skills/gsap-plugins/SKILL.md
+  - .agents/skills/gsap-react/SKILL.md
+  - .agents/skills/gsap-scrolltrigger/SKILL.md
+  - .agents/skills/gsap-timeline/SKILL.md
+  - .agents/skills/gsap-utils/SKILL.md
+  - .agents/skills/heygen/SKILL.md
+  - .agents/skills/hyperframes-animation/SKILL.md
+  - .agents/skills/hyperframes-cli/SKILL.md
+  - .agents/skills/hyperframes-core/SKILL.md
+  - .agents/skills/hyperframes-creative/SKILL.md
+  - .agents/skills/hyperframes-media/SKILL.md
+analysed_commit: 08e2151fa02de28a5d6a312b3d575692bf147ad7
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - cinematography
+  - subtitles
+  - voiceover
+  overlap: 0.5
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - character-animation
+  - subtitles
+  - voiceover
+  overlap: 0.38
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.12
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.12
+- id: CEH-0030
+  name: mutonby/openshorts
+  status: SANDBOXED
+  shared:
+  - ai-video-generation
+  - character-animation
+  - image-generation
+  - subtitles
+  - voiceover
+  overlap: 0.62
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - procedural-animation
+  - voiceover
+  overlap: 0.38
+- id: CEH-0025
+  name: Vincentwei1021/anything2explainer
+  status: RESTRICTED
+  shared:
+  - ai-video-generation
+  - subtitles
+  - voiceover
+  overlap: 0.38
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on 3d-animation, cinematography, subtitles,
+  voiceover. Run `ceh compare CEH-0029 CEH-0014`.'
+inspected: '2026-11-10T15:48:49+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:49+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, False, True]'
+    reusability:
+      score: 3
+      basis: resource type repository
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 1 days ago
+    documentation:
+      score: 5
+      basis: top-level README 44067 chars
+    licence_suitability:
+      score: 2
+      basis: AGPL-3.0 (copyleft)
+    security:
+      score: 3
+      basis: 6 findings, worst medium
+    integration_complexity:
+      score: 3
+      basis: '13 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.86
+  evidence_coverage: 0.7
+  gates:
+    licence: review
+    security: review

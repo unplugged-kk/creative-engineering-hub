@@ -1,0 +1,278 @@
+id: CEH-0020
+name: bangtutorial/bang-motion
+url: https://github.com/bangtutorial/bang-motion
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:30:21+00:00'
+description: Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer styles
+  that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor.
+capabilities:
+- 2d-animation
+- 3d-animation
+- explainer-videos
+- transitions
+- hand-drawn-animation
+- kinetic-typography
+- motion-graphics
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0020
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0020:
+      git: true
+      head: c1aa65e921c970d858705fcb4a53a8294d1a4131
+      branch: main
+      origin: https://github.com/bangtutorial/bang-motion
+      uncommitted:
+      - D  .claude-plugin/marketplace.json
+      - D  .claude-plugin/plugin.json
+      - D  CHANGELOG.md
+      - D  LICENSE
+      - D  README.md
+      - D  SKILL.md
+      - D  assets/starter-explainer-jurnalisme.html
+      - D  assets/starter-explainer-kartun.html
+      - D  assets/starter-explainer-katalog.html
+      - D  assets/starter-explainer-panggung.html
+      - D  assets/starter-explainer-sketsa.html
+      - D  assets/starter-explainer.html
+      - D  assets/starter-opener.html
+      - D  docs/gallery/01-grainy-gradient.jpg
+      - D  docs/gallery/02-kinetic-colorblock.jpg
+      - D  docs/gallery/03-saas-ui-tour.jpg
+      - D  docs/gallery/04-flat-vector.jpg
+      - D  docs/gallery/05-continuous-action.jpg
+      - D  docs/gallery/06-cartoon-stage.jpg
+      - D  docs/gallery/07-flat-pop-photo.jpg
+      - D  docs/gallery/08-white-catalog.jpg
+      - D  docs/gallery/09-visual-journalism.jpg
+      - D  docs/gallery/10-vintage-sketch.jpg
+      - D  docs/gallery/11-cartoon-collage.jpg
+      - D  docs/gallery/12-more-combinations.jpg
+      - D  docs/gallery/hero.jpg
+      - D  icon.png
+      - D  icon.svg
+      - D  references/ae-bridge-higgsfield.md
+      - D  references/anti-ppt.md
+      - D  references/architecture.md
+      - D  references/explainer.md
+      - D  references/kartun-panggung.md
+      - D  references/opener-konsep.md
+      - D  references/roadmap.md
+      - D  references/techniques.md
+      - D  scripts/ae/bridge/aset-svg.py
+      - D  scripts/ae/bridge/package.json
+      - D  scripts/ae/bridge/rig-tokoh.py
+      - D  scripts/ae/bridge/svg2png.cjs
+      - D  scripts/export-frames.mjs
+      - D  scripts/kepala-ekspresi.py
+      - D  scripts/serve.py
+      - D  scripts/snap.mjs
+      - D  scripts/vo-pauses.html
+      uncommitted_count: 45
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/bangtutorial/bang-motion
+  default_branch: main
+  forks: []
+  pins:
+  - commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    at: '2026-11-10T15:30:23+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
+  latest_commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
+  latest_release: null
+  last_checked: '2026-11-10T16:03:32+00:00'
+  checks:
+  - at: '2026-11-10T15:36:07+00:00'
+    latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:32+00:00'
+    latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: bangtutorial/bang-motion
+  description: Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer
+    styles that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor.
+  topics: []
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-09-15T04:45:32Z'
+  archived: false
+  stars: 1978
+  is_fork: false
+  parent: null
+  language: HTML
+notes: []
+history:
+- at: '2026-11-10T15:30:21+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:30:21+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:30:24+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:03:32+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 14
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 30
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  renderers:
+  - ffmpeg
+  - browser
+files:
+  count: 45
+  skills:
+  - SKILL.md
+analysed_commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - explainer-videos
+  - kinetic-typography
+  - motion-graphics
+  - transitions
+  overlap: 0.71
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  - explainer-videos
+  - kinetic-typography
+  overlap: 0.43
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  - motion-graphics
+  - transitions
+  overlap: 0.43
+- id: CEH-0011
+  name: greensock/gsap-skills
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.14
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.14
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - 3d-animation
+  - explainer-videos
+  - hand-drawn-animation
+  - motion-graphics
+  overlap: 0.57
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - 3d-animation
+  - motion-graphics
+  - transitions
+  overlap: 0.43
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  status: PARKED
+  shared:
+  - explainer-videos
+  - kinetic-typography
+  - motion-graphics
+  overlap: 0.43
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on 3d-animation, explainer-videos,
+  kinetic-typography, motion-graphics, transitions. Run `ceh compare CEH-0020 CEH-0014`.'
+inspected: '2026-11-10T15:48:18+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:18+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, True, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic'
+    maintainability:
+      score: 4
+      basis: last push 56 days ago
+    documentation:
+      score: 5
+      basis: top-level README 19662 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.43
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

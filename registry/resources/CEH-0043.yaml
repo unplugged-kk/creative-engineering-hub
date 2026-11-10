@@ -1,0 +1,325 @@
+id: CEH-0043
+name: ggml-org/whisper.cpp
+url: https://github.com/ggml-org/whisper.cpp
+aliases: []
+type: repository
+status: PRODUCTION
+created: '2026-11-10T15:34:02+00:00'
+description: Port of OpenAI's Whisper model in C/C++
+capabilities:
+- subtitles
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0043
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0043:
+      git: true
+      head: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+      branch: master
+      origin: https://github.com/ggml-org/whisper.cpp
+      uncommitted:
+      - D  .devops/cublas.Dockerfile
+      - D  .devops/main-cuda.Dockerfile
+      - D  .devops/main-intel.Dockerfile
+      - D  .devops/main-musa.Dockerfile
+      - D  .devops/main-rocm.Dockerfile
+      - D  .devops/main-vulkan.Dockerfile
+      - D  .devops/main.Dockerfile
+      - D  .dockerignore
+      - D  .github/actions/ccache-clear/action.yml
+      - D  .github/workflows/bindings-go.yml
+      - D  .github/workflows/bindings-ruby.yml
+      - D  .github/workflows/build-android.yml
+      - D  .github/workflows/build-clang.yml
+      - D  .github/workflows/build-coreml.yml
+      - D  .github/workflows/build-cpu.yml
+      - D  .github/workflows/build-freebsd.yml
+      - D  .github/workflows/build-gcc.yml
+      - D  .github/workflows/build-macos.yml
+      - D  .github/workflows/build-quantize.yml
+      - D  .github/workflows/build-sanitize.yml
+      - D  .github/workflows/build-self-hosted.yml
+      - D  .github/workflows/build-sycl.yml
+      - D  .github/workflows/build-vad.yml
+      - D  .github/workflows/build-wasm.yml
+      - D  .github/workflows/build-windows.yml
+      - D  .github/workflows/close-issue.yml
+      - D  .github/workflows/deploy-examples-wasm.yml
+      - D  .github/workflows/docker.yml
+      - D  .github/workflows/examples.yml
+      - D  .github/workflows/make-release.yml
+      - D  .github/workflows/release.yml
+      - D  .gitignore
+      - D  .pi/gg/SYSTEM.md
+      - D  AGENTS.md
+      - D  AUTHORS
+      - D  CMakeLists.txt
+      - D  CMakePresets.json
+      - D  CONTRIBUTING.md
+      - D  LICENSE
+      - D  Makefile
+      - D  README.md
+      - D  README_sycl.md
+      - D  bindings/CMakeLists.txt
+      - D  bindings/go/.gitignore
+      - D  bindings/go/LICENSE
+      - D  bindings/go/Makefile
+      - D  bindings/go/README.md
+      - D  bindings/go/doc.go
+      - D  bindings/go/examples/go-model-download/context.go
+      - D  bindings/go/examples/go-model-download/main.go
+      uncommitted_count: 2186
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/ggml-org/whisper.cpp
+  default_branch: master
+  forks: []
+  pins:
+  - commit: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+    at: '2026-11-10T15:34:06+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+  latest_commit: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+  latest_release: &id002
+    tag: v1.9.5
+    published_at: '2026-10-06T17:39:17Z'
+  last_checked: '2026-11-10T16:04:41+00:00'
+  checks:
+  - at: '2026-11-10T15:37:12+00:00'
+    latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:41+00:00'
+    latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: ggml-org/whisper.cpp
+  description: Port of OpenAI's Whisper model in C/C++
+  topics:
+  - inference
+  - openai
+  - speech-recognition
+  - speech-to-text
+  - transformer
+  - whisper
+  licence_spdx: MIT
+  default_branch: master
+  pushed_at: '2026-11-10T12:09:38Z'
+  archived: false
+  stars: 55065
+  is_fork: false
+  parent: null
+  language: C++
+  latest_release: *id002
+notes:
+- brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py.
+history:
+- at: '2026-11-10T15:34:02+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py.
+- at: '2026-11-10T15:34:02+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:41+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py.
+video_factory_usage:
+- contentos/lang/asr.py
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 27
+    font_files: 0
+    model_files: 12
+    nested_licence_files:
+    - bindings/go/LICENSE
+    - examples/wchess/wchess.wasm/chessboardjs-1.0.0/js/chessboard-1.0.0/LICENSE.md
+    - tests/earnings21/normalizers/LICENSE
+    - tests/librispeech-parakeet/normalizers/LICENSE
+    - tests/librispeech/normalizers/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - bindings/go/go.mod
+  - examples/addon.node/package.json
+  - tests/earnings21/requirements.txt
+  - tests/librispeech/requirements.txt
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-clang.yml:127
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-cpu.yml:65
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-freebsd.yml:53
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-gcc.yml:117
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-sanitize.yml:61
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/build-sycl.yml:68
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/docker.yml:44
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/examples.yml:26
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/release.yml:111
+  - severity: medium
+    kind: privilege escalation
+    path: README.md:547
+  - severity: medium
+    kind: privilege escalation
+    path: README_sycl.md:63
+  - severity: medium
+    kind: committed binary
+    path: bindings/java/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: privilege escalation
+    path: examples/command/README.md:42
+  - severity: medium
+    kind: privilege escalation
+    path: examples/stream/README.md:65
+  - severity: medium
+    kind: privilege escalation
+    path: examples/talk-llama/README.md:20
+  - severity: medium
+    kind: committed binary
+    path: examples/whisper.android.java/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: examples/whisper.android/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: privilege escalation
+    path: examples/whisper.swiftui/README.md:15
+  finding_count: 18
+  scanned_files: 345
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents: []
+  renderers:
+  - ffmpeg
+files:
+  count: 2186
+  skills: []
+analysed_commit: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0009
+  name: remotion-dev/remotion
+  status: PARKED
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - subtitles
+  overlap: 1.0
+- id: CEH-0016
+  name: remotion-dev/skills
+  status: REJECTED
+  shared:
+  - subtitles
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on subtitles. Run `ceh compare
+  CEH-0043 CEH-0008`.'
+inspected: '2026-11-10T15:49:40+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:40+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [False, True, True, True]'
+    reusability:
+      score: 3
+      basis: resource type repository
+    agent_compatibility:
+      score: 0
+      basis: 'agents detected: none'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 41029 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 18 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.71
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review
+capabilities_manual:
+- subtitles

@@ -1,0 +1,292 @@
+id: CEH-0035
+name: Panniantong/Agent-Reach
+url: https://github.com/Panniantong/Agent-Reach
+aliases: []
+type: agent-skill
+status: PRODUCTION
+created: '2026-11-10T15:32:45+00:00'
+description: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili,
+  XiaoHongShu — one CLI, zero API fees.
+capabilities:
+- data-visualization
+- content-research
+- social-media-videos
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0035
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0035:
+      git: true
+      head: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+      branch: main
+      origin: https://github.com/Panniantong/Agent-Reach
+      uncommitted:
+      - D  .github/release-acceptance.json
+      - D  .github/workflows/pytest.yml
+      - D  .github/workflows/release.yml
+      - D  .gitignore
+      - D  CHANGELOG.md
+      - D  CONTRIBUTING.md
+      - D  LICENSE
+      - D  README.md
+      - D  SECURITY.md
+      - D  agent_reach/__init__.py
+      - D  agent_reach/backends/__init__.py
+      - D  agent_reach/backends/boss_native.py
+      - D  agent_reach/backends/cloak.py
+      - D  agent_reach/backends/opencli.py
+      - D  agent_reach/channels/__init__.py
+      - D  agent_reach/channels/_opencli_site.py
+      - D  agent_reach/channels/base.py
+      - D  agent_reach/channels/bilibili.py
+      - D  agent_reach/channels/boss.py
+      - D  agent_reach/channels/facebook.py
+      - D  agent_reach/channels/github.py
+      - D  agent_reach/channels/instagram.py
+      - D  agent_reach/channels/linkedin.py
+      - D  agent_reach/channels/reddit.py
+      - D  agent_reach/channels/twitter.py
+      - D  agent_reach/channels/v2ex.py
+      - D  agent_reach/channels/web.py
+      - D  agent_reach/channels/xiaohongshu.py
+      - D  agent_reach/channels/xiaoyuzhou.py
+      - D  agent_reach/channels/xueqiu.py
+      - D  agent_reach/channels/youtube.py
+      - D  agent_reach/cli.py
+      - D  agent_reach/config.py
+      - D  agent_reach/runtime/__init__.py
+      - D  agent_reach/runtime/bridge.py
+      - D  agent_reach/runtime/browser.py
+      - D  agent_reach/runtime/browser_binding.py
+      - D  agent_reach/runtime/browser_watcher.py
+      - D  agent_reach/runtime/cdp.py
+      - D  agent_reach/runtime/cli.py
+      - D  agent_reach/runtime/clock.py
+      - D  agent_reach/runtime/dispatch.py
+      - D  agent_reach/runtime/legacy.py
+      - D  agent_reach/runtime/manage.py
+      - D  agent_reach/runtime/onboarding.py
+      - D  agent_reach/runtime/public_web.py
+      - D  agent_reach/runtime/result.py
+      - D  agent_reach/runtime/run.py
+      - D  agent_reach/runtime/session_reuse.py
+      - D  agent_reach/runtime/sessions.py
+      uncommitted_count: 124
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/Panniantong/Agent-Reach
+  default_branch: main
+  forks:
+  - https://github.com/unplugged-kk/agent-reach
+  pins:
+  - commit: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+    at: '2026-11-10T15:32:48+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+  latest_commit: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+  latest_release: &id002
+    tag: v1.6.1
+    published_at: '2026-11-01T07:24:15Z'
+  last_checked: '2026-11-10T16:04:15+00:00'
+  checks:
+  - at: '2026-11-10T15:36:48+00:00'
+    latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:15+00:00'
+    latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: Panniantong/Agent-Reach
+  description: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili,
+    XiaoHongShu — one CLI, zero API fees.
+  topics:
+  - agent-infrastructure
+  - ai-agent
+  - ai-search
+  - automation
+  - bilibili
+  - claude-code
+  - cli
+  - cursor
+  - free-api
+  - llm-tools
+  - mcp
+  - python
+  - reddit-scraper
+  - twitter-scraper
+  - web-scraper
+  - xiaohongshu
+  - youtube-transcript
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-08T02:17:48Z'
+  archived: false
+  stars: 110834
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes:
+- Installed as uv tool and as agent skill agent-reach.
+history:
+- at: '2026-11-10T15:32:45+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Installed as uv tool and as agent skill agent-reach.
+- at: '2026-11-10T15:32:45+00:00'
+  from: DISCOVERED
+  to: PRODUCTION
+  by: ceh migrate
+  note: recorded from historical evidence (INSTALLED)
+updated: '2026-11-10T16:04:15+00:00'
+historical:
+  group: E
+  previous_decision: INSTALLED
+  evidence:
+  - ~/git/video-factory/research/tool-catalog.yaml
+  note: Installed as uv tool and as agent skill agent-reach.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 7
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - pyproject.toml
+  python:
+  - requests>=2.28
+  - loguru>=0.7
+  - pyyaml>=6.0
+  - yt-dlp[default]==2026.8.19
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: docs/install.md:15
+  finding_count: 1
+  scanned_files: 113
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  - generic
+  renderers:
+  - browser
+  - p5js
+files:
+  count: 124
+  skills:
+  - agent_reach/skill/SKILL.md
+analysed_commit: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+alternatives:
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - content-research
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - social-media-videos
+  overlap: 0.33
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  overlap: 0.33
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - data-visualization
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0024
+  name: Vincentwei1021/video-shotcraft
+  status: SANDBOXED
+  shared:
+  - data-visualization
+  - social-media-videos
+  overlap: 0.67
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - content-research
+  overlap: 0.33
+- id: CEH-0009
+  name: remotion-dev/remotion
+  status: PARKED
+  shared:
+  - data-visualization
+  overlap: 0.33
+- id: CEH-0025
+  name: Vincentwei1021/anything2explainer
+  status: RESTRICTED
+  shared:
+  - data-visualization
+  overlap: 0.33
+recommendation: 'COMPARE before adopting: overlaps mvanhorn/last30days-skill (PRODUCTION) on content-research, social-media-videos.
+  Run `ceh compare CEH-0035 CEH-0036`.'
+inspected: '2026-11-10T15:49:04+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:04+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, False, True]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex, generic'
+    maintainability:
+      score: 5
+      basis: last push 2 days ago
+    documentation:
+      score: 5
+      basis: top-level README 9417 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 1 findings, worst medium
+    integration_complexity:
+      score: 4
+      basis: '4 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.5
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

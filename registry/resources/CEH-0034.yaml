@@ -1,0 +1,263 @@
+id: CEH-0034
+name: D4Vinci/Scrapling
+url: https://github.com/D4Vinci/Scrapling
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:32:35+00:00'
+description: '🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don''t
+  be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev'
+capabilities:
+- content-research
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0034
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0034:
+      git: true
+      head: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+      branch: main
+      origin: https://github.com/D4Vinci/Scrapling
+      uncommitted:
+      - D  .bandit.yml
+      - D  .dockerignore
+      - D  .github/FUNDING.yml
+      - D  .github/ISSUE_TEMPLATE/01-bug_report.yml
+      - D  .github/ISSUE_TEMPLATE/02-feature_request.yml
+      - D  .github/ISSUE_TEMPLATE/03-other.yml
+      - D  .github/ISSUE_TEMPLATE/04-docs_issue.yml
+      - D  .github/ISSUE_TEMPLATE/config.yml
+      - D  .github/PULL_REQUEST_TEMPLATE.md
+      - D  .github/workflows/code-quality.yml
+      - D  .github/workflows/docker-build.yml
+      - D  .github/workflows/release-and-publish.yml
+      - D  .github/workflows/tests.yml
+      - D  .gitignore
+      - D  .pre-commit-config.yaml
+      - D  .readthedocs.yaml
+      - D  AI_POLICY.md
+      - D  CODE_OF_CONDUCT.md
+      - D  CONTRIBUTING.md
+      - D  Dockerfile
+      - D  LICENSE
+      - D  MANIFEST.in
+      - D  README.md
+      - D  ROADMAP.md
+      - D  agent-skill/README.md
+      - D  agent-skill/Scrapling-Skill.zip
+      - D  agent-skill/Scrapling-Skill/LICENSE.txt
+      - D  agent-skill/Scrapling-Skill/SKILL.md
+      - D  agent-skill/Scrapling-Skill/examples/01_fetcher_session.py
+      - D  agent-skill/Scrapling-Skill/examples/02_browser_session.py
+      - D  agent-skill/Scrapling-Skill/examples/03_stealthy_session.py
+      - D  agent-skill/Scrapling-Skill/examples/04_spider.py
+      - D  agent-skill/Scrapling-Skill/examples/README.md
+      - D  agent-skill/Scrapling-Skill/references/building-rag-systems.md
+      - D  agent-skill/Scrapling-Skill/references/fetching/choosing.md
+      - D  agent-skill/Scrapling-Skill/references/fetching/static.md
+      - D  agent-skill/Scrapling-Skill/references/fetching/stealthy.md
+      - D  agent-skill/Scrapling-Skill/references/integrations/scrapy.md
+      - D  agent-skill/Scrapling-Skill/references/mcp-server.md
+      - D  agent-skill/Scrapling-Skill/references/migrating_from_beautifulsoup.md
+      - D  agent-skill/Scrapling-Skill/references/parsing/adaptive.md
+      - D  agent-skill/Scrapling-Skill/references/parsing/main_classes.md
+      - D  agent-skill/Scrapling-Skill/references/parsing/selection.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/advanced.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/architecture.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/generic-templates.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/getting-started.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/platform-templates.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/proxy-blocking.md
+      - D  agent-skill/Scrapling-Skill/references/spiders/requests-responses.md
+      uncommitted_count: 698
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/D4Vinci/Scrapling
+  default_branch: main
+  forks: []
+  pins:
+  - commit: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+    at: '2026-11-10T15:32:42+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+  latest_commit: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+  latest_release: &id002
+    tag: v0.5.1
+    published_at: '2026-11-04T20:29:16Z'
+  last_checked: '2026-11-10T16:04:12+00:00'
+  checks:
+  - at: '2026-11-10T15:36:45+00:00'
+    latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:12+00:00'
+    latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: D4Vinci/Scrapling
+  description: '🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don''t
+    be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev'
+  topics:
+  - ai
+  - ai-scraping
+  - automation
+  - crawler
+  - crawling
+  - crawling-python
+  - data
+  - data-extraction
+  - mcp
+  - mcp-server
+  - playwright
+  - python
+  - scraping
+  - selectors
+  - stealth
+  - web-scraper
+  - web-scraping
+  - web-scraping-python
+  - webscraping
+  - xpath
+  licence_spdx: BSD-3-Clause
+  default_branch: main
+  pushed_at: '2026-11-09T10:36:37Z'
+  archived: false
+  stars: 100961
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:32:35+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:32:35+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:32:43+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:04:12+00:00'
+historical:
+  group: E
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: BSD-3-Clause
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 27
+    font_files: 0
+    model_files: 0
+    nested_licence_files:
+    - agent-skill/Scrapling-Skill/LICENSE.txt
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - docs/requirements.txt
+  - pyproject.toml
+  - tests/requirements.txt
+  python:
+  - lxml>=6.1.1
+  - cssselect>=1.5.0
+  - orjson>=3.11.8
+  - tld>=0.13.2
+  - w3lib>=2.4.1
+  - typing_extensions
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 646
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - generic
+  renderers:
+  - browser
+files:
+  count: 698
+  skills:
+  - agent-skill/Scrapling-Skill/SKILL.md
+analysed_commit: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+alternatives:
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - content-research
+  overlap: 1.0
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - content-research
+  overlap: 1.0
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - content-research
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Panniantong/Agent-Reach (PRODUCTION) on content-research. Run `ceh compare
+  CEH-0034 CEH-0035`.'
+inspected: '2026-11-10T15:49:02+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:02+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, False, True]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, generic'
+    maintainability:
+      score: 5
+      basis: last push 1 days ago
+    documentation:
+      score: 5
+      basis: top-level README 38279 chars
+    licence_suitability:
+      score: 5
+      basis: BSD-3-Clause (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 4
+      basis: '6 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.5
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

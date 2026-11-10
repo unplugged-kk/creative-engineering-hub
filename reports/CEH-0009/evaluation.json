@@ -1,0 +1,502 @@
+{
+  "id": "CEH-0009",
+  "name": "remotion-dev/remotion",
+  "url": "https://github.com/remotion-dev/remotion",
+  "type": "renderer",
+  "status": "PARKED",
+  "capabilities": [
+    "sound-design",
+    "rendering",
+    "subtitles",
+    "video-editing",
+    "data-visualization",
+    "motion-graphics"
+  ],
+  "licence": {
+    "spdx": "Remotion-License",
+    "class": "custom",
+    "gate": "review",
+    "source": "fingerprint:LICENSE.md",
+    "assets": {
+      "media_files": 1020,
+      "font_files": 25,
+      "model_files": 0,
+      "nested_licence_files": [
+        "packages/agent-plugin/LICENSE",
+        "packages/animation-utils/LICENSE.md",
+        "packages/compositor/ffmpeg/build/LICENSE",
+        "packages/compositor/ffmpeg/wrapper/LICENSE",
+        "packages/core/LICENSE.md",
+        "packages/google-fonts/LICENSE.md",
+        "packages/lambda-python/LICENSE",
+        "packages/media-utils/LICENSE.md",
+        "packages/paths/LICENSE.md",
+        "packages/preload/LICENSE.md",
+        "packages/renderer/vendor/yauzl-patched/LICENSE",
+        "packages/shapes/LICENSE.md",
+        "packages/template-three/LICENSE.md"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": ".circleci/config.yml:20"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": ".github/workflows/ffmpeg.yml:38"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/chrome-compile/linux-arm64/Dockerfile:30"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/chrome-compile/linux-arm64/README.md:74"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/chrome-compile/linux-x64/Dockerfile:30"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/chrome-compile/linux-x64/README.md:60"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/chrome-compile/mac-arm64/build-chromium.sh:47"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libavcodec.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libavdevice.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libavfilter.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libavformat.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libavutil.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libswresample.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-arm64/libswscale.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libavcodec.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libavdevice.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libavfilter.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libavformat.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libavutil.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libswresample.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-darwin-x64/libswscale.dylib"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libavcodec.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libavdevice.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libavfilter.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libavformat.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libavutil.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libswresample.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-gnu/libswscale.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libavcodec.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libavdevice.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libavfilter.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libavformat.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libavutil.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libswresample.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-arm64-musl/libswscale.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libavcodec.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libavdevice.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libavfilter.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libavformat.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libavutil.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libswresample.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-gnu/libswscale.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libavcodec.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libavdevice.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libavfilter.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libavformat.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libavutil.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libswresample.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-linux-x64-musl/libswscale.so"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/avcodec-61.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/avdevice-61.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/avfilter-10.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/avformat-61.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/avutil-59.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/ffmpeg.exe"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/ffprobe.exe"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/libgcc_s_seh-1.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/libssp-0.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/libstdc++-6.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/libvpx-1.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/libwinpthread-1.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/msvcr100.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/remotion.exe"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/swresample-5.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/swscale-8.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "committed binary",
+        "path": "packages/compositor-win32-x64-msvc/zlib1.dll"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "packages/compositor/ffmpeg/build/Dockerfile:17"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "packages/compositor/ffmpeg/build/Dockerfile-aws:17"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "packages/docs/docusaurus.config.ts:93"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (Google API key)",
+        "path": "packages/docs/src/components/GoogleMaps.tsx:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "packages/docs/vercel.ts:741"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "packages/lambda-binaries/build-chrome.sh:409"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/lambda-binaries/build-chrome.sh:6"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "packages/licensing/src/test/register.test.ts:10"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "packages/template-stargazer/.github/workflows/render-video.yml:34"
+      },
+      {
+        "severity": "medium",
+        "kind": "npm prepare hook runs on install",
+        "path": "package.json: git config core.hooksPath .githooks"
+      }
+    ],
+    "finding_count": 76,
+    "scanned_files": 12108,
+    "notes": [
+      "29 large or binary files not scanned",
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "codex",
+      "generic"
+    ],
+    "renderers": [
+      "remotion",
+      "ffmpeg",
+      "browser",
+      "canvas"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:47+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, True, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type renderer"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, codex, generic"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 4,
+        "basis": "top-level README 4616 chars"
+      },
+      "licence_suitability": {
+        "score": 1,
+        "basis": "Remotion-License (custom)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "76 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 3,
+        "basis": "4 runtime dependencies; install hooks: ['prepare']"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.57,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "review",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, rendering, subtitles. Run `ceh compare CEH-0009 CEH-0014`."
+}

@@ -1,0 +1,478 @@
+id: CEH-0026
+name: morluto/rea
+url: https://github.com/morluto/rea
+aliases: []
+type: mcp-server
+status: REJECTED
+created: '2026-11-10T15:30:49+00:00'
+description: Reverse engineer anything with agents, from app behavior down to native binaries.
+capabilities:
+- explainer-videos
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0026
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0026:
+      git: true
+      head: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+      branch: main
+      origin: https://github.com/morluto/rea
+      uncommitted:
+      - D  .agents/plugins/marketplace.json
+      - D  .agents/skills/rea-analysis-optimization/SKILL.md
+      - D  .agents/skills/rea-analysis-optimization/agents/openai.yaml
+      - D  .agents/skills/rea-analysis-optimization/references/kuna-case-study.md
+      - D  .agents/skills/rea-changelog-update/SKILL.md
+      - D  .agents/skills/rea-ci-tests-audit/SKILL.md
+      - D  .agents/skills/rea-ci-tests-audit/agents/openai.yaml
+      - D  .agents/skills/rea-ci-tests-audit/references/measurement-and-ci.md
+      - D  .agents/skills/rea-tool-design/SKILL.md
+      - D  .agents/skills/reverse-engineer-anything/SKILL.md
+      - D  .agents/skills/reverse-engineer-anything/references/android-applications.md
+      - D  .agents/skills/reverse-engineer-anything/references/connection-and-recovery.md
+      - D  .agents/skills/reverse-engineer-anything/references/desktop-build.md
+      - D  .agents/skills/reverse-engineer-anything/references/environments.md
+      - D  .agents/skills/reverse-engineer-anything/references/evidence-workflows.md
+      - D  .agents/skills/reverse-engineer-anything/references/javascript-applications.md
+      - D  .agents/skills/reverse-engineer-anything/references/native-and-artifacts.md
+      - D  .agents/skills/reverse-engineer-anything/references/runtime-observation.md
+      - D  .claude-plugin/marketplace.json
+      - D  .claude-plugin/plugin.json
+      - D  .codex-plugin/mcp.json
+      - D  .codex-plugin/plugin.json
+      - D  .gitattributes
+      - D  .github/CODEOWNERS
+      - D  .github/ISSUE_TEMPLATE/bug_report.yml
+      - D  .github/ISSUE_TEMPLATE/config.yml
+      - D  .github/ISSUE_TEMPLATE/design_discussion.yml
+      - D  .github/ISSUE_TEMPLATE/documentation.yml
+      - D  .github/ISSUE_TEMPLATE/feature_request.yml
+      - D  .github/actionlint.yaml
+      - D  .github/actions/npm-cache/action.yml
+      - D  .github/actions/portable-build-cache/action.yml
+      - D  .github/actions/prepare-release-package/action.yml
+      - D  .github/actions/publish-mcp/action.yml
+      - D  .github/actions/publish-mcp/registry-state.d.mts
+      - D  .github/actions/publish-mcp/registry-state.mjs
+      - D  .github/codeql/production.yml
+      - D  .github/dependabot.yml
+      - D  .github/pull_request_template.md
+      - D  .github/workflows/cache-retention.yml
+      - D  .github/workflows/ci-full-pr.yml
+      - D  .github/workflows/ci-timings.yml
+      - D  .github/workflows/ci.yml
+      - D  .github/workflows/codeql.yml
+      - D  .github/workflows/ghidra-bridge-sources.yml
+      - D  .github/workflows/mutation.yml
+      - D  .github/workflows/nativeaot-fixtures.yml
+      - D  .github/workflows/pages.yml
+      - D  .github/workflows/pr-readiness.yml
+      - D  .github/workflows/pr-title.yml
+      uncommitted_count: 8081
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/morluto/rea
+  default_branch: main
+  forks: []
+  pins:
+  - commit: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    at: '2026-11-10T15:31:07+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+  latest_commit: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+  latest_release: &id002
+    tag: rea-agents-6.8.0
+    published_at: '2026-10-25T08:36:02Z'
+  last_checked: '2026-11-10T16:03:49+00:00'
+  checks:
+  - at: '2026-11-10T15:36:22+00:00'
+    latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:49+00:00'
+    latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: morluto/rea
+  description: Reverse engineer anything with agents, from app behavior down to native binaries.
+  topics:
+  - agent-skills
+  - ai
+  - android
+  - claude-code
+  - cli
+  - cpp
+  - dsh-plugin
+  - html
+  - java
+  - javascript
+  - linux
+  - mcp
+  - nodejs
+  - python
+  - rea
+  - react
+  - rust
+  - security
+  - touhou
+  - typescript
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-10T13:53:46Z'
+  archived: false
+  stars: 449070
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes:
+- Reverse-engineering toolkit for source-less artifacts, not a renderer. GPL-3.0.
+history:
+- at: '2026-11-10T15:30:49+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Reverse-engineering toolkit for source-less artifacts, not a renderer. GPL-3.0.
+- at: '2026-11-10T15:30:49+00:00'
+  from: DISCOVERED
+  to: REJECTED
+  by: ceh migrate
+  note: recorded from historical evidence (REJECT)
+updated: '2026-11-10T16:03:49+00:00'
+historical:
+  group: D
+  previous_decision: REJECT
+  evidence:
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: Reverse-engineering toolkit for source-less artifacts, not a renderer. GPL-3.0.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 2
+    font_files: 0
+    model_files: 0
+    nested_licence_files:
+    - tests/fixtures/graphql/LICENSE
+    - third_party/evmole/LICENSE
+    - third_party/pwndbg/LICENSE.md
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - website/requirements.txt
+  npm:
+    '@babel/parser': 8.0.4
+    '@babel/types': 8.0.4
+    '@bufbuild/protobuf': 2.16.0
+    '@clack/prompts': 1.7.0
+    '@jridgewell/trace-mapping': 0.3.31
+    '@lydell/node-pty': 1.1.0
+    '@modelcontextprotocol/client': 2.3.1
+    '@modelcontextprotocol/server': 2.3.1
+    '@msgpack/msgpack': 3.1.3
+    '@xmldom/xmldom': 0.9.12
+    '@xterm/addon-serialize': 0.14.0
+    '@xterm/headless': 6.0.0
+    '@zip.js/zip.js': 2.15.0
+    ajv: 8.20.0
+    ajv-formats: 3.0.1
+    canonicalize: 3.0.0
+    cborg: 6.1.3
+    cross-spawn: 7.0.6
+    diff: 9.0.0
+    evmole: 0.9.3
+    graphql: 17.1.0
+    har-schema: 2.0.0
+    ignore: 7.0.6
+    incur: 0.6.1
+    isomorphic-git: 1.38.7
+    jsonc-parser: 3.3.1
+    lossless-json: 4.3.1
+    openpgp: 6.3.2
+    parse5: 8.0.1
+    pino: 10.4.0
+    playwright-core: 1.64.1
+    plist: 5.0.0
+    saxes: 6.0.0
+    semver: 7.8.5
+    smol-toml: 1.9.0
+    stream-chain: 4.2.6
+    stream-json: 3.7.0
+    tokenx: 1.3.0
+    write-file-atomic: 7.0.0
+    ws: 8.21.0
+    yaml: 2.9.0
+    zod: 4.6.6
+  npm_dev:
+    '@electron/asar': 4.2.0
+    '@fast-check/vitest': 0.5.0
+    '@stryker-mutator/core': 10.0.0
+    '@stryker-mutator/typescript-checker': 10.0.0
+    '@stryker-mutator/vitest-runner': 10.0.0
+    '@toon-format/toon': 2.3.1
+    '@types/cross-spawn': 6.0.6
+    '@types/node': 26.6.4
+    '@types/semver': 7.7.1
+    '@types/write-file-atomic': 4.0.3
+    '@types/ws': 8.18.1
+    '@vitest/coverage-v8': 5.0.3
+    husky: 9.1.7
+    jscpd: 5.0.12
+    knip: 6.39.0
+    lint-staged: 16.4.0
+    oxfmt: 0.72.0
+    oxlint: 1.87.0
+    oxlint-tsgolint: 7.0.2005
+    release-please: 17.3.0
+    rolldown: 1.2.12
+    tsrs: 0.18.0-ts7.1.0-dev.20260929
+    tsx: 4.23.15
+    turbo: 2.11.7
+    typescript: 7.0.2
+    typescript-termux: npm:typescript@5.9.3
+    typescript6: npm:typescript@6.0.3
+    vitepress: 1.6.4
+    vitest: 5.0.3
+  install_hooks:
+    prepare: node scripts/prepare.mjs
+security:
+  gate: block
+  worst: high
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/ci.yml:653
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/real-agentenv.yml:68
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/real-binary-layout.yml:60
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/real-cutter.yml:30
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/real-ghidra-windows.yml:32
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/real-termux.yml:43
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/website-check.yml:30
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/website-pages.yml:63
+  - severity: medium
+    kind: pipe remote script to shell
+    path: docs/getting-started/installation.md:2043
+  - severity: medium
+    kind: pipe remote script to shell
+    path: install.sh:5
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: scripts/fixtures/browser-verifier-site.mjs:232
+  - severity: medium
+    kind: hardcoded credential
+    path: scripts/lib/browser-scenario-storage-fingerprints-e2e.mjs:17
+  - severity: high
+    kind: obfuscated execution
+    path: scripts/verify-qwen-client.mjs:333
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: src/browser/PlaywrightScenarioSession.test.ts:1755
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: src/cutter/cutterBridgeMac.test.ts:7
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: src/domain/desktop/appTaskChecks.test.ts:19
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: src/frida/FridaInstrumentationManager.test.ts:1430
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/acceptance/browser/browserScenarioLaunchFailure.test.ts:12
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/cli/cutterCommands.test.ts:136
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/cli/cutterStatusAttributionCli.test.ts:19
+  - severity: medium
+    kind: pipe remote script to shell
+    path: tests/boundary/filesystem/installScript.test.ts:302
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/mcp/cutterCancellationMcp.test.ts:70
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/mcp/cutterMcp.test.ts:202
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/mcp/fridaMcp.test.ts:166
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/mcp/ghidraFailureDiagnostics.test.ts:33
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/process/ProcessEvidence.test.ts:120
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/CutterBridgeCapacity.test.ts:22
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/CutterBridgeClient.test.ts:109
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/CutterBridgeNullIdentity.test.ts:13
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/CutterCommandCancellation.test.ts:100
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/CutterStatusProof.test.ts:17
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/cutterBridgeRequestLimit.test.ts:19
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/boundary/providers/ghidra/ghidraLauncher.test.ts:794
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/composition/browserScenarioStartupRedaction.test.ts:17
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: tests/process-global/cutterDescriptorLifetime.test.ts:67
+  - severity: medium
+    kind: pipe remote script to shell
+    path: website/public/get-started/index.html:383
+  - severity: medium
+    kind: npm prepare hook runs on install
+    path: 'package.json: node scripts/prepare.mjs'
+  - severity: medium
+    kind: known vulnerability
+    path: npm:minimatch@10.2.5 GHSA-g3hv-75wg-m249
+  finding_count: 38
+  scanned_files: 7731
+  notes:
+  - 1 large or binary files not scanned
+  - osv.dev checked 966 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  renderers:
+  - browser
+files:
+  count: 8076
+  skills:
+  - .agents/skills/rea-analysis-optimization/SKILL.md
+  - .agents/skills/rea-changelog-update/SKILL.md
+  - .agents/skills/rea-ci-tests-audit/SKILL.md
+  - .agents/skills/rea-tool-design/SKILL.md
+  - .agents/skills/reverse-engineer-anything/SKILL.md
+analysed_commit: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  status: PARKED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0021
+  name: CK42BB/vox-explainer-skill
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+- id: CEH-0023
+  name: hi-nikola/hand-drawn-explainer-video-nikola
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  overlap: 1.0
+recommendation: 'DO NOT RUN: high-severity security findings. Review reports/<id>/security.md before anything else.'
+inspected: '2026-11-10T15:48:40+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:40+00:00'
+  criteria:
+    workflow_completeness:
+      score: 5
+      basis: 'skills, scripts, examples, tests present: [True, True, True, True]'
+    reusability:
+      score: 4
+      basis: resource type mcp-server
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 32982 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 0
+      basis: 38 findings, worst high
+    integration_complexity:
+      score: 1
+      basis: '42 runtime dependencies; install hooks: [''prepare'']'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.21
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: block

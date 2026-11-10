@@ -1,0 +1,107 @@
+{
+  "id": "CEH-0001",
+  "name": "AbubakrChan/product-launch-motion",
+  "url": "https://github.com/AbubakrChan/product-launch-motion",
+  "type": "agent-skill",
+  "status": "PARKED",
+  "capabilities": [
+    "transitions",
+    "sound-design",
+    "storyboarding",
+    "motion-graphics",
+    "audio-qa",
+    "instagram-reels",
+    "voiceover",
+    "subtitles"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 5,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 37,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code"
+    ],
+    "renderers": [
+      "hyperframes",
+      "remotion",
+      "ffmpeg",
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:23+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, False, True, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 4,
+        "basis": "agents detected: agent-skills-format, claude-code"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 19 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 8263 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.43,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on motion-graphics, subtitles, transitions, voiceover. Run `ceh compare CEH-0001 CEH-0014`."
+}

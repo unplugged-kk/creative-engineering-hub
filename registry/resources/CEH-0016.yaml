@@ -1,0 +1,302 @@
+id: CEH-0016
+name: remotion-dev/skills
+url: https://github.com/remotion-dev/skills
+aliases: []
+type: agent-skill
+status: REJECTED
+created: '2026-11-10T15:29:59+00:00'
+description: Agent Skills
+capabilities:
+- subtitles
+- transitions
+- voiceover
+- sound-design
+- video-editing
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0016
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0016:
+      git: true
+      head: 1af7e69a2a613437d46095924057970a6a7df40d
+      branch: main
+      origin: https://github.com/remotion-dev/skills
+      uncommitted:
+      - D  README.md
+      - D  package.json
+      - D  scripts/prepare-embedded-skills.ts
+      - D  scripts/sync-agent-skills.ts
+      - D  scripts/sync-embedded-skills.ts
+      - D  scripts/sync-readme.ts
+      - D  scripts/validate-links.ts
+      - D  skills/remotion-best-practices/SKILL.md
+      - D  skills/remotion-best-practices/agents/openai.yaml
+      - D  skills/remotion-best-practices/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-captions/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-captions/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-captions/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-captions/display-captions.md
+      - D  skills/remotion-best-practices/remotion-captions/import-srt-captions.md
+      - D  skills/remotion-best-practices/remotion-captions/transcribe-captions.md
+      - D  skills/remotion-best-practices/remotion-create/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-create/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-create/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-create/tailwind.md
+      - D  skills/remotion-best-practices/remotion-create/video-layout.md
+      - D  skills/remotion-best-practices/remotion-docs/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-docs/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-docs/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-interactivity/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-interactivity/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-interactivity/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-interactivity/inline-effects.md
+      - D  skills/remotion-best-practices/remotion-interactivity/timeline-structure.md
+      - D  skills/remotion-best-practices/remotion-license/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-license/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-license/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-maps/REFERENCE.md
+      - D  skills/remotion-best-practices/remotion-maps/agents/openai.yaml
+      - D  skills/remotion-best-practices/remotion-maps/assets/remotion-icon.svg
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/TECHNIQUE.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/cesium-path.json
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/city-path.json
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/example-Root.tsx
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/sample-river.geojson
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-data-sources.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-troubleshooting.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs
+      - D  skills/remotion-best-practices/remotion-maps/techniques/mapbox/TECHNIQUE.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/mapbox/references/render-stability.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/maplibre/TECHNIQUE.md
+      - D  skills/remotion-best-practices/remotion-maps/techniques/maplibre/references/render-stability.md
+      uncommitted_count: 301
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/remotion-dev/skills
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b
+    at: '2026-11-10T15:29:59+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2'
+  pinned_commit: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b
+  latest_commit: 1af7e69a2a613437d46095924057970a6a7df40d
+  latest_release: null
+  last_checked: '2026-11-10T16:03:21+00:00'
+  checks:
+  - at: '2026-11-10T15:35:55+00:00'
+    latest: 1af7e69a2a613437d46095924057970a6a7df40d
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:03:21+00:00'
+    latest: 1af7e69a2a613437d46095924057970a6a7df40d
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: remotion-dev/skills
+  description: Agent Skills
+  topics: []
+  licence_spdx: null
+  default_branch: main
+  pushed_at: '2026-11-09T09:11:07Z'
+  archived: false
+  stars: 6780
+  is_fork: false
+  parent: null
+  language: TypeScript
+notes:
+- Generated mirror of remotion monorepo packages/skills; no LICENSE (404, API license null). Remotion skills are installed
+  as a Claude plugin (remotion:*) separately.
+history:
+- at: '2026-11-10T15:29:59+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Generated mirror of remotion monorepo packages/skills; no LICENSE (404, API license null). Remotion skills are installed
+    as a Claude plugin (remotion:*) separately.
+- at: '2026-11-10T15:29:59+00:00'
+  from: DISCOVERED
+  to: REJECTED
+  by: ceh migrate
+  note: recorded from historical evidence (REJECT)
+updated: '2026-11-10T16:03:21+00:00'
+historical:
+  group: C
+  previous_decision: REJECT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  note: Generated mirror of remotion monorepo packages/skills; no LICENSE (404, API license null). Remotion skills are installed
+    as a Claude plugin (remotion:*) separately.
+licence:
+  spdx: null
+  class: unknown
+  gate: review
+  source: no licence file
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests:
+  - package.json
+  npm: {}
+  npm_dev:
+    '@remotion/eslint-config-internal': ^4.0.0
+    eslint: 'catalog:'
+    '@remotion/bundler': ^4.0.0
+    remotion: ^4.0.0
+    react: 'catalog:'
+    react-dom: 'catalog:'
+    '@remotion/shapes': ^4.0.0
+    '@remotion/three': ^4.0.0
+    '@remotion/cli': ^4.0.0
+    typescript: 'catalog:'
+    '@remotion/lottie': ^4.0.0
+    '@remotion/google-fonts': ^4.0.0
+  install_hooks: {}
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 270
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  - generic
+  renderers:
+  - remotion
+  - ffmpeg
+  - canvas
+  - lottie
+files:
+  count: 301
+  skills:
+  - skills/remotion-best-practices/SKILL.md
+  - skills/remotion-captions/SKILL.md
+  - skills/remotion-create/SKILL.md
+  - skills/remotion-docs/SKILL.md
+  - skills/remotion-interactivity/SKILL.md
+  - skills/remotion-license/SKILL.md
+  - skills/remotion-maps/SKILL.md
+  - skills/remotion-markup/SKILL.md
+  - skills/remotion-multimedia/SKILL.md
+  - skills/remotion-render/SKILL.md
+  - skills/remotion-saas/SKILL.md
+  - skills/remotion-studio/SKILL.md
+  - skills/remotion-upgrade/SKILL.md
+analysed_commit: 1af7e69a2a613437d46095924057970a6a7df40d
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - subtitles
+  - transitions
+  - voiceover
+  overlap: 0.6
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 0.4
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - transitions
+  overlap: 0.2
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.2
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - sound-design
+  - subtitles
+  - transitions
+  - voiceover
+  overlap: 0.8
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - sound-design
+  - subtitles
+  - transitions
+  - voiceover
+  overlap: 0.8
+recommendation: 'COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on subtitles, transitions, voiceover.
+  Run `ceh compare CEH-0016 CEH-0014`.'
+inspected: '2026-11-10T15:48:11+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:12+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, True, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex, generic'
+    maintainability:
+      score: 5
+      basis: last push 1 days ago
+    documentation:
+      score: 4
+      basis: top-level README 3024 chars
+    licence_suitability:
+      score: 1
+      basis: None (unknown)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.86
+  evidence_coverage: 0.7
+  gates:
+    licence: review
+    security: pass

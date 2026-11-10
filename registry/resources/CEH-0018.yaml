@@ -1,0 +1,240 @@
+id: CEH-0018
+name: LottieFiles/motion-design-skill
+url: https://github.com/LottieFiles/motion-design-skill
+aliases: []
+type: agent-skill
+status: CANDIDATE
+created: '2026-11-10T15:30:13+00:00'
+description: Universal motion design principles for AI agents — timing, easing, choreography, and Disney animation principles
+  adapted for UI
+capabilities:
+- 2d-animation
+- camera-movement
+- data-visualization
+- documentary-storytelling
+- motion-graphics
+- transitions
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0018
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0018:
+      git: true
+      head: f9a8a041b85185ee4881b3471d3415e939aac772
+      branch: main
+      origin: https://github.com/LottieFiles/motion-design-skill
+      uncommitted:
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  skills/motion-design/SKILL.md
+      - D  skills/motion-design/director/choreography.md
+      - D  skills/motion-design/director/context-adaptation.md
+      - D  skills/motion-design/director/core-philosophy.md
+      - D  skills/motion-design/director/decision-framework.md
+      - D  skills/motion-design/director/disney-principles.md
+      - D  skills/motion-design/director/emotion-mapping.md
+      - D  skills/motion-design/director/motion-personality.md
+      - D  skills/motion-design/director/narrative-structure.md
+      - D  skills/motion-design/patterns/ambient-continuous.md
+      - D  skills/motion-design/patterns/entrance-exit.md
+      - D  skills/motion-design/patterns/multi-element.md
+      - D  skills/motion-design/patterns/state-feedback.md
+      - D  skills/motion-design/reference/property-selection.md
+      - D  skills/motion-design/reference/quality-checklist.md
+      - D  skills/motion-design/reference/timing-easing-tables.md
+      - D  skills/motion-design/reference/troubleshooting.md
+      uncommitted_count: 20
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/LottieFiles/motion-design-skill
+  default_branch: main
+  forks: []
+  pins:
+  - commit: f9a8a041b85185ee4881b3471d3415e939aac772
+    at: '2026-11-10T15:30:13+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2'
+  pinned_commit: f9a8a041b85185ee4881b3471d3415e939aac772
+  latest_commit: f9a8a041b85185ee4881b3471d3415e939aac772
+  latest_release: null
+  last_checked: '2026-11-10T16:04:13+00:00'
+  checks:
+  - at: '2026-11-10T15:36:00+00:00'
+    latest: f9a8a041b85185ee4881b3471d3415e939aac772
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:27+00:00'
+    latest: f9a8a041b85185ee4881b3471d3415e939aac772
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: LottieFiles/motion-design-skill
+  description: Universal motion design principles for AI agents — timing, easing, choreography, and Disney animation principles
+    adapted for UI
+  topics:
+  - agent-skills
+  - animation
+  - lottie
+  - motion-design
+  - ui
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-05-18T11:30:13Z'
+  archived: false
+  stars: 2927
+  is_fork: false
+  parent: null
+  language: null
+notes:
+- 18 markdown files of vendor-neutral motion principles; adapt the quantified threshold table only.
+history:
+- at: '2026-11-10T15:30:13+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: 18 markdown files of vendor-neutral motion principles; adapt the quantified threshold table only.
+- at: '2026-11-10T15:30:13+00:00'
+  from: DISCOVERED
+  to: CANDIDATE
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:04:14+00:00'
+historical:
+  group: C
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  note: 18 markdown files of vendor-neutral motion principles; adapt the quantified threshold table only.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 20
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  - generic
+  renderers:
+  - lottie
+files:
+  count: 20
+  skills:
+  - skills/motion-design/SKILL.md
+analysed_commit: f9a8a041b85185ee4881b3471d3415e939aac772
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.33
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.17
+- id: CEH-0011
+  name: greensock/gsap-skills
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.17
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  overlap: 0.17
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.17
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  - motion-graphics
+  - transitions
+  overlap: 0.5
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - motion-graphics
+  - transitions
+  overlap: 0.33
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - data-visualization
+  - motion-graphics
+  overlap: 0.33
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0018`.'
+inspected: '2026-11-10T16:04:14+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:15+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex, generic'
+    maintainability:
+      score: 3
+      basis: last push 176 days ago
+    documentation:
+      score: 4
+      basis: top-level README 3427 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.0
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

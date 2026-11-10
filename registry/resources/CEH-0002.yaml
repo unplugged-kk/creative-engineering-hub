@@ -1,0 +1,285 @@
+id: CEH-0002
+name: charlie947/motion-graphics-skills
+url: https://github.com/charlie947/motion-graphics-skills
+aliases: []
+type: agent-skill
+status: PARKED
+created: '2026-11-10T15:24:58+00:00'
+description: 13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator.
+capabilities:
+- instagram-reels
+- data-visualization
+- explainer-videos
+- motion-graphics
+- social-media-videos
+- procedural-animation
+- rendering
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0002
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0002:
+      git: true
+      head: 229022ebca76972e119e36ada23a1648d51665ab
+      branch: main
+      origin: https://github.com/charlie947/motion-graphics-skills
+      uncommitted:
+      - D  .gitignore
+      - D  .polish-metadata.json
+      - D  LICENSE
+      - D  README.md
+      - D  assets/readme/charlie.png
+      - D  assets/readme/demo-launch.gif
+      - D  assets/readme/demo-milestone.gif
+      - D  assets/readme/hero-dark.png
+      - D  assets/readme/hero-light.png
+      - D  assets/readme/social-preview.png
+      - D  downloads/motion-prompt-writer.zip
+      - D  downloads/reference-to-motion.zip
+      - D  prompts/brand-design-system.md
+      - D  prompts/briefs.md
+      - D  prompts/effects.md
+      - D  prompts/polish.md
+      - D  prompts/start-here.md
+      - D  skills/animated-chart/SKILL.md
+      - D  skills/apple-launch-film/SKILL.md
+      - D  skills/brand-intake/SKILL.md
+      - D  skills/launch-video/SKILL.md
+      - D  skills/loop-cover/SKILL.md
+      - D  skills/milestone-reveal/SKILL.md
+      - D  skills/model-showdown/SKILL.md
+      - D  skills/motion-brief-writer/SKILL.md
+      - D  skills/motion-effects/SKILL.md
+      - D  skills/motion-effects/references/effects.md
+      - D  skills/motion-prompt-writer/CANON-FACTS.txt
+      - D  skills/motion-prompt-writer/SKILL.md
+      - D  skills/newsletter-promo/SKILL.md
+      - D  skills/reel-export/SKILL.md
+      - D  skills/reference-to-motion/SKILL.md
+      - D  skills/title-sequence-3d/SKILL.md
+      - D  skills/vox-explainer/SKILL.md
+      - D  validate-skills.sh
+      uncommitted_count: 35
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/charlie947/motion-graphics-skills
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 229022ebca76972e119e36ada23a1648d51665ab
+    at: '2026-11-10T15:24:58+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_matrix'
+  pinned_commit: 229022ebca76972e119e36ada23a1648d51665ab
+  latest_commit: 229022ebca76972e119e36ada23a1648d51665ab
+  latest_release: null
+  last_checked: '2026-11-10T16:02:39+00:00'
+  checks:
+  - at: '2026-11-10T15:35:16+00:00'
+    latest: 229022ebca76972e119e36ada23a1648d51665ab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:02:39+00:00'
+    latest: 229022ebca76972e119e36ada23a1648d51665ab
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: charlie947/motion-graphics-skills
+  description: 13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator.
+  topics:
+  - agent-skills
+  - ai-marketing
+  - animation
+  - claude
+  - claude-code
+  - claude-skills
+  - codex
+  - hyperframes
+  - motion-graphics
+  - video
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-10-11T08:44:11Z'
+  archived: false
+  stars: 627
+  is_fork: false
+  parent: null
+  language: Shell
+notes:
+- Skill-hygiene validator and token-file convention; informed VF kinetic-typography style card.
+history:
+- at: '2026-11-10T15:24:58+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Skill-hygiene validator and token-file convention; informed VF kinetic-typography style card.
+- at: '2026-11-10T15:24:58+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:02:39+00:00'
+historical:
+  group: A
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: Skill-hygiene validator and token-file convention; informed VF kinetic-typography style card.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 6
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 27
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - ffmpeg
+  - browser
+files:
+  count: 35
+  skills:
+  - skills/animated-chart/SKILL.md
+  - skills/apple-launch-film/SKILL.md
+  - skills/brand-intake/SKILL.md
+  - skills/launch-video/SKILL.md
+  - skills/loop-cover/SKILL.md
+  - skills/milestone-reveal/SKILL.md
+  - skills/model-showdown/SKILL.md
+  - skills/motion-brief-writer/SKILL.md
+  - skills/motion-effects/SKILL.md
+  - skills/motion-prompt-writer/SKILL.md
+  - skills/newsletter-promo/SKILL.md
+  - skills/reel-export/SKILL.md
+  - skills/reference-to-motion/SKILL.md
+  - skills/title-sequence-3d/SKILL.md
+  - skills/vox-explainer/SKILL.md
+analysed_commit: 229022ebca76972e119e36ada23a1648d51665ab
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.43
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  - motion-graphics
+  - rendering
+  overlap: 0.43
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  - motion-graphics
+  overlap: 0.29
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  - social-media-videos
+  overlap: 0.29
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  status: PRODUCTION
+  shared:
+  - instagram-reels
+  - social-media-videos
+  overlap: 0.29
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  - rendering
+  overlap: 0.29
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  - motion-graphics
+  - procedural-animation
+  - rendering
+  overlap: 0.57
+- id: CEH-0024
+  name: Vincentwei1021/video-shotcraft
+  status: SANDBOXED
+  shared:
+  - data-visualization
+  - instagram-reels
+  - motion-graphics
+  - social-media-videos
+  overlap: 0.57
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0002`.'
+inspected: '2026-11-10T15:47:25+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:25+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 4
+      basis: last push 30 days ago
+    documentation:
+      score: 5
+      basis: top-level README 15774 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

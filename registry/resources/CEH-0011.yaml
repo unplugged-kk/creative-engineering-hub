@@ -1,0 +1,253 @@
+id: CEH-0011
+name: greensock/gsap-skills
+url: https://github.com/greensock/gsap-skills
+aliases: []
+type: agent-skill
+status: CANDIDATE
+created: '2026-11-10T15:28:40+00:00'
+description: Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation
+  Platform), including best practices, common animation patterns, and plugin usage.
+capabilities:
+- 2d-animation
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0011
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0011:
+      git: true
+      head: aed9cfd3277740755f6bfc1155c7aa645403b760
+      branch: main
+      origin: https://github.com/greensock/gsap-skills
+      uncommitted:
+      - D  .claude-plugin/marketplace.json
+      - D  .claude-plugin/plugin.json
+      - D  .cursor-plugin/marketplace.json
+      - D  .cursor-plugin/plugin.json
+      - D  .github/copilot-instructions.md
+      - D  .github/instructions/react.instructions.md
+      - D  .github/instructions/scrolltrigger.instructions.md
+      - D  .gitignore
+      - D  AGENTS.md
+      - D  CLAUDE.md
+      - D  GEMINI.md
+      - D  LICENSE
+      - D  README.md
+      - D  assets/gsap-green.svg
+      - D  assets/gsap-icon-inverted.svg
+      - D  assets/gsap-icon-square.svg
+      - D  assets/gsap-white.svg
+      - D  examples/README.md
+      - D  examples/nuxt/app/app.vue
+      - D  examples/nuxt/app/composables/useGSAP.ts
+      - D  examples/nuxt/app/pages/index.vue
+      - D  examples/nuxt/nuxt.config.ts
+      - D  examples/nuxt/package.json
+      - D  examples/react/App.jsx
+      - D  examples/react/index.html
+      - D  examples/react/main.jsx
+      - D  examples/react/package.json
+      - D  examples/react/vite.config.js
+      - D  examples/vanilla/index.html
+      - D  examples/vanilla/main.js
+      - D  examples/vue/app.vue
+      - D  examples/vue/index.html
+      - D  examples/vue/main.js
+      - D  examples/vue/package.json
+      - D  examples/vue/vite.config.js
+      - D  skills/gsap-core/SKILL.md
+      - D  skills/gsap-frameworks/SKILL.md
+      - D  skills/gsap-performance/SKILL.md
+      - D  skills/gsap-plugins/SKILL.md
+      - D  skills/gsap-react/SKILL.md
+      - D  skills/gsap-scrolltrigger/SKILL.md
+      - D  skills/gsap-timeline/SKILL.md
+      - D  skills/gsap-utils/SKILL.md
+      - D  skills/llms.txt
+      uncommitted_count: 44
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/greensock/gsap-skills
+  default_branch: main
+  forks: []
+  pins:
+  - commit: aed9cfd3277740755f6bfc1155c7aa645403b760
+    at: '2026-11-10T15:28:40+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2'
+  pinned_commit: aed9cfd3277740755f6bfc1155c7aa645403b760
+  latest_commit: aed9cfd3277740755f6bfc1155c7aa645403b760
+  latest_release: null
+  last_checked: '2026-11-10T16:03:06+00:00'
+  checks:
+  - at: '2026-11-10T15:35:41+00:00'
+    latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:06+00:00'
+    latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: greensock/gsap-skills
+  description: Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation
+    Platform), including best practices, common animation patterns, and plugin usage.
+  topics: []
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-07-29T17:36:08Z'
+  archived: false
+  stars: 18228
+  is_fork: false
+  parent: null
+  language: null
+notes:
+- Official GSAP API skills; API-correctness reference for the engine HyperFrames already uses. Also vendored inside OpenMontage
+  .agents/skills/gsap.
+history:
+- at: '2026-11-10T15:28:40+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Official GSAP API skills; API-correctness reference for the engine HyperFrames already uses. Also vendored inside
+    OpenMontage .agents/skills/gsap.
+- at: '2026-11-10T15:28:40+00:00'
+  from: DISCOVERED
+  to: CANDIDATE
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:03:06+00:00'
+historical:
+  group: B
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  note: Official GSAP API skills; API-correctness reference for the engine HyperFrames already uses. Also vendored inside
+    OpenMontage .agents/skills/gsap.
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests:
+  - examples/nuxt/package.json
+  - examples/react/package.json
+  - examples/vue/package.json
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 37
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - claude-code-plugin
+  - codex
+  - generic
+  - opencode
+  renderers: []
+files:
+  count: 44
+  skills:
+  - skills/gsap-core/SKILL.md
+  - skills/gsap-frameworks/SKILL.md
+  - skills/gsap-performance/SKILL.md
+  - skills/gsap-plugins/SKILL.md
+  - skills/gsap-react/SKILL.md
+  - skills/gsap-scrolltrigger/SKILL.md
+  - skills/gsap-timeline/SKILL.md
+  - skills/gsap-utils/SKILL.md
+analysed_commit: aed9cfd3277740755f6bfc1155c7aa645403b760
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0006
+  name: Tejashmakwana/motionmaxxing
+  status: PARKED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0023
+  name: hi-nikola/hand-drawn-explainer-video-nikola
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0027
+  name: motiondivision/ai-kit
+  status: PARKED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation. Run `ceh compare
+  CEH-0011 CEH-0008`.'
+inspected: '2026-11-10T15:47:51+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:51+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic, opencode'
+    maintainability:
+      score: 3
+      basis: last push 103 days ago
+    documentation:
+      score: 4
+      basis: top-level README 7654 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.14
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

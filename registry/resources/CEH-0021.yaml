@@ -1,0 +1,226 @@
+id: CEH-0021
+name: CK42BB/vox-explainer-skill
+url: https://github.com/CK42BB/vox-explainer-skill
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:30:26+00:00'
+description: A Claude Code skill that turns one topic prompt into a finished Vox-style explainer video. Script, keyframes,
+  animation, voiceover, music, and local assembly — end to end.
+capabilities:
+- voiceover
+- documentary-storytelling
+- explainer-videos
+- subtitles
+- camera-movement
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0021
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0021:
+      git: true
+      head: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+      branch: main
+      origin: https://github.com/CK42BB/vox-explainer-skill
+      uncommitted:
+      - D  LICENSE
+      - D  README.md
+      - D  SKILL.md
+      - D  references/atlas-cloud-api.md
+      - D  references/ffmpeg-assembly.md
+      - D  references/vox-style-guide.md
+      uncommitted_count: 6
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/CK42BB/vox-explainer-skill
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    at: '2026-11-10T15:30:27+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+  latest_commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+  latest_release: null
+  last_checked: '2026-11-10T16:03:34+00:00'
+  checks:
+  - at: '2026-11-10T15:36:09+00:00'
+    latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:34+00:00'
+    latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: CK42BB/vox-explainer-skill
+  description: A Claude Code skill that turns one topic prompt into a finished Vox-style explainer video. Script, keyframes,
+    animation, voiceover, music, and local assembly — end to end.
+  topics: []
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-07-11T01:27:54Z'
+  archived: false
+  stars: 192
+  is_fork: false
+  parent: null
+  language: null
+notes: []
+history:
+- at: '2026-11-10T15:30:26+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:30:26+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:30:28+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:03:34+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 0
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes: []
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 6
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  renderers:
+  - ffmpeg
+files:
+  count: 6
+  skills:
+  - SKILL.md
+analysed_commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - subtitles
+  - voiceover
+  overlap: 0.6
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  - subtitles
+  - voiceover
+  overlap: 0.6
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - camera-movement
+  - documentary-storytelling
+  overlap: 0.4
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.2
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.2
+- id: CEH-0025
+  name: Vincentwei1021/anything2explainer
+  status: RESTRICTED
+  shared:
+  - explainer-videos
+  - subtitles
+  - voiceover
+  overlap: 0.6
+- id: CEH-0028
+  name: harry0703/MoneyPrinterTurbo
+  status: SANDBOXED
+  shared:
+  - explainer-videos
+  - subtitles
+  - voiceover
+  overlap: 0.6
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on explainer-videos, subtitles,
+  voiceover. Run `ceh compare CEH-0021 CEH-0008`.'
+inspected: '2026-11-10T15:48:21+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:21+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code'
+    maintainability:
+      score: 3
+      basis: last push 122 days ago
+    documentation:
+      score: 3
+      basis: top-level README 2868 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.86
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

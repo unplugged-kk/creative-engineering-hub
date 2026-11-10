@@ -1,0 +1,108 @@
+{
+  "id": "CEH-0035",
+  "name": "Panniantong/Agent-Reach",
+  "url": "https://github.com/Panniantong/Agent-Reach",
+  "type": "agent-skill",
+  "status": "PRODUCTION",
+  "capabilities": [
+    "data-visualization",
+    "content-research",
+    "social-media-videos"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 7,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "docs/install.md:15"
+      }
+    ],
+    "finding_count": 1,
+    "scanned_files": 113,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "codex",
+      "generic"
+    ],
+    "renderers": [
+      "browser",
+      "p5js"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:49:04+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 4,
+        "basis": "skills, scripts, examples, tests present: [True, True, False, True]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, codex, generic"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 2 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 9417 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "1 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 4,
+        "basis": "4 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.5,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps mvanhorn/last30days-skill (PRODUCTION) on content-research, social-media-videos. Run `ceh compare CEH-0035 CEH-0036`."
+}

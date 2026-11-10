@@ -1,0 +1,284 @@
+id: CEH-0004
+name: Barty-Bart/motion-graphics
+url: https://github.com/Barty-Bart/motion-graphics
+aliases: []
+type: agent-skill
+status: PARKED
+created: '2026-11-10T15:25:08+00:00'
+description: Motion-graphics skills for Claude Code and Codex.
+capabilities:
+- sound-design
+- audio-qa
+- explainer-videos
+- motion-graphics
+- procedural-animation
+- kinetic-typography
+- ai-video-generation
+- camera-movement
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0004
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0004:
+      git: true
+      head: 3d83d987d658601d8a1269eb691622bdcd427335
+      branch: main
+      origin: https://github.com/Barty-Bart/motion-graphics
+      uncommitted:
+      - D  .gitignore
+      - D  LICENSE
+      - D  README.md
+      - D  docs/demo-cutaway.gif
+      - D  docs/demo-panel.gif
+      - D  docs/explainer-default.gif
+      - D  docs/explainer-engaging.gif
+      - D  docs/explainer-high-energy.gif
+      - D  docs/object-separation.gif
+      - D  docs/sound-effects.gif
+      - D  skills/explainer-default/README.md
+      - D  skills/explainer-default/SKILL.md
+      - D  skills/explainer-engaging/README.md
+      - D  skills/explainer-engaging/SKILL.md
+      - D  skills/explainer-high-energy/README.md
+      - D  skills/explainer-high-energy/SKILL.md
+      - D  skills/motion-broll/README.md
+      - D  skills/motion-broll/SKILL.md
+      - D  skills/motion-broll/engine/base.css
+      - D  skills/motion-broll/engine/beats.js
+      - D  skills/motion-broll/engine/build.py
+      - D  skills/motion-broll/engine/fonts/Geist-Variable.woff2
+      - D  skills/motion-broll/engine/fonts/GeistMono-Medium.woff2
+      - D  skills/motion-broll/engine/fonts/OFL-Geist.txt
+      - D  skills/motion-broll/engine/motion.js
+      - D  skills/motion-broll/engine/render.js
+      - D  skills/motion-broll/examples/opus-aoe2/01-opus-drop.html
+      - D  skills/motion-broll/examples/opus-aoe2/02-pip-builds.html
+      - D  skills/motion-broll/examples/opus-aoe2/03-effort-slider.html
+      - D  skills/motion-broll/examples/opus-aoe2/04-master-prompt.html
+      - D  skills/motion-broll/examples/opus-aoe2/05-low-vs-max.html
+      - D  skills/motion-broll/examples/opus-aoe2/06-chapter.html
+      - D  skills/motion-broll/examples/opus-aoe2/plan.json
+      - D  skills/motion-broll/reference/engine-api.md
+      - D  skills/motion-broll/scripts/composite.py
+      - D  skills/motion-broll/scripts/inspect_video.py
+      - D  skills/motion-broll/scripts/make_pages.py
+      - D  skills/motion-broll/scripts/setup.sh
+      - D  skills/motion-broll/scripts/words.py
+      - D  skills/motion-broll/templates/compare.html
+      - D  skills/motion-broll/templates/viewer.html
+      - D  skills/object-separation/README.md
+      - D  skills/object-separation/SKILL.md
+      - D  skills/sound-effects/LICENSES.md
+      - D  skills/sound-effects/MUSIC.md
+      - D  skills/sound-effects/README.md
+      - D  skills/sound-effects/SKILL.md
+      - D  skills/sound-effects/TOP-PICKS.md
+      - D  skills/sound-effects/scripts/report.py
+      - D  skills/sound-effects/scripts/sound_pass.py
+      uncommitted_count: 160
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/Barty-Bart/motion-graphics
+  default_branch: main
+  forks: []
+  pins:
+  - commit: d6e5d95e45167d95bb4260b9da4d674791143710
+    at: '2026-11-10T15:25:08+00:00'
+    by: ceh migrate
+    note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_matrix'
+  pinned_commit: d6e5d95e45167d95bb4260b9da4d674791143710
+  latest_commit: 3d83d987d658601d8a1269eb691622bdcd427335
+  latest_release: null
+  last_checked: '2026-11-10T16:02:45+00:00'
+  checks:
+  - at: '2026-11-10T15:35:22+00:00'
+    latest: 3d83d987d658601d8a1269eb691622bdcd427335
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:02:45+00:00'
+    latest: 3d83d987d658601d8a1269eb691622bdcd427335
+    flags: &id001
+    - new-commits
+    - local-conflict
+  flags: *id001
+meta:
+  full_name: Barty-Bart/motion-graphics
+  description: Motion-graphics skills for Claude Code and Codex.
+  topics: []
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-10-13T09:42:04Z'
+  archived: false
+  stars: 1168
+  is_fork: false
+  parent: null
+  language: HTML
+notes:
+- Measured, licence-aware SFX pass with CC0 library. Repo licence unclear (Mixkit bundles).
+history:
+- at: '2026-11-10T15:25:08+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Measured, licence-aware SFX pass with CC0 library. Repo licence unclear (Mixkit bundles).
+- at: '2026-11-10T15:25:08+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (ADAPT)
+updated: '2026-11-10T16:02:45+00:00'
+historical:
+  group: A
+  previous_decision: ADAPT
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: Measured, licence-aware SFX pass with CC0 library. Repo licence unclear (Mixkit bundles).
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: text:LICENSE
+  assets:
+    media_files: 116
+    font_files: 2
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 42
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - remotion
+  - ffmpeg
+  - browser
+files:
+  count: 160
+  skills:
+  - skills/explainer-default/SKILL.md
+  - skills/explainer-engaging/SKILL.md
+  - skills/explainer-high-energy/SKILL.md
+  - skills/motion-broll/SKILL.md
+  - skills/object-separation/SKILL.md
+  - skills/sound-effects/SKILL.md
+analysed_commit: 3d83d987d658601d8a1269eb691622bdcd427335
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - kinetic-typography
+  overlap: 0.25
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  - motion-graphics
+  overlap: 0.25
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - camera-movement
+  - motion-graphics
+  overlap: 0.25
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.12
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - audio-qa
+  - motion-graphics
+  - procedural-animation
+  - sound-design
+  overlap: 0.5
+- id: CEH-0012
+  name: cth9191/animate
+  status: SANDBOXED
+  shared:
+  - audio-qa
+  - explainer-videos
+  - motion-graphics
+  - procedural-animation
+  overlap: 0.5
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - audio-qa
+  - motion-graphics
+  - sound-design
+  overlap: 0.38
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  status: PARKED
+  shared:
+  - explainer-videos
+  - motion-graphics
+  - procedural-animation
+  overlap: 0.38
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0004`.'
+inspected: '2026-11-10T15:47:29+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:29+00:00'
+  criteria:
+    workflow_completeness:
+      score: 2
+      basis: 'skills, scripts, examples, tests present: [True, False, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 28 days ago
+    documentation:
+      score: 4
+      basis: top-level README 3029 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.29
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

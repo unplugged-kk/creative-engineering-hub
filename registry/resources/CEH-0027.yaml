@@ -1,0 +1,246 @@
+id: CEH-0027
+name: motiondivision/ai-kit
+url: https://github.com/motiondivision/ai-kit
+aliases: []
+type: mcp-server
+status: PARKED
+created: '2026-11-10T15:31:09+00:00'
+description: A Cursor plugin for Motion
+capabilities:
+- 2d-animation
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0027
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0027:
+      git: true
+      head: 1e424943582cbbdb6e3f410687e39f96451447bb
+      branch: main
+      origin: https://github.com/motiondivision/ai-kit
+      uncommitted:
+      - D  .cursor-plugin/marketplace.json
+      - D  .cursor/.gitignore
+      - D  .gitignore
+      - D  CHANGELOG.md
+      - D  README.md
+      - D  changelog.csv
+      - D  docs/add-a-plugin.md
+      - D  package-lock.json
+      - D  package.json
+      - D  packages/motion-ai/README.md
+      - D  packages/motion-ai/assets/ai-kit.png
+      - D  packages/motion-ai/assets/ai-kit.svg
+      - D  packages/motion-ai/assets/performance-doctor.png
+      - D  packages/motion-ai/assets/performance-doctor.svg
+      - D  packages/motion-ai/assets/performance-guard.png
+      - D  packages/motion-ai/assets/performance-guard.svg
+      - D  packages/motion-ai/package.json
+      - D  packages/motion-ai/scripts/sync-content.mjs
+      - D  packages/motion-ai/src/agents.ts
+      - D  packages/motion-ai/src/cli.ts
+      - D  packages/motion-ai/src/install.ts
+      - D  packages/motion-ai/tsconfig.json
+      - D  plugins/motion/.cursor-plugin/plugin.json
+      - D  plugins/motion/README.md
+      - D  plugins/motion/agents/motion-reviewer.md
+      - D  plugins/motion/assets/ai-kit-card.png
+      - D  plugins/motion/assets/logo.svg
+      - D  plugins/motion/assets/logo@512w.png
+      - D  plugins/motion/mcp.json
+      - D  plugins/motion/rules/motion.mdc
+      - D  plugins/motion/skills/motion/SKILL.md
+      - D  plugins/motion/skills/motion/best-practices/base-ui.md
+      - D  plugins/motion/skills/motion/best-practices/css-or-motion.md
+      - D  plugins/motion/skills/motion/best-practices/index.md
+      - D  plugins/motion/skills/motion/best-practices/motion.md
+      - D  plugins/motion/skills/motion/best-practices/react.md
+      - D  plugins/motion/skills/motion/best-practices/vue.md
+      - D  plugins/motion/skills/motion/codex/index.md
+      - D  plugins/motion/skills/motion/css-spring/index.md
+      - D  plugins/motion/skills/motion/insert/index.md
+      - D  plugins/motion/skills/motion/performance-audit/index.md
+      - D  plugins/motion/skills/motion/transition-preview/index.md
+      - D  scripts/generate-changelog-csv.js
+      - D  scripts/push-to-site.js
+      - D  scripts/release.mjs
+      - D  scripts/validate-template.mjs
+      uncommitted_count: 46
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/motiondivision/ai-kit
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 1e424943582cbbdb6e3f410687e39f96451447bb
+    at: '2026-11-10T15:31:12+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 1e424943582cbbdb6e3f410687e39f96451447bb
+  latest_commit: 1e424943582cbbdb6e3f410687e39f96451447bb
+  latest_release: null
+  last_checked: '2026-11-10T16:03:52+00:00'
+  checks:
+  - at: '2026-11-10T15:36:25+00:00'
+    latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:52+00:00'
+    latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: motiondivision/ai-kit
+  description: A Cursor plugin for Motion
+  topics: []
+  licence_spdx: null
+  default_branch: main
+  pushed_at: '2026-11-04T06:55:44Z'
+  archived: false
+  stars: 74
+  is_fork: false
+  parent: null
+  language: JavaScript
+notes:
+- Motion AI Kit, recorded in VF config/capabilities.json as ref:motion-ai-kit, reference-only.
+history:
+- at: '2026-11-10T15:31:09+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Motion AI Kit, recorded in VF config/capabilities.json as ref:motion-ai-kit, reference-only.
+- at: '2026-11-10T15:31:09+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (REFERENCE)
+updated: '2026-11-10T16:03:52+00:00'
+historical:
+  group: D
+  previous_decision: REFERENCE
+  evidence:
+  - ~/git/video-factory/docs/research/motion-design-integration/01-repository-audit.md
+  note: Motion AI Kit, recorded in VF config/capabilities.json as ref:motion-ai-kit, reference-only.
+licence:
+  spdx: null
+  class: unknown
+  gate: review
+  source: no licence file
+  assets:
+    media_files: 5
+    font_files: 0
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - package.json
+  - packages/motion-ai/package.json
+  npm: {}
+  npm_dev: {}
+  install_hooks: {}
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: known vulnerability
+    path: npm:js-yaml@4.3.0 GHSA-2883-xcg3-v3hh, GHSA-5p4m-2wfm-xmqj
+  finding_count: 1
+  scanned_files: 34
+  notes:
+  - osv.dev checked 17 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code
+  - codex
+  - opencode
+  renderers: []
+files:
+  count: 46
+  skills:
+  - plugins/motion/skills/motion/SKILL.md
+analysed_commit: 1e424943582cbbdb6e3f410687e39f96451447bb
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0011
+  name: greensock/gsap-skills
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0006
+  name: Tejashmakwana/motionmaxxing
+  status: PARKED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+- id: CEH-0023
+  name: hi-nikola/hand-drawn-explainer-video-nikola
+  status: SANDBOXED
+  shared:
+  - 2d-animation
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on 2d-animation. Run `ceh compare
+  CEH-0027 CEH-0008`.'
+inspected: '2026-11-10T15:48:42+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:42+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, True, False, False]'
+    reusability:
+      score: 4
+      basis: resource type mcp-server
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code, codex, opencode'
+    maintainability:
+      score: 5
+      basis: last push 6 days ago
+    documentation:
+      score: 3
+      basis: top-level README 2900 chars
+    licence_suitability:
+      score: 1
+      basis: None (unknown)
+    security:
+      score: 3
+      basis: 1 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.57
+  evidence_coverage: 0.7
+  gates:
+    licence: review
+    security: review

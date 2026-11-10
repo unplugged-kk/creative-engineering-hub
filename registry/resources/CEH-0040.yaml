@@ -1,0 +1,354 @@
+id: CEH-0040
+name: remsky/Kokoro-FastAPI
+url: https://github.com/remsky/Kokoro-FastAPI
+aliases: []
+type: repository
+status: SANDBOXED
+created: '2026-11-10T15:33:46+00:00'
+description: Dockerized OpenAI-compatible wrapper for Kokoro-82M text-to-speech w/multiplatform CPU, AMD, NVIDIA GPU PyTorch;
+  multi-speaker, clone-tuning, caption timestamps, SSML, websockets, optional readalong web UI
+capabilities:
+- subtitles
+- voiceover
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0040
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0040:
+      git: true
+      head: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+      branch: master
+      origin: https://github.com/remsky/Kokoro-FastAPI
+      uncommitted:
+      - D  .claude/skills/adding-normalizer/SKILL.md
+      - D  .claude/skills/api-contrib/SKILL.md
+      - D  .claude/skills/consumer-check/SKILL.md
+      - D  .claude/skills/consumer-check/consumers.py
+      - D  .claude/skills/integration-tests/SKILL.md
+      - D  .claude/skills/readme-benchmarks/SKILL.md
+      - D  .claude/skills/web-contrib/SKILL.md
+      - D  .codeql-config.yml
+      - D  .coveragerc
+      - D  .dockerignore
+      - D  .gitattributes
+      - D  .github/FUNDING.yml
+      - D  .github/ISSUE_TEMPLATE/bug_report.md
+      - D  .github/ISSUE_TEMPLATE/feature_request.md
+      - D  .github/dependabot.yml
+      - D  .github/pull_request_template.md
+      - D  .github/workflows/ci.yml
+      - D  .github/workflows/release.yml
+      - D  .github/workflows/test_build.yml
+      - D  .github/workflows/test_client_image.yml
+      - D  .gitignore
+      - D  .python-version
+      - D  .ruff.toml
+      - D  AGENTS.md
+      - D  CHANGELOG.md
+      - D  CONTRIBUTING.md
+      - D  LICENSE
+      - D  README.md
+      - D  VERSION
+      - D  api/__init__.py
+      - D  api/src/builds/v1_0/config.json
+      - D  api/src/core/__init__.py
+      - D  api/src/core/auth.py
+      - D  api/src/core/body_limit.py
+      - D  api/src/core/config.py
+      - D  api/src/core/don_quixote.txt
+      - D  api/src/core/model_config.py
+      - D  api/src/core/openai_mappings.json
+      - D  api/src/core/paths.py
+      - D  api/src/core/voice_grades.json
+      - D  api/src/inference/__init__.py
+      - D  api/src/inference/base.py
+      - D  api/src/inference/decode_clip.py
+      - D  api/src/inference/inno_tuner.py
+      - D  api/src/inference/kokoro_v1.py
+      - D  api/src/inference/model_manager.py
+      - D  api/src/inference/voice_manager.py
+      - D  api/src/main.py
+      - D  api/src/models/v1_0/config.json
+      - D  api/src/routers/__init__.py
+      uncommitted_count: 434
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/remsky/Kokoro-FastAPI
+  default_branch: master
+  forks: []
+  pins:
+  - commit: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+    at: '2026-11-10T15:33:53+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+  latest_commit: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+  latest_release: &id002
+    tag: v0.10.0
+    published_at: '2026-11-08T07:11:55Z'
+  last_checked: '2026-11-10T16:04:31+00:00'
+  checks:
+  - at: '2026-11-10T15:37:03+00:00'
+    latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:31+00:00'
+    latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: remsky/Kokoro-FastAPI
+  description: Dockerized OpenAI-compatible wrapper for Kokoro-82M text-to-speech w/multiplatform CPU, AMD, NVIDIA GPU PyTorch;
+    multi-speaker, clone-tuning, caption timestamps, SSML, websockets, optional readalong web UI
+  topics:
+  - fastapi
+  - kokoro
+  - kokoro-82m
+  - kokoro-tts
+  - multi-speaker-tts
+  - mutilingual-audio
+  - openai-compatible-api
+  - openwebui
+  - pytorch
+  - read-along
+  - realtime-api
+  - sillytavern
+  - ssml
+  - text-to-speech
+  - tts
+  - tts-api
+  - tts-captions
+  - tts-generation
+  - voice-clone-tool
+  - websockets
+  licence_spdx: Apache-2.0
+  default_branch: master
+  pushed_at: '2026-11-08T07:16:29Z'
+  archived: false
+  stars: 5664
+  is_fork: false
+  parent: null
+  language: Python
+  latest_release: *id002
+notes:
+- Kokoro in VF runs via hyperframes tts (kokoro-onnx in ~/.contentos/venv), not this server.
+history:
+- at: '2026-11-10T15:33:46+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: Kokoro in VF runs via hyperframes tts (kokoro-onnx in ~/.contentos/venv), not this server.
+- at: '2026-11-10T15:33:46+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:33:54+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:04:31+00:00'
+historical:
+  group: E
+  previous_decision: null
+  evidence: []
+  note: Kokoro in VF runs via hyperframes tts (kokoro-onnx in ~/.contentos/venv), not this server.
+licence:
+  spdx: Apache-2.0
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 53
+    font_files: 0
+    model_files: 72
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - docker/test-client/pyproject.toml
+  - examples/pyproject.toml
+  - examples/requirements.txt
+  - package.json
+  - pyproject.toml
+  npm: {}
+  npm_dev:
+    '@playwright/test': ^1.57.0
+  install_hooks: {}
+  python:
+  - fastapi>=0.128.8
+  - starlette>=1.3.1
+  - uvicorn==0.54.0
+  - click>=8.0.0
+  - pydantic==2.10.4
+  - pydantic-settings==2.7.0
+  - python-dotenv==1.2.2
+  - sqlalchemy==2.0.27
+  - numpy>=1.26.0
+  - scipy==1.14.1
+  - soundfile==0.13.0
+  - inno-kokoro==0.3.0
+  - python-multipart>=0.0.20
+  - regex>=2025.10.22
+  - unicode-segmentation-rs>=0.3.3
+  - aiofiles==23.2.1
+  - tqdm==4.67.1
+  - requests==2.33.0
+  - munch==4.0.0
+  - tiktoken==0.8.0
+  - loguru==0.7.3
+  - mutagen>=1.47.0
+  - psutil>=6.1.1
+  - espeakng-loader==0.2.4
+  - kokoro==0.9.4
+  - huggingface-hub>=1.6.0
+  - transformers>=5.5.0,<6
+  - misaki[en,ja,ko,zh]==0.9.4
+  - pyopenjtalk-plus>=0.4.1 ; sys_platform == 'win32'
+  - spacy==3.8.5
+  - en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+  - inflect>=7.5.0
+  - phonemizer-fork>=3.3.2
+  - av>=14.2.0
+  - text2num>=2.5.1
+  - wsproto==1.3.2
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/ci.yml:37
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/release.yml:116
+  - severity: medium
+    kind: privilege escalation
+    path: .github/workflows/test_build.yml:91
+  - severity: medium
+    kind: pipe remote script to shell
+    path: docker/rocm/Dockerfile:27
+  - severity: medium
+    kind: pipe remote script to shell
+    path: docker/test-client/Dockerfile:29
+  finding_count: 5
+  scanned_files: 286
+  notes:
+  - osv.dev checked 4 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - browser
+files:
+  count: 434
+  skills:
+  - .claude/skills/adding-normalizer/SKILL.md
+  - .claude/skills/api-contrib/SKILL.md
+  - .claude/skills/consumer-check/SKILL.md
+  - .claude/skills/integration-tests/SKILL.md
+  - .claude/skills/readme-benchmarks/SKILL.md
+  - .claude/skills/web-contrib/SKILL.md
+analysed_commit: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+alternatives:
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 1.0
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 1.0
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.5
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.5
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.5
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 1.0
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  status: PARKED
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 1.0
+- id: CEH-0016
+  name: remotion-dev/skills
+  status: REJECTED
+  shared:
+  - subtitles
+  - voiceover
+  overlap: 1.0
+recommendation: 'COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on subtitles, voiceover. Run `ceh
+  compare CEH-0040 CEH-0008`.'
+inspected: '2026-11-10T15:49:34+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:34+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 3
+      basis: resource type repository
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 2 days ago
+    documentation:
+      score: 5
+      basis: top-level README 41564 chars
+    licence_suitability:
+      score: 5
+      basis: Apache-2.0 (permissive)
+    security:
+      score: 3
+      basis: 5 findings, worst medium
+    integration_complexity:
+      score: 2
+      basis: '36 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.21
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

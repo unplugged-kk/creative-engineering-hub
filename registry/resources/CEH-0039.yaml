@@ -1,0 +1,312 @@
+id: CEH-0039
+name: ag-ui-protocol/ag-ui
+url: https://github.com/ag-ui-protocol/ag-ui
+aliases: []
+type: agent-skill
+status: SANDBOXED
+created: '2026-11-10T15:33:34+00:00'
+description: 'AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.'
+capabilities: []
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0039
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0039:
+      git: true
+      head: deefd3833c15b353348ba90eae0fad6113021759
+      branch: main
+      origin: https://github.com/ag-ui-protocol/ag-ui
+      uncommitted:
+      - D  .claude-plugin/marketplace.json
+      - D  .claude/settings.json
+      - D  .gitattributes
+      - D  .github/CODEOWNERS
+      - D  .github/ISSUE_TEMPLATE/bug_report.yml
+      - D  .github/ISSUE_TEMPLATE/documentation.yml
+      - D  .github/ISSUE_TEMPLATE/feature_request.yml
+      - D  .github/actionlint.yaml
+      - D  .github/actions/assert-lockfiles-unchanged/action.yml
+      - D  .github/actions/assert-lockfiles-unchanged/assert-lockfiles-unchanged.sh
+      - D  .github/config-allowlist.txt
+      - D  .github/pull_request_template.md
+      - D  .github/python-toolchain.env
+      - D  .github/scripts/auto-approve-community.test.mjs
+      - D  .github/scripts/check-config-allowlist.sh
+      - D  .github/scripts/check-lfs-pointers.sh
+      - D  .github/skills/agui-cross-sdk-parity/SKILL.md
+      - D  .github/skills/agui-dojo/SKILL.md
+      - D  .github/skills/agui-dotnet-agents-sync/SKILL.md
+      - D  .github/skills/agui-dotnet-code-review/SKILL.md
+      - D  .github/skills/agui-dotnet-code-review/references/rules.md
+      - D  .github/skills/agui-dotnet-cross-language-tests/SKILL.md
+      - D  .github/skills/agui-dotnet-feature-workflow/SKILL.md
+      - D  .github/skills/agui-dotnet-integration-tests/SKILL.md
+      - D  .github/skills/agui-dotnet-sample-step/SKILL.md
+      - D  .github/skills/agui-dotnet-sdk-docs/SKILL.md
+      - D  .github/skills/agui-dotnet-transport/SKILL.md
+      - D  .github/skills/agui-dotnet-transport/references/wire-format.md
+      - D  .github/skills/agui-dotnet-unit-tests/SKILL.md
+      - D  .github/skills/agui-dotnet-wire-types/SKILL.md
+      - D  .github/skills/agui-playwright-validate/SKILL.md
+      - D  .github/workflows/auto-approve-community.yml
+      - D  .github/workflows/build-python-preview.yml
+      - D  .github/workflows/canary.yml
+      - D  .github/workflows/dojo-e2e-published.yml
+      - D  .github/workflows/dojo-e2e.yml
+      - D  .github/workflows/lint-release-workflows.yml
+      - D  .github/workflows/lint-typescript.yml
+      - D  .github/workflows/package-licenses.yml
+      - D  .github/workflows/pr-check-binaries.yml
+      - D  .github/workflows/prepare-release.yml
+      - D  .github/workflows/publish-commit.yml
+      - D  .github/workflows/publish-dart-sdk.yml
+      - D  .github/workflows/publish-python-preview.yml
+      - D  .github/workflows/publish-release.yml
+      - D  .github/workflows/rust-lint-test.yml
+      - D  .github/workflows/security-fork-pr-alert.yml
+      - D  .github/workflows/test-auto-approve-community.yml
+      - D  .github/workflows/test-release-scripts.yml
+      - D  .github/workflows/typecheck-typescript.yml
+      uncommitted_count: 6034
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/ag-ui-protocol/ag-ui
+  default_branch: main
+  forks: []
+  pins:
+  - commit: deefd3833c15b353348ba90eae0fad6113021759
+    at: '2026-11-10T15:33:43+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: deefd3833c15b353348ba90eae0fad6113021759
+  latest_commit: deefd3833c15b353348ba90eae0fad6113021759
+  latest_release: &id002
+    tag: release/2026-11-10
+    published_at: '2026-11-10T15:29:46Z'
+  last_checked: '2026-11-10T16:04:28+00:00'
+  checks:
+  - at: '2026-11-10T15:37:00+00:00'
+    latest: deefd3833c15b353348ba90eae0fad6113021759
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:04:28+00:00'
+    latest: deefd3833c15b353348ba90eae0fad6113021759
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: ag-ui-protocol/ag-ui
+  description: 'AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.'
+  topics:
+  - ag-ui-protocol
+  - agent-frontend
+  - agent-ui
+  - agentic-workflow
+  - ai-agents
+  licence_spdx: MIT
+  default_branch: main
+  pushed_at: '2026-11-10T15:29:45Z'
+  archived: false
+  stars: 17087
+  is_fork: false
+  parent: null
+  language: TypeScript
+  latest_release: *id002
+notes: []
+history:
+- at: '2026-11-10T15:33:34+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:33:34+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:33:45+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+updated: '2026-11-10T16:04:28+00:00'
+historical:
+  group: E
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: MIT
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 71
+    font_files: 0
+    model_files: 196
+    nested_licence_files:
+    - apps/dojo/LICENSE
+    - docs/LICENSE
+    - integrations/a2a/typescript/LICENSE
+    - integrations/adk-middleware/js/LICENSE
+    - integrations/adk-middleware/python/LICENSE
+    - integrations/adk-middleware/typescript/LICENSE
+    - integrations/ag2/typescript/LICENSE
+    - integrations/agno/typescript/LICENSE
+    - integrations/antigravity/python/LICENSE
+    - integrations/antigravity/typescript/LICENSE
+    - integrations/aws-strands/python/LICENSE
+    - integrations/aws-strands/typescript/LICENSE
+    - integrations/claude-agent-sdk/python/LICENSE
+    - integrations/claude-agent-sdk/typescript/LICENSE
+    - integrations/claude-managed-agents/dotnet/LICENSE
+    - integrations/claude-managed-agents/python/LICENSE
+    - integrations/claude-managed-agents/typescript/LICENSE
+    - integrations/community/cloudflare-agents/typescript/LICENSE
+    - integrations/community/omnara/typescript/LICENSE
+    - integrations/community/spring-ai/typescript/LICENSE
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - apps/client-cli-example/package.json
+  - apps/dojo/package.json
+  - docs/package.json
+  - middlewares/a2a-middleware/package.json
+  - middlewares/a2ui-middleware/package.json
+  - middlewares/event-throttle-middleware/package.json
+  - middlewares/mcp-apps-middleware/package.json
+  - middlewares/mcp-middleware/package.json
+  - middlewares/middleware-starter/package.json
+  - package.json
+  - sdks/python/pyproject.toml
+  - spec/package.json
+  npm: {}
+  npm_dev:
+    '@eslint/js': ^9.37.0
+    '@nx/js': 22.5.0
+    eslint: ^9.37.0
+    nx: ^22.4.5
+    prettier: ^3.5.3
+    semver: ^7.7.3
+    tsx: ^4.20.6
+    typescript: 5.8.2
+    typescript-eslint: ^8.48.1
+  install_hooks: {}
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: pipe remote script to shell
+    path: apps/dojo/README.md:27
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: integrations/aws-strands/typescript/src/__tests__/url-fetch-policy.test.ts:2159
+  - severity: medium
+    kind: secret-shaped string in test, docs or comment (hardcoded credential)
+    path: integrations/langgraph/python/tests/test_internal_model_calls.py:19
+  - severity: medium
+    kind: privilege escalation
+    path: sdks/community/c++/README.md:57
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/examples/chatapp-java/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/examples/chatapp-swiftui/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/examples/chatapp-wearos/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/examples/chatapp/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/examples/tools/gradle/wrapper/gradle-wrapper.jar
+  - severity: medium
+    kind: committed binary
+    path: sdks/community/kotlin/library/gradle/wrapper/gradle-wrapper.jar
+  finding_count: 10
+  scanned_files: 4090
+  notes:
+  - 2 large or binary files not scanned
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - antigravity
+  - claude-code-plugin
+  - codex
+  renderers:
+  - browser
+files:
+  count: 6034
+  skills:
+  - .github/skills/agui-cross-sdk-parity/SKILL.md
+  - .github/skills/agui-dojo/SKILL.md
+  - .github/skills/agui-dotnet-agents-sync/SKILL.md
+  - .github/skills/agui-dotnet-code-review/SKILL.md
+  - .github/skills/agui-dotnet-cross-language-tests/SKILL.md
+  - .github/skills/agui-dotnet-feature-workflow/SKILL.md
+  - .github/skills/agui-dotnet-integration-tests/SKILL.md
+  - .github/skills/agui-dotnet-sample-step/SKILL.md
+  - .github/skills/agui-dotnet-sdk-docs/SKILL.md
+  - .github/skills/agui-dotnet-transport/SKILL.md
+  - .github/skills/agui-dotnet-unit-tests/SKILL.md
+  - .github/skills/agui-dotnet-wire-types/SKILL.md
+  - .github/skills/agui-playwright-validate/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-client-tools/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-human-in-the-loop/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-multimodal/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-protobuf/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-reasoning/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-server-tools/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-shared-state/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-streaming-chat/SKILL.md
+  - sdks/dotnet/plugins/ag-ui-dotnet/skills/agui-dotnet-troubleshoot/SKILL.md
+  - skills/ag-ui-a2ui-integration/SKILL.md
+analysed_commit: deefd3833c15b353348ba90eae0fad6113021759
+alternatives: []
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0039`. Gates needing review: security.'
+inspected: '2026-11-10T15:49:31+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:49:31+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, True, False, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, antigravity, claude-code-plugin, codex'
+    maintainability:
+      score: 5
+      basis: last push 0 days ago
+    documentation:
+      score: 5
+      basis: top-level README 13129 chars
+    licence_suitability:
+      score: 5
+      basis: MIT (permissive)
+    security:
+      score: 3
+      basis: 10 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.43
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: review

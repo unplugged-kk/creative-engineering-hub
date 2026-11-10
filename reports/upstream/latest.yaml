@@ -1,0 +1,282 @@
+at: '2026-11-10T16:04:47+00:00'
+results:
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  pinned: 951d6149d2748a15058f79dcf8e8c4bf00824121
+  latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0002
+  name: charlie947/motion-graphics-skills
+  pinned: 229022ebca76972e119e36ada23a1648d51665ab
+  latest: 229022ebca76972e119e36ada23a1648d51665ab
+  flags:
+  - up-to-date
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  pinned: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+  latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+  flags:
+  - up-to-date
+- id: CEH-0004
+  name: Barty-Bart/motion-graphics
+  pinned: d6e5d95e45167d95bb4260b9da4d674791143710
+  latest: 3d83d987d658601d8a1269eb691622bdcd427335
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  pinned: e627941543d9988b155dc610bb9cc0115a5e365e
+  latest: 6f80380b91858dad66524a5b34e027dad656d538
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0006
+  name: Tejashmakwana/motionmaxxing
+  pinned: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+  latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+  flags:
+  - up-to-date
+- id: CEH-0007
+  name: feitangyuan/onetake
+  pinned: abb6d17279cdc749e27e99aa534a062d8fd01ced
+  latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+  flags:
+  - up-to-date
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  pinned: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
+  latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
+  flags:
+  - up-to-date
+- id: CEH-0009
+  name: remotion-dev/remotion
+  pinned: 5ce9514934716083274bb18221737223aba63318
+  latest: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0010
+  name: motiondivision/motion
+  pinned: e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8
+  latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0011
+  name: greensock/gsap-skills
+  pinned: aed9cfd3277740755f6bfc1155c7aa645403b760
+  latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+  flags:
+  - up-to-date
+- id: CEH-0012
+  name: cth9191/animate
+  pinned: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+  latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+  flags:
+  - up-to-date
+- id: CEH-0013
+  name: nateherkai/herk-edit-kit
+  pinned: 0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86
+  latest: 10511e5af86fc47756ea89803b397422e2d89284
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
+  latest: cda84222aa12716f2ceb92b45629487be81a0601
+  flags:
+  - new-commits
+- id: CEH-0015
+  name: acamposuribe/p5.brush
+  pinned: null
+  latest: d56350a647d0b098a9e79d397447a8094f6c45a4
+  flags:
+  - unpinned
+- id: CEH-0016
+  name: remotion-dev/skills
+  pinned: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b
+  latest: 1af7e69a2a613437d46095924057970a6a7df40d
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0017
+  name: 199-biotechnologies/motion-dev-animations-skill
+  pinned: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+  latest: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
+  flags:
+  - up-to-date
+  - unmaintained
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  pinned: f9a8a041b85185ee4881b3471d3415e939aac772
+  latest: f9a8a041b85185ee4881b3471d3415e939aac772
+  flags:
+  - up-to-date
+- id: CEH-0019
+  name: haidrrrry/claude-remotion-skill
+  pinned: 1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383
+  latest: 1dcbe5e3fc6cf970bd10d3cc05f0a8a5d19d0383
+  flags:
+  - up-to-date
+- id: CEH-0020
+  name: bangtutorial/bang-motion
+  pinned: c1aa65e921c970d858705fcb4a53a8294d1a4131
+  latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+  flags:
+  - up-to-date
+- id: CEH-0021
+  name: CK42BB/vox-explainer-skill
+  pinned: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+  latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+  flags:
+  - up-to-date
+- id: CEH-0022
+  name: lintsinghua/paint-mv-skills
+  pinned: ca8f5f75f186d590e687542b106aa73ceff9133c
+  latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+  flags:
+  - up-to-date
+- id: CEH-0023
+  name: hi-nikola/hand-drawn-explainer-video-nikola
+  pinned: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+  latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+  flags:
+  - up-to-date
+- id: CEH-0024
+  name: Vincentwei1021/video-shotcraft
+  pinned: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+  latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+  flags:
+  - up-to-date
+- id: CEH-0025
+  name: Vincentwei1021/anything2explainer
+  pinned: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+  latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+  flags:
+  - up-to-date
+- id: CEH-0026
+  name: morluto/rea
+  pinned: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+  latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+  flags:
+  - up-to-date
+- id: CEH-0027
+  name: motiondivision/ai-kit
+  pinned: 1e424943582cbbdb6e3f410687e39f96451447bb
+  latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+  flags:
+  - up-to-date
+- id: CEH-0028
+  name: harry0703/MoneyPrinterTurbo
+  pinned: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
+  latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0029
+  name: OpenMontageInc/OpenMontage
+  pinned: 08e2151fa02de28a5d6a312b3d575692bf147ad7
+  latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+  flags:
+  - new-commits
+  - local-conflict
+- id: CEH-0030
+  name: mutonby/openshorts
+  pinned: 55308c3eb5b85f03d840a32c087755e1abcc8eec
+  latest: 55308c3eb5b85f03d840a32c087755e1abcc8eec
+  flags:
+  - up-to-date
+- id: CEH-0031
+  name: OpenCut-app/OpenCut
+  pinned: e668010778568641babef2cc40be4703ae6916d6
+  latest: e668010778568641babef2cc40be4703ae6916d6
+  flags:
+  - up-to-date
+- id: CEH-0032
+  name: darkzOGx/youtube-automation-agent
+  pinned: e973d515aef90c467da2289144df737a3bd03859
+  latest: e973d515aef90c467da2289144df737a3bd03859
+  flags:
+  - up-to-date
+- id: CEH-0033
+  name: hypit-ai/hypit
+  pinned: 3e49a974c605701650466de1d32aee720db5ad9a
+  latest: 3e49a974c605701650466de1d32aee720db5ad9a
+  flags:
+  - up-to-date
+- id: CEH-0034
+  name: D4Vinci/Scrapling
+  pinned: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+  latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+  flags:
+  - up-to-date
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  pinned: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+  latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+  flags:
+  - up-to-date
+- id: CEH-0036
+  name: mvanhorn/last30days-skill
+  pinned: c567827c3d25865fafa6b1ad33a173346da8cdcb
+  latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
+  flags:
+  - up-to-date
+- id: CEH-0037
+  name: gitroomhq/postiz-app
+  pinned: 85a0246b600733d851ed0927020bd5735db860c8
+  latest: 85a0246b600733d851ed0927020bd5735db860c8
+  flags:
+  - up-to-date
+- id: CEH-0038
+  name: CopilotKit/CopilotKit
+  pinned: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  flags:
+  - up-to-date
+- id: CEH-0039
+  name: ag-ui-protocol/ag-ui
+  pinned: deefd3833c15b353348ba90eae0fad6113021759
+  latest: deefd3833c15b353348ba90eae0fad6113021759
+  flags:
+  - up-to-date
+- id: CEH-0040
+  name: remsky/Kokoro-FastAPI
+  pinned: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+  latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+  flags:
+  - up-to-date
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  pinned: 3596b26764286a7de9d90c363e988d50578918e5
+  latest: 3596b26764286a7de9d90c363e988d50578918e5
+  flags:
+  - up-to-date
+- id: CEH-0042
+  name: Jakeschincariol/youtube-agent-skill
+  pinned: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+  latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+  flags:
+  - up-to-date
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  pinned: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+  latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+  flags:
+  - up-to-date
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  pinned: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+  latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+  flags:
+  - up-to-date
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  pinned: 7b91435c301d530351dcf5ebb91dd139c002e405
+  latest: 7b91435c301d530351dcf5ebb91dd139c002e405
+  flags:
+  - up-to-date

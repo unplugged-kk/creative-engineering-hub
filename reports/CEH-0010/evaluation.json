@@ -1,0 +1,112 @@
+{
+  "id": "CEH-0010",
+  "name": "motiondivision/motion",
+  "url": "https://github.com/motiondivision/motion",
+  "type": "template",
+  "status": "PARKED",
+  "capabilities": [
+    "transitions"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 10,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": [
+        "packages/framer-motion/LICENSE.md",
+        "packages/motion-dom/LICENSE.md",
+        "packages/motion-utils/LICENSE.md",
+        "packages/motion/LICENSE.md"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "npm prepare hook runs on install",
+        "path": "package.json: turbo run build measure"
+      }
+    ],
+    "finding_count": 1,
+    "scanned_files": 2099,
+    "notes": [
+      "1 large or binary files not scanned",
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "codex",
+      "opencode"
+    ],
+    "renderers": [
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:49+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 4,
+        "basis": "skills, scripts, examples, tests present: [True, True, False, True]"
+      },
+      "reusability": {
+        "score": 3,
+        "basis": "resource type template"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, codex, opencode"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 4,
+        "basis": "top-level README 7409 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "1 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 4,
+        "basis": "0 runtime dependencies; install hooks: ['prepare']"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.21,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "review"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps heygen-com/hyperframes (PRODUCTION) on transitions. Run `ceh compare CEH-0010 CEH-0014`."
+}

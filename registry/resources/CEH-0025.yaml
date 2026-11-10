@@ -1,0 +1,305 @@
+id: CEH-0025
+name: Vincentwei1021/anything2explainer
+url: https://github.com/Vincentwei1021/anything2explainer
+aliases: []
+type: agent-skill
+status: RESTRICTED
+created: '2026-11-10T15:30:44+00:00'
+description: Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas
+  motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame
+  drawn in code with Remotion.
+capabilities:
+- voiceover
+- explainer-videos
+- ai-video-generation
+- data-visualization
+- motion-graphics
+- storyboarding
+- subtitles
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0025
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0025:
+      git: true
+      head: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+      branch: main
+      origin: https://github.com/Vincentwei1021/anything2explainer
+      uncommitted:
+      - D  .gitignore
+      - D  CITATION.cff
+      - D  LICENSE
+      - D  README.md
+      - D  README_ZH.md
+      - D  SKILL.md
+      - D  examples/contrast/01_hero_size_bad_f0128.jpg
+      - D  examples/contrast/01_hero_size_good_f0138.jpg
+      - D  examples/contrast/02_hero_reveal_bad_f1729.jpg
+      - D  examples/contrast/02_hero_reveal_good_f1105.jpg
+      - D  examples/contrast/03_big_number_good_f7258.jpg
+      - D  examples/contrast/03_sparse_axis_bad_f1900.jpg
+      - D  examples/contrast/04_formula_bad_f3033.jpg
+      - D  examples/contrast/04_result_number_good_f2613.jpg
+      - D  examples/contrast/05_clean_bg_good_f1237.jpg
+      - D  examples/contrast/05_clutter_bg_bad_f1651.jpg
+      - D  examples/contrast/06_ending_bad_f7540.jpg
+      - D  examples/contrast/06_ending_good_f8100.jpg
+      - D  examples/contrast/README.md
+      - D  examples/contrast/contrast_sheet.jpg
+      - D  examples/rag/AGENT_RAG_BUILD_RULES.md
+      - D  examples/rag/AGENT_RAG_QC_RULES.md
+      - D  examples/rag/README.md
+      - D  examples/rag/frames/overview_1.jpg
+      - D  examples/rag/frames/overview_2.jpg
+      - D  examples/rag/frames/overview_3.jpg
+      - D  examples/rag/frames/overview_4.jpg
+      - D  examples/rag/frames/overview_5.jpg
+      - D  examples/rag/frames/overview_6.jpg
+      - D  examples/rag/frames/ref_agentic_loop_f6900.jpg
+      - D  examples/rag/frames/ref_chapter_card_f1490.jpg
+      - D  examples/rag/frames/ref_chunk_size_f2200.jpg
+      - D  examples/rag/frames/ref_graphrag_f6600.jpg
+      - D  examples/rag/frames/ref_hnsw_f3260.jpg
+      - D  examples/rag/frames/ref_hybrid_rrf_f4640.jpg
+      - D  examples/rag/frames/ref_long_context_f7480.jpg
+      - D  examples/rag/frames/ref_lost_in_middle_f5250.jpg
+      - D  examples/rag/frames/ref_moat_f8100.jpg
+      - D  examples/rag/frames/ref_paper_f1300.jpg
+      - D  examples/rag/frames/ref_parse_f1760.jpg
+      - D  examples/rag/frames/ref_rag_reveal_f1090.jpg
+      - D  examples/rag/frames/ref_ragas_f6150.jpg
+      - D  examples/rag/frames/ref_rerank_funnel_f4900.jpg
+      - D  examples/rag/frames/ref_shortcomings_f0600.jpg
+      - D  examples/rag/frames/ref_title_f0058.jpg
+      - D  examples/rag/frames/ref_vector_space_f2990.jpg
+      - D  examples/rag/narration.txt
+      - D  examples/rag/qc/qc_v1_C1.md
+      - D  examples/rag/qc/qc_v1_C2.md
+      - D  examples/rag/qc/qc_v1_C3.md
+      uncommitted_count: 211
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/Vincentwei1021/anything2explainer
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    at: '2026-11-10T15:30:46+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+  latest_commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+  latest_release: null
+  last_checked: '2026-11-10T16:03:46+00:00'
+  checks:
+  - at: '2026-11-10T15:36:19+00:00'
+    latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:03:46+00:00'
+    latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: Vincentwei1021/anything2explainer
+  description: Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas
+    motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame
+    drawn in code with Remotion.
+  topics:
+  - agent-skills
+  - ai-agents
+  - ai-video
+  - claude-code
+  - claude-code-skill
+  - codex
+  - edge-tts
+  - educational-video
+  - explainer-video
+  - kokoro
+  - motion-graphics
+  - multi-agent
+  - react
+  - remotion
+  - text-to-video
+  - tts
+  - typescript
+  - video-generation
+  licence_spdx: NOASSERTION
+  default_branch: main
+  pushed_at: '2026-11-09T15:26:15Z'
+  archived: false
+  stars: 3190
+  is_fork: false
+  parent: null
+  language: TypeScript
+notes: []
+history:
+- at: '2026-11-10T15:30:44+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: ''
+- at: '2026-11-10T15:30:44+00:00'
+  from: DISCOVERED
+  to: INSPECTING
+  by: ceh inspect
+  note: ''
+- at: '2026-11-10T15:30:47+00:00'
+  from: INSPECTING
+  to: SANDBOXED
+  by: ceh inspect
+  note: read statically in the lab; nothing executed
+- at: '2026-11-10T15:35:03+00:00'
+  from: SANDBOXED
+  to: RESTRICTED
+  by: ceh evaluate
+  note: licence PolyForm-Noncommercial-1.0.0 blocks commercial use
+updated: '2026-11-10T16:03:46+00:00'
+historical:
+  group: D
+  previous_decision: null
+  evidence: []
+  note: null
+licence:
+  spdx: PolyForm-Noncommercial-1.0.0
+  class: non-commercial
+  gate: block
+  source: fingerprint:LICENSE
+  assets:
+    media_files: 36
+    font_files: 4
+    model_files: 0
+    nested_licence_files:
+    - template/public/fonts/LICENSE.md
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests:
+  - template/package.json
+security:
+  gate: review
+  worst: medium
+  findings:
+  - severity: medium
+    kind: privilege escalation
+    path: README.md:82
+  - severity: medium
+    kind: privilege escalation
+    path: README_ZH.md:82
+  finding_count: 2
+  scanned_files: 168
+  notes:
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - remotion
+  - ffmpeg
+  - browser
+files:
+  count: 211
+  skills:
+  - SKILL.md
+analysed_commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - explainer-videos
+  - motion-graphics
+  - subtitles
+  - voiceover
+  overlap: 0.57
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - explainer-videos
+  - subtitles
+  - voiceover
+  overlap: 0.43
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - data-visualization
+  - motion-graphics
+  overlap: 0.29
+- id: CEH-0035
+  name: Panniantong/Agent-Reach
+  status: PRODUCTION
+  shared:
+  - data-visualization
+  overlap: 0.14
+- id: CEH-0041
+  name: thewh1teagle/kokoro-onnx
+  status: PRODUCTION
+  shared:
+  - voiceover
+  overlap: 0.14
+- id: CEH-0043
+  name: ggml-org/whisper.cpp
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.14
+- id: CEH-0044
+  name: FFmpeg/FFmpeg
+  status: PRODUCTION
+  shared:
+  - subtitles
+  overlap: 0.14
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.14
+recommendation: 'RESTRICT: PolyForm-Noncommercial-1.0.0 forbids commercial use. Reference the method only; never copy code
+  or assets.'
+inspected: '2026-11-10T15:48:29+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:48:29+00:00'
+  criteria:
+    workflow_completeness:
+      score: 3
+      basis: 'skills, scripts, examples, tests present: [True, False, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 5
+      basis: last push 1 days ago
+    documentation:
+      score: 5
+      basis: top-level README 17808 chars
+    licence_suitability:
+      score: 0
+      basis: PolyForm-Noncommercial-1.0.0 (non-commercial)
+    security:
+      score: 3
+      basis: 2 findings, worst medium
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 3.71
+  evidence_coverage: 0.7
+  gates:
+    licence: block
+    security: review

@@ -1,0 +1,1458 @@
+{
+  "id": "CEH-0014",
+  "pinned": "01c6f6004a00ecfa6e77ab4025b47a46a5e925fc",
+  "latest": "cda84222aa12716f2ceb92b45629487be81a0601",
+  "at": "2026-11-10T16:03:42+00:00",
+  "commits": [
+    {
+      "sha": "cda84222aa12716f2ceb92b45629487be81a0601",
+      "date": "2026-11-10",
+      "subject": "fix(core): Safari keeps a small file's preload and leaves a playing clip's source alone (#7498)"
+    },
+    {
+      "sha": "b0835262ae5179f27d95ac2d140298f83fbf2fd1",
+      "date": "2026-11-10",
+      "subject": "fix(studio): check Host on the dev server's API routes and honor preview allowed hosts (#7493)"
+    },
+    {
+      "sha": "265ec660b7a029b2275ae131789ede2dc90858f6",
+      "date": "2026-11-10",
+      "subject": "ci(publish): build the Lambda handler zip in a read-only job and verify its hash before release (#7495)"
+    },
+    {
+      "sha": "983e865ad7ac8e6e6737eff229949d181934ed39",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): thumbnail origin from the server, sandbox previews from other sites (#7492)"
+    },
+    {
+      "sha": "5c579997562578a6b0a946d10b4410a23e5f4029",
+      "date": "2026-11-10",
+      "subject": "fix(producer): a render uses the CLI's own GSAP, so the default CDN's file needs no network (#7388)"
+    },
+    {
+      "sha": "b28bd2b3482a6bcb04d0d0ba0eaee74fbb965455",
+      "date": "2026-11-10",
+      "subject": "fix(cli): only name a shadowing install whose manager can move it (#7499)"
+    },
+    {
+      "sha": "fecde9992fba422e56df4dedc84940bda47ce75e",
+      "date": "2026-11-10",
+      "subject": "perf(core): Safari stops a long video's clips from loading the whole file at once (#7436)"
+    },
+    {
+      "sha": "ec30de06278300882a898f5fa0b27a599e0dd550",
+      "date": "2026-11-10",
+      "subject": "fix(studio): messages that count clips or keyframes say 1 clip, not 1 clips (#7496)"
+    },
+    {
+      "sha": "248f56fbaa08aa9167ff44b10764df526c90a921",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): a claim waits for a changing file's first copy, so its edit stays undoable (#7497)"
+    },
+    {
+      "sha": "ad1a5eab29b1a0b9f19305690c5cefab84819cd4",
+      "date": "2026-11-10",
+      "subject": "chore: release v0.9.30 (#7494)"
+    },
+    {
+      "sha": "007664e25a587c35da0ea104d7fc6a8550389446",
+      "date": "2026-11-10",
+      "subject": "fix(reverse): give agents the sign-in reason to say, and catch stale CLIs that know reverse (#7488)"
+    },
+    {
+      "sha": "f9255e39a56de17fd86362c4558a918ad2a874ef",
+      "date": "2026-11-10",
+      "subject": "fix(aws-lambda): the handler ZIP installs its runtime from a committed lockfile with scripts off (#7485)"
+    },
+    {
+      "sha": "61e720b0e7d6d68172466a3a72ea27d98f2ad58d",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): history sweeps stop holding the host's event loop on large projects (#7491)"
+    },
+    {
+      "sha": "c6d243a2dee879e5f1fa2aeda544de8ecf91a998",
+      "date": "2026-11-10",
+      "subject": "fix(gcp-cloud-run): pin the base image and verify chrome-headless-shell and bun by sha256 (#7487)"
+    },
+    {
+      "sha": "f318d3d08a7dff5fb48d12e7604c73bf004af204",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): refuse cross-origin writes and unknown hosts on the preview server (#7490)"
+    },
+    {
+      "sha": "b4c7f9cf7c601b440fcc94a7a9c44658cb6b7cd6",
+      "date": "2026-11-10",
+      "subject": "chore: release v0.9.29 (#7483)"
+    },
+    {
+      "sha": "724ab39b3fdba730a2215e93b5843b4479ef8f7b",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): buildSubCompositionHtml reads only compositions inside the project (#7482)"
+    },
+    {
+      "sha": "0ba8941235f7bb3b40e10bb79bd27130543718c3",
+      "date": "2026-11-10",
+      "subject": "feat(cli): label GPT image prices as estimates and show the charged credits (#7351)"
+    },
+    {
+      "sha": "e8416b2a41e537ed2f0c56e66a8ce585d1fb5b01",
+      "date": "2026-11-10",
+      "subject": "fix(studio-server): history waits out a file a save has emptied, and rereads one written mid-copy (#7480)"
+    },
+    {
+      "sha": "88db83092a635b9e3ef2b7f90e2f50261e8e5cdb",
+      "date": "2026-11-10",
+      "subject": "fix(producer): refuse a too-slow render only when its typical frame says it cannot finish (#7479)"
+    },
+    {
+      "sha": "1a758fd60fac90cd3ce370f5af1cb47e4b610128",
+      "date": "2026-11-10",
+      "subject": "test(engine): split the frame extractor tests so each file stays under the flake gate budget (#7476)"
+    },
+    {
+      "sha": "b12365d67d8436c8537c0d3de7a6717b1519a509",
+      "date": "2026-11-10",
+      "subject": "docs(studio-app): the Reference read is paid by Pro or a saved HeyGen API key (#7440)"
+    },
+    {
+      "sha": "235c80bae0cde99754cab78609cb5d7d210b650e",
+      "date": "2026-11-10",
+      "subject": "fix(engine): a video clip shows a new source frame on every frame it is on screen (#7471)"
+    },
+    {
+      "sha": "58686a74c6a82c13cec05c67a76cc7555cea509b",
+      "date": "2026-11-09",
+      "subject": "chore: release v0.9.28 (#7475)"
+    },
+    {
+      "sha": "756bd6b174dea149b08011012c1e530017d08299",
+      "date": "2026-11-10",
+      "subject": "docs(studio-app): cloud exports come with the plan, not only an API key (#7441)"
+    },
+    {
+      "sha": "4d0fa2baa85d821a8b13c04225138480e02ebe1d",
+      "date": "2026-11-10",
+      "subject": "fix(engine): short clips from Apple-encoded videos keep their last frame (#7469)"
+    },
+    {
+      "sha": "58e9cae7520c057914249fc60477421727b4386f",
+      "date": "2026-11-10",
+      "subject": "fix(share): preserve re-invites and validate workspace responses (#7470)"
+    },
+    {
+      "sha": "651de1d948b0f619001e3705cba98fa415baf0dd",
+      "date": "2026-11-09",
+      "subject": "feat(cli): carry the motion blur summary on the @hf-result line (#7468)"
+    },
+    {
+      "sha": "e5e79e59ea63f92696fda39e18b89467d554d0d4",
+      "date": "2026-11-09",
+      "subject": "fix(player): unload the video when its src is cleared (#7466)"
+    },
+    {
+      "sha": "9e346f9bb793fe53684d7437ac4bed79b11aaa54",
+      "date": "2026-11-09",
+      "subject": "chore(release): cut v0.9.27 (#7464)"
+    },
+    {
+      "sha": "6f90980394086b1ac3a48c9c44ceadd9729e5ad5",
+      "date": "2026-11-09",
+      "subject": "perf(parsers): speed up deleting animated groups (#7463)"
+    },
+    {
+      "sha": "7bf19ab5f9d1690d596334822f251dece3921e1a",
+      "date": "2026-11-09",
+      "subject": "test(engine): nightly motion blur run over generated compositions (#7437)"
+    },
+    {
+      "sha": "4b3f70fb1b202a1422a199e8b7440a388d0b5a20",
+      "date": "2026-11-09",
+      "subject": "fix(cli): Studio renders take the same one-render-slot lock as the CLI (#7459)"
+    },
+    {
+      "sha": "48a2b4e019f7fe7643a5888f1a2802dd29e577e9",
+      "date": "2026-11-09",
+      "subject": "docs(mcp): current ChatGPT and Claude setup steps, the hosted render's real output, and a first prompt that works (#7439)"
+    },
+    {
+      "sha": "4d29a64b0557611d505480ce230103d05ff16002",
+      "date": "2026-11-09",
+      "subject": "test(engine): real-Chrome tests get 30 s per test on slow runners, not 5 s (#7456)"
+    },
+    {
+      "sha": "b95ab794eb22069be7e4767a08c129cb1504cfed",
+      "date": "2026-11-09",
+      "subject": "chore(codegen): resync cloud client from EF bc598db7 (#7455)"
+    },
+    {
+      "sha": "a4e16d87c68a4799832d06e292302f5a2e5897f1",
+      "date": "2026-11-09",
+      "subject": "fix(cli): templates pull unpacks under .hyperframes, not beside templates/ (#7269)"
+    },
+    {
+      "sha": "3ff0b3d81c011c63917c66df0d2cf45a32148882",
+      "date": "2026-11-09",
+      "subject": "docs(changelog): weekly digest 2026-11-02-2026-11-09 (#7453)"
+    },
+    {
+      "sha": "fc13420de8f0627a7db1f9f375163c1bbd6ad0c4",
+      "date": "2026-11-09",
+      "subject": "fix(skills): await the player seek in seam-gate (#7454)"
+    },
+    {
+      "sha": "0ca2b1ae9e72a9b9cae88e18e526a5fb129c880f",
+      "date": "2026-11-09",
+      "subject": "fix(cli): label SVG contact sheet thumbnails by file name on Windows (#6732)"
+    },
+    {
+      "sha": "b59fa2083391f792346f91817ed7689c2525c8c5",
+      "date": "2026-11-09",
+      "subject": "fix(cli): staging folders beside a project path no longer fail past 260 characters on Windows (#7338)"
+    },
+    {
+      "sha": "c149730819437fbf0d8fda7de6952293bcf69c50",
+      "date": "2026-11-09",
+      "subject": "fix(cli): no macOS developer-tools prompt from git, xcrun or cc checks on a Mac without the tools (#7257)"
+    },
+    {
+      "sha": "c9fe041504049b69efebf894461802e84b0ab0ce",
+      "date": "2026-11-09",
+      "subject": "test(engine): drive the empty-screenshot probe test with fake timers (#7000)"
+    },
+    {
+      "sha": "7b30a50b518436d14fa19cb7ab3e323f26d9be70",
+      "date": "2026-11-09",
+      "subject": "fix(cli): transcribe reads whisper output with nan or inf values (#7110)"
+    },
+    {
+      "sha": "3a24da8a8e08a1ffc8b42cc8cac0c3104e26503f",
+      "date": "2026-11-09",
+      "subject": "fix(cli): spaced-path hint takes the longest path and reads --flag=value; telemetry docs name the reverse session id (#7452)"
+    },
+    {
+      "sha": "37f1819f32cf0b1329f2241295dbad9a3dea354e",
+      "date": "2026-11-09",
+      "subject": "feat(skills): route a style outside the templates instead of listing them (#7450)"
+    },
+    {
+      "sha": "caa62fe68ba49a851b82331088ce57f9f6fee8e8",
+      "date": "2026-11-09",
+      "subject": "fix(core): detect template entries structurally (#7249)"
+    },
+    {
+      "sha": "448f88ff3ab31c47e6f82298f4a012019349893a",
+      "date": "2026-11-09",
+      "subject": "feat(cli): reverse and templates report their own runs; commands say which skills are installed (#7444)"
+    },
+    {
+      "sha": "eb0a52c2980318aa07df4290c247cd41b08ed268",
+      "date": "2026-11-09",
+      "subject": "fix(cli): measure answers the four mistakes agents make most (#7443)"
+    },
+    {
+      "sha": "ad6f7858f649f44e16f21128a88992ea3c01dd74",
+      "date": "2026-11-09",
+      "subject": "feat(skills): reverse-any-video and style-sampling install with the core set (#7445)"
+    },
+    {
+      "sha": "a73572c3b7b2ead7ad0ff25b22b4b7080c5c7132",
+      "date": "2026-11-09",
+      "subject": "fix(core): a video held on its tail is seeked once, not every frame (#7442)"
+    },
+    {
+      "sha": "c38ac5438c751094a720c55c68bd15fc6450ec37",
+      "date": "2026-11-09",
+      "subject": "feat(producer): distributed and range renders honour page motion blur (#7311)"
+    },
+    {
+      "sha": "e351253724c7142cc4697de652f353a0fd74b66e",
+      "date": "2026-11-09",
+      "subject": "docs(cli): correct Claude Code marker comments in agent detection (#7426)"
+    },
+    {
+      "sha": "7bf65995b34fc2293bdd0b8e6273e86e56e1c3b1",
+      "date": "2026-11-09",
+      "subject": "feat(cli): add agent markers other detectors use, verified upstream (#7425)"
+    },
+    {
+      "sha": "c1e96a45b24c66c96ed9151075f5262d4a3614dc",
+      "date": "2026-11-09",
+      "subject": "fix(cli): let an agent's own name beat editor and host markers (#7424)"
+    },
+    {
+      "sha": "c14f258907252cc4b44e79b7f92e2cc870bb6259",
+      "date": "2026-11-09",
+      "subject": "feat(cli): detect more agent runtimes in telemetry (#7423)"
+    },
+    {
+      "sha": "d09584382641a1cf0a14bfa4ed12b9ab6729446a",
+      "date": "2026-11-09",
+      "subject": "docs: list the 1440p presets in the v0.9.26 notes (#7422)"
+    },
+    {
+      "sha": "0c6c7fca45bddc9838ebc6c0f0280e9efea1f18a",
+      "date": "2026-11-08",
+      "subject": "chore: release v0.9.26 (#7421)"
+    },
+    {
+      "sha": "5e8abd7574a78e159ac51761e62fa25179e151a5",
+      "date": "2026-11-08",
+      "subject": "feat(cli): add 1440p resolution presets to --resolution (#7418)"
+    },
+    {
+      "sha": "91ad7fb6ee3fb4d0098385abdea64a1d5acd0dfd",
+      "date": "2026-11-08",
+      "subject": "fix(cli): cloud render finds media whose file name is stored in another Unicode form than the page's (#7419)"
+    },
+    {
+      "sha": "2927fe615581f03258205a876fada7d6f3111dc8",
+      "date": "2026-11-08",
+      "subject": "perf(studio-server): a large project's first history copy takes a fraction of the time (#7415)"
+    },
+    {
+      "sha": "327e20208c3f542841de670cce54754473f58d30",
+      "date": "2026-11-08",
+      "subject": "chore: release v0.9.25 (#7414)"
+    },
+    {
+      "sha": "b764a5ffdc9ce14bec63d32ab7b7133578562234",
+      "date": "2026-11-08",
+      "subject": "test(lint): cover template-root composition variable declarations (#6150)"
+    },
+    {
+      "sha": "fa2e63515f3a4b80c7f0399c4f393a9a4c6f6d3f",
+      "date": "2026-11-08",
+      "subject": "fix(core): a muted video's picture no longer waits on its own audio track at a cut (#7412)"
+    },
+    {
+      "sha": "eb16510a10fbc30f230ae2b7d6e5a7ac50e31eeb",
+      "date": "2026-11-08",
+      "subject": "fix(producer): seed random values in every render so re-renders give the same film (#7410)"
+    },
+    {
+      "sha": "070b964d7b8cd844a893f0abbe8e0b7f1ac6d879",
+      "date": "2026-11-08",
+      "subject": "feat(cli): check replays an unchanged project's last pass and takes --no-craft (#7398)"
+    },
+    {
+      "sha": "12906e0bfba41b72d9aad83d6a98c0c8943e5682",
+      "date": "2026-11-08",
+      "subject": "fix(core): capture pages load only the clips on screen (#7402)"
+    },
+    {
+      "sha": "074de9dd1e7196c1e1f56b6c8704f4bebac41983",
+      "date": "2026-11-08",
+      "subject": "ci: install ffmpeg through the GitHub API asset route with a cache (#7401)"
+    },
+    {
+      "sha": "7ad2be96ea1cdf6c1c5d3da7f3be20584c3a9f25",
+      "date": "2026-11-08",
+      "subject": "chore: release v0.9.23 (#7399)"
+    },
+    {
+      "sha": "75fe18c621be5297d7b09a788fabc75a3cd6c734",
+      "date": "2026-11-08",
+      "subject": "fix(core): a set written before its tween no longer erases the tween's end (#7397)"
+    },
+    {
+      "sha": "0f5914dc445ceed38fdc58eadb617f69632c0a29",
+      "date": "2026-11-08",
+      "subject": "test(engine): the decode timeout warning reaches every caller (#7119)"
+    },
+    {
+      "sha": "ab785e9c5c59e9542593e49b93f9547cb2665b44",
+      "date": "2026-11-08",
+      "subject": "fix(studio): a menu row's highlight is rounder than its panel (#7395)"
+    },
+    {
+      "sha": "adf14d7324109694614955f32ba6cf2b97ad79d2",
+      "date": "2026-11-08",
+      "subject": "feat(engine): a failed CDN script's report names its library and version, never its URL (#7394)"
+    },
+    {
+      "sha": "3151fd21330e7e955210bfd3f557bc8d78d243c5",
+      "date": "2026-11-08",
+      "subject": "fix(studio): bound recovery and verify full-quality playback (#7393)"
+    },
+    {
+      "sha": "fd05a3860c66958ba3d509981e890c699ae4aa5e",
+      "date": "2026-11-08",
+      "subject": "feat(core): preview health names the media element that held play (#7159)"
+    },
+    {
+      "sha": "26956ea1f4c855e80cfdd1677c1e02e15fbf088d",
+      "date": "2026-11-08",
+      "subject": "chore: release v0.9.22 (#7392)"
+    },
+    {
+      "sha": "fed14b0161baa6edf170ba37e2fb4a0f4656a8f1",
+      "date": "2026-11-08",
+      "subject": "fix(producer): keep page timers on the film's schedule at every worker count (#7390)"
+    },
+    {
+      "sha": "b7157bdabbabb194f60126bca45cad21c263a7dc",
+      "date": "2026-11-08",
+      "subject": "feat(studio): scrub full-quality video with decoded preview frames (#7379)"
+    },
+    {
+      "sha": "b87a01f6a851b0ca02bfad3acfd0c56398024267",
+      "date": "2026-11-07",
+      "subject": "fix(core): retain complete preview pictures during native seeks (#7378)"
+    },
+    {
+      "sha": "34118d8f20cf9682f119b157e89b2f3fe42cd4e4",
+      "date": "2026-11-07",
+      "subject": "test(producer): the injector budget test no longer leaves a no-op injector for later tests (#7384)"
+    },
+    {
+      "sha": "a0bbaab43688d48501621f4837eae1ad97480743",
+      "date": "2026-11-07",
+      "subject": "chore: release v0.9.21 (#7385)"
+    },
+    {
+      "sha": "942893eb2cbd601b177450834d08596a195d8b5c",
+      "date": "2026-11-07",
+      "subject": "fix(core): preview playback moves every frame between an audio track's time updates (#7373)"
+    },
+    {
+      "sha": "841e90ffe201823bb011ad568efe474787674b16",
+      "date": "2026-11-07",
+      "subject": "fix(core): Safari video picture lands on the cut again, undoing the hidden pre-roll (#7383)"
+    },
+    {
+      "sha": "e0c11bf09aa457523a54e975d5b57b7ad119548d",
+      "date": "2026-11-07",
+      "subject": "fix(cli): a media file referenced by its filesystem path goes into the cloud archive (#7381)"
+    },
+    {
+      "sha": "7b79ab42905a730dd5d0aeb01b8b2dadecc7433e",
+      "date": "2026-11-07",
+      "subject": "fix(check): lint and check skip compositions the project never mounts (#7369)"
+    },
+    {
+      "sha": "b559a98d37f4044d6d24a43ae660c5c6092c8fc4",
+      "date": "2026-11-07",
+      "subject": "fix(engine): hlg footage with a large header sei also tone-maps at hlg's white (#7349)"
+    },
+    {
+      "sha": "c27475b9728de320839284ef4ecce15f9b799ccc",
+      "date": "2026-11-07",
+      "subject": "perf(producer): size a long video's chunks in one plan, no re-plan (#7382)"
+    },
+    {
+      "sha": "3d7f12acd761c55a6f25ae0634346aa9ee1b3e6e",
+      "date": "2026-11-07",
+      "subject": "feat(cli): cloud uploads send a big file in parts, so a cut connection resends one part (#7375)"
+    },
+    {
+      "sha": "f5bde9533f66e80bebc2aea906ec0d6b5ecb6793",
+      "date": "2026-11-07",
+      "subject": "feat(media-use): the voice credits line names the real source, your recording or any vendor (#7380)"
+    },
+    {
+      "sha": "57a75337b7481f636f75971115b457275b4b8eb1",
+      "date": "2026-11-07",
+      "subject": "fix(cli): a re-encode of a media file over the cap is limited to fit it (#7376)"
+    },
+    {
+      "sha": "14e598e5a17cbf541c2201f5c84dbbde3c25ce1c",
+      "date": "2026-11-07",
+      "subject": "feat(media-use): your own voice recording is a voice line, and speed applies to it (#7377)"
+    },
+    {
+      "sha": "b418bb24fc14e9f1d8e46dee057b8b9f6cabc943",
+      "date": "2026-11-07",
+      "subject": "refactor(cli): the cloud upload's PUT and retry code moves to its own file (#7374)"
+    },
+    {
+      "sha": "a595755a35f4d7ad49b83a47f4e39445562bf3d9",
+      "date": "2026-11-07",
+      "subject": "fix(core): a film moves on past a video the browser never starts loading (#7368)"
+    },
+    {
+      "sha": "59c2065d636700b629b8f6add9132cb7008d98c8",
+      "date": "2026-11-07",
+      "subject": "fix(producer): page timers during a render run on film time (#7362)"
+    },
+    {
+      "sha": "9efbbdf5ae69047e39a2770e95d0771ca12356ed",
+      "date": "2026-11-07",
+      "subject": "fix(cli): transcribe names why whisper is missing and the one line that fixes it (#7366)"
+    },
+    {
+      "sha": "a3b8f521d9114286fa410a49bfd07ccf7d541689",
+      "date": "2026-11-07",
+      "subject": "fix(check): masked or clipped-away text no longer counts as overlapping (#7364)"
+    },
+    {
+      "sha": "330be7cd2da8c984d17a604fd934c400d04a9f0b",
+      "date": "2026-11-07",
+      "subject": "fix(check): the overlap finding names the decorative mark, data-layout-ignore (#7365)"
+    },
+    {
+      "sha": "896a77c3076e5a6360cc3557cac576625786906f",
+      "date": "2026-11-07",
+      "subject": "fix(cli): open stops the project's background preview first (#7297)"
+    },
+    {
+      "sha": "7b1d9ccebf9c7e2c2bd22b7e9d9487ce975d6425",
+      "date": "2026-11-07",
+      "subject": "test(player): a Safari perf run that fails says which wait timed out and why (#7347)"
+    },
+    {
+      "sha": "336abaa80f405717b82111656f204d48bbde53b9",
+      "date": "2026-11-07",
+      "subject": "fix(cli): stop waiting for the cloud's file check when the caller aborts (#7361)"
+    },
+    {
+      "sha": "e827de256f162be009423e8e0a0f335a071c230f",
+      "date": "2026-11-07",
+      "subject": "fix(check): a Chrome that never becomes ready ends the check with a named error (#7360)"
+    },
+    {
+      "sha": "e206ff6bd922c0c806ec07d3f5f6e7191d9c2fe5",
+      "date": "2026-11-07",
+      "subject": "chore: release v0.9.20 (#7358)"
+    },
+    {
+      "sha": "f46a593a965e1d6e597f87b5257c8a38e4374085",
+      "date": "2026-11-07",
+      "subject": "fix(cli): wait for the cloud's file check as long as the file's size allows (#7357)"
+    },
+    {
+      "sha": "555c788a333c592e9878139db318ea52f1315cec",
+      "date": "2026-11-07",
+      "subject": "fix(cli): cloud upload tests stop flaking and two cuts at the same age count as one (#7352)"
+    },
+    {
+      "sha": "9058fd1a7aff9e2ac14fcf13f23fc83e143bc60d",
+      "date": "2026-11-07",
+      "subject": "fix(core): skip a video the browser can't decode instead of freezing the film (#7355)"
+    },
+    {
+      "sha": "cf75dfd7af51ee6c690313874fb7dbe297fda184",
+      "date": "2026-11-07",
+      "subject": "fix(studio-server): a video with a codec nobody listed gets a playable preview copy (#7356)"
+    },
+    {
+      "sha": "6161ae740a34b341aba98f2fcd4583f79a4f1332",
+      "date": "2026-11-07",
+      "subject": "fix(cli): cloud render zip carries files the composition references under dot-folders (#7353)"
+    },
+    {
+      "sha": "9ac2a2387aa1afeb7c8942dbf4e46c7fdee359d8",
+      "date": "2026-11-07",
+      "subject": "feat(check): name the saved report file and print one stderr line per check step (#7344)"
+    },
+    {
+      "sha": "6004508e6571b02bea15ac205f67ce1ce4e1fb7b",
+      "date": "2026-11-07",
+      "subject": "fix(studio-server): MPEG-2 and DNxHD videos get a playable preview copy (#7348)"
+    },
+    {
+      "sha": "65c62f31451cb369f858fc9e3cd7cf8934e62f9e",
+      "date": "2026-11-07",
+      "subject": "fix(cli): a cloud upload cut at a fixed age stops early and shows its progress (#7350)"
+    },
+    {
+      "sha": "bc2773d04770aed1870f2d680c30f4dd7d92ccdb",
+      "date": "2026-11-07",
+      "subject": "fix(check): a Korean number and its counter count as one word in line reading time (#7343)"
+    },
+    {
+      "sha": "b37db112252e48f2850716c356756e09967b42e3",
+      "date": "2026-11-07",
+      "subject": "feat(cli): audio --read --layer reads a one-layer file whole, no separation (#7345)"
+    },
+    {
+      "sha": "1ddd425587b78e9b247cb87e4a1a17012a1876c1",
+      "date": "2026-11-07",
+      "subject": "fix(core): words in a scene the preview mounts later keep their spaces (#7342)"
+    },
+    {
+      "sha": "25a61016d11cba89f344d3a89b9e21f13c8158b3",
+      "date": "2026-11-07",
+      "subject": "feat(studio): type an exact preview zoom and see a pixel grid at high zoom (#5708)"
+    },
+    {
+      "sha": "cc7a760f03991c74bf27dc6e1784dac5619ef4f7",
+      "date": "2026-11-07",
+      "subject": "fix(lint): flag crypto.randomUUID() as non-deterministic (#7322)"
+    },
+    {
+      "sha": "f004622a6b0dbef7322a2f1862a815cf4577b3ae",
+      "date": "2026-11-07",
+      "subject": "feat(studio): improve element picker cancellation feedback (#6900)"
+    },
+    {
+      "sha": "a4a84deec59af994a95a872059b495a97bb91c32",
+      "date": "2026-11-07",
+      "subject": "feat(studio): show canvas gesture position, size and rotation (#5594)"
+    },
+    {
+      "sha": "6c0cab814f54e0b98f08e1387dd0c7c632edd530",
+      "date": "2026-11-07",
+      "subject": "feat(cli): support JSON telemetry status (#7289)"
+    },
+    {
+      "sha": "539c70ceea4607883fb79dbc55eae2346ce1a91d",
+      "date": "2026-11-06",
+      "subject": "fix(core): a render no longer rewinds when a set sits beside a tween on another property (#7339)"
+    },
+    {
+      "sha": "ca64c2a6d3d782cef6b7b5939196b8f11720f38a",
+      "date": "2026-11-06",
+      "subject": "refactor(engine): the effect scan resolves its options before scanning (#7336)"
+    },
+    {
+      "sha": "ab50e9c14892e45d5e94ca6f9633236dc27f4988",
+      "date": "2026-11-06",
+      "subject": "fix(cli): price GPT Image 2.6 and every GPT Image reference picture (#7307)"
+    },
+    {
+      "sha": "d2b170ce585900e93528c548bfaf6a67304d2b03",
+      "date": "2026-11-06",
+      "subject": "test(studio): kill and retry a test Chrome that hangs after it starts listening (#7337)"
+    },
+    {
+      "sha": "cfa0d0cef9f3dcde7057ac42cf268c78ed3dad66",
+      "date": "2026-11-06",
+      "subject": "fix(engine): a missing frame file skips its self-verify sample instead of aborting the render (#7334)"
+    },
+    {
+      "sha": "9acdce4a25d99b0e3441117ca81cb4c7a19f2198",
+      "date": "2026-11-06",
+      "subject": "feat(cli): the sign-in page the browser lands on follows the design (#7332)"
+    },
+    {
+      "sha": "fe0f54b38c6b5164ea3ab1a20115cfafddbe722a",
+      "date": "2026-11-06",
+      "subject": "fix(producer): a failure before the first frame reports frame capture as its stage (#7331)"
+    },
+    {
+      "sha": "a9a8d8937750db083e843da06a75c2febb3738d2",
+      "date": "2026-11-06",
+      "subject": "fix(engine): a render no longer finishes without an image that loaded late (#7304)"
+    },
+    {
+      "sha": "6fab2191423165436f20ec5e057d0d025f34cffb",
+      "date": "2026-11-06",
+      "subject": "fix(producer): segmented capture gives up on a session stuck opening or initializing (#7329)"
+    },
+    {
+      "sha": "18fc75dcd7b453ab10d0834bc9e8d2265353121c",
+      "date": "2026-11-06",
+      "subject": "fix(engine): drawElement falls back on gpu-less linux and beginframe launches instead of hanging self-verify (#7324)"
+    },
+    {
+      "sha": "318724f5f4b7293de19f610f309dec2748942ed8",
+      "date": "2026-11-06",
+      "subject": "feat(studio): show the agent's storyboard in a Storyboard tab beside the preview (#7284)"
+    },
+    {
+      "sha": "3e3ba8d0d076f1487b4e0aa9261ed148c26936eb",
+      "date": "2026-11-06",
+      "subject": "fix(core): a set that interrupts a tween holds in a real render at any worker count (#7318)"
+    },
+    {
+      "sha": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "date": "2026-11-06",
+      "subject": "feat(core): motion blur reports what a composition holds, as counts (#7306)"
+    },
+    {
+      "sha": "4cf26b5b49e6c4f2b42fb28738a1fb576e7494de",
+      "date": "2026-11-06",
+      "subject": "fix(producer): render reads a composition src like the preview, refuses paths outside (#7317)"
+    },
+    {
+      "sha": "de2d21a8abd786ef3d63a6818eda3cad844ea46f",
+      "date": "2026-11-06",
+      "subject": "feat(cli): check_report counts the browser-playable copies a check waited for (#7316)"
+    },
+    {
+      "sha": "410a516ceec79177c6e456e73f9f8aca974f45d8",
+      "date": "2026-11-06",
+      "subject": "fix(skills): reverse hands billing commands to the person instead of running them (#7314)"
+    },
+    {
+      "sha": "cb8e02e8264bd6994de29a024a6f320ce21654e7",
+      "date": "2026-11-06",
+      "subject": "fix(core): a decoded buffer's handover leaves the routed element silent (#7309)"
+    },
+    {
+      "sha": "f3e45b492eb91be881ba44c529fae524f2c76849",
+      "date": "2026-11-06",
+      "subject": "fix(studio-server): proxy MPEG-4 Part 2 and MJPEG video the browser cannot decode (#7310)"
+    },
+    {
+      "sha": "9e2510bdabc3955183235e47dc6215069bf20882",
+      "date": "2026-11-06",
+      "subject": "fix(templates): pin the five style-sampling packs with the release-check fixes (#7263)"
+    },
+    {
+      "sha": "07824098e994d5722c1faca5b5203e4617488b95",
+      "date": "2026-11-06",
+      "subject": "test(engine): blur gates fail on CI when they cannot run, and prove blur drew (#7302)"
+    },
+    {
+      "sha": "9fcd06cbbf5ed53c40561376543634eb681ee53f",
+      "date": "2026-11-06",
+      "subject": "feat(cli): check_report names the finding that stopped the check (#7305)"
+    },
+    {
+      "sha": "fc0b53361bf3eff695389200f6caf7b72ea7c9af",
+      "date": "2026-11-06",
+      "subject": "fix(cli): media-use voices says whose clones it lists, and --voice takes language codes (#7261)"
+    },
+    {
+      "sha": "3e86def58e49019a2046303dbeed1cec6cde741d",
+      "date": "2026-11-06",
+      "subject": "fix(core): video starts a second early and catches up hidden, so the picture meets the cut (#7265)"
+    },
+    {
+      "sha": "41b7aeeafb99dba664f32b7ac0a8b0af5b7b75f1",
+      "date": "2026-11-06",
+      "subject": "fix(cli): cloud render logs a line a minute while a job holds its status (#7262)"
+    },
+    {
+      "sha": "8fd754207050650568df870397cc5287400b907c",
+      "date": "2026-11-06",
+      "subject": "fix(cli): installing Chrome on a busy Windows PC no longer takes ten minutes (#7301)"
+    },
+    {
+      "sha": "6011d9d0dd555a21430baeee8d84cca8cbacbb6a",
+      "date": "2026-11-06",
+      "subject": "fix(core): accented Latin letters draw in a bundled family at its bundled weights (#7299)"
+    },
+    {
+      "sha": "66cbabc39aefc91cc3f82b102499c37a2d546ff8",
+      "date": "2026-11-06",
+      "subject": "fix(studio): pressing Shift no longer re-renders the timeline (#7298)"
+    },
+    {
+      "sha": "e2bb7da25da9d268e33d766683885ad69b088169",
+      "date": "2026-11-06",
+      "subject": "feat(core): auto motion blur draws with the filter tier (#7288)"
+    },
+    {
+      "sha": "4bee04e4a1590fb3b33da5b7aabcd435b8cd6b95",
+      "date": "2026-11-06",
+      "subject": "fix(core): a mover's ::before and ::after outside its box stay in the blur (#7295)"
+    },
+    {
+      "sha": "b6f2bec165af61a0a1103fc416814146849a4fdf",
+      "date": "2026-11-06",
+      "subject": "fix(core): a mover holding a fixed child stays sharp in the filter tier (#7292)"
+    },
+    {
+      "sha": "f54b2227fd0f695d1a14d94fb6e1ad1017866bb5",
+      "date": "2026-11-06",
+      "subject": "feat(share): extract shared review kernel for local hosts (#7134)"
+    },
+    {
+      "sha": "2066a2ff5416f83eaad0731f5238ea5c442893f2",
+      "date": "2026-11-06",
+      "subject": "fix(core): the filter tier's svg no longer changes which child is last in the root (#7293)"
+    },
+    {
+      "sha": "cd7e93baa0b83dbc6536490a876d00a51ba236aa",
+      "date": "2026-11-06",
+      "subject": "fix(core): blur quiets discrete callbacks instead of undoing what they wrote (#7271)"
+    },
+    {
+      "sha": "a81b34410868208035095fe454a09403bf4aaaba",
+      "date": "2026-11-06",
+      "subject": "feat(cli): a line_unread finding carries the frames it measured around where the line was first read (#7294)"
+    },
+    {
+      "sha": "b4cc674f7f312e77ded32e0b53006cc0bad6723b",
+      "date": "2026-11-06",
+      "subject": "chore: release v0.9.19 (#7290)"
+    },
+    {
+      "sha": "b56e2c03669cc0515209b0f886594b36867eab02",
+      "date": "2026-11-06",
+      "subject": "fix(cli): a font missing from this computer no longer stops a cloud render, and is named (#7287)"
+    },
+    {
+      "sha": "6abc62a1796f7ebafd001dd13869a049f1f87dc5",
+      "date": "2026-11-06",
+      "subject": "fix(core): a render lands where preview does when a set interrupts a tween (#7283)"
+    },
+    {
+      "sha": "cbe5dcb2d202a26fc98b161d51915813fb584380",
+      "date": "2026-11-06",
+      "subject": "chore: release v0.9.18 (#7270)"
+    },
+    {
+      "sha": "5259fd11204eed4251267ecd16e016156a3614e3",
+      "date": "2026-11-06",
+      "subject": "chore(ci): close PRs and needs-info issues after three weeks without activity (#7280)"
+    },
+    {
+      "sha": "72326a3ac7abb650b7bb4bbd33b2b855bc790cac",
+      "date": "2026-11-05",
+      "subject": "fix(cli): a render's lint runs at normal priority, so a busy Windows PC no longer stalls it (#7268)"
+    },
+    {
+      "sha": "4935d6736b64ed3dd68524c1cb2c7f011171baef",
+      "date": "2026-11-05",
+      "subject": "fix(cli): normalize-audio says where the target stays when a limit holds its gain (#7267)"
+    },
+    {
+      "sha": "256b84a41bc32913870953c06e05f4ab25e963f8",
+      "date": "2026-11-05",
+      "subject": "fix(core): check's no-draw seeks no longer upload graded images to the GPU (#7264)"
+    },
+    {
+      "sha": "32eb4c3582d6b5b52c06f1444d23bc395b8e19d8",
+      "date": "2026-11-05",
+      "subject": "chore: release v0.9.17 (#7260)"
+    },
+    {
+      "sha": "968f97fe954f733d8610ab86a09ded1e78fec23c",
+      "date": "2026-11-05",
+      "subject": "feat(producer): render long videos with windowed source frames behind a flag (#7242)"
+    },
+    {
+      "sha": "478ef2f26e8b2811383d6e0e31b69efebf508148",
+      "date": "2026-11-05",
+      "subject": "fix(cli): check judges SVG gradient text by its gradient stops, not as black (#7258)"
+    },
+    {
+      "sha": "7290ee68c3e1607b8cead5bb8394e39c679204c3",
+      "date": "2026-11-05",
+      "subject": "fix(engine): name a failed script's origin and error before the free text of its warning (#7256)"
+    },
+    {
+      "sha": "2f2195515b6cb693909ddd46e6c6ced43965e287",
+      "date": "2026-11-05",
+      "subject": "fix(cli): normalize-audio --reference stops short of the peak ceiling instead of refusing (#7254)"
+    },
+    {
+      "sha": "8df4f21c20679fc92ae338ad647da5f5d9a69d76",
+      "date": "2026-11-05",
+      "subject": "fix(producer): segmented and sequential capture check drawElement samples (#7255)"
+    },
+    {
+      "sha": "599eaad2ba6a908b6da9de724bc04474c79fa019",
+      "date": "2026-11-05",
+      "subject": "feat(producer): a capture segment extracts the frames it shows and deletes them (#7241)"
+    },
+    {
+      "sha": "35cbca99274907c914e4e083f30684060e3b4c58",
+      "date": "2026-11-05",
+      "subject": "refactor(producer): deferred frame extraction moves out of the distributed code (#7240)"
+    },
+    {
+      "sha": "b108f851201dc22f5d4974ee7f1c9d19b472cc1e",
+      "date": "2026-11-05",
+      "subject": "fix(core): two scenes drawing SVGs with the same ids each show their own (#7251)"
+    },
+    {
+      "sha": "f98218a224ba5b3ad0591485d9b1b9344ba0ce11",
+      "date": "2026-11-05",
+      "subject": "fix(cli): end a stalled cloud upload and send it again (#7237)"
+    },
+    {
+      "sha": "600bfa451bd69a6101666f46d03a22e970af972b",
+      "date": "2026-11-05",
+      "subject": "fix(core): decode WebKit sources by memory budget, not by length (#7232)"
+    },
+    {
+      "sha": "5377b756b5d1fcf06171a133b715003f05ff71c7",
+      "date": "2026-11-05",
+      "subject": "fix(core): snapshot and preview show a clip on the frame render shows it (#7238)"
+    },
+    {
+      "sha": "d40d0b251f6dc5d97dff472cc99d528a46cab9db",
+      "date": "2026-11-05",
+      "subject": "fix(producer): an export over the peak ceiling loses only what it must (#7246)"
+    },
+    {
+      "sha": "a664f99ec86162411e726bb5ae7fb0cc250b819e",
+      "date": "2026-11-05",
+      "subject": "fix(lint): every selector in a comma list counts as hidden by authored CSS (#7252)"
+    },
+    {
+      "sha": "0b355982460e0ca66b6f762da7732d4990c6ddc1",
+      "date": "2026-11-05",
+      "subject": "fix(core): the bundle's contract check reads a timeline registered in a local script (#7248)"
+    },
+    {
+      "sha": "644b166e78c40fa527715cb843adf1c0ddf9182c",
+      "date": "2026-11-05",
+      "subject": "fix(cli): check sees an SVG stroke drawing on, so it no longer calls it a dead stretch (#7250)"
+    },
+    {
+      "sha": "0a6746e1d6fabab6178ef8ead0e6da1593a1e59a",
+      "date": "2026-11-05",
+      "subject": "fix(cli): an unknown command answers in a few lines and says what to run instead (#7247)"
+    },
+    {
+      "sha": "b7d72c9478bf0717458ced2d8ab35b5807b45f3c",
+      "date": "2026-11-05",
+      "subject": "feat(cli): check --budget stops the whole check in time and reports what it found (#7245)"
+    },
+    {
+      "sha": "c1977fab3e632aa559636ab28bdedd764fdb7dc6",
+      "date": "2026-11-05",
+      "subject": "fix(cli): lint says nothing when the OS refuses to lower its priority (#7244)"
+    },
+    {
+      "sha": "df54f380cbcada23c56019972441b98160f2adb8",
+      "date": "2026-11-05",
+      "subject": "feat(cli): info --media lists every clip the render hears, on the film's clock (#7235)"
+    },
+    {
+      "sha": "80e02e74a0af8bc6be30cb4c671b03b064c667b6",
+      "date": "2026-11-05",
+      "subject": "fix(lint): compositions in .hyperframesignore no longer count as the project's (#7239)"
+    },
+    {
+      "sha": "f55990ebca68780a680af4080df88e114537739c",
+      "date": "2026-11-05",
+      "subject": "fix(cli): name the network cause of a failed fetch in the error box (#7236)"
+    },
+    {
+      "sha": "5ee9e928d5d1377826dd025a73bb5ec22666bcee",
+      "date": "2026-11-05",
+      "subject": "fix(core): hlg footage tone-maps to sdr at the bt.2408 reference white (#7234)"
+    },
+    {
+      "sha": "45705fa25c4aa7ba2cef3e8a66842ea08c261b9a",
+      "date": "2026-11-05",
+      "subject": "chore: release v0.9.16 (#7230)"
+    },
+    {
+      "sha": "5f7b85c5d76b723ea7328919de8bc8908e192ebc",
+      "date": "2026-11-05",
+      "subject": "fix(cli): billing re-reads the account on Enter and sells nothing it can't price (#7226)"
+    },
+    {
+      "sha": "2af37ac0c3ff162706463a0aeaa527e741d45ed9",
+      "date": "2026-11-05",
+      "subject": "fix(engine): read a video's length from its packets when headers state none (#7233)"
+    },
+    {
+      "sha": "216395e98e094972ec905e20c851149ab302a6f1",
+      "date": "2026-11-05",
+      "subject": "fix(cli): every settings file follows HYPERFRAMES_CONFIG_DIR (#7229)"
+    },
+    {
+      "sha": "b7a8cfa73cca4b9f3b1d027b08fc73b9e3b748f3",
+      "date": "2026-11-05",
+      "subject": "fix(core): keep long WebKit sources and unloaded clips on the audio clock (#7225)"
+    },
+    {
+      "sha": "ecf0e14387482bf7ca35c7797292d6bbb67b66d1",
+      "date": "2026-11-05",
+      "subject": "fix(cli): previews and every per-user cache follow HYPERFRAMES_CACHE_DIR (#7224)"
+    },
+    {
+      "sha": "0180c603d1902de32ca14543cdac710c87a676b2",
+      "date": "2026-11-05",
+      "subject": "fix(producer): resolve template sub-composition entries in the shared compile stage (#7217)"
+    },
+    {
+      "sha": "b96d3c8bd6aefe412dda92d3b788fea0ee4fa3e6",
+      "date": "2026-11-05",
+      "subject": "fix(core): a multi-worker render replays overlapping tweens behind the timeline stand-in (#7231)"
+    },
+    {
+      "sha": "659ef568d71442a3e4f1b919cf03a547c79e7005",
+      "date": "2026-11-05",
+      "subject": "fix(producer): export sizes an unsized phone video as it plays, not as stored (#7228)"
+    },
+    {
+      "sha": "ada71da92d78c28494a0421b909e0772f837fa1d",
+      "date": "2026-11-05",
+      "subject": "fix(cli): capture takes a refused screenshot once more before naming it (#7222)"
+    },
+    {
+      "sha": "7bebcb9fcbccc595d9bc7cb1b3ea44e5060e243e",
+      "date": "2026-11-05",
+      "subject": "fix(skills): reword the billing lines the Snyk audit reads as hiding cost (#7218)"
+    },
+    {
+      "sha": "18513d46d21e8c10155dc4fdae9103a74deb2efc",
+      "date": "2026-11-05",
+      "subject": "fix(studio-server): the cancel route replies once the adapter's stop has settled (#7221)"
+    },
+    {
+      "sha": "b98718fe93b8798e29bc755049ef56729bdc1582",
+      "date": "2026-11-05",
+      "subject": "fix(engine): report a pending setup as a setup timeout, not zero duration (#7211)"
+    },
+    {
+      "sha": "7050b9b5bbcca4552a5a76661bb782990508983d",
+      "date": "2026-11-05",
+      "subject": "fix(studio-server): a refused cut says which way it was refused (#7212)"
+    },
+    {
+      "sha": "d810bdbb27ed5fe1d428ec5389dbd6861318386a",
+      "date": "2026-11-05",
+      "subject": "fix(cli): init no longer crashes copying into a folder at a Windows drive root (#7220)"
+    },
+    {
+      "sha": "d452a6fad4752277ef23e0920bf1dc92b989ae31",
+      "date": "2026-11-05",
+      "subject": "feat(registry): add path-traced-3d example with raster preview and path-traced export (#7219)"
+    },
+    {
+      "sha": "898d0fb00b3d8a9dbe637c8a5df2423c9556ace1",
+      "date": "2026-11-05",
+      "subject": "fix(core): blur scan and eventful reads put back the DOM a timeline call changed (#7191)"
+    }
+  ],
+  "commit_count": 1858,
+  "files_changed": 5654,
+  "deleted": [
+    "docs/catalog/components/simulated-cursor.mdx",
+    "docs/contracts/2026-10-01-timeline-filmstrip.html",
+    "docs/contracts/2026-10-02-ghost-lane-membership.html",
+    "docs/contracts/2026-10-02-thumbnail-document-lifetime.html",
+    "docs/go-further.mdx",
+    "docs/guides/choose-creation-path.mdx",
+    "docs/guides/color-grading.mdx",
+    "docs/guides/feedback.mdx",
+    "docs/guides/troubleshooting.mdx",
+    "docs/plans/2026-09-26-image-thumbnails.md",
+    "docs/prompting/anatomy.mdx",
+    "docs/prompting/audio-effects.mdx",
+    "docs/prompting/captions-and-talking-heads.mdx",
+    "docs/prompting/code-and-prs.mdx",
+    "docs/prompting/code-blocks.mdx",
+    "docs/prompting/explainers.mdx",
+    "docs/prompting/generated-artwork.mdx",
+    "docs/prompting/iterating.mdx",
+    "docs/prompting/motion-graphics.mdx",
+    "docs/prompting/music-and-slideshows.mdx",
+    "docs/prompting/overlays-and-lower-thirds.mdx",
+    "docs/prompting/product-launch.mdx",
+    "docs/prompting/rendering-and-output.mdx",
+    "docs/prompting/rules-and-anti-patterns.mdx",
+    "docs/prompting/runtimes-and-3d.mdx",
+    "docs/prompting/specification-dial.mdx",
+    "docs/prompting/storyboards.mdx",
+    "docs/prompting/transitions.mdx",
+    "docs/prompting/variables-and-templating.mdx",
+    "docs/prompting/vfx-and-liquid-glass.mdx",
+    "docs/prompting/visual-specs.mdx",
+    "docs/prompting/vocabulary.mdx",
+    "docs/public/catalog/assets/2427868cae6e8cf3.woff2",
+    "docs/public/catalog/assets/36535127950d69fb.woff2",
+    "docs/public/catalog/assets/42e5ad0b3cee71d5.woff2",
+    "docs/public/catalog/assets/5905d90fd449470d.woff2",
+    "docs/public/catalog/assets/728492d30bf60f21.woff2",
+    "docs/public/catalog/assets/788a403350b85d98.woff2",
+    "docs/public/catalog/assets/95061b23401efc9b.woff2",
+    "docs/public/catalog/assets/ae40a5f8f9f604f4.woff2",
+    "docs/public/catalog/assets/b13fa08305318ea6.woff2",
+    "docs/public/catalog/assets/c356c27cca02fa3b.woff2",
+    "docs/public/catalog/assets/e3c9ceb1da81254f.woff2",
+    "docs/public/catalog/assets/e59d60b150022666.woff2",
+    "docs/public/catalog/components/simulated-cursor.json",
+    "docs/public/catalog/vendor/BufferGeometryUtils.json",
+    "docs/public/catalog/vendor/RoomEnvironment.json",
+    "docs/public/catalog/vendor/three.core.min.json",
+    "docs/public/catalog/vendor/three.module.min.json",
+    "docs/studio/animation.mdx",
+    "docs/studio/audio-automation.mdx",
+    "docs/studio/audio-groups.mdx",
+    "docs/studio/captions.mdx",
+    "docs/studio/shortcuts.mdx",
+    "docs/studio/slideshows.mdx",
+    "docs/studio/source.mdx",
+    "docs/studio/troubleshooting.mdx",
+    "docs/studio/variables.mdx",
+    "docs/studio/voiceover-carve.mdx",
+    "examples/aws-lambda/sample-events/assemble-v1.json",
+    "examples/aws-lambda/sample-events/plan-v1.json",
+    "examples/aws-lambda/sample-events/render-chunk-v1.json",
+    "examples/aws-lambda/scripts/_semantic-compare.sh",
+    "examples/aws-lambda/scripts/semantic-compare.test.sh",
+    "examples/gcp-cloud-run/sample-events/assemble-v1.json",
+    "examples/gcp-cloud-run/sample-events/plan-v1.json",
+    "examples/gcp-cloud-run/sample-events/render-chunk-v1.json",
+    "packages/cli/scripts/build-beat-analyzer.mjs",
+    "packages/cli/src/beats/headlessAnalyzer.ts",
+    "packages/cli/src/server/studioServer.stampOnOpen.test.ts",
+    "packages/core/scripts/rewrite-esm-extensions.ts",
+    "packages/core/src/mediaTiming.test.ts",
+    "packages/core/src/storyboard/transitionsContract.test.ts",
+    "packages/core/src/storyboard/vendoredParity.test.ts",
+    "packages/producer/fixtures/plan-parity-size-pressure/.plan-parity-fixture.json",
+    "packages/producer/fixtures/plan-parity-size-pressure/index.html",
+    "packages/producer/fixtures/plan-parity-visual-audio/.plan-parity-fixture.json",
+    "packages/producer/fixtures/plan-parity-visual-audio/index.html",
+    "packages/producer/scripts/build-fonts.mjs",
+    "packages/producer/scripts/generate-font-data.ts",
+    "packages/producer/src/plan-parity-analysis.test.ts",
+    "packages/producer/src/plan-parity-analysis.ts",
+    "packages/producer/src/plan-parity-contract.test.ts",
+    "packages/producer/src/plan-parity-contract.ts",
+    "packages/producer/src/plan-parity-fixture.test.ts",
+    "packages/producer/src/plan-parity-fixture.ts",
+    "packages/producer/src/plan-parity-harness.test.ts",
+    "packages/producer/src/plan-parity-harness.ts",
+    "packages/producer/src/plan-parity-lambda-local-driver.ts",
+    "packages/producer/src/services/audioExtractor.ts",
+    "packages/producer/src/services/authoredGoogleFonts.test.ts",
+    "packages/producer/src/services/authoredGoogleFonts.ts",
+    "packages/producer/src/services/deterministicFonts-aliasSupplement.test.ts",
+    "packages/producer/src/services/deterministicFonts-authoredResources.test.ts",
+    "packages/producer/src/services/deterministicFonts-bundledStylesheet.test.ts",
+    "packages/producer/src/services/deterministicFonts-bundledSubset.test.ts",
+    "packages/producer/src/services/deterministicFonts-declaredAlias.test.ts",
+    "packages/producer/src/services/deterministicFonts-failClosed.test.ts",
+    "packages/producer/src/services/deterministicFonts-googleSubsets.test.ts",
+    "packages/producer/src/services/deterministicFonts-oblique.test.ts"
+  ],
+  "breaking": [
+    {
+      "sha": "7f48a6894c42426ae9bc8a913879d4cd0fb72166",
+      "date": "2026-11-02",
+      "subject": "feat!: remove Plan v1 distributed transport (#6970)"
+    },
+    {
+      "sha": "688229314fb219c4317351c25483ecc3c56a519b",
+      "date": "2026-10-21",
+      "subject": "feat(skills)!: publish seven knowledge skills aligned with Studio and retire the workflow skills (#5651)"
+    },
+    {
+      "sha": "abe97f6e4c704d745dccc4012e7adb2644624c5e",
+      "date": "2026-10-14",
+      "subject": "refactor(inspector)!: drop the predefined agent tools; harnesses define their own (#5570)"
+    }
+  ],
+  "licence_files_changed": [],
+  "manifests": {
+    "packages/parsers/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "entities"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/producer/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [
+        "@fontsource/archivo-black",
+        "@fontsource/eb-garamond",
+        "@fontsource/ibm-plex-mono",
+        "@fontsource/inter",
+        "@fontsource/jetbrains-mono",
+        "@fontsource/league-gothic",
+        "@fontsource/montserrat",
+        "@fontsource/nunito",
+        "@fontsource/oswald",
+        "@fontsource/outfit",
+        "@fontsource/space-mono",
+        "wawoff2"
+      ],
+      "changed": {
+        "@hyperframes/core": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "@hyperframes/studio-server": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "puppeteer": [
+          "^25.2.1",
+          "~25.11.0"
+        ],
+        "@hyperframes/engine": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "puppeteer-core": [
+          "^25.2.1",
+          "^25.11.0"
+        ],
+        "@hyperframes/parsers": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "@hyperframes/lint": [
+          "workspace:^",
+          "workspace:*"
+        ]
+      }
+    },
+    "packages/gcp-cloud-run/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/cli/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "acorn",
+        "undici",
+        "yauzl"
+      ],
+      "removed": [
+        "prettier",
+        "sharp"
+      ],
+      "changed": {
+        "esbuild": [
+          "^0.25.12",
+          "^0.28.2"
+        ]
+      }
+    },
+    "packages/share/package.json": {
+      "version": [
+        null,
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "registry/blocks/godrays/source/package-lock.json": {
+      "changed": true
+    },
+    "packages/sdk/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/core/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "acorn",
+        "wawoff2"
+      ],
+      "removed": [
+        "bpm-detective"
+      ],
+      "changed": {}
+    },
+    "packages/inspector/package.json": {
+      "version": [
+        null,
+        "0.9.30"
+      ],
+      "added": [
+        "@hyperframes/core",
+        "@hyperframes/parsers",
+        "@jridgewell/trace-mapping",
+        "acorn",
+        "esbuild",
+        "eslint-scope",
+        "htmlparser2",
+        "postcss",
+        "puppeteer-core"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/shader-transitions/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "registry/blocks/frost-sequence-camera-orbit/source/package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/aws-lambda/scripts/runtime-lock/sparticuz/package.json": {
+      "version": [
+        null,
+        "0.0.0"
+      ],
+      "added": [
+        "@sparticuz/chromium",
+        "puppeteer-core"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/engine/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "undici"
+      ],
+      "removed": [],
+      "changed": {
+        "puppeteer": [
+          "^25.8.0",
+          "~25.11.0"
+        ],
+        "puppeteer-core": [
+          "^25.8.0",
+          "^25.11.0"
+        ]
+      }
+    },
+    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package.json": {
+      "version": [
+        null,
+        "0.0.0"
+      ],
+      "added": [
+        "puppeteer-core"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [
+        "yaml"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/player/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/aws-lambda/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "@aws-sdk/client-ecr",
+        "@aws-sdk/client-lambda",
+        "@aws-sdk/s3-request-presigner"
+      ],
+      "removed": [],
+      "changed": {
+        "@aws-sdk/client-s3": [
+          "^3.700.0",
+          "^3.1146.0"
+        ],
+        "@aws-sdk/client-sfn": [
+          "^3.700.0",
+          "^3.1146.0"
+        ]
+      }
+    },
+    "registry/examples/path-traced-3d/source/package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/lint/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "ignore"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "registry/examples/path-traced-3d/source/package-lock.json": {
+      "changed": true
+    },
+    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package-lock.json": {
+      "changed": true
+    },
+    "packages/studio-server/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [
+        "sharp"
+      ],
+      "changed": {}
+    },
+    "packages/aws-lambda/scripts/runtime-lock/sparticuz/package-lock.json": {
+      "changed": true
+    },
+    "packages/studio/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "acorn"
+      ],
+      "removed": [
+        "bpm-detective"
+      ],
+      "changed": {
+        "mediabunny": [
+          "^1.45.3",
+          "^1.65.2"
+        ]
+      }
+    },
+    "registry/blocks/godrays/source/package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    }
+  },
+  "impacted_skills": [],
+  "impacted_video_factory": [
+    "video-factory/config/upstream-skills.lock.json",
+    "video-factory/contentos/renderers/hyperframes.py",
+    "video-factory/package.json: hyperframes 0.8.114",
+    "video-factory/research/tool-catalog.yaml"
+  ],
+  "local_modifications": {
+    "/Users/kishore/audit-scratch/t1/hf-src": 0
+  }
+}

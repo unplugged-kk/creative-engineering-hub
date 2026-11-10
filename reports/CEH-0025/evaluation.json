@@ -1,0 +1,119 @@
+{
+  "id": "CEH-0025",
+  "name": "Vincentwei1021/anything2explainer",
+  "url": "https://github.com/Vincentwei1021/anything2explainer",
+  "type": "agent-skill",
+  "status": "RESTRICTED",
+  "capabilities": [
+    "voiceover",
+    "explainer-videos",
+    "ai-video-generation",
+    "data-visualization",
+    "motion-graphics",
+    "storyboarding",
+    "subtitles"
+  ],
+  "licence": {
+    "spdx": "PolyForm-Noncommercial-1.0.0",
+    "class": "non-commercial",
+    "gate": "block",
+    "source": "fingerprint:LICENSE",
+    "assets": {
+      "media_files": 36,
+      "font_files": 4,
+      "model_files": 0,
+      "nested_licence_files": [
+        "template/public/fonts/LICENSE.md"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "review",
+    "worst": "medium",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "README.md:82"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": "README_ZH.md:82"
+      }
+    ],
+    "finding_count": 2,
+    "scanned_files": 168,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "codex"
+    ],
+    "renderers": [
+      "remotion",
+      "ffmpeg",
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:29+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 3,
+        "basis": "skills, scripts, examples, tests present: [True, False, True, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, codex"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 1 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 17808 chars"
+      },
+      "licence_suitability": {
+        "score": 0,
+        "basis": "PolyForm-Noncommercial-1.0.0 (non-commercial)"
+      },
+      "security": {
+        "score": 3,
+        "basis": "2 findings, worst medium"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.71,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "block",
+      "security": "review"
+    }
+  },
+  "recommendation": "RESTRICT: PolyForm-Noncommercial-1.0.0 forbids commercial use. Reference the method only; never copy code or assets."
+}

@@ -1,0 +1,297 @@
+{
+  "id": "CEH-0026",
+  "name": "morluto/rea",
+  "url": "https://github.com/morluto/rea",
+  "type": "mcp-server",
+  "status": "REJECTED",
+  "capabilities": [
+    "explainer-videos"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 2,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": [
+        "tests/fixtures/graphql/LICENSE",
+        "third_party/evmole/LICENSE",
+        "third_party/pwndbg/LICENSE.md"
+      ]
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "block",
+    "worst": "high",
+    "findings": [
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/ci.yml:653"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/real-agentenv.yml:68"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/real-binary-layout.yml:60"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/real-cutter.yml:30"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/real-ghidra-windows.yml:32"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/real-termux.yml:43"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/website-check.yml:30"
+      },
+      {
+        "severity": "medium",
+        "kind": "privilege escalation",
+        "path": ".github/workflows/website-pages.yml:63"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "docs/getting-started/installation.md:2043"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "install.sh:5"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "scripts/fixtures/browser-verifier-site.mjs:232"
+      },
+      {
+        "severity": "medium",
+        "kind": "hardcoded credential",
+        "path": "scripts/lib/browser-scenario-storage-fingerprints-e2e.mjs:17"
+      },
+      {
+        "severity": "high",
+        "kind": "obfuscated execution",
+        "path": "scripts/verify-qwen-client.mjs:333"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "src/browser/PlaywrightScenarioSession.test.ts:1755"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "src/cutter/cutterBridgeMac.test.ts:7"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "src/domain/desktop/appTaskChecks.test.ts:19"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "src/frida/FridaInstrumentationManager.test.ts:1430"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/acceptance/browser/browserScenarioLaunchFailure.test.ts:12"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/cli/cutterCommands.test.ts:136"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/cli/cutterStatusAttributionCli.test.ts:19"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "tests/boundary/filesystem/installScript.test.ts:302"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/mcp/cutterCancellationMcp.test.ts:70"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/mcp/cutterMcp.test.ts:202"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/mcp/fridaMcp.test.ts:166"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/mcp/ghidraFailureDiagnostics.test.ts:33"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/process/ProcessEvidence.test.ts:120"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/CutterBridgeCapacity.test.ts:22"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/CutterBridgeClient.test.ts:109"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/CutterBridgeNullIdentity.test.ts:13"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/CutterCommandCancellation.test.ts:100"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/CutterStatusProof.test.ts:17"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/cutterBridgeRequestLimit.test.ts:19"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/boundary/providers/ghidra/ghidraLauncher.test.ts:794"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/composition/browserScenarioStartupRedaction.test.ts:17"
+      },
+      {
+        "severity": "medium",
+        "kind": "secret-shaped string in test, docs or comment (hardcoded credential)",
+        "path": "tests/process-global/cutterDescriptorLifetime.test.ts:67"
+      },
+      {
+        "severity": "medium",
+        "kind": "pipe remote script to shell",
+        "path": "website/public/get-started/index.html:383"
+      },
+      {
+        "severity": "medium",
+        "kind": "npm prepare hook runs on install",
+        "path": "package.json: node scripts/prepare.mjs"
+      },
+      {
+        "severity": "medium",
+        "kind": "known vulnerability",
+        "path": "npm:minimatch@10.2.5 GHSA-g3hv-75wg-m249"
+      }
+    ],
+    "finding_count": 38,
+    "scanned_files": 7731,
+    "notes": [
+      "1 large or binary files not scanned",
+      "osv.dev checked 966 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "generic"
+    ],
+    "renderers": [
+      "browser"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:40+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 5,
+        "basis": "skills, scripts, examples, tests present: [True, True, True, True]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type mcp-server"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code, claude-code-plugin, codex, generic"
+      },
+      "maintainability": {
+        "score": 5,
+        "basis": "last push 0 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 32982 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 0,
+        "basis": "38 findings, worst high"
+      },
+      "integration_complexity": {
+        "score": 1,
+        "basis": "42 runtime dependencies; install hooks: ['prepare']"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.21,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "block"
+    }
+  },
+  "recommendation": "DO NOT RUN: high-severity security findings. Review reports/<id>/security.md before anything else."
+}

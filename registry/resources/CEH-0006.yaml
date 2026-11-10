@@ -1,0 +1,281 @@
+id: CEH-0006
+name: Tejashmakwana/motionmaxxing
+url: https://github.com/Tejashmakwana/motionmaxxing
+aliases: []
+type: agent-skill
+status: PARKED
+created: '2026-11-10T15:25:18+00:00'
+description: Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion
+  designer.
+capabilities:
+- sound-design
+- 3d-animation
+- motion-graphics
+- storyboarding
+- 2d-animation
+- ai-video-generation
+local:
+  paths:
+  - /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0006
+  state:
+    /Users/kishore/git/creative-engineering-hub/lab/clones/CEH-0006:
+      git: true
+      head: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+      branch: main
+      origin: https://github.com/Tejashmakwana/motionmaxxing
+      uncommitted:
+      - D  .gitignore
+      - D  LICENSE
+      - D  NOTICE
+      - D  README.md
+      - D  SKILL.md
+      - D  docs/HOW-IT-WAS-BUILT.md
+      - D  docs/KNOWN-LIMITS.md
+      - D  docs/hero/NOTE.md
+      - D  docs/hero/index.html
+      - D  docs/media/cluely-comparison.gif
+      - D  docs/media/cluely-comparison.mp4
+      - D  docs/media/cluely-poster.jpg
+      - D  docs/media/eases-dark.svg
+      - D  docs/media/eases-light.svg
+      - D  docs/media/eases.svg
+      - D  docs/media/gates.png
+      - D  docs/media/hero.gif
+      - D  docs/media/hero.mp4
+      - D  docs/media/spotify-comparison.gif
+      - D  docs/media/spotify-comparison.mp4
+      - D  docs/media/spotify-poster.jpg
+      - D  docs/media/wispr-comparison.gif
+      - D  docs/media/wispr-comparison.mp4
+      - D  docs/media/wispr-poster.jpg
+      - D  examples/3d-hero/index.html
+      - D  examples/demo/index.html
+      - D  examples/phone/index.html
+      - D  examples/selftest/index.html
+      - D  install.sh
+      - D  library/moments.jsonl
+      - D  references/brand.md
+      - D  references/close.md
+      - D  references/director.md
+      - D  references/idea.md
+      - D  references/judgment.md
+      - D  references/layout.md
+      - D  references/motion.md
+      - D  references/slop.md
+      - D  references/sound-sync.md
+      - D  references/tools.md
+      - D  references/transitions.md
+      - D  references/type.md
+      - D  references/ui-demo.md
+      - D  references/world.md
+      - D  runtime/README.md
+      - D  runtime/fonts.css
+      - D  runtime/fonts/InterVariable.woff2
+      - D  runtime/fonts/OFL.txt
+      - D  runtime/hero3d/fonts/Inter-Bold-Latin.ttf
+      - D  runtime/hero3d/fonts/OFL.txt
+      uncommitted_count: 105
+  modified: true
+upstream:
+  strategy: PINNED
+  remote: https://github.com/Tejashmakwana/motionmaxxing
+  default_branch: main
+  forks: []
+  pins:
+  - commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    at: '2026-11-10T15:25:21+00:00'
+    by: ceh inspect
+    note: commit read at inspection
+  pinned_commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+  latest_commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+  latest_release: null
+  last_checked: '2026-11-10T16:02:50+00:00'
+  checks:
+  - at: '2026-11-10T15:35:27+00:00'
+    latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:02:50+00:00'
+    latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    flags: &id001
+    - up-to-date
+  flags: *id001
+meta:
+  full_name: Tejashmakwana/motionmaxxing
+  description: Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion
+    designer.
+  topics:
+  - agent-skills
+  - ai
+  - claude-code
+  - gsap
+  - hyperframes
+  - motion-graphics
+  - motionmaxxing
+  - video
+  licence_spdx: Apache-2.0
+  default_branch: main
+  pushed_at: '2026-10-06T18:20:43Z'
+  archived: false
+  stars: 1515
+  is_fork: false
+  parent: null
+  language: JavaScript
+notes:
+- G5 page-chrome lint taxonomy and audio cut-sync. Proprietary bundled assets.
+history:
+- at: '2026-11-10T15:25:18+00:00'
+  from: null
+  to: DISCOVERED
+  by: ceh migrate
+  note: G5 page-chrome lint taxonomy and audio cut-sync. Proprietary bundled assets.
+- at: '2026-11-10T15:25:18+00:00'
+  from: DISCOVERED
+  to: PARKED
+  by: ceh migrate
+  note: recorded from historical evidence (REFERENCE)
+updated: '2026-11-10T16:02:50+00:00'
+historical:
+  group: A
+  previous_decision: REFERENCE
+  evidence:
+  - ~/git/video-factory/docs/research/video-factory-evolution/repository-audit.md
+  - ~/Desktop/VideoFactory-Lanes/evidence/m3-repo-matrix.json
+  note: G5 page-chrome lint taxonomy and audio cut-sync. Proprietary bundled assets.
+licence:
+  spdx: Apache-2.0
+  class: permissive
+  gate: pass
+  source: github-api
+  assets:
+    media_files: 14
+    font_files: 2
+    model_files: 0
+    nested_licence_files: []
+  notes:
+  - Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default.
+dependencies:
+  manifests: []
+security:
+  gate: pass
+  worst: low
+  findings: []
+  finding_count: 0
+  scanned_files: 81
+  notes:
+  - 1 large or binary files not scanned
+  - osv.dev checked 0 pinned packages
+compatibility:
+  agents:
+  - agent-skills-format
+  - claude-code
+  - codex
+  renderers:
+  - hyperframes
+  - ffmpeg
+  - browser
+  - canvas
+files:
+  count: 105
+  skills:
+  - SKILL.md
+analysed_commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+alternatives:
+- id: CEH-0014
+  name: heygen-com/hyperframes
+  status: PRODUCTION
+  shared:
+  - 3d-animation
+  - motion-graphics
+  overlap: 0.33
+- id: CEH-0018
+  name: LottieFiles/motion-design-skill
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  - motion-graphics
+  overlap: 0.33
+- id: CEH-0008
+  name: Priyanshsharma21/aansh-video
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.17
+- id: CEH-0011
+  name: greensock/gsap-skills
+  status: CANDIDATE
+  shared:
+  - 2d-animation
+  overlap: 0.17
+- id: CEH-0048
+  name: motion-canvas/motion-canvas
+  status: CANDIDATE
+  shared:
+  - motion-graphics
+  overlap: 0.17
+- id: CEH-0005
+  name: whaleyxbt/claude-motion
+  status: PARKED
+  shared:
+  - 3d-animation
+  - motion-graphics
+  - sound-design
+  - storyboarding
+  overlap: 0.67
+- id: CEH-0001
+  name: AbubakrChan/product-launch-motion
+  status: PARKED
+  shared:
+  - motion-graphics
+  - sound-design
+  - storyboarding
+  overlap: 0.5
+- id: CEH-0003
+  name: howseen-ai/claude-motion-design
+  status: PARKED
+  shared:
+  - 3d-animation
+  - motion-graphics
+  - sound-design
+  overlap: 0.5
+recommendation: 'EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0006`.'
+inspected: '2026-11-10T15:47:34+00:00'
+evaluation:
+  manual: {}
+  at: '2026-11-10T15:47:34+00:00'
+  criteria:
+    workflow_completeness:
+      score: 4
+      basis: 'skills, scripts, examples, tests present: [True, True, True, False]'
+    reusability:
+      score: 4
+      basis: resource type agent-skill
+    agent_compatibility:
+      score: 5
+      basis: 'agents detected: agent-skills-format, claude-code, codex'
+    maintainability:
+      score: 4
+      basis: last push 34 days ago
+    documentation:
+      score: 5
+      basis: top-level README 22885 chars
+    licence_suitability:
+      score: 5
+      basis: Apache-2.0 (permissive)
+    security:
+      score: 5
+      basis: 0 findings, worst low
+    integration_complexity:
+      score: 5
+      basis: '0 runtime dependencies; install hooks: []'
+    visual_quality:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+    performance:
+      score: null
+      basis: 'needs a benchmark: render a sample and record it with --score'
+  weighted_score: 4.57
+  evidence_coverage: 0.7
+  gates:
+    licence: pass
+    security: pass

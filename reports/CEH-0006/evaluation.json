@@ -1,0 +1,107 @@
+{
+  "id": "CEH-0006",
+  "name": "Tejashmakwana/motionmaxxing",
+  "url": "https://github.com/Tejashmakwana/motionmaxxing",
+  "type": "agent-skill",
+  "status": "PARKED",
+  "capabilities": [
+    "sound-design",
+    "3d-animation",
+    "motion-graphics",
+    "storyboarding",
+    "2d-animation",
+    "ai-video-generation"
+  ],
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 14,
+      "font_files": 2,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": [
+      "Bundled media, fonts or models may carry their own terms; the code licence does not cover them by default."
+    ]
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 81,
+    "notes": [
+      "1 large or binary files not scanned",
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "claude-code",
+      "codex"
+    ],
+    "renderers": [
+      "hyperframes",
+      "ffmpeg",
+      "browser",
+      "canvas"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:47:34+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 4,
+        "basis": "skills, scripts, examples, tests present: [True, True, True, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, claude-code, codex"
+      },
+      "maintainability": {
+        "score": 4,
+        "basis": "last push 34 days ago"
+      },
+      "documentation": {
+        "score": 5,
+        "basis": "top-level README 22885 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "Apache-2.0 (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 4.57,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "EVALUATE: no active capability covers this. Run `ceh evaluate CEH-0006`."
+}

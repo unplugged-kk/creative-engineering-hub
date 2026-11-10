@@ -1,0 +1,100 @@
+{
+  "id": "CEH-0021",
+  "name": "CK42BB/vox-explainer-skill",
+  "url": "https://github.com/CK42BB/vox-explainer-skill",
+  "type": "agent-skill",
+  "status": "SANDBOXED",
+  "capabilities": [
+    "voiceover",
+    "documentary-storytelling",
+    "explainer-videos",
+    "subtitles",
+    "camera-movement"
+  ],
+  "licence": {
+    "spdx": "MIT",
+    "class": "permissive",
+    "gate": "pass",
+    "source": "github-api",
+    "assets": {
+      "media_files": 0,
+      "font_files": 0,
+      "model_files": 0,
+      "nested_licence_files": []
+    },
+    "notes": []
+  },
+  "security": {
+    "gate": "pass",
+    "worst": "low",
+    "findings": [],
+    "finding_count": 0,
+    "scanned_files": 6,
+    "notes": [
+      "osv.dev checked 0 pinned packages"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "agent-skills-format",
+      "antigravity",
+      "claude-code"
+    ],
+    "renderers": [
+      "ffmpeg"
+    ]
+  },
+  "evaluation": {
+    "manual": {},
+    "at": "2026-11-10T15:48:21+00:00",
+    "criteria": {
+      "workflow_completeness": {
+        "score": 2,
+        "basis": "skills, scripts, examples, tests present: [True, False, False, False]"
+      },
+      "reusability": {
+        "score": 4,
+        "basis": "resource type agent-skill"
+      },
+      "agent_compatibility": {
+        "score": 5,
+        "basis": "agents detected: agent-skills-format, antigravity, claude-code"
+      },
+      "maintainability": {
+        "score": 3,
+        "basis": "last push 122 days ago"
+      },
+      "documentation": {
+        "score": 3,
+        "basis": "top-level README 2868 chars"
+      },
+      "licence_suitability": {
+        "score": 5,
+        "basis": "MIT (permissive)"
+      },
+      "security": {
+        "score": 5,
+        "basis": "0 findings, worst low"
+      },
+      "integration_complexity": {
+        "score": 5,
+        "basis": "0 runtime dependencies; install hooks: []"
+      },
+      "visual_quality": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      },
+      "performance": {
+        "score": null,
+        "basis": "needs a benchmark: render a sample and record it with --score"
+      }
+    },
+    "weighted_score": 3.86,
+    "evidence_coverage": 0.7,
+    "gates": {
+      "licence": "pass",
+      "security": "pass"
+    }
+  },
+  "recommendation": "COMPARE before adopting: overlaps Priyanshsharma21/aansh-video (CANDIDATE) on explainer-videos, subtitles, voiceover. Run `ceh compare CEH-0021 CEH-0008`."
+}
