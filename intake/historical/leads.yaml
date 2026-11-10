@@ -35,7 +35,7 @@ leads:
      note: "Voice to animated host plus word captions on HyperFrames; fills the documented lip-synced cartoon host gap."}
 
   # B. Rendering and animation systems
-  - {url: https://github.com/remotion-dev/remotion, vf_usage: ["contentos/renderers/remotion.py"], group: B, previous: DEFER, pinned: 5ce9514934716083274bb18221737223aba63318, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_catalog],
+  - {url: https://github.com/remotion-dev/remotion, type: renderer, capabilities: [rendering, motion-graphics, data-visualization], vf_usage: ["contentos/renderers/remotion.py"], group: B, previous: DEFER, pinned: 5ce9514934716083274bb18221737223aba63318, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_catalog],
      note: "Optional React/data-driven renderer. Non-OSI two-tier licence: company licence needed above 3 employees. VF has contentos/renderers/remotion.py adapter."}
   - {url: https://github.com/motiondivision/motion, group: B, previous: REFERENCE, pinned: e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8, status: PARKED, evidence: [vf_audit_1, vf_audit_2],
      note: "Web UI animation library, not a video workflow. Not the same as motiondivision/ai-kit."}
@@ -47,11 +47,11 @@ leads:
      note: "Animate Studio v0.4.0 installed separately at ~/Desktop/Animate-Studio; doctor PASS=21. Style-grammar format and approval gates adapted by VF; its canvas renderer is not adopted."}
   - {url: https://github.com/nateherkai/hyperframes-student-kit, group: B, previous: DEFER, pinned: 0d30152a82b9ceb93cfdd9bdbf46f0d5ab3cde86, status: PARKED, evidence: [vf_audit_1, vf_audit_2, vf_matrix],
      note: "Renamed upstream to nateherkai/herk-edit-kit. Footage-editing kit; paid hooks and bundled media rejected."}
-  - {url: https://github.com/heygen-com/hyperframes, vf_usage: ["package.json: hyperframes 0.8.114", "config/upstream-skills.lock.json", "contentos/renderers/hyperframes.py"], group: B, previous: ADOPT, pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc, status: PRODUCTION, strategy: PINNED,
+  - {url: https://github.com/heygen-com/hyperframes, type: renderer, capabilities: [rendering, motion-graphics, kinetic-typography, voiceover, subtitles], vf_usage: ["package.json: hyperframes 0.8.114", "config/upstream-skills.lock.json", "contentos/renderers/hyperframes.py"], group: B, previous: ADOPT, pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc, status: PRODUCTION, strategy: PINNED,
      local: [~/audit-scratch/t1/hf-src], forks: [https://github.com/kishorehq/hyperframes],
      evidence: [vf_audit_1, vf_audit_2, vf_lock, vf_package, vf_catalog],
      note: "VF default renderer: npm hyperframes 0.8.114 = tag v0.8.114 = commit 01c6f600. Official skills hyperframes-core/animation/keyframes pinned by tree sha256 in vf_lock."}
-  - {url: https://github.com/acamposuribe/p5.brush, group: B, previous: EXPERIMENTAL, status: SANDBOXED, evidence: [vf_p5],
+  - {url: https://github.com/acamposuribe/p5.brush, type: renderer, capabilities: [hand-drawn-animation, procedural-animation], group: B, previous: EXPERIMENTAL, status: SANDBOXED, evidence: [vf_p5],
      local: [~/git/video-factory/workspace/experiments/p5brush-001],
      note: "Experimental hand-drawn brush renderer, evaluated in VF workspace/experiments/p5brush-001."}
 
@@ -79,7 +79,7 @@ leads:
      note: "Motion AI Kit, recorded in VF config/capabilities.json as ref:motion-ai-kit, reference-only."}
 
   # E. Other content production projects and tools
-  - {url: https://github.com/harry0703/MoneyPrinterTurbo, vf_usage: ["contentos/renderers/mpt.py", "vendor/MoneyPrinterTurbo"], group: E, previous: OPTIONAL_BACKEND, status: SANDBOXED, strategy: VENDORED,
+  - {url: https://github.com/harry0703/MoneyPrinterTurbo, type: workflow, capabilities: [rendering, social-media-videos, voiceover, subtitles], vf_usage: ["contentos/renderers/mpt.py", "vendor/MoneyPrinterTurbo"], group: E, previous: OPTIONAL_BACKEND, status: SANDBOXED, strategy: VENDORED,
      local: [~/git/video-factory/vendor/MoneyPrinterTurbo], forks: [https://github.com/kishorehq/MoneyPrinterTurbo], evidence: [vf_catalog],
      note: "Alternate VF rendering lane (contentos/renderers/mpt.py). Cloud TTS fails local-first policy. Vendored copy has local Docker files."}
   - {url: https://github.com/calesthio/OpenMontage, vf_usage: ["vendor/OpenMontage (reference only)"], group: E, previous: EXTERNAL_REFERENCE, status: RESTRICTED, strategy: VENDORED,
@@ -97,11 +97,11 @@ leads:
   - {url: https://github.com/CopilotKit/CopilotKit, group: E, status: DISCOVERED}
   - {url: https://github.com/ag-ui-protocol/ag-ui, group: E, status: DISCOVERED}
   - {url: https://github.com/remsky/Kokoro-FastAPI, group: E, status: DISCOVERED, note: "Kokoro in VF runs via hyperframes tts (kokoro-onnx in ~/.contentos/venv), not this server."}
-  - {url: https://github.com/thewh1teagle/kokoro-onnx, vf_usage: ["hyperframes tts (contentos/lang/tts.py)"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv."}
+  - {url: https://github.com/thewh1teagle/kokoro-onnx, capabilities: [voiceover], vf_usage: ["hyperframes tts (contentos/lang/tts.py)"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "Kokoro TTS used by hyperframes tts in VF; installed in ~/.contentos/venv."}
   - {url: https://github.com/Jakeschincariol/youtube-agent-skill, vf_usage: ["vendor/youtube-agent-skill"], group: E, previous: INSTALLED, status: PRODUCTION, strategy: VENDORED,
      local: [~/git/video-factory/vendor/youtube-agent-skill], evidence: [vf_catalog], note: "11 skills copied to ~/.claude/skills; writes, never publishes."}
-  - {url: https://github.com/ggml-org/whisper.cpp, vf_usage: ["contentos/lang/asr.py"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py."}
-  - {url: https://github.com/FFmpeg/FFmpeg, vf_usage: ["pipeline render and QA"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew ffmpeg arm64 at /opt/homebrew/bin."}
+  - {url: https://github.com/ggml-org/whisper.cpp, capabilities: [subtitles], vf_usage: ["contentos/lang/asr.py"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew whisper-cli; used by hyperframes transcribe and contentos/lang/asr.py."}
+  - {url: https://github.com/FFmpeg/FFmpeg, capabilities: [rendering, video-editing, compositing, audio-qa], vf_usage: ["pipeline render and QA"], group: E, previous: INSTALLED, status: PRODUCTION, evidence: [vf_catalog], note: "brew ffmpeg arm64 at /opt/homebrew/bin."}
   - {url: https://www.pexels.com/api/, group: E, type: asset-library, status: DISCOVERED, note: "Stock footage API used by MoneyPrinterTurbo lane."}
   - {url: https://pixabay.com/api/docs/, group: E, type: asset-library, status: DISCOVERED}
   - {url: https://coverr.co/, group: E, type: asset-library, status: DISCOVERED}
