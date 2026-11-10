@@ -17,59 +17,10 @@ local:
       head: 3596b26764286a7de9d90c363e988d50578918e5
       branch: main
       origin: https://github.com/thewh1teagle/kokoro-onnx
-      uncommitted:
-      - D  .github/FUNDING.yml
-      - D  .github/ISSUE_TEMPLATE/bug_report.yaml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yaml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/workflows/check.yml
-      - D  .github/workflows/fetch_voices.yml
-      - D  .github/workflows/publish-to-pypi.yml
-      - D  .github/workflows/test.yml
-      - D  .gitignore
-      - D  .python-version
-      - D  .vscode/extensions.json
-      - D  .vscode/settings.json
-      - D  BUILDING.md
-      - D  CONTRIBUTE.md
-      - D  LICENSE
-      - D  README.md
-      - D  examples/app.py
-      - D  examples/chinese.py
-      - D  examples/english.py
-      - D  examples/french.py
-      - D  examples/hebrew.py
-      - D  examples/hindi.py
-      - D  examples/italian.py
-      - D  examples/japanese.py
-      - D  examples/play.py
-      - D  examples/podcast.py
-      - D  examples/portuguese.py
-      - D  examples/save.py
-      - D  examples/spanish.py
-      - D  examples/with_blending.py
-      - D  examples/with_continuous.py
-      - D  examples/with_cuda.py
-      - D  examples/with_espeak_data.py
-      - D  examples/with_espeak_lib.py
-      - D  examples/with_log.py
-      - D  examples/with_phonemes.py
-      - D  examples/with_provider.py
-      - D  examples/with_quant.py
-      - D  examples/with_session.py
-      - D  examples/with_stream.py
-      - D  examples/with_stream_save.py
-      - D  examples/with_timestamps.py
-      - D  examples/with_video_subtitles.py
-      - D  examples/with_voice.py
-      - D  pyproject.toml
-      - D  scripts/export.py
-      - D  scripts/fetch_voices.py
-      - D  src/kokoro_onnx/__init__.py
-      - D  src/kokoro_onnx/chunker.py
-      - D  src/kokoro_onnx/config.json
-      uncommitted_count: 59
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/thewh1teagle/kokoro-onnx
@@ -85,13 +36,21 @@ upstream:
   latest_release: &id002
     tag: model-files-v1.1
     published_at: '2025-03-01T14:13:38Z'
-  last_checked: '2026-11-10T16:04:36+00:00'
+  last_checked: '2026-11-10T16:33:54+00:00'
   checks:
   - at: '2026-11-10T15:37:05+00:00'
     latest: 3596b26764286a7de9d90c363e988d50578918e5
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:36+00:00'
+    latest: 3596b26764286a7de9d90c363e988d50578918e5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:29+00:00'
+    latest: 3596b26764286a7de9d90c363e988d50578918e5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:54+00:00'
     latest: 3596b26764286a7de9d90c363e988d50578918e5
     flags: &id001
     - up-to-date
@@ -126,7 +85,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:36+00:00'
+updated: '2026-11-10T16:33:54+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

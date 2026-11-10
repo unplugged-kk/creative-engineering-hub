@@ -17,59 +17,10 @@ local:
       head: cdced3d0696601ea4b3eb1dc7205be1426f74c13
       branch: main
       origin: https://github.com/motiondivision/motion
-      uncommitted:
-      - D  .agents/skills/fix/SKILL.md
-      - D  .agents/skills/improve/SKILL.md
-      - D  .agents/skills/improve/references/audit-playbook.md
-      - D  .agents/skills/improve/references/closing-the-loop.md
-      - D  .agents/skills/improve/references/plan-template.md
-      - D  .circleci/config.yml
-      - D  .claude/overviews/projection.md
-      - D  .claude/settings.json
-      - D  .cursorrules
-      - D  .devcontainer/Dockerfile
-      - D  .devcontainer/devcontainer.json
-      - D  .github/FUNDING.yml
-      - D  .github/ISSUE_TEMPLATE/bug_report.md
-      - D  .github/ISSUE_TEMPLATE/feature_request.md
-      - D  .github/workflows/claude.yml
-      - D  .gitignore
-      - D  .nvmrc
-      - D  .prettierrc.json
-      - D  .vscode/settings.json
-      - D  .yarn/cache/@adobe-css-tools-npm-4.4.3-9b50fb7d52-8c773f624d.zip
-      - D  .yarn/cache/@ampproject-remapping-npm-2.3.0-559c14eee4-d3ad7b89d9.zip
-      - D  .yarn/cache/@babel-code-frame-npm-7.27.1-4dbcabb137-5874edc5d3.zip
-      - D  .yarn/cache/@babel-compat-data-npm-7.27.5-0de0881fc1-8706be55f1.zip
-      - D  .yarn/cache/@babel-core-npm-7.27.4-801e5891a4-e7f961274f.zip
-      - D  .yarn/cache/@babel-generator-npm-7.27.5-b91f717ed1-f6d3bf70f6.zip
-      - D  .yarn/cache/@babel-helper-annotate-as-pure-npm-7.27.3-d8daa5b949-63863a5c93.zip
-      - D  .yarn/cache/@babel-helper-compilation-targets-npm-7.27.2-111dda04b6-7b95328237.zip
-      - D  .yarn/cache/@babel-helper-create-class-features-plugin-npm-7.27.1-65d3087eb1-406954b455.zip
-      - D  .yarn/cache/@babel-helper-member-expression-to-functions-npm-7.27.1-39af2b31f0-b13a3d1200.zip
-      - D  .yarn/cache/@babel-helper-module-imports-npm-7.27.1-3bf33978f4-92d01c71c0.zip
-      - D  .yarn/cache/@babel-helper-module-transforms-npm-7.27.3-90dc30d3d9-c611d42d3c.zip
-      - D  .yarn/cache/@babel-helper-optimise-call-expression-npm-7.27.1-84d2c8f7d3-0fb7ee824a.zip
-      - D  .yarn/cache/@babel-helper-plugin-utils-npm-7.27.1-4f91e7999b-5d71505530.zip
-      - D  .yarn/cache/@babel-helper-replace-supers-npm-7.27.1-f784132f4b-3690266c30.zip
-      - D  .yarn/cache/@babel-helper-skip-transparent-expression-wrappers-npm-7.27.1-c539e02d36-4f380c5d0e.zip
-      - D  .yarn/cache/@babel-helper-string-parser-npm-7.27.1-d1471e0598-0a8464adc4.zip
-      - D  .yarn/cache/@babel-helper-validator-identifier-npm-7.27.1-2c3cefd5dc-3c7e8391e5.zip
-      - D  .yarn/cache/@babel-helper-validator-option-npm-7.27.1-7c563f0423-db73e6a308.zip
-      - D  .yarn/cache/@babel-helpers-npm-7.27.6-7fcd6207a2-12f96a5800.zip
-      - D  .yarn/cache/@babel-parser-npm-7.27.5-c483fe8f2e-16f00a1289.zip
-      - D  .yarn/cache/@babel-plugin-proposal-private-methods-npm-7.18.6-55729207b7-22d8502ee9.zip
-      - D  .yarn/cache/@babel-plugin-syntax-async-generators-npm-7.8.4-d10cf993c9-7ed1c1d9b9.zip
-      - D  .yarn/cache/@babel-plugin-syntax-bigint-npm-7.8.3-b05d971e6c-3a10849d83.zip
-      - D  .yarn/cache/@babel-plugin-syntax-class-properties-npm-7.12.13-002ee9d930-24f34b196d.zip
-      - D  .yarn/cache/@babel-plugin-syntax-class-static-block-npm-7.14.5-7bdd0ff1b3-3e80814b5b.zip
-      - D  .yarn/cache/@babel-plugin-syntax-import-attributes-npm-7.27.1-e7e02d37a0-97973982ff.zip
-      - D  .yarn/cache/@babel-plugin-syntax-import-meta-npm-7.10.4-4a0a0158bc-166ac1125d.zip
-      - D  .yarn/cache/@babel-plugin-syntax-json-strings-npm-7.8.3-6dc7848179-bf5aea1f31.zip
-      - D  .yarn/cache/@babel-plugin-syntax-jsx-npm-7.27.1-2f6039b8f0-c6d1324cff.zip
-      - D  .yarn/cache/@babel-plugin-syntax-logical-assignment-operators-npm-7.10.4-72ae00fdf6-aff3357703.zip
-      uncommitted_count: 3557
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/motiondivision/motion
@@ -83,7 +34,7 @@ upstream:
   pinned_commit: e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8
   latest_commit: cdced3d0696601ea4b3eb1dc7205be1426f74c13
   latest_release: null
-  last_checked: '2026-11-10T16:03:04+00:00'
+  last_checked: '2026-11-10T16:32:29+00:00'
   checks:
   - at: '2026-11-10T15:35:38+00:00'
     latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
@@ -91,9 +42,23 @@ upstream:
     - new-commits
   - at: '2026-11-10T16:03:04+00:00'
     latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:17:45+00:00'
+    latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:21:07+00:00'
+    latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:29+00:00'
+    latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: motiondivision/motion
@@ -126,7 +91,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (REFERENCE)
-updated: '2026-11-10T16:03:04+00:00'
+updated: '2026-11-10T16:32:29+00:00'
 historical:
   group: B
   previous_decision: REFERENCE

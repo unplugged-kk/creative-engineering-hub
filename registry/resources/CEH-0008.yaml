@@ -24,59 +24,10 @@ local:
       head: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
       branch: main
       origin: https://github.com/Priyanshsharma21/aansh-video
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  aansh-video/SKILL.md
-      - D  aansh-video/harness.js
-      - D  aansh-video/template/assets/engine.js
-      - D  aansh-video/template/assets/gsap.min.js
-      - D  aansh-video/template/assets/mouth.js
-      - D  aansh-video/template/assets/scenes.js
-      - D  aansh-video/template/assets/words.js
-      - D  aansh-video/template/hyperframes.json
-      - D  aansh-video/template/index.html
-      - D  aansh-video/template/meta.json
-      - D  aansh-video/template/package.json
-      - D  aansh-video/tools/align.py
-      - D  aansh-video/tools/mouth.py
-      - D  aansh-video/tools/transcribe.sh
-      - D  docs/demo.jpg
-      - D  skills/anime-reel/SKILL.md
-      - D  skills/blueprint-explainer/SKILL.md
-      - D  skills/breaking-news/SKILL.md
-      - D  skills/business-short-form-reels/SKILL.md
-      - D  skills/cinema-scope/SKILL.md
-      - D  skills/comic-halftone/SKILL.md
-      - D  skills/comic-reel/SKILL.md
-      - D  skills/dark-red-timeline-motion-graphics/SKILL.md
-      - D  skills/depth-ui-reel/SKILL.md
-      - D  skills/educational-youtube-editor/SKILL.md
-      - D  skills/glass-stat-card/SKILL.md
-      - D  skills/hindi-lyric-video/SKILL.md
-      - D  skills/hindi-pastel-reel-edit/SKILL.md
-      - D  skills/instagram-ui-hinglish/SKILL.md
-      - D  skills/iphone-style-by-aansh/SKILL.md
-      - D  skills/katha-video/SKILL.md
-      - D  skills/kinetic-lyrics/SKILL.md
-      - D  skills/kinetic-talking-head-edit/SKILL.md
-      - D  skills/latent-reel/SKILL.md
-      - D  skills/led-matrix-text/SKILL.md
-      - D  skills/lyric-video/SKILL.md
-      - D  skills/madhubani-kahani/SKILL.md
-      - D  skills/magazine-cover/SKILL.md
-      - D  skills/match-cut/SKILL.md
-      - D  skills/neon-outline/SKILL.md
-      - D  skills/news-report/SKILL.md
-      - D  skills/particle-chart/SKILL.md
-      - D  skills/particle-text/SKILL.md
-      - D  skills/personal-broll-library/SKILL.md
-      - D  skills/personal-explainer/SKILL.md
-      - D  skills/personal-short-form-reels/SKILL.md
-      - D  skills/podcast-explainer/SKILL.md
-      uncommitted_count: 64
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Priyanshsharma21/aansh-video
@@ -90,13 +41,25 @@ upstream:
   pinned_commit: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
   latest_commit: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
   latest_release: null
-  last_checked: '2026-11-10T16:02:56+00:00'
+  last_checked: '2026-11-10T16:32:22+00:00'
   checks:
   - at: '2026-11-10T15:35:33+00:00'
     latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
     flags:
     - up-to-date
   - at: '2026-11-10T16:02:56+00:00'
+    latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:39+00:00'
+    latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:01+00:00'
+    latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:22+00:00'
     latest: 99ce8b1724f75fedd5cc9a7bc6a2c19931e8d505
     flags: &id001
     - up-to-date
@@ -126,7 +89,7 @@ history:
   to: CANDIDATE
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:02:56+00:00'
+updated: '2026-11-10T16:32:22+00:00'
 historical:
   group: A
   previous_decision: ADAPT

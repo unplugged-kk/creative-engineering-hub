@@ -20,59 +20,10 @@ local:
       head: e973d515aef90c467da2289144df737a3bd03859
       branch: master
       origin: https://github.com/darkzOGx/youtube-automation-agent
-      uncommitted:
-      - D  .env.example
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/workflows/ci.yml
-      - D  .gitignore
-      - D  CHANGELOG.md
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  README.md
-      - D  agents/analytics-optimization-agent.js
-      - D  agents/content-strategy-agent.js
-      - D  agents/production-management-agent.js
-      - D  agents/publishing-scheduling-agent.js
-      - D  agents/script-writer-agent.js
-      - D  agents/seo-optimizer-agent.js
-      - D  agents/thumbnail-designer-agent.js
-      - D  assets/demo/README.md
-      - D  assets/screenshots/operator.png
-      - D  assets/screenshots/overview.png
-      - D  assets/screenshots/review.png
-      - D  config/credentials.example.json
-      - D  dashboard/app.js
-      - D  dashboard/enhance.js
-      - D  dashboard/index.html
-      - D  dashboard/styles.css
-      - D  database/db.js
-      - D  docs/api.md
-      - D  docs/features.md
-      - D  docs/providers.md
-      - D  docs/superpowers/plans/2026-08-23-audience-engagement-studio.md
-      - D  docs/superpowers/specs/2026-08-23-audience-engagement-studio-design.md
-      - D  docs/troubleshooting.md
-      - D  eslint.config.js
-      - D  examples/README.md
-      - D  index.js
-      - D  mcp/content-strategy-agent.mcp.json
-      - D  modern-auth.js
-      - D  oauth-server.js
-      - D  package-lock.json
-      - D  package.json
-      - D  reports/growth/baseline-2026-08-18.json
-      - D  reports/growth/baseline-2026-08-18.md
-      - D  reports/growth/fork-census-2026-08-18.json
-      - D  reports/growth/fork-census-2026-08-18.md
-      - D  reports/growth/prelaunch-readiness-2026-08-18.md
-      - D  schedules/daily-automation.js
-      - D  scripts/docs/capture-screenshots.js
-      - D  scripts/growth/snapshot-github.js
-      uncommitted_count: 76
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/darkzOGx/youtube-automation-agent
@@ -89,13 +40,25 @@ upstream:
   latest_release: &id002
     tag: v2.11.0
     published_at: '2026-10-14T03:34:15Z'
-  last_checked: '2026-11-10T16:04:06+00:00'
+  last_checked: '2026-11-10T16:33:29+00:00'
   checks:
   - at: '2026-11-10T15:36:39+00:00'
     latest: e973d515aef90c467da2289144df737a3bd03859
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:06+00:00'
+    latest: e973d515aef90c467da2289144df737a3bd03859
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:44+00:00'
+    latest: e973d515aef90c467da2289144df737a3bd03859
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:05+00:00'
+    latest: e973d515aef90c467da2289144df737a3bd03859
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:29+00:00'
     latest: e973d515aef90c467da2289144df737a3bd03859
     flags: &id001
     - up-to-date
@@ -153,7 +116,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:06+00:00'
+updated: '2026-11-10T16:33:29+00:00'
 historical:
   group: E
   previous_decision: null

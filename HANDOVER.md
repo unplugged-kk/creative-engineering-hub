@@ -1,5 +1,36 @@
 # CEH handover
 
+## Latest integration checkpoint - read first
+
+2026-11-10 continuation mission implemented and verified a strict v2 catalog and isolated metadata-only VF consumer.
+The older sections below are historical and do not supersede this checkpoint.
+
+- CEH core commit 75adf7a: strict governed v2 producer/reader, CLI export, corrected object-only clone state and fresh upstream assessments.
+- Creative curation commit ba4afce: kinetic-type-planning and measured-sound-pass 0.1.0, original instruction-only candidates with pinned provenance.
+- VF branch codex/ceh-catalog-consumer at /tmp/ceh-vf-consumer, commit b1befad73b4285ce461eb48861e5559c069d2776.
+  Adds only standalone contentos.ceh_catalog/ceh_contract modules, tests and docs; no pipeline/CLI/default/gate changes; disabled by default.
+- Real v2 catalog generated via `uv run ceh catalog export --json`: empty. No new approval, capability publication, historical ratification,
+  branch merge, deployment or HyperFrames upgrade performed. Legacy catalog file remains absent (CLI fallback empty).
+- CEH: 104 tests pass; focused Ruff and syntax compile pass; `ceh validate` reports 48 resources, 3 skills; skill validation passes.
+- Live original VF: 1023 passed, 8 skipped. Isolated consumer VF: 1080 passed, 17 skipped; Node66 pass. Consumer focus71 pass.
+  Counts differ because the isolated base excludes user WIP tests. Original tracked diff and untracked filenames compare unchanged.
+- All registry pins compare unchanged against 59070c1. Upstream refreshed45 resources;14 attention signals. Corrected no-checkout
+  false conflicts; remaining local-conflict labels explicitly heuristic. p5.brush local Git state unverified.
+- Fixture-only end-to-end: real VF reader selects synthetic approved metadata; canonical planning -> authored HyperFrames0.8.114
+  sandbox render -> existing VF technical QA8PASS1WARN. Three encoded outputs have identical SHA256. No real capability approval inferred.
+- Output /tmp/ceh-benchmark-from-helper/video.mp4. Full benchmark, probes, repro commands and limits in continuation/benchmark.md.
+  Media is external/ephemeral; original textual harness and fixture selector are committed under tools/benchmarks/kinetic_type.
+- Independent review fixed generic task matches, huge versions, malformed environments, unknown/NC asset licences and release
+  approval binding. Publisher now binds both bundle bytes and the complete reviewed entry digest. Contract copies match exactly.
+- One current Codex planning invocation documented; other products not runtime-verified. New creative skills remain unapproved/uninstalled.
+- Current reports: reports/continuation/2026-11-10/{baseline,mission-progress,acceptance-matrix,benchmark,agent-interoperability,
+  security-review,ratification,recovery,production-readiness}.md.
+
+Next restricted decision: review exact candidate skill/licence and output evidence, authorize a specific verified capability's
+approval/publication, then separately review the VF branch for merge/activation and its independently accepted catalog fingerprint.
+Before production: normal-speed visual/listening review, real-agent/brand/language verification, transitive/source review and existing
+VF job approvals/QA. Semantic API analysis, broader benchmarks and scheduling are not claimed complete. See acceptance matrix.
+
 Written 2026-11-10 mid-build so another agent can continue. Mission text: the user's "MASTER MISSION: Build Creative
 Engineering Hub (CEH)" prompt (phases 1-9, acceptance criteria 1-15). Read that first if you have it.
 

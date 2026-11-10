@@ -28,9 +28,17 @@ upstream:
   latest_release: &id002
     tag: v3.17.2
     published_at: '2024-12-14T20:26:49Z'
-  last_checked: '2026-11-10T16:04:47+00:00'
+  last_checked: '2026-11-10T16:34:05+00:00'
   checks:
   - at: '2026-11-10T16:04:47+00:00'
+    latest: 7b91435c301d530351dcf5ebb91dd139c002e405
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:40+00:00'
+    latest: 7b91435c301d530351dcf5ebb91dd139c002e405
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:34:05+00:00'
     latest: 7b91435c301d530351dcf5ebb91dd139c002e405
     flags: &id001
     - up-to-date
@@ -73,7 +81,7 @@ history:
   to: CANDIDATE
   by: ceh evaluate
   note: score 2.93 at coverage 0.7
-updated: '2026-11-10T16:04:47+00:00'
+updated: '2026-11-10T16:34:05+00:00'
 licence:
   spdx: MIT
   class: permissive

@@ -17,59 +17,10 @@ local:
       head: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
       branch: main
       origin: https://github.com/morluto/rea
-      uncommitted:
-      - D  .agents/plugins/marketplace.json
-      - D  .agents/skills/rea-analysis-optimization/SKILL.md
-      - D  .agents/skills/rea-analysis-optimization/agents/openai.yaml
-      - D  .agents/skills/rea-analysis-optimization/references/kuna-case-study.md
-      - D  .agents/skills/rea-changelog-update/SKILL.md
-      - D  .agents/skills/rea-ci-tests-audit/SKILL.md
-      - D  .agents/skills/rea-ci-tests-audit/agents/openai.yaml
-      - D  .agents/skills/rea-ci-tests-audit/references/measurement-and-ci.md
-      - D  .agents/skills/rea-tool-design/SKILL.md
-      - D  .agents/skills/reverse-engineer-anything/SKILL.md
-      - D  .agents/skills/reverse-engineer-anything/references/android-applications.md
-      - D  .agents/skills/reverse-engineer-anything/references/connection-and-recovery.md
-      - D  .agents/skills/reverse-engineer-anything/references/desktop-build.md
-      - D  .agents/skills/reverse-engineer-anything/references/environments.md
-      - D  .agents/skills/reverse-engineer-anything/references/evidence-workflows.md
-      - D  .agents/skills/reverse-engineer-anything/references/javascript-applications.md
-      - D  .agents/skills/reverse-engineer-anything/references/native-and-artifacts.md
-      - D  .agents/skills/reverse-engineer-anything/references/runtime-observation.md
-      - D  .claude-plugin/marketplace.json
-      - D  .claude-plugin/plugin.json
-      - D  .codex-plugin/mcp.json
-      - D  .codex-plugin/plugin.json
-      - D  .gitattributes
-      - D  .github/CODEOWNERS
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/ISSUE_TEMPLATE/design_discussion.yml
-      - D  .github/ISSUE_TEMPLATE/documentation.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/actionlint.yaml
-      - D  .github/actions/npm-cache/action.yml
-      - D  .github/actions/portable-build-cache/action.yml
-      - D  .github/actions/prepare-release-package/action.yml
-      - D  .github/actions/publish-mcp/action.yml
-      - D  .github/actions/publish-mcp/registry-state.d.mts
-      - D  .github/actions/publish-mcp/registry-state.mjs
-      - D  .github/codeql/production.yml
-      - D  .github/dependabot.yml
-      - D  .github/pull_request_template.md
-      - D  .github/workflows/cache-retention.yml
-      - D  .github/workflows/ci-full-pr.yml
-      - D  .github/workflows/ci-timings.yml
-      - D  .github/workflows/ci.yml
-      - D  .github/workflows/codeql.yml
-      - D  .github/workflows/ghidra-bridge-sources.yml
-      - D  .github/workflows/mutation.yml
-      - D  .github/workflows/nativeaot-fixtures.yml
-      - D  .github/workflows/pages.yml
-      - D  .github/workflows/pr-readiness.yml
-      - D  .github/workflows/pr-title.yml
-      uncommitted_count: 8081
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/morluto/rea
@@ -85,13 +36,25 @@ upstream:
   latest_release: &id002
     tag: rea-agents-6.8.0
     published_at: '2026-10-25T08:36:02Z'
-  last_checked: '2026-11-10T16:03:49+00:00'
+  last_checked: '2026-11-10T16:33:13+00:00'
   checks:
   - at: '2026-11-10T15:36:22+00:00'
     latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:49+00:00'
+    latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:26+00:00'
+    latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:49+00:00'
+    latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:13+00:00'
     latest: b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829
     flags: &id001
     - up-to-date
@@ -142,7 +105,7 @@ history:
   to: REJECTED
   by: ceh migrate
   note: recorded from historical evidence (REJECT)
-updated: '2026-11-10T16:03:49+00:00'
+updated: '2026-11-10T16:33:13+00:00'
 historical:
   group: D
   previous_decision: REJECT

@@ -24,33 +24,10 @@ local:
       head: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
       branch: main
       origin: https://github.com/howseen-ai/claude-motion-design
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  examples/howseen-launch/assets/logo-mark.png
-      - D  examples/howseen-launch/audio.py
-      - D  examples/howseen-launch/fetch_assets.py
-      - D  examples/howseen-launch/film.html
-      - D  examples/howseen-launch/preview.gif
-      - D  examples/howseen-launch/render.py
-      - D  skill/motion-design/SKILL.md
-      - D  skill/motion-design/scripts/analyze_song.py
-      - D  skill/motion-design/scripts/audio_template.py
-      - D  skill/motion-design/scripts/mcp21_client.py
-      - D  skill/motion-design/scripts/mixkit_sfx_search.py
-      - D  skill/motion-design/scripts/remake/BRIEF_TEMPLATE.md
-      - D  skill/motion-design/scripts/remake/core.js
-      - D  skill/motion-design/scripts/remake/index.html
-      - D  skill/motion-design/scripts/remake/remake_analyze.py
-      - D  skill/motion-design/scripts/remake/remake_qa.py
-      - D  skill/motion-design/scripts/remake/remake_render.py
-      - D  skill/motion-design/scripts/remake/remake_stub.py
-      - D  skill/motion-design/scripts/remake/remake_sync.py
-      - D  skill/motion-design/scripts/render_template.py
-      - D  skill/motion-design/scripts/svgl_logos.py
-      uncommitted_count: 24
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/howseen-ai/claude-motion-design
@@ -64,13 +41,25 @@ upstream:
   pinned_commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
   latest_commit: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
   latest_release: null
-  last_checked: '2026-11-10T16:02:42+00:00'
+  last_checked: '2026-11-10T16:32:09+00:00'
   checks:
   - at: '2026-11-10T15:35:19+00:00'
     latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
     flags:
     - up-to-date
   - at: '2026-11-10T16:02:42+00:00'
+    latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:26+00:00'
+    latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:20:46+00:00'
+    latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:09+00:00'
     latest: 3d90d349ef3fdde9b7e89de4df4a2159c9e8697f
     flags: &id001
     - up-to-date
@@ -108,7 +97,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:02:42+00:00'
+updated: '2026-11-10T16:32:09+00:00'
 historical:
   group: A
   previous_decision: ADAPT

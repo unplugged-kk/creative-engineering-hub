@@ -19,59 +19,10 @@ local:
       head: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
       branch: master
       origin: https://github.com/remsky/Kokoro-FastAPI
-      uncommitted:
-      - D  .claude/skills/adding-normalizer/SKILL.md
-      - D  .claude/skills/api-contrib/SKILL.md
-      - D  .claude/skills/consumer-check/SKILL.md
-      - D  .claude/skills/consumer-check/consumers.py
-      - D  .claude/skills/integration-tests/SKILL.md
-      - D  .claude/skills/readme-benchmarks/SKILL.md
-      - D  .claude/skills/web-contrib/SKILL.md
-      - D  .codeql-config.yml
-      - D  .coveragerc
-      - D  .dockerignore
-      - D  .gitattributes
-      - D  .github/FUNDING.yml
-      - D  .github/ISSUE_TEMPLATE/bug_report.md
-      - D  .github/ISSUE_TEMPLATE/feature_request.md
-      - D  .github/dependabot.yml
-      - D  .github/pull_request_template.md
-      - D  .github/workflows/ci.yml
-      - D  .github/workflows/release.yml
-      - D  .github/workflows/test_build.yml
-      - D  .github/workflows/test_client_image.yml
-      - D  .gitignore
-      - D  .python-version
-      - D  .ruff.toml
-      - D  AGENTS.md
-      - D  CHANGELOG.md
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  README.md
-      - D  VERSION
-      - D  api/__init__.py
-      - D  api/src/builds/v1_0/config.json
-      - D  api/src/core/__init__.py
-      - D  api/src/core/auth.py
-      - D  api/src/core/body_limit.py
-      - D  api/src/core/config.py
-      - D  api/src/core/don_quixote.txt
-      - D  api/src/core/model_config.py
-      - D  api/src/core/openai_mappings.json
-      - D  api/src/core/paths.py
-      - D  api/src/core/voice_grades.json
-      - D  api/src/inference/__init__.py
-      - D  api/src/inference/base.py
-      - D  api/src/inference/decode_clip.py
-      - D  api/src/inference/inno_tuner.py
-      - D  api/src/inference/kokoro_v1.py
-      - D  api/src/inference/model_manager.py
-      - D  api/src/inference/voice_manager.py
-      - D  api/src/main.py
-      - D  api/src/models/v1_0/config.json
-      - D  api/src/routers/__init__.py
-      uncommitted_count: 434
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/remsky/Kokoro-FastAPI
@@ -87,13 +38,21 @@ upstream:
   latest_release: &id002
     tag: v0.10.0
     published_at: '2026-11-08T07:11:55Z'
-  last_checked: '2026-11-10T16:04:31+00:00'
+  last_checked: '2026-11-10T16:33:51+00:00'
   checks:
   - at: '2026-11-10T15:37:03+00:00'
     latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:31+00:00'
+    latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:26+00:00'
+    latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:51+00:00'
     latest: 7ae0f54b4bd74c780974c0da6c4cf83dc7324c8e
     flags: &id001
     - up-to-date
@@ -150,7 +109,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:31+00:00'
+updated: '2026-11-10T16:33:51+00:00'
 historical:
   group: E
   previous_decision: null

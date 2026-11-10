@@ -22,59 +22,10 @@ local:
       head: d4457db99b1737f1596f7a02c9d588eb77265904
       branch: main
       origin: https://github.com/remotion-dev/remotion
-      uncommitted:
-      - D  .agents/skills/accept-web-renderer-prs/SKILL.md
-      - D  .agents/skills/add-bug/SKILL.md
-      - D  .agents/skills/add-cli-option/SKILL.md
-      - D  .agents/skills/add-effect/SKILL.md
-      - D  .agents/skills/add-expert/SKILL.md
-      - D  .agents/skills/add-new-package/SKILL.md
-      - D  .agents/skills/add-sfx/SKILL.md
-      - D  .agents/skills/add-webcodecs-bug/SKILL.md
-      - D  .agents/skills/canvas-capture-extension/SKILL.md
-      - D  .agents/skills/canvas-capture-extension/agents/openai.yaml
-      - D  .agents/skills/canvas-capture-extension/scripts/rebuild-extension.sh
-      - D  .agents/skills/checkout/SKILL.md
-      - D  .agents/skills/convert/SKILL.md
-      - D  .agents/skills/convert/agents/openai.yaml
-      - D  .agents/skills/deprecate-api/SKILL.md
-      - D  .agents/skills/docs-demo/SKILL.md
-      - D  .agents/skills/docs/SKILL.md
-      - D  .agents/skills/docs/agents/openai.yaml
-      - D  .agents/skills/experts/SKILL.md
-      - D  .agents/skills/experts/agents/openai.yaml
-      - D  .agents/skills/find-unplanned-issues/SKILL.md
-      - D  .agents/skills/find-unplanned-issues/agents/openai.yaml
-      - D  .agents/skills/find-unplanned-issues/scripts/find-unplanned-issues.ts
-      - D  .agents/skills/find-unplanned-issues/scripts/prune-closed-masterplan-issues.ts
-      - D  .agents/skills/fix-dependabot/SKILL.md
-      - D  .agents/skills/fix-root-cause/SKILL.md
-      - D  .agents/skills/flake/SKILL.md
-      - D  .agents/skills/formatting/SKILL.md
-      - D  .agents/skills/gh-stack/SKILL.md
-      - D  .agents/skills/gh-stack/references/commands.md
-      - D  .agents/skills/gh-stack/references/stack-design.md
-      - D  .agents/skills/gh-stack/references/troubleshooting.md
-      - D  .agents/skills/homepage-video-assets/SKILL.md
-      - D  .agents/skills/import-canvas-capture/SKILL.md
-      - D  .agents/skills/interactivity-best-practices/SKILL.md
-      - D  .agents/skills/issue-management/SKILL.md
-      - D  .agents/skills/issue/SKILL.md
-      - D  .agents/skills/merge/SKILL.md
-      - D  .agents/skills/no-comments/SKILL.md
-      - D  .agents/skills/no-pointer/SKILL.md
-      - D  .agents/skills/no-pointer/agents/openai.yaml
-      - D  .agents/skills/nullable-new-params/SKILL.md
-      - D  .agents/skills/nullable-new-params/agents/openai.yaml
-      - D  .agents/skills/nullable-new-params/scripts/find-new-optional-params.ts
-      - D  .agents/skills/offload-r2/SKILL.md
-      - D  .agents/skills/offload-r2/agents/openai.yaml
-      - D  .agents/skills/player-example/SKILL.md
-      - D  .agents/skills/player-example/agents/openai.yaml
-      - D  .agents/skills/pr-name/SKILL.md
-      - D  .agents/skills/pr-ready/SKILL.md
-      uncommitted_count: 14807
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/remotion-dev/remotion
@@ -86,11 +37,11 @@ upstream:
     by: ceh migrate
     note: 'pin recorded by earlier research: vf_audit_1, vf_audit_2, vf_catalog'
   pinned_commit: 5ce9514934716083274bb18221737223aba63318
-  latest_commit: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
+  latest_commit: 9aa9452ab9c42a36c17319348f0c99534772ecf6
   latest_release: &id002
     tag: v4.0.542
     published_at: '2026-11-09T09:25:39Z'
-  last_checked: '2026-11-10T16:03:00+00:00'
+  last_checked: '2026-11-10T16:32:25+00:00'
   checks:
   - at: '2026-11-10T15:35:36+00:00'
     latest: e0c7c81bab5232c5589d9ff11c970369f626cf06
@@ -99,9 +50,23 @@ upstream:
     - local-conflict
   - at: '2026-11-10T16:03:00+00:00'
     latest: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:17:42+00:00'
+    latest: 7aa8c885c1e2c5843472126ecf373723ca069dfa
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:21:04+00:00'
+    latest: 7aa8c885c1e2c5843472126ecf373723ca069dfa
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:25+00:00'
+    latest: 9aa9452ab9c42a36c17319348f0c99534772ecf6
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: remotion-dev/remotion
@@ -134,7 +99,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (DEFER)
-updated: '2026-11-10T16:03:00+00:00'
+updated: '2026-11-10T16:32:25+00:00'
 historical:
   group: B
   previous_decision: DEFER

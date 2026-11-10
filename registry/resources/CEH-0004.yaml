@@ -24,59 +24,10 @@ local:
       head: 3d83d987d658601d8a1269eb691622bdcd427335
       branch: main
       origin: https://github.com/Barty-Bart/motion-graphics
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  docs/demo-cutaway.gif
-      - D  docs/demo-panel.gif
-      - D  docs/explainer-default.gif
-      - D  docs/explainer-engaging.gif
-      - D  docs/explainer-high-energy.gif
-      - D  docs/object-separation.gif
-      - D  docs/sound-effects.gif
-      - D  skills/explainer-default/README.md
-      - D  skills/explainer-default/SKILL.md
-      - D  skills/explainer-engaging/README.md
-      - D  skills/explainer-engaging/SKILL.md
-      - D  skills/explainer-high-energy/README.md
-      - D  skills/explainer-high-energy/SKILL.md
-      - D  skills/motion-broll/README.md
-      - D  skills/motion-broll/SKILL.md
-      - D  skills/motion-broll/engine/base.css
-      - D  skills/motion-broll/engine/beats.js
-      - D  skills/motion-broll/engine/build.py
-      - D  skills/motion-broll/engine/fonts/Geist-Variable.woff2
-      - D  skills/motion-broll/engine/fonts/GeistMono-Medium.woff2
-      - D  skills/motion-broll/engine/fonts/OFL-Geist.txt
-      - D  skills/motion-broll/engine/motion.js
-      - D  skills/motion-broll/engine/render.js
-      - D  skills/motion-broll/examples/opus-aoe2/01-opus-drop.html
-      - D  skills/motion-broll/examples/opus-aoe2/02-pip-builds.html
-      - D  skills/motion-broll/examples/opus-aoe2/03-effort-slider.html
-      - D  skills/motion-broll/examples/opus-aoe2/04-master-prompt.html
-      - D  skills/motion-broll/examples/opus-aoe2/05-low-vs-max.html
-      - D  skills/motion-broll/examples/opus-aoe2/06-chapter.html
-      - D  skills/motion-broll/examples/opus-aoe2/plan.json
-      - D  skills/motion-broll/reference/engine-api.md
-      - D  skills/motion-broll/scripts/composite.py
-      - D  skills/motion-broll/scripts/inspect_video.py
-      - D  skills/motion-broll/scripts/make_pages.py
-      - D  skills/motion-broll/scripts/setup.sh
-      - D  skills/motion-broll/scripts/words.py
-      - D  skills/motion-broll/templates/compare.html
-      - D  skills/motion-broll/templates/viewer.html
-      - D  skills/object-separation/README.md
-      - D  skills/object-separation/SKILL.md
-      - D  skills/sound-effects/LICENSES.md
-      - D  skills/sound-effects/MUSIC.md
-      - D  skills/sound-effects/README.md
-      - D  skills/sound-effects/SKILL.md
-      - D  skills/sound-effects/TOP-PICKS.md
-      - D  skills/sound-effects/scripts/report.py
-      - D  skills/sound-effects/scripts/sound_pass.py
-      uncommitted_count: 160
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Barty-Bart/motion-graphics
@@ -90,7 +41,7 @@ upstream:
   pinned_commit: d6e5d95e45167d95bb4260b9da4d674791143710
   latest_commit: 3d83d987d658601d8a1269eb691622bdcd427335
   latest_release: null
-  last_checked: '2026-11-10T16:02:45+00:00'
+  last_checked: '2026-11-10T16:32:12+00:00'
   checks:
   - at: '2026-11-10T15:35:22+00:00'
     latest: 3d83d987d658601d8a1269eb691622bdcd427335
@@ -99,9 +50,23 @@ upstream:
     - local-conflict
   - at: '2026-11-10T16:02:45+00:00'
     latest: 3d83d987d658601d8a1269eb691622bdcd427335
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:17:29+00:00'
+    latest: 3d83d987d658601d8a1269eb691622bdcd427335
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:20:48+00:00'
+    latest: 3d83d987d658601d8a1269eb691622bdcd427335
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:12+00:00'
+    latest: 3d83d987d658601d8a1269eb691622bdcd427335
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: Barty-Bart/motion-graphics
@@ -128,7 +93,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:02:45+00:00'
+updated: '2026-11-10T16:32:12+00:00'
 historical:
   group: A
   previous_decision: ADAPT

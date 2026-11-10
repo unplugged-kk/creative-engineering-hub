@@ -20,59 +20,10 @@ local:
       head: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
       branch: main
       origin: https://github.com/Panniantong/Agent-Reach
-      uncommitted:
-      - D  .github/release-acceptance.json
-      - D  .github/workflows/pytest.yml
-      - D  .github/workflows/release.yml
-      - D  .gitignore
-      - D  CHANGELOG.md
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  README.md
-      - D  SECURITY.md
-      - D  agent_reach/__init__.py
-      - D  agent_reach/backends/__init__.py
-      - D  agent_reach/backends/boss_native.py
-      - D  agent_reach/backends/cloak.py
-      - D  agent_reach/backends/opencli.py
-      - D  agent_reach/channels/__init__.py
-      - D  agent_reach/channels/_opencli_site.py
-      - D  agent_reach/channels/base.py
-      - D  agent_reach/channels/bilibili.py
-      - D  agent_reach/channels/boss.py
-      - D  agent_reach/channels/facebook.py
-      - D  agent_reach/channels/github.py
-      - D  agent_reach/channels/instagram.py
-      - D  agent_reach/channels/linkedin.py
-      - D  agent_reach/channels/reddit.py
-      - D  agent_reach/channels/twitter.py
-      - D  agent_reach/channels/v2ex.py
-      - D  agent_reach/channels/web.py
-      - D  agent_reach/channels/xiaohongshu.py
-      - D  agent_reach/channels/xiaoyuzhou.py
-      - D  agent_reach/channels/xueqiu.py
-      - D  agent_reach/channels/youtube.py
-      - D  agent_reach/cli.py
-      - D  agent_reach/config.py
-      - D  agent_reach/runtime/__init__.py
-      - D  agent_reach/runtime/bridge.py
-      - D  agent_reach/runtime/browser.py
-      - D  agent_reach/runtime/browser_binding.py
-      - D  agent_reach/runtime/browser_watcher.py
-      - D  agent_reach/runtime/cdp.py
-      - D  agent_reach/runtime/cli.py
-      - D  agent_reach/runtime/clock.py
-      - D  agent_reach/runtime/dispatch.py
-      - D  agent_reach/runtime/legacy.py
-      - D  agent_reach/runtime/manage.py
-      - D  agent_reach/runtime/onboarding.py
-      - D  agent_reach/runtime/public_web.py
-      - D  agent_reach/runtime/result.py
-      - D  agent_reach/runtime/run.py
-      - D  agent_reach/runtime/session_reuse.py
-      - D  agent_reach/runtime/sessions.py
-      uncommitted_count: 124
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Panniantong/Agent-Reach
@@ -89,13 +40,21 @@ upstream:
   latest_release: &id002
     tag: v1.6.1
     published_at: '2026-11-01T07:24:15Z'
-  last_checked: '2026-11-10T16:04:15+00:00'
+  last_checked: '2026-11-10T16:33:37+00:00'
   checks:
   - at: '2026-11-10T15:36:48+00:00'
     latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:15+00:00'
+    latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:13+00:00'
+    latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:37+00:00'
     latest: c70ae6da5d39bc90e09ad2ae0575ccc89f31e284
     flags: &id001
     - up-to-date
@@ -144,7 +103,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:15+00:00'
+updated: '2026-11-10T16:33:37+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

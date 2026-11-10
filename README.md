@@ -34,3 +34,14 @@ uv run ceh status
 
 See [AGENTS.md](AGENTS.md) for natural-language operation, [ARCHITECTURE.md](ARCHITECTURE.md) for design,
 [ROADMAP.md](ROADMAP.md) for what is next, and `reports/historical-migration/REPORT.md` for the recovered inventory.
+
+## Optional Video Factory metadata contract
+
+`uv run ceh catalog export --json` produces a strict v2 consumer view without granting approvals. Historical PRODUCTION
+records do not qualify automatically. See [catalog contract](integrations/video-factory/catalog-v2.md) for the reviewed release
+metadata, independent trust digest and compatibility requirements. The initial production v2 catalog is empty.
+
+The isolated VF branch provides `python -m contentos.ceh_catalog`; it is disabled by default, reads metadata only and never
+loads skills or executes catalog instructions. It is not merged into VF main. Current evidence and activation gaps are in
+[continuation reports](reports/continuation/2026-11-10/mission-progress.md). The creative library now includes two unapproved
+instruction-only candidates: kinetic-type-planning and measured-sound-pass.

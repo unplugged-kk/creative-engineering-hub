@@ -21,6 +21,7 @@ local:
       head: 01e9eccc1beb7d97cb8819bbae5eef9f0d08866c
       branch: main
       origin: https://github.com/harry0703/MoneyPrinterTurbo
+      checkout: working-tree
       uncommitted:
       - ?? Dockerfile.dory
       - ?? docker-compose.override.yml
@@ -43,7 +44,7 @@ upstream:
   latest_release: &id002
     tag: v1.3.10
     published_at: '2026-11-07T00:43:54Z'
-  last_checked: '2026-11-10T16:03:55+00:00'
+  last_checked: '2026-11-10T16:33:18+00:00'
   checks:
   - at: '2026-11-10T15:36:28+00:00'
     latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
@@ -51,6 +52,21 @@ upstream:
     - new-commits
     - local-conflict
   - at: '2026-11-10T16:03:55+00:00'
+    latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:18:32+00:00'
+    latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:21:55+00:00'
+    latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:33:18+00:00'
     latest: 53c4ca3d85100eeb8660ec3d5e5f7c90bcc7849a
     flags: &id001
     - new-commits
@@ -98,7 +114,7 @@ history:
   to: SANDBOXED
   by: ceh migrate
   note: recorded from historical evidence (OPTIONAL_BACKEND)
-updated: '2026-11-10T16:03:55+00:00'
+updated: '2026-11-10T16:33:18+00:00'
 historical:
   group: E
   previous_decision: OPTIONAL_BACKEND

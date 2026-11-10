@@ -19,59 +19,10 @@ local:
       head: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
       branch: main
       origin: https://github.com/CopilotKit/CopilotKit
-      uncommitted:
-      - D  .browserslistrc
-      - D  .claude-plugin/marketplace.json
-      - D  .claude-plugin/plugin.json
-      - D  .claude/docs/aeo-synthetics.md
-      - D  .claude/docs/architecture.md
-      - D  .claude/docs/documentation.md
-      - D  .claude/docs/git.md
-      - D  .claude/docs/hooks.md
-      - D  .claude/docs/workflow.md
-      - D  .coderabbit.yaml
-      - D  .cursor/rules/agent-development.mdc
-      - D  .cursor/rules/copilotkit-architecture.mdc
-      - D  .cursor/rules/development-workflow.mdc
-      - D  .cursor/rules/examples-and-demos.mdc
-      - D  .cursor/rules/frontend-development.mdc
-      - D  .cursor/rules/quick-reference.mdc
-      - D  .cursor/rules/suggestions-development.mdc
-      - D  .cursor/rules/working-with-rules.mdc
-      - D  .dockerignore
-      - D  .gitattributes
-      - D  .github/CODEOWNERS
-      - D  .github/ISSUE_TEMPLATE/1-bug-report.yml
-      - D  .github/ISSUE_TEMPLATE/2-feature-request.yml
-      - D  .github/ISSUE_TEMPLATE/3-documentation.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/config-allowlist.txt
-      - D  .github/scripts/check-config-allowlist.sh
-      - D  .github/scripts/print-pyproject-deps.mjs
-      - D  .github/scripts/starter-clean-install-known-broken.txt
-      - D  .github/scripts/starter-clean-install-matrix.mjs
-      - D  .github/scripts/starter-clean-install.sh
-      - D  .github/workflows/aeo_synthetics.yml
-      - D  .github/workflows/auto_merge_showcases.yml
-      - D  .github/workflows/canary.yml
-      - D  .github/workflows/cleanup_pr-caches.yml
-      - D  .github/workflows/docs_open_release_pr.yml
-      - D  .github/workflows/docs_promote.yml
-      - D  .github/workflows/ghcr_unlinked_packages.yml
-      - D  .github/workflows/integrations_parity.yml
-      - D  .github/workflows/intelligence-browser-upgrade.yml
-      - D  .github/workflows/intelligence-compatibility-monitor.yml
-      - D  .github/workflows/intelligence-rich-threads-deploy.yml
-      - D  .github/workflows/intelligence-rich-threads-dev.yml
-      - D  .github/workflows/intelligence-rich-threads.yml
-      - D  .github/workflows/intelligence-runtimes.yml
-      - D  .github/workflows/intelligence-skill-adapters.yml
-      - D  .github/workflows/intelligence-smoke.yml
-      - D  .github/workflows/lint-release-workflows.yml
-      - D  .github/workflows/package-licenses.yml
-      uncommitted_count: 24728
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/CopilotKit/CopilotKit
@@ -83,11 +34,11 @@ upstream:
     by: ceh inspect
     note: commit read at inspection
   pinned_commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
-  latest_commit: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  latest_commit: 216c636b97c70bde79ebeb4db50a6edc470dbf7b
   latest_release: &id002
     tag: v1.85.0
     published_at: '2026-11-06T15:47:49Z'
-  last_checked: '2026-11-10T16:04:24+00:00'
+  last_checked: '2026-11-10T16:33:46+00:00'
   checks:
   - at: '2026-11-10T15:36:57+00:00'
     latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
@@ -95,8 +46,16 @@ upstream:
     - up-to-date
   - at: '2026-11-10T16:04:24+00:00'
     latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
-    flags: &id001
+    flags:
     - up-to-date
+  - at: '2026-11-10T16:22:21+00:00'
+    latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:46+00:00'
+    latest: 216c636b97c70bde79ebeb4db50a6edc470dbf7b
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: CopilotKit/CopilotKit
@@ -149,7 +108,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:24+00:00'
+updated: '2026-11-10T16:33:46+00:00'
 historical:
   group: E
   previous_decision: null

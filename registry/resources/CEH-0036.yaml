@@ -20,59 +20,10 @@ local:
       head: c567827c3d25865fafa6b1ad33a173346da8cdcb
       branch: main
       origin: https://github.com/mvanhorn/last30days-skill
-      uncommitted:
-      - D  .agents/plugins/marketplace.json
-      - D  .claude-plugin/marketplace.json
-      - D  .claude-plugin/plugin.json
-      - D  .clawhubignore
-      - D  .codex-plugin/plugin.json
-      - D  .gitattributes
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/copilot-instructions.md
-      - D  .github/dependabot.yml
-      - D  .github/scripts/prepare_release.py
-      - D  .github/scripts/read_manifest_version.py
-      - D  .github/workflows/changelog-guard.yml
-      - D  .github/workflows/osv-scanner.yml
-      - D  .github/workflows/prepare-release.yml
-      - D  .github/workflows/release.yml
-      - D  .github/workflows/scorecard.yml
-      - D  .github/workflows/security.yml
-      - D  .github/workflows/tag-release.yml
-      - D  .github/workflows/validate.yml
-      - D  .github/workflows/zizmor.yml
-      - D  .gitignore
-      - D  .grok-plugin/marketplace.json
-      - D  .grok-plugin/plugin.json
-      - D  .skillignore
-      - D  AGENTS.md
-      - D  CHANGELOG.md
-      - D  CLAUDE.md
-      - D  CONCEPTS.md
-      - D  CONFIGURATION.md
-      - D  CONTRIBUTING.md
-      - D  CONTRIBUTORS.md
-      - D  HERMES_SETUP.md
-      - D  LICENSE
-      - D  README.ar.md
-      - D  README.de.md
-      - D  README.es.md
-      - D  README.fr.md
-      - D  README.ja.md
-      - D  README.md
-      - D  README.pt-BR.md
-      - D  README.zh-CN.md
-      - D  SECURITY.md
-      - D  changelog.d/.gitkeep
-      - D  changelog.d/README.md
-      - D  docs/how-search-works.md
-      - D  docs/plans/2026-08-14-demote-grok-cli-opt-in-plan.md
-      - D  docs/plans/2026-08-14-feat-x-retrieve-judge-retry-plan.md
-      uncommitted_count: 612
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/mvanhorn/last30days-skill
@@ -90,13 +41,21 @@ upstream:
   latest_release: &id002
     tag: v3.33.2
     published_at: '2026-11-10T08:28:04Z'
-  last_checked: '2026-11-10T16:04:18+00:00'
+  last_checked: '2026-11-10T16:33:40+00:00'
   checks:
   - at: '2026-11-10T15:36:50+00:00'
     latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:18+00:00'
+    latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:15+00:00'
+    latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:40+00:00'
     latest: c567827c3d25865fafa6b1ad33a173346da8cdcb
     flags: &id001
     - up-to-date
@@ -147,7 +106,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:18+00:00'
+updated: '2026-11-10T16:33:40+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

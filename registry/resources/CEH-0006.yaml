@@ -23,59 +23,10 @@ local:
       head: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
       branch: main
       origin: https://github.com/Tejashmakwana/motionmaxxing
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  NOTICE
-      - D  README.md
-      - D  SKILL.md
-      - D  docs/HOW-IT-WAS-BUILT.md
-      - D  docs/KNOWN-LIMITS.md
-      - D  docs/hero/NOTE.md
-      - D  docs/hero/index.html
-      - D  docs/media/cluely-comparison.gif
-      - D  docs/media/cluely-comparison.mp4
-      - D  docs/media/cluely-poster.jpg
-      - D  docs/media/eases-dark.svg
-      - D  docs/media/eases-light.svg
-      - D  docs/media/eases.svg
-      - D  docs/media/gates.png
-      - D  docs/media/hero.gif
-      - D  docs/media/hero.mp4
-      - D  docs/media/spotify-comparison.gif
-      - D  docs/media/spotify-comparison.mp4
-      - D  docs/media/spotify-poster.jpg
-      - D  docs/media/wispr-comparison.gif
-      - D  docs/media/wispr-comparison.mp4
-      - D  docs/media/wispr-poster.jpg
-      - D  examples/3d-hero/index.html
-      - D  examples/demo/index.html
-      - D  examples/phone/index.html
-      - D  examples/selftest/index.html
-      - D  install.sh
-      - D  library/moments.jsonl
-      - D  references/brand.md
-      - D  references/close.md
-      - D  references/director.md
-      - D  references/idea.md
-      - D  references/judgment.md
-      - D  references/layout.md
-      - D  references/motion.md
-      - D  references/slop.md
-      - D  references/sound-sync.md
-      - D  references/tools.md
-      - D  references/transitions.md
-      - D  references/type.md
-      - D  references/ui-demo.md
-      - D  references/world.md
-      - D  runtime/README.md
-      - D  runtime/fonts.css
-      - D  runtime/fonts/InterVariable.woff2
-      - D  runtime/fonts/OFL.txt
-      - D  runtime/hero3d/fonts/Inter-Bold-Latin.ttf
-      - D  runtime/hero3d/fonts/OFL.txt
-      uncommitted_count: 105
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Tejashmakwana/motionmaxxing
@@ -89,13 +40,25 @@ upstream:
   pinned_commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
   latest_commit: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
   latest_release: null
-  last_checked: '2026-11-10T16:02:50+00:00'
+  last_checked: '2026-11-10T16:32:17+00:00'
   checks:
   - at: '2026-11-10T15:35:27+00:00'
     latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
     flags:
     - up-to-date
   - at: '2026-11-10T16:02:50+00:00'
+    latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:34+00:00'
+    latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:20:54+00:00'
+    latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:17+00:00'
     latest: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
     flags: &id001
     - up-to-date
@@ -134,7 +97,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (REFERENCE)
-updated: '2026-11-10T16:02:50+00:00'
+updated: '2026-11-10T16:32:17+00:00'
 historical:
   group: A
   previous_decision: REFERENCE

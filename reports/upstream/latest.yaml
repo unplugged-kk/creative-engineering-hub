@@ -1,4 +1,4 @@
-at: '2026-11-10T16:04:47+00:00'
+at: '2026-11-10T16:34:05+00:00'
 results:
 - id: CEH-0001
   name: AbubakrChan/product-launch-motion
@@ -6,7 +6,6 @@ results:
   latest: edbfb105382f21507bad895d8b5f6e0faa67487c
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0002
   name: charlie947/motion-graphics-skills
   pinned: 229022ebca76972e119e36ada23a1648d51665ab
@@ -25,14 +24,12 @@ results:
   latest: 3d83d987d658601d8a1269eb691622bdcd427335
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0005
   name: whaleyxbt/claude-motion
   pinned: e627941543d9988b155dc610bb9cc0115a5e365e
   latest: 6f80380b91858dad66524a5b34e027dad656d538
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0006
   name: Tejashmakwana/motionmaxxing
   pinned: 8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c
@@ -54,17 +51,15 @@ results:
 - id: CEH-0009
   name: remotion-dev/remotion
   pinned: 5ce9514934716083274bb18221737223aba63318
-  latest: 925e452b6dcc0f25ef24584afc68f6238f6d1ff6
+  latest: 9aa9452ab9c42a36c17319348f0c99534772ecf6
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0010
   name: motiondivision/motion
   pinned: e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8
   latest: cdced3d0696601ea4b3eb1dc7205be1426f74c13
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0011
   name: greensock/gsap-skills
   pinned: aed9cfd3277740755f6bfc1155c7aa645403b760
@@ -83,7 +78,6 @@ results:
   latest: 10511e5af86fc47756ea89803b397422e2d89284
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0014
   name: heygen-com/hyperframes
   pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
@@ -96,13 +90,13 @@ results:
   latest: d56350a647d0b098a9e79d397447a8094f6c45a4
   flags:
   - unpinned
+  - local-unverified
 - id: CEH-0016
   name: remotion-dev/skills
   pinned: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b
   latest: 1af7e69a2a613437d46095924057970a6a7df40d
   flags:
   - new-commits
-  - local-conflict
 - id: CEH-0017
   name: 199-biotechnologies/motion-dev-animations-skill
   pinned: 3feedfb4dba8adae40fc9a5f9a23e3dda2121205
@@ -187,9 +181,9 @@ results:
 - id: CEH-0030
   name: mutonby/openshorts
   pinned: 55308c3eb5b85f03d840a32c087755e1abcc8eec
-  latest: 55308c3eb5b85f03d840a32c087755e1abcc8eec
+  latest: f259b07d2a718a3396e2fc37b903285e6ff533c6
   flags:
-  - up-to-date
+  - new-commits
 - id: CEH-0031
   name: OpenCut-app/OpenCut
   pinned: e668010778568641babef2cc40be4703ae6916d6
@@ -235,9 +229,9 @@ results:
 - id: CEH-0038
   name: CopilotKit/CopilotKit
   pinned: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
-  latest: 35626f5d7bd90941e57c7e65ef6dbe9241866d5c
+  latest: 216c636b97c70bde79ebeb4db50a6edc470dbf7b
   flags:
-  - up-to-date
+  - new-commits
 - id: CEH-0039
   name: ag-ui-protocol/ag-ui
   pinned: deefd3833c15b353348ba90eae0fad6113021759

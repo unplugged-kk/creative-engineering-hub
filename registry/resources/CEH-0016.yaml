@@ -21,59 +21,10 @@ local:
       head: 1af7e69a2a613437d46095924057970a6a7df40d
       branch: main
       origin: https://github.com/remotion-dev/skills
-      uncommitted:
-      - D  README.md
-      - D  package.json
-      - D  scripts/prepare-embedded-skills.ts
-      - D  scripts/sync-agent-skills.ts
-      - D  scripts/sync-embedded-skills.ts
-      - D  scripts/sync-readme.ts
-      - D  scripts/validate-links.ts
-      - D  skills/remotion-best-practices/SKILL.md
-      - D  skills/remotion-best-practices/agents/openai.yaml
-      - D  skills/remotion-best-practices/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-captions/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-captions/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-captions/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-captions/display-captions.md
-      - D  skills/remotion-best-practices/remotion-captions/import-srt-captions.md
-      - D  skills/remotion-best-practices/remotion-captions/transcribe-captions.md
-      - D  skills/remotion-best-practices/remotion-create/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-create/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-create/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-create/tailwind.md
-      - D  skills/remotion-best-practices/remotion-create/video-layout.md
-      - D  skills/remotion-best-practices/remotion-docs/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-docs/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-docs/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-interactivity/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-interactivity/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-interactivity/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-interactivity/inline-effects.md
-      - D  skills/remotion-best-practices/remotion-interactivity/timeline-structure.md
-      - D  skills/remotion-best-practices/remotion-license/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-license/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-license/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-maps/REFERENCE.md
-      - D  skills/remotion-best-practices/remotion-maps/agents/openai.yaml
-      - D  skills/remotion-best-practices/remotion-maps/assets/remotion-icon.svg
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/TECHNIQUE.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/cesium-path.json
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/city-path.json
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/example-Root.tsx
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/sample-river.geojson
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-data-sources.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-troubleshooting.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs
-      - D  skills/remotion-best-practices/remotion-maps/techniques/mapbox/TECHNIQUE.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/mapbox/references/render-stability.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/maplibre/TECHNIQUE.md
-      - D  skills/remotion-best-practices/remotion-maps/techniques/maplibre/references/render-stability.md
-      uncommitted_count: 301
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/remotion-dev/skills
@@ -87,7 +38,7 @@ upstream:
   pinned_commit: 7ba4dcf8ebe1626b00baa41e1f2478113719b60b
   latest_commit: 1af7e69a2a613437d46095924057970a6a7df40d
   latest_release: null
-  last_checked: '2026-11-10T16:03:21+00:00'
+  last_checked: '2026-11-10T16:32:45+00:00'
   checks:
   - at: '2026-11-10T15:35:55+00:00'
     latest: 1af7e69a2a613437d46095924057970a6a7df40d
@@ -95,9 +46,23 @@ upstream:
     - new-commits
   - at: '2026-11-10T16:03:21+00:00'
     latest: 1af7e69a2a613437d46095924057970a6a7df40d
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:18:00+00:00'
+    latest: 1af7e69a2a613437d46095924057970a6a7df40d
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:21:24+00:00'
+    latest: 1af7e69a2a613437d46095924057970a6a7df40d
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:45+00:00'
+    latest: 1af7e69a2a613437d46095924057970a6a7df40d
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: remotion-dev/skills
@@ -126,7 +91,7 @@ history:
   to: REJECTED
   by: ceh migrate
   note: recorded from historical evidence (REJECT)
-updated: '2026-11-10T16:03:21+00:00'
+updated: '2026-11-10T16:32:45+00:00'
 historical:
   group: C
   previous_decision: REJECT

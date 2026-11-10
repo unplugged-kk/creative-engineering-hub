@@ -2,7 +2,7 @@
   "id": "CEH-0014",
   "pinned": "01c6f6004a00ecfa6e77ab4025b47a46a5e925fc",
   "latest": "cda84222aa12716f2ceb92b45629487be81a0601",
-  "at": "2026-11-10T16:03:42+00:00",
+  "at": "2026-11-10T16:34:07+00:00",
   "commits": [
     {
       "sha": "cda84222aa12716f2ceb92b45629487be81a0601",
@@ -1128,67 +1128,43 @@
   ],
   "licence_files_changed": [],
   "manifests": {
-    "packages/parsers/package.json": {
+    "packages/engine/package.json": {
       "version": [
         "0.8.114",
         "0.9.30"
       ],
       "added": [
-        "entities"
+        "undici"
       ],
+      "removed": [],
+      "changed": {
+        "puppeteer-core": [
+          "^25.8.0",
+          "^25.11.0"
+        ],
+        "puppeteer": [
+          "^25.8.0",
+          "~25.11.0"
+        ]
+      }
+    },
+    "registry/examples/path-traced-3d/source/package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [],
       "removed": [],
       "changed": {}
     },
-    "packages/producer/package.json": {
+    "packages/player/package.json": {
       "version": [
         "0.8.114",
         "0.9.30"
       ],
       "added": [],
-      "removed": [
-        "@fontsource/archivo-black",
-        "@fontsource/eb-garamond",
-        "@fontsource/ibm-plex-mono",
-        "@fontsource/inter",
-        "@fontsource/jetbrains-mono",
-        "@fontsource/league-gothic",
-        "@fontsource/montserrat",
-        "@fontsource/nunito",
-        "@fontsource/oswald",
-        "@fontsource/outfit",
-        "@fontsource/space-mono",
-        "wawoff2"
-      ],
-      "changed": {
-        "@hyperframes/core": [
-          "workspace:^",
-          "workspace:*"
-        ],
-        "@hyperframes/studio-server": [
-          "workspace:^",
-          "workspace:*"
-        ],
-        "puppeteer": [
-          "^25.2.1",
-          "~25.11.0"
-        ],
-        "@hyperframes/engine": [
-          "workspace:^",
-          "workspace:*"
-        ],
-        "puppeteer-core": [
-          "^25.2.1",
-          "^25.11.0"
-        ],
-        "@hyperframes/parsers": [
-          "workspace:^",
-          "workspace:*"
-        ],
-        "@hyperframes/lint": [
-          "workspace:^",
-          "workspace:*"
-        ]
-      }
+      "removed": [],
+      "changed": {}
     },
     "packages/gcp-cloud-run/package.json": {
       "version": [
@@ -1197,62 +1173,6 @@
       ],
       "added": [],
       "removed": [],
-      "changed": {}
-    },
-    "packages/cli/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [
-        "acorn",
-        "undici",
-        "yauzl"
-      ],
-      "removed": [
-        "prettier",
-        "sharp"
-      ],
-      "changed": {
-        "esbuild": [
-          "^0.25.12",
-          "^0.28.2"
-        ]
-      }
-    },
-    "packages/share/package.json": {
-      "version": [
-        null,
-        "0.9.30"
-      ],
-      "added": [],
-      "removed": [],
-      "changed": {}
-    },
-    "registry/blocks/godrays/source/package-lock.json": {
-      "changed": true
-    },
-    "packages/sdk/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [],
-      "removed": [],
-      "changed": {}
-    },
-    "packages/core/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [
-        "acorn",
-        "wawoff2"
-      ],
-      "removed": [
-        "bpm-detective"
-      ],
       "changed": {}
     },
     "packages/inspector/package.json": {
@@ -1283,6 +1203,58 @@
       "removed": [],
       "changed": {}
     },
+    "package.json": {
+      "version": [
+        null,
+        null
+      ],
+      "added": [
+        "yaml"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/sdk/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/core/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "acorn",
+        "wawoff2"
+      ],
+      "removed": [
+        "bpm-detective"
+      ],
+      "changed": {}
+    },
+    "registry/examples/path-traced-3d/source/package-lock.json": {
+      "changed": true
+    },
+    "packages/aws-lambda/scripts/runtime-lock/sparticuz/package-lock.json": {
+      "changed": true
+    },
+    "packages/share/package.json": {
+      "version": [
+        null,
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package-lock.json": {
+      "changed": true
+    },
     "registry/blocks/frost-sequence-camera-orbit/source/package.json": {
       "version": [
         null,
@@ -1304,119 +1276,6 @@
       "removed": [],
       "changed": {}
     },
-    "packages/engine/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [
-        "undici"
-      ],
-      "removed": [],
-      "changed": {
-        "puppeteer": [
-          "^25.8.0",
-          "~25.11.0"
-        ],
-        "puppeteer-core": [
-          "^25.8.0",
-          "^25.11.0"
-        ]
-      }
-    },
-    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package.json": {
-      "version": [
-        null,
-        "0.0.0"
-      ],
-      "added": [
-        "puppeteer-core"
-      ],
-      "removed": [],
-      "changed": {}
-    },
-    "package.json": {
-      "version": [
-        null,
-        null
-      ],
-      "added": [
-        "yaml"
-      ],
-      "removed": [],
-      "changed": {}
-    },
-    "packages/player/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [],
-      "removed": [],
-      "changed": {}
-    },
-    "packages/aws-lambda/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [
-        "@aws-sdk/client-ecr",
-        "@aws-sdk/client-lambda",
-        "@aws-sdk/s3-request-presigner"
-      ],
-      "removed": [],
-      "changed": {
-        "@aws-sdk/client-s3": [
-          "^3.700.0",
-          "^3.1146.0"
-        ],
-        "@aws-sdk/client-sfn": [
-          "^3.700.0",
-          "^3.1146.0"
-        ]
-      }
-    },
-    "registry/examples/path-traced-3d/source/package.json": {
-      "version": [
-        null,
-        null
-      ],
-      "added": [],
-      "removed": [],
-      "changed": {}
-    },
-    "packages/lint/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [
-        "ignore"
-      ],
-      "removed": [],
-      "changed": {}
-    },
-    "registry/examples/path-traced-3d/source/package-lock.json": {
-      "changed": true
-    },
-    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package-lock.json": {
-      "changed": true
-    },
-    "packages/studio-server/package.json": {
-      "version": [
-        "0.8.114",
-        "0.9.30"
-      ],
-      "added": [],
-      "removed": [
-        "sharp"
-      ],
-      "changed": {}
-    },
-    "packages/aws-lambda/scripts/runtime-lock/sparticuz/package-lock.json": {
-      "changed": true
-    },
     "packages/studio/package.json": {
       "version": [
         "0.8.114",
@@ -1435,6 +1294,28 @@
         ]
       }
     },
+    "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package.json": {
+      "version": [
+        null,
+        "0.0.0"
+      ],
+      "added": [
+        "puppeteer-core"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/parsers/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "entities"
+      ],
+      "removed": [],
+      "changed": {}
+    },
     "registry/blocks/godrays/source/package.json": {
       "version": [
         null,
@@ -1443,6 +1324,125 @@
       "added": [],
       "removed": [],
       "changed": {}
+    },
+    "packages/cli/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "acorn",
+        "undici",
+        "yauzl"
+      ],
+      "removed": [
+        "prettier",
+        "sharp"
+      ],
+      "changed": {
+        "esbuild": [
+          "^0.25.12",
+          "^0.28.2"
+        ]
+      }
+    },
+    "packages/lint/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "ignore"
+      ],
+      "removed": [],
+      "changed": {}
+    },
+    "packages/producer/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [
+        "@fontsource/archivo-black",
+        "@fontsource/eb-garamond",
+        "@fontsource/ibm-plex-mono",
+        "@fontsource/inter",
+        "@fontsource/jetbrains-mono",
+        "@fontsource/league-gothic",
+        "@fontsource/montserrat",
+        "@fontsource/nunito",
+        "@fontsource/oswald",
+        "@fontsource/outfit",
+        "@fontsource/space-mono",
+        "wawoff2"
+      ],
+      "changed": {
+        "@hyperframes/studio-server": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "@hyperframes/core": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "@hyperframes/engine": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "puppeteer-core": [
+          "^25.2.1",
+          "^25.11.0"
+        ],
+        "puppeteer": [
+          "^25.2.1",
+          "~25.11.0"
+        ],
+        "@hyperframes/parsers": [
+          "workspace:^",
+          "workspace:*"
+        ],
+        "@hyperframes/lint": [
+          "workspace:^",
+          "workspace:*"
+        ]
+      }
+    },
+    "packages/studio-server/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [],
+      "removed": [
+        "sharp"
+      ],
+      "changed": {}
+    },
+    "packages/aws-lambda/package.json": {
+      "version": [
+        "0.8.114",
+        "0.9.30"
+      ],
+      "added": [
+        "@aws-sdk/client-ecr",
+        "@aws-sdk/client-lambda",
+        "@aws-sdk/s3-request-presigner"
+      ],
+      "removed": [],
+      "changed": {
+        "@aws-sdk/client-sfn": [
+          "^3.700.0",
+          "^3.1146.0"
+        ],
+        "@aws-sdk/client-s3": [
+          "^3.700.0",
+          "^3.1146.0"
+        ]
+      }
+    },
+    "registry/blocks/godrays/source/package-lock.json": {
+      "changed": true
     }
   },
   "impacted_skills": [],

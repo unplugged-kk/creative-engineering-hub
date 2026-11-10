@@ -26,59 +26,10 @@ local:
       head: 55308c3eb5b85f03d840a32c087755e1abcc8eec
       branch: main
       origin: https://github.com/mutonby/openshorts
-      uncommitted:
-      - D  .dockerignore
-      - D  .env.example
-      - D  .github/workflows/ci.yml
-      - D  .github/workflows/publish-cli.yml
-      - D  .gitignore
-      - D  .hallmark/log.json
-      - D  CLAUDE.md
-      - D  Dockerfile
-      - D  LICENSE
-      - D  NOTICE
-      - D  README.md
-      - D  active_speaker.py
-      - D  alembic.ini
-      - D  alembic/env.py
-      - D  alembic/script.py.mako
-      - D  app.py
-      - D  assets/make_watermark.py
-      - D  assets/watermark.png
-      - D  bin/ffmpeg
-      - D  burned_subtitles.py
-      - D  camera_inset.py
-      - D  churchil_queen_vertical.gif
-      - D  churchil_queen_vertical_short.gif
-      - D  cli/README.md
-      - D  cli/openshorts.egg-info/PKG-INFO
-      - D  cli/openshorts.egg-info/SOURCES.txt
-      - D  cli/openshorts.egg-info/dependency_links.txt
-      - D  cli/openshorts.egg-info/entry_points.txt
-      - D  cli/openshorts.egg-info/top_level.txt
-      - D  cli/openshorts_cli.py
-      - D  cli/pyproject.toml
-      - D  clip_selection.py
-      - D  cloud/LICENSE
-      - D  cloud/__init__.py
-      - D  cloud/account.py
-      - D  cloud/alerts.py
-      - D  cloud/analytics.py
-      - D  cloud/api_keys.py
-      - D  cloud/auth.py
-      - D  cloud/autopilot.py
-      - D  cloud/billing.py
-      - D  cloud/cancellation.py
-      - D  cloud/config.py
-      - D  cloud/database.py
-      - D  cloud/digest.py
-      - D  cloud/disposable_domains.txt
-      - D  cloud/disposable_mx.txt
-      - D  cloud/email_policy.py
-      - D  cloud/emails.py
-      - D  cloud/evidence.py
-      uncommitted_count: 476
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/mutonby/openshorts
@@ -90,9 +41,9 @@ upstream:
     by: ceh inspect
     note: commit read at inspection
   pinned_commit: 55308c3eb5b85f03d840a32c087755e1abcc8eec
-  latest_commit: 55308c3eb5b85f03d840a32c087755e1abcc8eec
+  latest_commit: f259b07d2a718a3396e2fc37b903285e6ff533c6
   latest_release: null
-  last_checked: '2026-11-10T16:04:01+00:00'
+  last_checked: '2026-11-10T16:33:24+00:00'
   checks:
   - at: '2026-11-10T15:36:34+00:00'
     latest: 55308c3eb5b85f03d840a32c087755e1abcc8eec
@@ -100,8 +51,22 @@ upstream:
     - up-to-date
   - at: '2026-11-10T16:04:01+00:00'
     latest: 55308c3eb5b85f03d840a32c087755e1abcc8eec
-    flags: &id001
+    flags:
     - up-to-date
+  - at: '2026-11-10T16:18:38+00:00'
+    latest: f259b07d2a718a3396e2fc37b903285e6ff533c6
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:22:00+00:00'
+    latest: f259b07d2a718a3396e2fc37b903285e6ff533c6
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:33:24+00:00'
+    latest: f259b07d2a718a3396e2fc37b903285e6ff533c6
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: mutonby/openshorts
@@ -155,7 +120,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:01+00:00'
+updated: '2026-11-10T16:33:24+00:00'
 historical:
   group: E
   previous_decision: KEEP_EXISTING

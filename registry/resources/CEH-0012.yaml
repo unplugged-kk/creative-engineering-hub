@@ -27,11 +27,13 @@ local:
       head: 7e5eb56feb2dd573f890e1b7b34748af43d58263
       branch: main
       origin: https://github.com/cth9191/animate
+      checkout: working-tree
       uncommitted:
       - ?? .DS_Store
       uncommitted_count: 1
     /Users/kishore/Desktop/Animate-Studio/.claude/skills/animate:
       git: false
+      unverified: true
   modified: true
 upstream:
   strategy: PINNED
@@ -46,13 +48,25 @@ upstream:
   pinned_commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
   latest_commit: 7e5eb56feb2dd573f890e1b7b34748af43d58263
   latest_release: null
-  last_checked: '2026-11-10T16:03:09+00:00'
+  last_checked: '2026-11-10T16:32:34+00:00'
   checks:
   - at: '2026-11-10T15:35:44+00:00'
     latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:09+00:00'
+    latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:50+00:00'
+    latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:13+00:00'
+    latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:34+00:00'
     latest: 7e5eb56feb2dd573f890e1b7b34748af43d58263
     flags: &id001
     - up-to-date
@@ -96,7 +110,7 @@ history:
   to: SANDBOXED
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:03:09+00:00'
+updated: '2026-11-10T16:32:34+00:00'
 historical:
   group: B
   previous_decision: ADAPT

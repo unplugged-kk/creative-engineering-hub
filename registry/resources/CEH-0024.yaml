@@ -25,59 +25,10 @@ local:
       head: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
       branch: main
       origin: https://github.com/Vincentwei1021/video-shotcraft
-      uncommitted:
-      - D  .claude-plugin/plugin.json
-      - D  .github/ISSUE_TEMPLATE/showcase.yml
-      - D  .github/scripts/showcase-publish.py
-      - D  .github/workflows/contact-sheet-tests.yml
-      - D  .github/workflows/deploy-pages.yml
-      - D  .github/workflows/pr-checks.yml
-      - D  .github/workflows/showcase-publish.yml
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  README_CN.md
-      - D  README_JA.md
-      - D  README_RU.md
-      - D  README_TW.md
-      - D  SKILL.md
-      - D  agents/openai.yaml
-      - D  assets/audio/ATTRIBUTION.md
-      - D  assets/audio/bgm/bgm-tech-house.mp3
-      - D  assets/audio/bgm/cat-walk.mp3
-      - D  assets/audio/bgm/g-eazy-nba-type.mp3
-      - D  assets/audio/bgm/house-vibez.mp3
-      - D  assets/audio/bgm/tonight-hiphop.mp3
-      - D  assets/brand/BRAND.md
-      - D  assets/brand/brand-board.svg
-      - D  assets/brand/logo-lockup-reverse.svg
-      - D  assets/brand/logo-lockup.svg
-      - D  assets/brand/logo-mark-mono.svg
-      - D  assets/brand/logo-mark-reverse.svg
-      - D  assets/brand/logo-mark.svg
-      - D  assets/lib/Caption.tsx
-      - D  assets/lib/ClipCard.tsx
-      - D  assets/lib/DigitRoll.tsx
-      - D  assets/lib/FlashCut.tsx
-      - D  assets/lib/FlatPanel.tsx
-      - D  assets/lib/PageCam.tsx
-      - D  assets/lib/VerticalTicker.tsx
-      - D  assets/lib/helpers/__tests__/helpers.test.ts
-      - D  assets/lib/helpers/camera.tsx
-      - D  assets/lib/helpers/motion.ts
-      - D  assets/lib/helpers/rand.ts
-      - D  assets/lib/helpers/shake.ts
-      - D  assets/readme/cover.webp
-      - D  assets/readme/examples/camera.webp
-      - D  assets/readme/examples/data.webp
-      - D  assets/readme/examples/effects.webp
-      - D  assets/readme/examples/interaction.webp
-      - D  assets/readme/examples/opening.webp
-      - D  assets/readme/examples/outro.webp
-      - D  assets/readme/examples/rhythm.webp
-      - D  assets/readme/examples/transition.webp
-      uncommitted_count: 1221
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Vincentwei1021/video-shotcraft
@@ -93,13 +44,25 @@ upstream:
   latest_release: &id002
     tag: showcase-media
     published_at: '2026-09-01T16:47:16Z'
-  last_checked: '2026-11-10T16:03:43+00:00'
+  last_checked: '2026-11-10T16:33:08+00:00'
   checks:
   - at: '2026-11-10T15:36:17+00:00'
     latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:43+00:00'
+    latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:21+00:00'
+    latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:44+00:00'
+    latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:08+00:00'
     latest: 3ac67b75dd0b3bc2fd807c17f6b7ce35373eef3d
     flags: &id001
     - up-to-date
@@ -145,7 +108,7 @@ history:
   to: SANDBOXED
   by: ceh migrate
   note: recorded from historical evidence
-updated: '2026-11-10T16:03:43+00:00'
+updated: '2026-11-10T16:33:08+00:00'
 historical:
   group: D
   previous_decision: null

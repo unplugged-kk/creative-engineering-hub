@@ -21,59 +21,10 @@ local:
       head: abb6d17279cdc749e27e99aa534a062d8fd01ced
       branch: main
       origin: https://github.com/feitangyuan/onetake
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  SKILL.md
-      - D  assets/cases/clawd.gif
-      - D  assets/cases/clearing.gif
-      - D  assets/cases/domino.gif
-      - D  assets/cases/ebb.gif
-      - D  assets/cases/infra.gif
-      - D  assets/cases/knockon.gif
-      - D  assets/cases/motion-web.gif
-      - D  assets/cases/one-dot.gif
-      - D  assets/cases/onetake-launch.gif
-      - D  assets/cases/overlap.gif
-      - D  assets/cases/pith.gif
-      - D  assets/cases/skill-demo.gif
-      - D  assets/cases/unbroken.gif
-      - D  assets/hero.gif
-      - D  assets/logo/favicon.ico
-      - D  assets/logo/onetake-icon-1024.png
-      - D  assets/logo/onetake-icon-16.png
-      - D  assets/logo/onetake-icon-180.png
-      - D  assets/logo/onetake-icon-32.png
-      - D  assets/logo/onetake-icon-48.png
-      - D  assets/logo/onetake-icon-512.png
-      - D  assets/logo/onetake-icon.svg
-      - D  assets/logo/onetake-mark.svg
-      - D  assets/logo/onetake-wordmark-on-cream.svg
-      - D  assets/logo/onetake-wordmark.png
-      - D  assets/logo/onetake-wordmark.svg
-      - D  cases/clawd-desktop-19s/README.md
-      - D  cases/clawd-desktop-19s/clawd.mp4
-      - D  cases/clearing-15s/README.md
-      - D  cases/clearing-15s/clearing.mp4
-      - D  cases/domino-25s/README.md
-      - D  cases/domino-25s/domino.mp4
-      - D  cases/ebb-15s/README.md
-      - D  cases/ebb-15s/ebb.mp4
-      - D  cases/infra-25s/README.md
-      - D  cases/infra-25s/infra.mp4
-      - D  cases/knockon-15s/README.md
-      - D  cases/knockon-15s/knockon.mp4
-      - D  cases/motion-web-15s/README.md
-      - D  cases/motion-web-15s/motion-web.mp4
-      - D  cases/one-dot-15s/README.md
-      - D  cases/one-dot-15s/one-dot.mp4
-      - D  cases/onetake-launch-30s/README.md
-      - D  cases/onetake-launch-30s/onetake-launch.mp4
-      - D  cases/overlap-15s/README.md
-      - D  cases/overlap-15s/overlap.mp4
-      uncommitted_count: 114
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/feitangyuan/onetake
@@ -89,13 +40,25 @@ upstream:
   latest_release: &id002
     tag: v1.1.0-lite
     published_at: '2026-10-08T16:26:45Z'
-  last_checked: '2026-11-10T16:02:52+00:00'
+  last_checked: '2026-11-10T16:32:19+00:00'
   checks:
   - at: '2026-11-10T15:35:30+00:00'
     latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
     flags:
     - up-to-date
   - at: '2026-11-10T16:02:52+00:00'
+    latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:36+00:00'
+    latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:20:58+00:00'
+    latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:19+00:00'
     latest: abb6d17279cdc749e27e99aa534a062d8fd01ced
     flags: &id001
     - up-to-date
@@ -136,7 +99,7 @@ history:
   to: RESTRICTED
   by: ceh migrate
   note: recorded from historical evidence (REFERENCE)
-updated: '2026-11-10T16:02:52+00:00'
+updated: '2026-11-10T16:32:19+00:00'
 historical:
   group: A
   previous_decision: REFERENCE

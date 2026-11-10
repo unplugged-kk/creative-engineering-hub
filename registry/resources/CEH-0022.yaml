@@ -23,54 +23,10 @@ local:
       head: ca8f5f75f186d590e687542b106aa73ceff9133c
       branch: main
       origin: https://github.com/lintsinghua/paint-mv-skills
-      uncommitted:
-      - D  .claude/skills
-      - D  .cursor/skills
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  demo/cast.jpg
-      - D  demo/cover.jpg
-      - D  demo/midnight-studio.mp4
-      - D  demo/project/STORYBOARD.md
-      - D  demo/project/assets/song.mp3
-      - D  demo/project/src/ch/c01_street.js
-      - D  demo/project/src/ch/c02_chorus1.js
-      - D  demo/project/src/ch/c03_ownpace.js
-      - D  demo/project/src/ch/c04_chorus2.js
-      - D  demo/project/src/ch/c05_dawn.js
-      - D  demo/project/src/characters.js
-      - D  demo/project/src/lyrics.js
-      - D  demo/project/src/poster.js
-      - D  demo/project/src/sets.js
-      - D  demo/project/src/song.js
-      - D  demo/stills.jpg
-      - D  skills/paint-mv-animate/SKILL.md
-      - D  skills/paint-mv-animate/api.md
-      - D  skills/paint-mv-animate/characters.md
-      - D  skills/paint-mv-animate/examples/README.md
-      - D  skills/paint-mv-animate/techniques.md
-      - D  skills/paint-mv-render/SKILL.md
-      - D  skills/paint-mv-storyboard/SKILL.md
-      - D  skills/paint-mv/SKILL.md
-      - D  skills/paint-mv/reference/timing.md
-      - D  skills/paint-mv/scripts/align_lyrics.py
-      - D  skills/paint-mv/scripts/analyze_audio.mjs
-      - D  skills/paint-mv/scripts/fetch_upstream.mjs
-      - D  skills/paint-mv/scripts/lyrics_to_ly.mjs
-      - D  skills/paint-mv/scripts/new_project.mjs
-      - D  skills/paint-mv/template.patch
-      - D  skills/paint-mv/template/.gitignore
-      - D  skills/paint-mv/template/assets/.gitkeep
-      - D  skills/paint-mv/template/package-lock.json
-      - D  skills/paint-mv/template/package.json
-      - D  skills/paint-mv/template/src/ch/.gitkeep
-      - D  skills/paint-mv/template/src/characters.js
-      - D  skills/paint-mv/template/src/lyrics.js
-      - D  skills/paint-mv/template/src/sets.js
-      - D  skills/paint-mv/template/src/song.js
-      uncommitted_count: 45
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/lintsinghua/paint-mv-skills
@@ -86,13 +42,25 @@ upstream:
   latest_release: &id002
     tag: v0.0.1
     published_at: '2026-09-25T12:33:18Z'
-  last_checked: '2026-11-10T16:03:37+00:00'
+  last_checked: '2026-11-10T16:33:02+00:00'
   checks:
   - at: '2026-11-10T15:36:12+00:00'
     latest: ca8f5f75f186d590e687542b106aa73ceff9133c
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:37+00:00'
+    latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:15+00:00'
+    latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:39+00:00'
+    latest: ca8f5f75f186d590e687542b106aa73ceff9133c
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:02+00:00'
     latest: ca8f5f75f186d590e687542b106aa73ceff9133c
     flags: &id001
     - up-to-date
@@ -144,7 +112,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:03:37+00:00'
+updated: '2026-11-10T16:33:02+00:00'
 historical:
   group: D
   previous_decision: null

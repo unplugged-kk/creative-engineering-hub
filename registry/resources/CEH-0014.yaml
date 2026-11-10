@@ -25,6 +25,7 @@ local:
       head: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
       branch: HEAD
       origin: https://github.com/heygen-com/hyperframes
+      checkout: working-tree
       uncommitted: []
       uncommitted_count: 0
   modified: false
@@ -44,7 +45,7 @@ upstream:
   latest_release: &id002
     tag: v0.9.30
     published_at: '2026-11-10T12:44:28Z'
-  last_checked: '2026-11-10T16:03:15+00:00'
+  last_checked: '2026-11-10T16:32:40+00:00'
   checks:
   - at: '2026-11-10T15:35:49+00:00'
     latest: cda84222aa12716f2ceb92b45629487be81a0601
@@ -52,11 +53,23 @@ upstream:
     - new-commits
   - at: '2026-11-10T16:03:15+00:00'
     latest: cda84222aa12716f2ceb92b45629487be81a0601
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:17:55+00:00'
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:21:19+00:00'
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
+    flags:
+    - new-commits
+  - at: '2026-11-10T16:32:40+00:00'
+    latest: cda84222aa12716f2ceb92b45629487be81a0601
     flags: &id001
     - new-commits
   flags: *id001
   last_report:
-    at: '2026-11-10T16:03:42+00:00'
+    at: '2026-11-10T16:34:07+00:00'
     pinned: 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc
     latest: cda84222aa12716f2ceb92b45629487be81a0601
     commit_count: 1858
@@ -107,7 +120,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (ADOPT)
-updated: '2026-11-10T16:03:42+00:00'
+updated: '2026-11-10T16:34:07+00:00'
 historical:
   group: B
   previous_decision: ADOPT

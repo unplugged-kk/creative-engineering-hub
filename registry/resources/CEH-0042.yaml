@@ -19,6 +19,7 @@ local:
       head: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
       branch: main
       origin: https://github.com/Jakeschincariol/youtube-agent-skill.git
+      checkout: working-tree
       uncommitted: []
       uncommitted_count: 0
   modified: false
@@ -35,13 +36,21 @@ upstream:
   pinned_commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
   latest_commit: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
   latest_release: null
-  last_checked: '2026-11-10T16:04:38+00:00'
+  last_checked: '2026-11-10T16:33:57+00:00'
   checks:
   - at: '2026-11-10T15:37:08+00:00'
     latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:38+00:00'
+    latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:32+00:00'
+    latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:57+00:00'
     latest: a2feb2104981a375ffd4f87ee04f4f5344ac43c6
     flags: &id001
     - up-to-date
@@ -73,7 +82,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:38+00:00'
+updated: '2026-11-10T16:33:57+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

@@ -23,44 +23,10 @@ local:
       head: 229022ebca76972e119e36ada23a1648d51665ab
       branch: main
       origin: https://github.com/charlie947/motion-graphics-skills
-      uncommitted:
-      - D  .gitignore
-      - D  .polish-metadata.json
-      - D  LICENSE
-      - D  README.md
-      - D  assets/readme/charlie.png
-      - D  assets/readme/demo-launch.gif
-      - D  assets/readme/demo-milestone.gif
-      - D  assets/readme/hero-dark.png
-      - D  assets/readme/hero-light.png
-      - D  assets/readme/social-preview.png
-      - D  downloads/motion-prompt-writer.zip
-      - D  downloads/reference-to-motion.zip
-      - D  prompts/brand-design-system.md
-      - D  prompts/briefs.md
-      - D  prompts/effects.md
-      - D  prompts/polish.md
-      - D  prompts/start-here.md
-      - D  skills/animated-chart/SKILL.md
-      - D  skills/apple-launch-film/SKILL.md
-      - D  skills/brand-intake/SKILL.md
-      - D  skills/launch-video/SKILL.md
-      - D  skills/loop-cover/SKILL.md
-      - D  skills/milestone-reveal/SKILL.md
-      - D  skills/model-showdown/SKILL.md
-      - D  skills/motion-brief-writer/SKILL.md
-      - D  skills/motion-effects/SKILL.md
-      - D  skills/motion-effects/references/effects.md
-      - D  skills/motion-prompt-writer/CANON-FACTS.txt
-      - D  skills/motion-prompt-writer/SKILL.md
-      - D  skills/newsletter-promo/SKILL.md
-      - D  skills/reel-export/SKILL.md
-      - D  skills/reference-to-motion/SKILL.md
-      - D  skills/title-sequence-3d/SKILL.md
-      - D  skills/vox-explainer/SKILL.md
-      - D  validate-skills.sh
-      uncommitted_count: 35
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/charlie947/motion-graphics-skills
@@ -74,13 +40,25 @@ upstream:
   pinned_commit: 229022ebca76972e119e36ada23a1648d51665ab
   latest_commit: 229022ebca76972e119e36ada23a1648d51665ab
   latest_release: null
-  last_checked: '2026-11-10T16:02:39+00:00'
+  last_checked: '2026-11-10T16:32:07+00:00'
   checks:
   - at: '2026-11-10T15:35:16+00:00'
     latest: 229022ebca76972e119e36ada23a1648d51665ab
     flags:
     - up-to-date
   - at: '2026-11-10T16:02:39+00:00'
+    latest: 229022ebca76972e119e36ada23a1648d51665ab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:20+00:00'
+    latest: 229022ebca76972e119e36ada23a1648d51665ab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:20:43+00:00'
+    latest: 229022ebca76972e119e36ada23a1648d51665ab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:07+00:00'
     latest: 229022ebca76972e119e36ada23a1648d51665ab
     flags: &id001
     - up-to-date
@@ -120,7 +98,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:02:39+00:00'
+updated: '2026-11-10T16:32:07+00:00'
 historical:
   group: A
   previous_decision: ADAPT

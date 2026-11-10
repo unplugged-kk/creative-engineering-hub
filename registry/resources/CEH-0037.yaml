@@ -19,59 +19,10 @@ local:
       head: 85a0246b600733d851ed0927020bd5735db860c8
       branch: main
       origin: https://github.com/gitroomhq/postiz-app
-      uncommitted:
-      - D  .claude/settings.json
-      - D  .coderabbit.yaml
-      - D  .devcontainer/devcontainer.json
-      - D  .dockerignore
-      - D  .env.example
-      - D  .eslintignore
-      - D  .github/Dependabot.yml
-      - D  .github/FUNDING.yaml
-      - D  .github/ISSUE_TEMPLATE/01_bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/02_feature_request.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/agents/ai-agents-cli.svg
-      - D  .github/agents/chatgpt.svg
-      - D  .github/agents/claude-code.svg
-      - D  .github/agents/claude-cowork.svg
-      - D  .github/agents/claude.svg
-      - D  .github/agents/codex.svg
-      - D  .github/agents/cursor.svg
-      - D  .github/agents/grok-bot.svg
-      - D  .github/agents/grok-build.svg
-      - D  .github/agents/hermes-agent.svg
-      - D  .github/agents/mcp-server.svg
-      - D  .github/agents/muse.svg
-      - D  .github/agents/nanoclaw.svg
-      - D  .github/agents/openclaw.svg
-      - D  .github/agents/paperclip.svg
-      - D  .github/agents/perplexity-computer.svg
-      - D  .github/assets/gitroom-darkmode-logo.png
-      - D  .github/assets/gitroom-lightmode-logo.png
-      - D  .github/assets/gitroom-main-youtube.png
-      - D  .github/assets/screen-002.png
-      - D  .github/assets/screen-003.png
-      - D  .github/assets/screen-004.png
-      - D  .github/copilot-instructions.md
-      - D  .github/sponsors/hostinger.png
-      - D  .github/workflows/build-containers.yml
-      - D  .github/workflows/build-extension.yaml
-      - D  .github/workflows/build.yml
-      - D  .github/workflows/codeql.yml
-      - D  .github/workflows/deploy-aws.yml
-      - D  .github/workflows/eslint
-      - D  .github/workflows/issue-label-triggers.yml
-      - D  .github/workflows/publish-extension.yml
-      - D  .github/workflows/staging-conflicts.yml
-      - D  .github/workflows/stale.yml
-      - D  .gitignore
-      - D  .gitmodules
-      - D  .npmrc
-      - D  .prettierignore
-      uncommitted_count: 1042
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/gitroomhq/postiz-app
@@ -87,13 +38,21 @@ upstream:
   latest_release: &id002
     tag: v2.25.3
     published_at: '2026-10-24T14:16:43Z'
-  last_checked: '2026-11-10T16:04:20+00:00'
+  last_checked: '2026-11-10T16:33:43+00:00'
   checks:
   - at: '2026-11-10T15:36:53+00:00'
     latest: 85a0246b600733d851ed0927020bd5735db860c8
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:20+00:00'
+    latest: 85a0246b600733d851ed0927020bd5735db860c8
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:18+00:00'
+    latest: 85a0246b600733d851ed0927020bd5735db860c8
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:43+00:00'
     latest: 85a0246b600733d851ed0927020bd5735db860c8
     flags: &id001
     - up-to-date
@@ -139,7 +98,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:20+00:00'
+updated: '2026-11-10T16:33:43+00:00'
 historical:
   group: E
   previous_decision: KEEP_EXISTING

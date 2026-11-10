@@ -22,15 +22,10 @@ local:
       head: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
       branch: main
       origin: https://github.com/CK42BB/vox-explainer-skill
-      uncommitted:
-      - D  LICENSE
-      - D  README.md
-      - D  SKILL.md
-      - D  references/atlas-cloud-api.md
-      - D  references/ffmpeg-assembly.md
-      - D  references/vox-style-guide.md
-      uncommitted_count: 6
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/CK42BB/vox-explainer-skill
@@ -44,13 +39,25 @@ upstream:
   pinned_commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
   latest_commit: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
   latest_release: null
-  last_checked: '2026-11-10T16:03:34+00:00'
+  last_checked: '2026-11-10T16:33:00+00:00'
   checks:
   - at: '2026-11-10T15:36:09+00:00'
     latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:34+00:00'
+    latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:12+00:00'
+    latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:37+00:00'
+    latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:00+00:00'
     latest: 7003225dc3ed1dee9e2ef8b91b05b82c04691aa9
     flags: &id001
     - up-to-date
@@ -85,7 +92,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:03:34+00:00'
+updated: '2026-11-10T16:33:00+00:00'
 historical:
   group: D
   previous_decision: null

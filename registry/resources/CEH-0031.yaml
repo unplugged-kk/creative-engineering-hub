@@ -17,59 +17,10 @@ local:
       head: e668010778568641babef2cc40be4703ae6916d6
       branch: main
       origin: https://github.com/OpenCut-app/OpenCut
-      uncommitted:
-      - D  .env.example
-      - D  .github/CODE_OF_CONDUCT.md
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/SECURITY.md
-      - D  .github/SUPPORT.md
-      - D  .github/copilot-instructions.md
-      - D  .github/pull_request_template.md
-      - D  .github/workflows/bun-ci.yml
-      - D  .github/workflows/media-deps.yml
-      - D  .gitignore
-      - D  .moon/toolchains.yml
-      - D  .moon/workspace.yml
-      - D  .prototools
-      - D  .tokeignore
-      - D  .vscode/settings.json
-      - D  Cargo.lock
-      - D  Cargo.toml
-      - D  LICENSE
-      - D  README.md
-      - D  apps/api/moon.yml
-      - D  apps/api/package.json
-      - D  apps/api/src/index.ts
-      - D  apps/api/wrangler.jsonc
-      - D  apps/desktop/Cargo.toml
-      - D  apps/desktop/README.md
-      - D  apps/desktop/moon.yml
-      - D  apps/desktop/src/components/badge.rs
-      - D  apps/desktop/src/components/button.rs
-      - D  apps/desktop/src/components/context_menu.rs
-      - D  apps/desktop/src/components/label.rs
-      - D  apps/desktop/src/components/mod.rs
-      - D  apps/desktop/src/components/resizable.rs
-      - D  apps/desktop/src/components/separator.rs
-      - D  apps/desktop/src/main.rs
-      - D  apps/desktop/src/panels/browser.rs
-      - D  apps/desktop/src/panels/inspector.rs
-      - D  apps/desktop/src/panels/mod.rs
-      - D  apps/desktop/src/panels/preview.rs
-      - D  apps/desktop/src/panels/timeline.rs
-      - D  apps/desktop/src/shell.rs
-      - D  apps/desktop/src/theme.rs
-      - D  apps/web/.cta.json
-      - D  apps/web/.gitignore
-      - D  apps/web/.vscode/settings.json
-      - D  apps/web/components.json
-      - D  apps/web/moon.yml
-      - D  apps/web/package.json
-      - D  apps/web/public/favicon.ico
-      - D  apps/web/public/manifest.json
-      uncommitted_count: 130
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/OpenCut-app/OpenCut
@@ -85,13 +36,25 @@ upstream:
   latest_release: &id002
     tag: v0.3.0
     published_at: '2026-04-15T02:04:44Z'
-  last_checked: '2026-11-10T16:04:04+00:00'
+  last_checked: '2026-11-10T16:33:27+00:00'
   checks:
   - at: '2026-11-10T15:36:36+00:00'
     latest: e668010778568641babef2cc40be4703ae6916d6
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:04+00:00'
+    latest: e668010778568641babef2cc40be4703ae6916d6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:41+00:00'
+    latest: e668010778568641babef2cc40be4703ae6916d6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:03+00:00'
+    latest: e668010778568641babef2cc40be4703ae6916d6
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:27+00:00'
     latest: e668010778568641babef2cc40be4703ae6916d6
     flags: &id001
     - up-to-date
@@ -129,7 +92,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:04+00:00'
+updated: '2026-11-10T16:33:27+00:00'
 historical:
   group: E
   previous_decision: KEEP_EXISTING

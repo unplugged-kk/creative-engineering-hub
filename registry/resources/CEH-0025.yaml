@@ -25,59 +25,10 @@ local:
       head: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
       branch: main
       origin: https://github.com/Vincentwei1021/anything2explainer
-      uncommitted:
-      - D  .gitignore
-      - D  CITATION.cff
-      - D  LICENSE
-      - D  README.md
-      - D  README_ZH.md
-      - D  SKILL.md
-      - D  examples/contrast/01_hero_size_bad_f0128.jpg
-      - D  examples/contrast/01_hero_size_good_f0138.jpg
-      - D  examples/contrast/02_hero_reveal_bad_f1729.jpg
-      - D  examples/contrast/02_hero_reveal_good_f1105.jpg
-      - D  examples/contrast/03_big_number_good_f7258.jpg
-      - D  examples/contrast/03_sparse_axis_bad_f1900.jpg
-      - D  examples/contrast/04_formula_bad_f3033.jpg
-      - D  examples/contrast/04_result_number_good_f2613.jpg
-      - D  examples/contrast/05_clean_bg_good_f1237.jpg
-      - D  examples/contrast/05_clutter_bg_bad_f1651.jpg
-      - D  examples/contrast/06_ending_bad_f7540.jpg
-      - D  examples/contrast/06_ending_good_f8100.jpg
-      - D  examples/contrast/README.md
-      - D  examples/contrast/contrast_sheet.jpg
-      - D  examples/rag/AGENT_RAG_BUILD_RULES.md
-      - D  examples/rag/AGENT_RAG_QC_RULES.md
-      - D  examples/rag/README.md
-      - D  examples/rag/frames/overview_1.jpg
-      - D  examples/rag/frames/overview_2.jpg
-      - D  examples/rag/frames/overview_3.jpg
-      - D  examples/rag/frames/overview_4.jpg
-      - D  examples/rag/frames/overview_5.jpg
-      - D  examples/rag/frames/overview_6.jpg
-      - D  examples/rag/frames/ref_agentic_loop_f6900.jpg
-      - D  examples/rag/frames/ref_chapter_card_f1490.jpg
-      - D  examples/rag/frames/ref_chunk_size_f2200.jpg
-      - D  examples/rag/frames/ref_graphrag_f6600.jpg
-      - D  examples/rag/frames/ref_hnsw_f3260.jpg
-      - D  examples/rag/frames/ref_hybrid_rrf_f4640.jpg
-      - D  examples/rag/frames/ref_long_context_f7480.jpg
-      - D  examples/rag/frames/ref_lost_in_middle_f5250.jpg
-      - D  examples/rag/frames/ref_moat_f8100.jpg
-      - D  examples/rag/frames/ref_paper_f1300.jpg
-      - D  examples/rag/frames/ref_parse_f1760.jpg
-      - D  examples/rag/frames/ref_rag_reveal_f1090.jpg
-      - D  examples/rag/frames/ref_ragas_f6150.jpg
-      - D  examples/rag/frames/ref_rerank_funnel_f4900.jpg
-      - D  examples/rag/frames/ref_shortcomings_f0600.jpg
-      - D  examples/rag/frames/ref_title_f0058.jpg
-      - D  examples/rag/frames/ref_vector_space_f2990.jpg
-      - D  examples/rag/narration.txt
-      - D  examples/rag/qc/qc_v1_C1.md
-      - D  examples/rag/qc/qc_v1_C2.md
-      - D  examples/rag/qc/qc_v1_C3.md
-      uncommitted_count: 211
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/Vincentwei1021/anything2explainer
@@ -91,13 +42,25 @@ upstream:
   pinned_commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
   latest_commit: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
   latest_release: null
-  last_checked: '2026-11-10T16:03:46+00:00'
+  last_checked: '2026-11-10T16:33:10+00:00'
   checks:
   - at: '2026-11-10T15:36:19+00:00'
     latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:46+00:00'
+    latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:23+00:00'
+    latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:46+00:00'
+    latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:10+00:00'
     latest: 0b85f6c7bfc4ef094ee1afb6c68c06fcf329cfab
     flags: &id001
     - up-to-date
@@ -156,7 +119,7 @@ history:
   to: RESTRICTED
   by: ceh evaluate
   note: licence PolyForm-Noncommercial-1.0.0 blocks commercial use
-updated: '2026-11-10T16:03:46+00:00'
+updated: '2026-11-10T16:33:10+00:00'
 historical:
   group: D
   previous_decision: null

@@ -17,59 +17,10 @@ local:
       head: d2c6f05a46dacf663e357bcf0ed40f542a72825d
       branch: master
       origin: https://github.com/ggml-org/whisper.cpp
-      uncommitted:
-      - D  .devops/cublas.Dockerfile
-      - D  .devops/main-cuda.Dockerfile
-      - D  .devops/main-intel.Dockerfile
-      - D  .devops/main-musa.Dockerfile
-      - D  .devops/main-rocm.Dockerfile
-      - D  .devops/main-vulkan.Dockerfile
-      - D  .devops/main.Dockerfile
-      - D  .dockerignore
-      - D  .github/actions/ccache-clear/action.yml
-      - D  .github/workflows/bindings-go.yml
-      - D  .github/workflows/bindings-ruby.yml
-      - D  .github/workflows/build-android.yml
-      - D  .github/workflows/build-clang.yml
-      - D  .github/workflows/build-coreml.yml
-      - D  .github/workflows/build-cpu.yml
-      - D  .github/workflows/build-freebsd.yml
-      - D  .github/workflows/build-gcc.yml
-      - D  .github/workflows/build-macos.yml
-      - D  .github/workflows/build-quantize.yml
-      - D  .github/workflows/build-sanitize.yml
-      - D  .github/workflows/build-self-hosted.yml
-      - D  .github/workflows/build-sycl.yml
-      - D  .github/workflows/build-vad.yml
-      - D  .github/workflows/build-wasm.yml
-      - D  .github/workflows/build-windows.yml
-      - D  .github/workflows/close-issue.yml
-      - D  .github/workflows/deploy-examples-wasm.yml
-      - D  .github/workflows/docker.yml
-      - D  .github/workflows/examples.yml
-      - D  .github/workflows/make-release.yml
-      - D  .github/workflows/release.yml
-      - D  .gitignore
-      - D  .pi/gg/SYSTEM.md
-      - D  AGENTS.md
-      - D  AUTHORS
-      - D  CMakeLists.txt
-      - D  CMakePresets.json
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  Makefile
-      - D  README.md
-      - D  README_sycl.md
-      - D  bindings/CMakeLists.txt
-      - D  bindings/go/.gitignore
-      - D  bindings/go/LICENSE
-      - D  bindings/go/Makefile
-      - D  bindings/go/README.md
-      - D  bindings/go/doc.go
-      - D  bindings/go/examples/go-model-download/context.go
-      - D  bindings/go/examples/go-model-download/main.go
-      uncommitted_count: 2186
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/ggml-org/whisper.cpp
@@ -85,13 +36,21 @@ upstream:
   latest_release: &id002
     tag: v1.9.5
     published_at: '2026-10-06T17:39:17Z'
-  last_checked: '2026-11-10T16:04:41+00:00'
+  last_checked: '2026-11-10T16:34:00+00:00'
   checks:
   - at: '2026-11-10T15:37:12+00:00'
     latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:41+00:00'
+    latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:35+00:00'
+    latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:34:00+00:00'
     latest: d2c6f05a46dacf663e357bcf0ed40f542a72825d
     flags: &id001
     - up-to-date
@@ -128,7 +87,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:41+00:00'
+updated: '2026-11-10T16:34:00+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

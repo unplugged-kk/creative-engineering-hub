@@ -63,3 +63,11 @@ history: [{at, from, to, by, note}]
 See `docs/adr/`. Trade-offs in brief: per-file records over one big YAML (merge-friendly, scales); static-only inspection over
 running code (safety first, benchmarks are a separate explicit step); catalog file over editing Video Factory (keeps production
 independent); symlink installs over copies (one canonical skill, instant updates, safe uninstall).
+
+## Current consumer implementation status
+
+The v2 contract is documented in integrations/video-factory/catalog-v2.md. `ceh catalog export` creates a separately versioned,
+strictly governed consumer view; the current real catalog is empty. The prior diagram expresses the target VF flow, not an
+already enabled production integration. The metadata-only consumer exists on isolated VF branch codex/ceh-catalog-consumer,
+commit b1befad, and is disabled by default. It requires an independently reviewed catalog digest and explicit compatibility
+observations. It never loads skill bodies or executes catalog data. Production pipeline, approvals and renderer defaults are unchanged.

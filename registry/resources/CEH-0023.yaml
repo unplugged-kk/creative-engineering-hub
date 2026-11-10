@@ -19,59 +19,10 @@ local:
       head: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
       branch: main
       origin: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola
-      uncommitted:
-      - D  .env.example
-      - D  .gitattributes
-      - D  .gitignore
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  LICENSE-MEDIA.md
-      - D  README.md
-      - D  SECURITY.md
-      - D  SKILL.md
-      - D  SKILL.zh-CN.md
-      - D  THIRD_PARTY_NOTICES.md
-      - D  agents/openai.yaml
-      - D  config/runtime.example.json
-      - D  docs/ARCHITECTURE.md
-      - D  docs/CONFIGURATION.md
-      - D  docs/INSTALL.md
-      - D  docs/STYLES.md
-      - D  docs/TROUBLESHOOTING.md
-      - D  docs/assets/volcengine-seed-tts-2-setup.png
-      - D  evals/evals.json
-      - D  examples/program-animation/skill-demo/DESIGN.md
-      - D  examples/program-animation/skill-demo/README.md
-      - D  examples/program-animation/skill-demo/assets/narration.wav
-      - D  examples/program-animation/skill-demo/hyperframes.json
-      - D  examples/program-animation/skill-demo/index.html
-      - D  examples/program-animation/skill-demo/package-lock.json
-      - D  examples/program-animation/skill-demo/package.json
-      - D  examples/program-animation/skill-demo/preview.png
-      - D  examples/program-animation/skill-demo/script.txt
-      - D  examples/program-animation/skill-demo/timeline.json
-      - D  examples/program-animation/skill-demo/what-is-skill-sample.mp4
-      - D  "examples/program-animation/skill-demo/\344\275\277\347\224\250\350\257\264\346\230\216.txt"
-      - D  examples/stroke-story/steve-jobs/README.md
-      - D  examples/stroke-story/steve-jobs/annotation.json
-      - D  examples/stroke-story/steve-jobs/regions-preview.png
-      - D  examples/stroke-story/steve-jobs/semantic-island-sample.mp4
-      - D  examples/stroke-story/steve-jobs/source.png
-      - D  examples/stroke-story/steve-jobs/steve-jobs-biography.mp4
-      - D  examples/stroke-story/steve-jobs/transition-contact.jpg
-      - D  examples/stroke-story/yuefa-sanzhang/README.md
-      - D  examples/stroke-story/yuefa-sanzhang/editable-project.zip
-      - D  examples/stroke-story/yuefa-sanzhang/hand-speed-contact-sheet.jpg
-      - D  examples/stroke-story/yuefa-sanzhang/seven-scenes-final-frames.jpg
-      - D  examples/stroke-story/yuefa-sanzhang/timeline.json
-      - D  examples/stroke-story/yuefa-sanzhang/verification.json
-      - D  examples/stroke-story/yuefa-sanzhang/yuefa-sanzhang-16x9-stroke-story.mp4
-      - D  preferences.json
-      - D  references/automation-workflow.md
-      - D  references/hand-drawn-video-prompts-LICENSE.txt
-      - D  references/output-example.md
-      uncommitted_count: 86
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/hi-nikola/hand-drawn-explainer-video-nikola
@@ -87,13 +38,25 @@ upstream:
   latest_release: &id002
     tag: v1.1.0
     published_at: '2026-09-03T04:25:05Z'
-  last_checked: '2026-11-10T16:03:41+00:00'
+  last_checked: '2026-11-10T16:33:05+00:00'
   checks:
   - at: '2026-11-10T15:36:14+00:00'
     latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:41+00:00'
+    latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:18+00:00'
+    latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:41+00:00'
+    latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:05+00:00'
     latest: 3ee5d1c01fe8d34f5162c4aace418753f85bd0d9
     flags: &id001
     - up-to-date
@@ -133,7 +96,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:03:41+00:00'
+updated: '2026-11-10T16:33:05+00:00'
 historical:
   group: D
   previous_decision: null

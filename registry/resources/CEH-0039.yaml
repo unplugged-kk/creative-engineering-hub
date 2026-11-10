@@ -16,59 +16,10 @@ local:
       head: deefd3833c15b353348ba90eae0fad6113021759
       branch: main
       origin: https://github.com/ag-ui-protocol/ag-ui
-      uncommitted:
-      - D  .claude-plugin/marketplace.json
-      - D  .claude/settings.json
-      - D  .gitattributes
-      - D  .github/CODEOWNERS
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/documentation.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/actionlint.yaml
-      - D  .github/actions/assert-lockfiles-unchanged/action.yml
-      - D  .github/actions/assert-lockfiles-unchanged/assert-lockfiles-unchanged.sh
-      - D  .github/config-allowlist.txt
-      - D  .github/pull_request_template.md
-      - D  .github/python-toolchain.env
-      - D  .github/scripts/auto-approve-community.test.mjs
-      - D  .github/scripts/check-config-allowlist.sh
-      - D  .github/scripts/check-lfs-pointers.sh
-      - D  .github/skills/agui-cross-sdk-parity/SKILL.md
-      - D  .github/skills/agui-dojo/SKILL.md
-      - D  .github/skills/agui-dotnet-agents-sync/SKILL.md
-      - D  .github/skills/agui-dotnet-code-review/SKILL.md
-      - D  .github/skills/agui-dotnet-code-review/references/rules.md
-      - D  .github/skills/agui-dotnet-cross-language-tests/SKILL.md
-      - D  .github/skills/agui-dotnet-feature-workflow/SKILL.md
-      - D  .github/skills/agui-dotnet-integration-tests/SKILL.md
-      - D  .github/skills/agui-dotnet-sample-step/SKILL.md
-      - D  .github/skills/agui-dotnet-sdk-docs/SKILL.md
-      - D  .github/skills/agui-dotnet-transport/SKILL.md
-      - D  .github/skills/agui-dotnet-transport/references/wire-format.md
-      - D  .github/skills/agui-dotnet-unit-tests/SKILL.md
-      - D  .github/skills/agui-dotnet-wire-types/SKILL.md
-      - D  .github/skills/agui-playwright-validate/SKILL.md
-      - D  .github/workflows/auto-approve-community.yml
-      - D  .github/workflows/build-python-preview.yml
-      - D  .github/workflows/canary.yml
-      - D  .github/workflows/dojo-e2e-published.yml
-      - D  .github/workflows/dojo-e2e.yml
-      - D  .github/workflows/lint-release-workflows.yml
-      - D  .github/workflows/lint-typescript.yml
-      - D  .github/workflows/package-licenses.yml
-      - D  .github/workflows/pr-check-binaries.yml
-      - D  .github/workflows/prepare-release.yml
-      - D  .github/workflows/publish-commit.yml
-      - D  .github/workflows/publish-dart-sdk.yml
-      - D  .github/workflows/publish-python-preview.yml
-      - D  .github/workflows/publish-release.yml
-      - D  .github/workflows/rust-lint-test.yml
-      - D  .github/workflows/security-fork-pr-alert.yml
-      - D  .github/workflows/test-auto-approve-community.yml
-      - D  .github/workflows/test-release-scripts.yml
-      - D  .github/workflows/typecheck-typescript.yml
-      uncommitted_count: 6034
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/ag-ui-protocol/ag-ui
@@ -84,13 +35,21 @@ upstream:
   latest_release: &id002
     tag: release/2026-11-10
     published_at: '2026-11-10T15:29:46Z'
-  last_checked: '2026-11-10T16:04:28+00:00'
+  last_checked: '2026-11-10T16:33:49+00:00'
   checks:
   - at: '2026-11-10T15:37:00+00:00'
     latest: deefd3833c15b353348ba90eae0fad6113021759
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:28+00:00'
+    latest: deefd3833c15b353348ba90eae0fad6113021759
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:24+00:00'
+    latest: deefd3833c15b353348ba90eae0fad6113021759
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:49+00:00'
     latest: deefd3833c15b353348ba90eae0fad6113021759
     flags: &id001
     - up-to-date
@@ -130,7 +89,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:28+00:00'
+updated: '2026-11-10T16:33:49+00:00'
 historical:
   group: E
   previous_decision: null

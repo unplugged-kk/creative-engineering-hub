@@ -23,29 +23,10 @@ local:
       head: f9a8a041b85185ee4881b3471d3415e939aac772
       branch: main
       origin: https://github.com/LottieFiles/motion-design-skill
-      uncommitted:
-      - D  .gitignore
-      - D  LICENSE
-      - D  README.md
-      - D  skills/motion-design/SKILL.md
-      - D  skills/motion-design/director/choreography.md
-      - D  skills/motion-design/director/context-adaptation.md
-      - D  skills/motion-design/director/core-philosophy.md
-      - D  skills/motion-design/director/decision-framework.md
-      - D  skills/motion-design/director/disney-principles.md
-      - D  skills/motion-design/director/emotion-mapping.md
-      - D  skills/motion-design/director/motion-personality.md
-      - D  skills/motion-design/director/narrative-structure.md
-      - D  skills/motion-design/patterns/ambient-continuous.md
-      - D  skills/motion-design/patterns/entrance-exit.md
-      - D  skills/motion-design/patterns/multi-element.md
-      - D  skills/motion-design/patterns/state-feedback.md
-      - D  skills/motion-design/reference/property-selection.md
-      - D  skills/motion-design/reference/quality-checklist.md
-      - D  skills/motion-design/reference/timing-easing-tables.md
-      - D  skills/motion-design/reference/troubleshooting.md
-      uncommitted_count: 20
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/LottieFiles/motion-design-skill
@@ -59,13 +40,25 @@ upstream:
   pinned_commit: f9a8a041b85185ee4881b3471d3415e939aac772
   latest_commit: f9a8a041b85185ee4881b3471d3415e939aac772
   latest_release: null
-  last_checked: '2026-11-10T16:04:13+00:00'
+  last_checked: '2026-11-10T16:32:52+00:00'
   checks:
   - at: '2026-11-10T15:36:00+00:00'
     latest: f9a8a041b85185ee4881b3471d3415e939aac772
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:27+00:00'
+    latest: f9a8a041b85185ee4881b3471d3415e939aac772
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:05+00:00'
+    latest: f9a8a041b85185ee4881b3471d3415e939aac772
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:29+00:00'
+    latest: f9a8a041b85185ee4881b3471d3415e939aac772
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:52+00:00'
     latest: f9a8a041b85185ee4881b3471d3415e939aac772
     flags: &id001
     - up-to-date
@@ -101,7 +94,7 @@ history:
   to: CANDIDATE
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:04:14+00:00'
+updated: '2026-11-10T16:32:52+00:00'
 historical:
   group: C
   previous_decision: ADAPT

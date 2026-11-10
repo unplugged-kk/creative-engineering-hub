@@ -24,54 +24,10 @@ local:
       head: c1aa65e921c970d858705fcb4a53a8294d1a4131
       branch: main
       origin: https://github.com/bangtutorial/bang-motion
-      uncommitted:
-      - D  .claude-plugin/marketplace.json
-      - D  .claude-plugin/plugin.json
-      - D  CHANGELOG.md
-      - D  LICENSE
-      - D  README.md
-      - D  SKILL.md
-      - D  assets/starter-explainer-jurnalisme.html
-      - D  assets/starter-explainer-kartun.html
-      - D  assets/starter-explainer-katalog.html
-      - D  assets/starter-explainer-panggung.html
-      - D  assets/starter-explainer-sketsa.html
-      - D  assets/starter-explainer.html
-      - D  assets/starter-opener.html
-      - D  docs/gallery/01-grainy-gradient.jpg
-      - D  docs/gallery/02-kinetic-colorblock.jpg
-      - D  docs/gallery/03-saas-ui-tour.jpg
-      - D  docs/gallery/04-flat-vector.jpg
-      - D  docs/gallery/05-continuous-action.jpg
-      - D  docs/gallery/06-cartoon-stage.jpg
-      - D  docs/gallery/07-flat-pop-photo.jpg
-      - D  docs/gallery/08-white-catalog.jpg
-      - D  docs/gallery/09-visual-journalism.jpg
-      - D  docs/gallery/10-vintage-sketch.jpg
-      - D  docs/gallery/11-cartoon-collage.jpg
-      - D  docs/gallery/12-more-combinations.jpg
-      - D  docs/gallery/hero.jpg
-      - D  icon.png
-      - D  icon.svg
-      - D  references/ae-bridge-higgsfield.md
-      - D  references/anti-ppt.md
-      - D  references/architecture.md
-      - D  references/explainer.md
-      - D  references/kartun-panggung.md
-      - D  references/opener-konsep.md
-      - D  references/roadmap.md
-      - D  references/techniques.md
-      - D  scripts/ae/bridge/aset-svg.py
-      - D  scripts/ae/bridge/package.json
-      - D  scripts/ae/bridge/rig-tokoh.py
-      - D  scripts/ae/bridge/svg2png.cjs
-      - D  scripts/export-frames.mjs
-      - D  scripts/kepala-ekspresi.py
-      - D  scripts/serve.py
-      - D  scripts/snap.mjs
-      - D  scripts/vo-pauses.html
-      uncommitted_count: 45
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/bangtutorial/bang-motion
@@ -85,13 +41,25 @@ upstream:
   pinned_commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
   latest_commit: c1aa65e921c970d858705fcb4a53a8294d1a4131
   latest_release: null
-  last_checked: '2026-11-10T16:03:32+00:00'
+  last_checked: '2026-11-10T16:32:57+00:00'
   checks:
   - at: '2026-11-10T15:36:07+00:00'
     latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:32+00:00'
+    latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:10+00:00'
+    latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:34+00:00'
+    latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:57+00:00'
     latest: c1aa65e921c970d858705fcb4a53a8294d1a4131
     flags: &id001
     - up-to-date
@@ -126,7 +94,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:03:32+00:00'
+updated: '2026-11-10T16:32:57+00:00'
 historical:
   group: D
   previous_decision: null

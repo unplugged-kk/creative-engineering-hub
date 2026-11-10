@@ -26,6 +26,7 @@ local:
       head: 08e2151fa02de28a5d6a312b3d575692bf147ad7
       branch: main
       origin: https://github.com/calesthio/OpenMontage
+      checkout: working-tree
       uncommitted:
       - ?? .dockerignore
       - ?? Dockerfile
@@ -46,7 +47,7 @@ upstream:
   pinned_commit: 08e2151fa02de28a5d6a312b3d575692bf147ad7
   latest_commit: fecb9a1e3cc23ef84de30b272059457a427f16f8
   latest_release: null
-  last_checked: '2026-11-10T16:03:58+00:00'
+  last_checked: '2026-11-10T16:33:21+00:00'
   checks:
   - at: '2026-11-10T15:36:31+00:00'
     latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
@@ -54,6 +55,21 @@ upstream:
     - new-commits
     - local-conflict
   - at: '2026-11-10T16:03:58+00:00'
+    latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:18:36+00:00'
+    latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:21:58+00:00'
+    latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:33:21+00:00'
     latest: fecb9a1e3cc23ef84de30b272059457a427f16f8
     flags: &id001
     - new-commits
@@ -104,7 +120,7 @@ history:
   to: RESTRICTED
   by: ceh migrate
   note: recorded from historical evidence (EXTERNAL_REFERENCE)
-updated: '2026-11-10T16:03:58+00:00'
+updated: '2026-11-10T16:33:21+00:00'
 historical:
   group: E
   previous_decision: EXTERNAL_REFERENCE

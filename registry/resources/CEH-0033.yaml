@@ -21,59 +21,10 @@ local:
       head: 3e49a974c605701650466de1d32aee720db5ad9a
       branch: main
       origin: https://github.com/hypit-ai/hypit
-      uncommitted:
-      - D  .claude/skills/hypit
-      - D  .codex/skills/hypit
-      - D  .gitattributes
-      - D  .github/FUNDING.yml
-      - D  .github/ISSUE_AUTOMATION_DESIGN.md
-      - D  .github/ISSUE_TEMPLATE/bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/ISSUE_TEMPLATE/feature_request.yml
-      - D  .github/automation/analysis-prompt.md
-      - D  .github/automation/analysis.mjs
-      - D  .github/automation/analysis.test.mjs
-      - D  .github/workflows/automation-check.yml
-      - D  .github/workflows/ci.yml
-      - D  .github/workflows/npm-package.yml
-      - D  .github/workflows/publish-npm.yml
-      - D  .github/workflows/repository-analysis.yml
-      - D  .github/workflows/sync-hypihub-docs.yml
-      - D  .gitignore
-      - D  .node-version
-      - D  .puppeteerrc.cjs
-      - D  CONTRIBUTING.md
-      - D  CONTRIBUTING.zh-CN.md
-      - D  LICENSE
-      - D  README.md
-      - D  README.zh-CN.md
-      - D  bin/hypit.mjs
-      - D  docs/.vitepress/config.mts
-      - D  docs/guide/agents.md
-      - D  docs/guide/author-packages.md
-      - D  docs/guide/component-anatomy.md
-      - D  docs/guide/conventions.md
-      - D  docs/guide/develop.md
-      - D  docs/guide/packages.md
-      - D  docs/guide/providers.md
-      - D  docs/guide/runtime.md
-      - D  docs/guide/service-partners.md
-      - D  docs/guide/skill.md
-      - D  docs/guide/studio-companion-architecture.md
-      - D  docs/guide/studio-temporal-windows.md
-      - D  docs/guide/testing.md
-      - D  docs/public/agentsky-dark.png
-      - D  docs/public/agentsky-light.png
-      - D  docs/public/autoclaw.png
-      - D  docs/public/beatapi.png
-      - D  docs/public/hiapi.png
-      - D  docs/public/hypit-logo-dark.svg
-      - D  docs/public/hypit-logo-light.svg
-      - D  docs/public/hypit-logo.svg
-      - D  docs/public/logo-line-dark.svg
-      - D  docs/public/logo-line-light.svg
-      uncommitted_count: 1721
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/hypit-ai/hypit
@@ -89,13 +40,21 @@ upstream:
   latest_release: &id002
     tag: v0.3.1
     published_at: '2026-10-09T10:24:35Z'
-  last_checked: '2026-11-10T16:04:09+00:00'
+  last_checked: '2026-11-10T16:33:32+00:00'
   checks:
   - at: '2026-11-10T15:36:42+00:00'
     latest: 3e49a974c605701650466de1d32aee720db5ad9a
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:09+00:00'
+    latest: 3e49a974c605701650466de1d32aee720db5ad9a
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:08+00:00'
+    latest: 3e49a974c605701650466de1d32aee720db5ad9a
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:32+00:00'
     latest: 3e49a974c605701650466de1d32aee720db5ad9a
     flags: &id001
     - up-to-date
@@ -151,7 +110,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:09+00:00'
+updated: '2026-11-10T16:33:32+00:00'
 historical:
   group: E
   previous_decision: null

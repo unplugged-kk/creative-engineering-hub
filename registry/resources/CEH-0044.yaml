@@ -21,59 +21,10 @@ local:
       head: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
       branch: master
       origin: https://github.com/FFmpeg/FFmpeg
-      uncommitted:
-      - D  .forgejo/CODEOWNERS
-      - D  .forgejo/ISSUE_TEMPLATE.md
-      - D  .forgejo/PULL_REQUEST_TEMPLATE.md
-      - D  .forgejo/actions/rebase-pr/action.yml
-      - D  .forgejo/inject-pr-samples.py
-      - D  .forgejo/labeler/labeler.js
-      - D  .forgejo/labeler/labeler.yml
-      - D  .forgejo/pre-commit/config.yaml
-      - D  .forgejo/pre-commit/ignored-words.txt
-      - D  .forgejo/workflows/autolabel.yml
-      - D  .forgejo/workflows/backports.yml
-      - D  .forgejo/workflows/lint.yml
-      - D  .forgejo/workflows/test.yml
-      - D  .gitattributes
-      - D  .gitignore
-      - D  .mailmap
-      - D  CONTRIBUTING.md
-      - D  COPYING.GPLv2
-      - D  COPYING.GPLv3
-      - D  COPYING.LGPLv2.1
-      - D  COPYING.LGPLv3
-      - D  CREDITS
-      - D  Changelog
-      - D  FUNDING.json
-      - D  INSTALL.md
-      - D  LICENSE.md
-      - D  MAINTAINERS
-      - D  Makefile
-      - D  README.md
-      - D  RELEASE
-      - D  compat/aix/math.h
-      - D  compat/android/binder.c
-      - D  compat/android/binder.h
-      - D  compat/android/math.h
-      - D  compat/atomics/dummy/stdatomic_impl.h
-      - D  compat/atomics/stdatomic.h
-      - D  compat/atomics/win32/stdatomic_impl.h
-      - D  compat/cuda/cuda_runtime.h
-      - D  compat/cuda/dynlink_loader.h
-      - D  compat/dispatch_semaphore/semaphore.h
-      - D  compat/djgpp/math.c
-      - D  compat/djgpp/math.h
-      - D  compat/float/float.h
-      - D  compat/float/limits.h
-      - D  compat/getopt.c
-      - D  compat/os2threads.h
-      - D  compat/solaris/make_sunver.pl
-      - D  compat/stdbit/stdbit.h
-      - D  compat/strtod.c
-      - D  compat/w32dlfcn.h
-      uncommitted_count: 11195
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/FFmpeg/FFmpeg
@@ -87,13 +38,21 @@ upstream:
   pinned_commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
   latest_commit: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
   latest_release: null
-  last_checked: '2026-11-10T16:04:44+00:00'
+  last_checked: '2026-11-10T16:34:03+00:00'
   checks:
   - at: '2026-11-10T15:37:14+00:00'
     latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:44+00:00'
+    latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:37+00:00'
+    latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:34:03+00:00'
     latest: d0b9c63c9fe54100201240b04fc28b8fd5216fb7
     flags: &id001
     - up-to-date
@@ -138,7 +97,7 @@ history:
   to: PRODUCTION
   by: ceh migrate
   note: recorded from historical evidence (INSTALLED)
-updated: '2026-11-10T16:04:44+00:00'
+updated: '2026-11-10T16:34:03+00:00'
 historical:
   group: E
   previous_decision: INSTALLED

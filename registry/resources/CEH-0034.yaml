@@ -18,59 +18,10 @@ local:
       head: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
       branch: main
       origin: https://github.com/D4Vinci/Scrapling
-      uncommitted:
-      - D  .bandit.yml
-      - D  .dockerignore
-      - D  .github/FUNDING.yml
-      - D  .github/ISSUE_TEMPLATE/01-bug_report.yml
-      - D  .github/ISSUE_TEMPLATE/02-feature_request.yml
-      - D  .github/ISSUE_TEMPLATE/03-other.yml
-      - D  .github/ISSUE_TEMPLATE/04-docs_issue.yml
-      - D  .github/ISSUE_TEMPLATE/config.yml
-      - D  .github/PULL_REQUEST_TEMPLATE.md
-      - D  .github/workflows/code-quality.yml
-      - D  .github/workflows/docker-build.yml
-      - D  .github/workflows/release-and-publish.yml
-      - D  .github/workflows/tests.yml
-      - D  .gitignore
-      - D  .pre-commit-config.yaml
-      - D  .readthedocs.yaml
-      - D  AI_POLICY.md
-      - D  CODE_OF_CONDUCT.md
-      - D  CONTRIBUTING.md
-      - D  Dockerfile
-      - D  LICENSE
-      - D  MANIFEST.in
-      - D  README.md
-      - D  ROADMAP.md
-      - D  agent-skill/README.md
-      - D  agent-skill/Scrapling-Skill.zip
-      - D  agent-skill/Scrapling-Skill/LICENSE.txt
-      - D  agent-skill/Scrapling-Skill/SKILL.md
-      - D  agent-skill/Scrapling-Skill/examples/01_fetcher_session.py
-      - D  agent-skill/Scrapling-Skill/examples/02_browser_session.py
-      - D  agent-skill/Scrapling-Skill/examples/03_stealthy_session.py
-      - D  agent-skill/Scrapling-Skill/examples/04_spider.py
-      - D  agent-skill/Scrapling-Skill/examples/README.md
-      - D  agent-skill/Scrapling-Skill/references/building-rag-systems.md
-      - D  agent-skill/Scrapling-Skill/references/fetching/choosing.md
-      - D  agent-skill/Scrapling-Skill/references/fetching/static.md
-      - D  agent-skill/Scrapling-Skill/references/fetching/stealthy.md
-      - D  agent-skill/Scrapling-Skill/references/integrations/scrapy.md
-      - D  agent-skill/Scrapling-Skill/references/mcp-server.md
-      - D  agent-skill/Scrapling-Skill/references/migrating_from_beautifulsoup.md
-      - D  agent-skill/Scrapling-Skill/references/parsing/adaptive.md
-      - D  agent-skill/Scrapling-Skill/references/parsing/main_classes.md
-      - D  agent-skill/Scrapling-Skill/references/parsing/selection.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/advanced.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/architecture.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/generic-templates.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/getting-started.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/platform-templates.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/proxy-blocking.md
-      - D  agent-skill/Scrapling-Skill/references/spiders/requests-responses.md
-      uncommitted_count: 698
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/D4Vinci/Scrapling
@@ -86,13 +37,21 @@ upstream:
   latest_release: &id002
     tag: v0.5.1
     published_at: '2026-11-04T20:29:16Z'
-  last_checked: '2026-11-10T16:04:12+00:00'
+  last_checked: '2026-11-10T16:33:34+00:00'
   checks:
   - at: '2026-11-10T15:36:45+00:00'
     latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
     flags:
     - up-to-date
   - at: '2026-11-10T16:04:12+00:00'
+    latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:22:10+00:00'
+    latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:34+00:00'
     latest: c5121c7c06a8595ed3a0a9b7b7dcd6802b5ebfc5
     flags: &id001
     - up-to-date
@@ -148,7 +107,7 @@ history:
   to: SANDBOXED
   by: ceh inspect
   note: read statically in the lab; nothing executed
-updated: '2026-11-10T16:04:12+00:00'
+updated: '2026-11-10T16:33:34+00:00'
 historical:
   group: E
   previous_decision: null

@@ -17,55 +17,10 @@ local:
       head: 1e424943582cbbdb6e3f410687e39f96451447bb
       branch: main
       origin: https://github.com/motiondivision/ai-kit
-      uncommitted:
-      - D  .cursor-plugin/marketplace.json
-      - D  .cursor/.gitignore
-      - D  .gitignore
-      - D  CHANGELOG.md
-      - D  README.md
-      - D  changelog.csv
-      - D  docs/add-a-plugin.md
-      - D  package-lock.json
-      - D  package.json
-      - D  packages/motion-ai/README.md
-      - D  packages/motion-ai/assets/ai-kit.png
-      - D  packages/motion-ai/assets/ai-kit.svg
-      - D  packages/motion-ai/assets/performance-doctor.png
-      - D  packages/motion-ai/assets/performance-doctor.svg
-      - D  packages/motion-ai/assets/performance-guard.png
-      - D  packages/motion-ai/assets/performance-guard.svg
-      - D  packages/motion-ai/package.json
-      - D  packages/motion-ai/scripts/sync-content.mjs
-      - D  packages/motion-ai/src/agents.ts
-      - D  packages/motion-ai/src/cli.ts
-      - D  packages/motion-ai/src/install.ts
-      - D  packages/motion-ai/tsconfig.json
-      - D  plugins/motion/.cursor-plugin/plugin.json
-      - D  plugins/motion/README.md
-      - D  plugins/motion/agents/motion-reviewer.md
-      - D  plugins/motion/assets/ai-kit-card.png
-      - D  plugins/motion/assets/logo.svg
-      - D  plugins/motion/assets/logo@512w.png
-      - D  plugins/motion/mcp.json
-      - D  plugins/motion/rules/motion.mdc
-      - D  plugins/motion/skills/motion/SKILL.md
-      - D  plugins/motion/skills/motion/best-practices/base-ui.md
-      - D  plugins/motion/skills/motion/best-practices/css-or-motion.md
-      - D  plugins/motion/skills/motion/best-practices/index.md
-      - D  plugins/motion/skills/motion/best-practices/motion.md
-      - D  plugins/motion/skills/motion/best-practices/react.md
-      - D  plugins/motion/skills/motion/best-practices/vue.md
-      - D  plugins/motion/skills/motion/codex/index.md
-      - D  plugins/motion/skills/motion/css-spring/index.md
-      - D  plugins/motion/skills/motion/insert/index.md
-      - D  plugins/motion/skills/motion/performance-audit/index.md
-      - D  plugins/motion/skills/motion/transition-preview/index.md
-      - D  scripts/generate-changelog-csv.js
-      - D  scripts/push-to-site.js
-      - D  scripts/release.mjs
-      - D  scripts/validate-template.mjs
-      uncommitted_count: 46
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/motiondivision/ai-kit
@@ -79,13 +34,25 @@ upstream:
   pinned_commit: 1e424943582cbbdb6e3f410687e39f96451447bb
   latest_commit: 1e424943582cbbdb6e3f410687e39f96451447bb
   latest_release: null
-  last_checked: '2026-11-10T16:03:52+00:00'
+  last_checked: '2026-11-10T16:33:16+00:00'
   checks:
   - at: '2026-11-10T15:36:25+00:00'
     latest: 1e424943582cbbdb6e3f410687e39f96451447bb
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:52+00:00'
+    latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:18:29+00:00'
+    latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:52+00:00'
+    latest: 1e424943582cbbdb6e3f410687e39f96451447bb
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:33:16+00:00'
     latest: 1e424943582cbbdb6e3f410687e39f96451447bb
     flags: &id001
     - up-to-date
@@ -115,7 +82,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (REFERENCE)
-updated: '2026-11-10T16:03:52+00:00'
+updated: '2026-11-10T16:33:16+00:00'
 historical:
   group: D
   previous_decision: REFERENCE

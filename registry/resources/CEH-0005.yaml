@@ -24,59 +24,10 @@ local:
       head: 6f80380b91858dad66524a5b34e027dad656d538
       branch: main
       origin: https://github.com/whaleyxbt/claude-motion
-      uncommitted:
-      - D  .claude/skills/motion-design/SKILL.md
-      - D  .claude/skills/review-loop/SKILL.md
-      - D  .claude/skills/sound-design/SKILL.md
-      - D  .claude/skills/web-sims/SKILL.md
-      - D  .github/ISSUE_TEMPLATE/showcase.yml
-      - D  .gitignore
-      - D  .mcp.json.example
-      - D  AGENTS.md
-      - D  CLAUDE.md
-      - D  CONTRIBUTING.md
-      - D  LICENSE
-      - D  README.md
-      - D  examples/01-effort/README.md
-      - D  media/preview.gif
-      - D  media/sheet.png
-      - D  media/sims/crawlers.gif
-      - D  media/sims/dossier.gif
-      - D  media/sims/engine.gif
-      - D  media/wave.png
-      - D  package-lock.json
-      - D  package.json
-      - D  remotion.config.ts
-      - D  scripts/py.mjs
-      - D  scripts/sheet.mjs
-      - D  scripts/wave.mjs
-      - D  sfx/__init__.py
-      - D  sfx/__main__.py
-      - D  sfx/cues/effort.py
-      - D  sfx/dsp.py
-      - D  sfx/loudness.py
-      - D  sfx/mix.py
-      - D  sfx/synth.py
-      - D  sims/README.md
-      - D  sims/beats.py
-      - D  sims/build.mjs
-      - D  sims/capture.mjs
-      - D  sims/crawlers/main.js
-      - D  sims/crawlers/sites.js
-      - D  sims/crawlers/style.css
-      - D  sims/dossier/main.js
-      - D  sims/dossier/sites.js
-      - D  sims/dossier/style.css
-      - D  sims/engine/main.js
-      - D  sims/engine/sound.py
-      - D  sims/engine/style.css
-      - D  sims/engine/timeline.json
-      - D  sims/kit/director.js
-      - D  sims/kit/hud.js
-      - D  sims/kit/runtime.js
-      - D  sims/kit/runtime.test.mjs
-      uncommitted_count: 68
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/whaleyxbt/claude-motion
@@ -90,7 +41,7 @@ upstream:
   pinned_commit: e627941543d9988b155dc610bb9cc0115a5e365e
   latest_commit: 6f80380b91858dad66524a5b34e027dad656d538
   latest_release: null
-  last_checked: '2026-11-10T16:02:47+00:00'
+  last_checked: '2026-11-10T16:32:15+00:00'
   checks:
   - at: '2026-11-10T15:35:25+00:00'
     latest: 6f80380b91858dad66524a5b34e027dad656d538
@@ -99,9 +50,23 @@ upstream:
     - local-conflict
   - at: '2026-11-10T16:02:47+00:00'
     latest: 6f80380b91858dad66524a5b34e027dad656d538
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:17:31+00:00'
+    latest: 6f80380b91858dad66524a5b34e027dad656d538
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:20:51+00:00'
+    latest: 6f80380b91858dad66524a5b34e027dad656d538
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:15+00:00'
+    latest: 6f80380b91858dad66524a5b34e027dad656d538
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: whaleyxbt/claude-motion
@@ -128,7 +93,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:02:47+00:00'
+updated: '2026-11-10T16:32:15+00:00'
 historical:
   group: A
   previous_decision: ADAPT

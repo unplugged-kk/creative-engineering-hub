@@ -25,51 +25,10 @@ local:
       head: edbfb105382f21507bad895d8b5f6e0faa67487c
       branch: main
       origin: https://github.com/AbubakrChan/product-launch-motion
-      uncommitted:
-      - D  .github/FUNDING.yml
-      - D  .gitignore
-      - D  LICENSE
-      - D  NOTICE
-      - D  README.md
-      - D  SKILL.md
-      - D  examples/film-preview.webp
-      - D  examples/hoopoe-preview.webp
-      - D  examples/one-shape-loop.webp
-      - D  legacy/CASE-STUDY.md
-      - D  legacy/SKILL.md
-      - D  legacy/assets/BRIEF.md
-      - D  legacy/assets/STORYBOARD.md
-      - D  legacy/assets/cues.example.json
-      - D  legacy/assets/film.example.json
-      - D  legacy/assets/frame-skeleton.html
-      - D  legacy/evals/BASELINE.md
-      - D  legacy/evals/evals.json
-      - D  legacy/film-preview.webp
-      - D  legacy/references/01-renderer-contract.md
-      - D  legacy/references/02-story-and-truth.md
-      - D  legacy/references/03-word-locked-sync.md
-      - D  legacy/references/04-motion-grammar.md
-      - D  legacy/references/05-camera-3d-cursor.md
-      - D  legacy/references/06-look-and-grade.md
-      - D  legacy/references/07-sound-and-master.md
-      - D  legacy/references/08-qa-and-direction.md
-      - D  legacy/references/09-shot-catalog.md
-      - D  legacy/references/10-traps.md
-      - D  legacy/references/11-creative-direction.md
-      - D  legacy/references/12-deliverables.md
-      - D  legacy/scripts/assemble.mjs
-      - D  legacy/scripts/level-sfx.mjs
-      - D  legacy/scripts/master.sh
-      - D  legacy/scripts/transitions.mjs
-      - D  legacy/scripts/verify-cue.sh
-      - D  legacy/scripts/wire-audio.mjs
-      - D  legacy/scripts/wire-grade.mjs
-      - D  legacy/scripts/word-timings.mjs
-      - D  legacy/still-1.jpg
-      - D  references/prompts.md
-      - D  references/technique.md
-      uncommitted_count: 42
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/AbubakrChan/product-launch-motion
@@ -85,7 +44,7 @@ upstream:
   latest_release: &id002
     tag: v2.0.0
     published_at: '2026-10-12T19:43:53Z'
-  last_checked: '2026-11-10T16:02:37+00:00'
+  last_checked: '2026-11-10T16:32:04+00:00'
   checks:
   - at: '2026-11-10T15:35:14+00:00'
     latest: edbfb105382f21507bad895d8b5f6e0faa67487c
@@ -94,9 +53,23 @@ upstream:
     - local-conflict
   - at: '2026-11-10T16:02:37+00:00'
     latest: edbfb105382f21507bad895d8b5f6e0faa67487c
-    flags: &id001
+    flags:
     - new-commits
     - local-conflict
+  - at: '2026-11-10T16:17:16+00:00'
+    latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:20:40+00:00'
+    latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+    flags:
+    - new-commits
+    - local-conflict
+  - at: '2026-11-10T16:32:04+00:00'
+    latest: edbfb105382f21507bad895d8b5f6e0faa67487c
+    flags: &id001
+    - new-commits
   flags: *id001
 meta:
   full_name: AbubakrChan/product-launch-motion
@@ -145,7 +118,7 @@ history:
   to: PARKED
   by: ceh migrate
   note: recorded from historical evidence (REFERENCE)
-updated: '2026-11-10T16:02:37+00:00'
+updated: '2026-11-10T16:32:04+00:00'
 historical:
   group: A
   previous_decision: REFERENCE

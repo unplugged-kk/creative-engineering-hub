@@ -16,7 +16,8 @@ local:
   state:
     /Users/kishore/git/video-factory/workspace/experiments/p5brush-001:
       git: false
-  modified: false
+      unverified: true
+  modified: null
 upstream:
   strategy: PINNED
   remote: https://github.com/acamposuribe/p5.brush
@@ -27,7 +28,7 @@ upstream:
   latest_release: &id002
     tag: v3.0.0
     published_at: '2026-10-28T00:36:57Z'
-  last_checked: '2026-11-10T16:03:18+00:00'
+  last_checked: '2026-11-10T16:32:42+00:00'
   checks:
   - at: '2026-11-10T15:35:52+00:00'
     latest: d56350a647d0b098a9e79d397447a8094f6c45a4
@@ -38,8 +39,21 @@ upstream:
     - unpinned
   - at: '2026-11-10T16:03:18+00:00'
     latest: d56350a647d0b098a9e79d397447a8094f6c45a4
+    flags:
+    - unpinned
+  - at: '2026-11-10T16:17:57+00:00'
+    latest: d56350a647d0b098a9e79d397447a8094f6c45a4
+    flags:
+    - unpinned
+  - at: '2026-11-10T16:21:21+00:00'
+    latest: d56350a647d0b098a9e79d397447a8094f6c45a4
+    flags:
+    - unpinned
+  - at: '2026-11-10T16:32:42+00:00'
+    latest: d56350a647d0b098a9e79d397447a8094f6c45a4
     flags: &id001
     - unpinned
+    - local-unverified
   flags: *id001
 meta:
   full_name: acamposuribe/p5.brush
@@ -76,7 +90,7 @@ history:
   to: SANDBOXED
   by: ceh migrate
   note: recorded from historical evidence (EXPERIMENTAL)
-updated: '2026-11-10T16:03:18+00:00'
+updated: '2026-11-10T16:32:42+00:00'
 historical:
   group: B
   previous_decision: EXPERIMENTAL

@@ -18,53 +18,10 @@ local:
       head: aed9cfd3277740755f6bfc1155c7aa645403b760
       branch: main
       origin: https://github.com/greensock/gsap-skills
-      uncommitted:
-      - D  .claude-plugin/marketplace.json
-      - D  .claude-plugin/plugin.json
-      - D  .cursor-plugin/marketplace.json
-      - D  .cursor-plugin/plugin.json
-      - D  .github/copilot-instructions.md
-      - D  .github/instructions/react.instructions.md
-      - D  .github/instructions/scrolltrigger.instructions.md
-      - D  .gitignore
-      - D  AGENTS.md
-      - D  CLAUDE.md
-      - D  GEMINI.md
-      - D  LICENSE
-      - D  README.md
-      - D  assets/gsap-green.svg
-      - D  assets/gsap-icon-inverted.svg
-      - D  assets/gsap-icon-square.svg
-      - D  assets/gsap-white.svg
-      - D  examples/README.md
-      - D  examples/nuxt/app/app.vue
-      - D  examples/nuxt/app/composables/useGSAP.ts
-      - D  examples/nuxt/app/pages/index.vue
-      - D  examples/nuxt/nuxt.config.ts
-      - D  examples/nuxt/package.json
-      - D  examples/react/App.jsx
-      - D  examples/react/index.html
-      - D  examples/react/main.jsx
-      - D  examples/react/package.json
-      - D  examples/react/vite.config.js
-      - D  examples/vanilla/index.html
-      - D  examples/vanilla/main.js
-      - D  examples/vue/app.vue
-      - D  examples/vue/index.html
-      - D  examples/vue/main.js
-      - D  examples/vue/package.json
-      - D  examples/vue/vite.config.js
-      - D  skills/gsap-core/SKILL.md
-      - D  skills/gsap-frameworks/SKILL.md
-      - D  skills/gsap-performance/SKILL.md
-      - D  skills/gsap-plugins/SKILL.md
-      - D  skills/gsap-react/SKILL.md
-      - D  skills/gsap-scrolltrigger/SKILL.md
-      - D  skills/gsap-timeline/SKILL.md
-      - D  skills/gsap-utils/SKILL.md
-      - D  skills/llms.txt
-      uncommitted_count: 44
-  modified: true
+      checkout: object-only
+      uncommitted: []
+      uncommitted_count: 0
+  modified: false
 upstream:
   strategy: PINNED
   remote: https://github.com/greensock/gsap-skills
@@ -78,13 +35,25 @@ upstream:
   pinned_commit: aed9cfd3277740755f6bfc1155c7aa645403b760
   latest_commit: aed9cfd3277740755f6bfc1155c7aa645403b760
   latest_release: null
-  last_checked: '2026-11-10T16:03:06+00:00'
+  last_checked: '2026-11-10T16:32:31+00:00'
   checks:
   - at: '2026-11-10T15:35:41+00:00'
     latest: aed9cfd3277740755f6bfc1155c7aa645403b760
     flags:
     - up-to-date
   - at: '2026-11-10T16:03:06+00:00'
+    latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:17:47+00:00'
+    latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:21:10+00:00'
+    latest: aed9cfd3277740755f6bfc1155c7aa645403b760
+    flags:
+    - up-to-date
+  - at: '2026-11-10T16:32:31+00:00'
     latest: aed9cfd3277740755f6bfc1155c7aa645403b760
     flags: &id001
     - up-to-date
@@ -117,7 +86,7 @@ history:
   to: CANDIDATE
   by: ceh migrate
   note: recorded from historical evidence (ADAPT)
-updated: '2026-11-10T16:03:06+00:00'
+updated: '2026-11-10T16:32:31+00:00'
 historical:
   group: B
   previous_decision: ADAPT

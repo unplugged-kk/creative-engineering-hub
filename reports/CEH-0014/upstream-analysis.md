@@ -11,12 +11,24 @@ https://github.com/heygen-com/hyperframes
 | Latest observed | cda84222aa12716f2ceb92b45629487be81a0601 |
 | Latest release | v0.9.30 |
 | Forks | https://github.com/kishorehq/hyperframes |
-| Last checked | 2026-11-10T16:03:15+00:00 |
+| Last checked | 2026-11-10T16:32:40+00:00 |
 | Flags | Upstream has new commits |
+
+## Assessment scope
+
+- Local modification flags are heuristic signals, not proof of a merge conflict. No merge or semantic overlap analysis was performed.
+- Compatibility: UNKNOWN for the proposed upstream revision until targeted regression and rendered QA evidence exists.
+- Security: UNKNOWN for the proposed revision; advisory flags and historical scans are not a new-revision audit.
+- Licence suitability: UNKNOWN for the proposed revision until code, bundled assets and transitive terms are reviewed.
+- Breaking signals use commit subjects and package major versions; deleted files are observations, not verified deleted features. No semantic API compatibility analysis is claimed.
 
 ## Change summary 01c6f6004a → cda84222aa
 
 1858 commits, 5654 files changed.
+
+- Exact old commit: `01c6f6004a00ecfa6e77ab4025b47a46a5e925fc`
+- Exact proposed commit: `cda84222aa12716f2ceb92b45629487be81a0601`
+- [Source comparison](https://github.com/heygen-com/hyperframes/compare/01c6f6004a00ecfa6e77ab4025b47a46a5e925fc...cda84222aa12716f2ceb92b45629487be81a0601)
 
 ### Breaking signals
 - 7f48a689 feat!: remove Plan v1 distributed transport (#6970)
@@ -29,67 +41,43 @@ https://github.com/heygen-com/hyperframes
 ### Dependency manifests
 ```json
 {
-  "packages/parsers/package.json": {
+  "packages/engine/package.json": {
     "version": [
       "0.8.114",
       "0.9.30"
     ],
     "added": [
-      "entities"
+      "undici"
     ],
+    "removed": [],
+    "changed": {
+      "puppeteer-core": [
+        "^25.8.0",
+        "^25.11.0"
+      ],
+      "puppeteer": [
+        "^25.8.0",
+        "~25.11.0"
+      ]
+    }
+  },
+  "registry/examples/path-traced-3d/source/package.json": {
+    "version": [
+      null,
+      null
+    ],
+    "added": [],
     "removed": [],
     "changed": {}
   },
-  "packages/producer/package.json": {
+  "packages/player/package.json": {
     "version": [
       "0.8.114",
       "0.9.30"
     ],
     "added": [],
-    "removed": [
-      "@fontsource/archivo-black",
-      "@fontsource/eb-garamond",
-      "@fontsource/ibm-plex-mono",
-      "@fontsource/inter",
-      "@fontsource/jetbrains-mono",
-      "@fontsource/league-gothic",
-      "@fontsource/montserrat",
-      "@fontsource/nunito",
-      "@fontsource/oswald",
-      "@fontsource/outfit",
-      "@fontsource/space-mono",
-      "wawoff2"
-    ],
-    "changed": {
-      "@hyperframes/core": [
-        "workspace:^",
-        "workspace:*"
-      ],
-      "@hyperframes/studio-server": [
-        "workspace:^",
-        "workspace:*"
-      ],
-      "puppeteer": [
-        "^25.2.1",
-        "~25.11.0"
-      ],
-      "@hyperframes/engine": [
-        "workspace:^",
-        "workspace:*"
-      ],
-      "puppeteer-core": [
-        "^25.2.1",
-        "^25.11.0"
-      ],
-      "@hyperframes/parsers": [
-        "workspace:^",
-        "workspace:*"
-      ],
-      "@hyperframes/lint": [
-        "workspace:^",
-        "workspace:*"
-      ]
-    }
+    "removed": [],
+    "changed": {}
   },
   "packages/gcp-cloud-run/package.json": {
     "version": [
@@ -98,62 +86,6 @@ https://github.com/heygen-com/hyperframes
     ],
     "added": [],
     "removed": [],
-    "changed": {}
-  },
-  "packages/cli/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [
-      "acorn",
-      "undici",
-      "yauzl"
-    ],
-    "removed": [
-      "prettier",
-      "sharp"
-    ],
-    "changed": {
-      "esbuild": [
-        "^0.25.12",
-        "^0.28.2"
-      ]
-    }
-  },
-  "packages/share/package.json": {
-    "version": [
-      null,
-      "0.9.30"
-    ],
-    "added": [],
-    "removed": [],
-    "changed": {}
-  },
-  "registry/blocks/godrays/source/package-lock.json": {
-    "changed": true
-  },
-  "packages/sdk/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [],
-    "removed": [],
-    "changed": {}
-  },
-  "packages/core/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [
-      "acorn",
-      "wawoff2"
-    ],
-    "removed": [
-      "bpm-detective"
-    ],
     "changed": {}
   },
   "packages/inspector/package.json": {
@@ -184,6 +116,58 @@ https://github.com/heygen-com/hyperframes
     "removed": [],
     "changed": {}
   },
+  "package.json": {
+    "version": [
+      null,
+      null
+    ],
+    "added": [
+      "yaml"
+    ],
+    "removed": [],
+    "changed": {}
+  },
+  "packages/sdk/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [],
+    "removed": [],
+    "changed": {}
+  },
+  "packages/core/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [
+      "acorn",
+      "wawoff2"
+    ],
+    "removed": [
+      "bpm-detective"
+    ],
+    "changed": {}
+  },
+  "registry/examples/path-traced-3d/source/package-lock.json": {
+    "changed": true
+  },
+  "packages/aws-lambda/scripts/runtime-lock/sparticuz/package-lock.json": {
+    "changed": true
+  },
+  "packages/share/package.json": {
+    "version": [
+      null,
+      "0.9.30"
+    ],
+    "added": [],
+    "removed": [],
+    "changed": {}
+  },
+  "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package-lock.json": {
+    "changed": true
+  },
   "registry/blocks/frost-sequence-camera-orbit/source/package.json": {
     "version": [
       null,
@@ -205,119 +189,6 @@ https://github.com/heygen-com/hyperframes
     "removed": [],
     "changed": {}
   },
-  "packages/engine/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [
-      "undici"
-    ],
-    "removed": [],
-    "changed": {
-      "puppeteer": [
-        "^25.8.0",
-        "~25.11.0"
-      ],
-      "puppeteer-core": [
-        "^25.8.0",
-        "^25.11.0"
-      ]
-    }
-  },
-  "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package.json": {
-    "version": [
-      null,
-      "0.0.0"
-    ],
-    "added": [
-      "puppeteer-core"
-    ],
-    "removed": [],
-    "changed": {}
-  },
-  "package.json": {
-    "version": [
-      null,
-      null
-    ],
-    "added": [
-      "yaml"
-    ],
-    "removed": [],
-    "changed": {}
-  },
-  "packages/player/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [],
-    "removed": [],
-    "changed": {}
-  },
-  "packages/aws-lambda/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [
-      "@aws-sdk/client-ecr",
-      "@aws-sdk/client-lambda",
-      "@aws-sdk/s3-request-presigner"
-    ],
-    "removed": [],
-    "changed": {
-      "@aws-sdk/client-s3": [
-        "^3.700.0",
-        "^3.1146.0"
-      ],
-      "@aws-sdk/client-sfn": [
-        "^3.700.0",
-        "^3.1146.0"
-      ]
-    }
-  },
-  "registry/examples/path-traced-3d/source/package.json": {
-    "version": [
-      null,
-      null
-    ],
-    "added": [],
-    "removed": [],
-    "changed": {}
-  },
-  "packages/lint/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [
-      "ignore"
-    ],
-    "removed": [],
-    "changed": {}
-  },
-  "registry/examples/path-traced-3d/source/package-lock.json": {
-    "changed": true
-  },
-  "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package-lock.json": {
-    "changed": true
-  },
-  "packages/studio-server/package.json": {
-    "version": [
-      "0.8.114",
-      "0.9.30"
-    ],
-    "added": [],
-    "removed": [
-      "sharp"
-    ],
-    "changed": {}
-  },
-  "packages/aws-lambda/scripts/runtime-lock/sparticuz/package-lock.json": {
-    "changed": true
-  },
   "packages/studio/package.json": {
     "version": [
       "0.8.114",
@@ -336,6 +207,28 @@ https://github.com/heygen-com/hyperframes
       ]
     }
   },
+  "packages/aws-lambda/scripts/runtime-lock/chrome-headless-shell/package.json": {
+    "version": [
+      null,
+      "0.0.0"
+    ],
+    "added": [
+      "puppeteer-core"
+    ],
+    "removed": [],
+    "changed": {}
+  },
+  "packages/parsers/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [
+      "entities"
+    ],
+    "removed": [],
+    "changed": {}
+  },
   "registry/blocks/godrays/source/package.json": {
     "version": [
       null,
@@ -344,6 +237,125 @@ https://github.com/heygen-com/hyperframes
     "added": [],
     "removed": [],
     "changed": {}
+  },
+  "packages/cli/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [
+      "acorn",
+      "undici",
+      "yauzl"
+    ],
+    "removed": [
+      "prettier",
+      "sharp"
+    ],
+    "changed": {
+      "esbuild": [
+        "^0.25.12",
+        "^0.28.2"
+      ]
+    }
+  },
+  "packages/lint/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [
+      "ignore"
+    ],
+    "removed": [],
+    "changed": {}
+  },
+  "packages/producer/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [],
+    "removed": [
+      "@fontsource/archivo-black",
+      "@fontsource/eb-garamond",
+      "@fontsource/ibm-plex-mono",
+      "@fontsource/inter",
+      "@fontsource/jetbrains-mono",
+      "@fontsource/league-gothic",
+      "@fontsource/montserrat",
+      "@fontsource/nunito",
+      "@fontsource/oswald",
+      "@fontsource/outfit",
+      "@fontsource/space-mono",
+      "wawoff2"
+    ],
+    "changed": {
+      "@hyperframes/studio-server": [
+        "workspace:^",
+        "workspace:*"
+      ],
+      "@hyperframes/core": [
+        "workspace:^",
+        "workspace:*"
+      ],
+      "@hyperframes/engine": [
+        "workspace:^",
+        "workspace:*"
+      ],
+      "puppeteer-core": [
+        "^25.2.1",
+        "^25.11.0"
+      ],
+      "puppeteer": [
+        "^25.2.1",
+        "~25.11.0"
+      ],
+      "@hyperframes/parsers": [
+        "workspace:^",
+        "workspace:*"
+      ],
+      "@hyperframes/lint": [
+        "workspace:^",
+        "workspace:*"
+      ]
+    }
+  },
+  "packages/studio-server/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [],
+    "removed": [
+      "sharp"
+    ],
+    "changed": {}
+  },
+  "packages/aws-lambda/package.json": {
+    "version": [
+      "0.8.114",
+      "0.9.30"
+    ],
+    "added": [
+      "@aws-sdk/client-ecr",
+      "@aws-sdk/client-lambda",
+      "@aws-sdk/s3-request-presigner"
+    ],
+    "removed": [],
+    "changed": {
+      "@aws-sdk/client-sfn": [
+        "^3.700.0",
+        "^3.1146.0"
+      ],
+      "@aws-sdk/client-s3": [
+        "^3.700.0",
+        "^3.1146.0"
+      ]
+    }
+  },
+  "registry/blocks/godrays/source/package-lock.json": {
+    "changed": true
   }
 }
 ```
@@ -427,4 +439,13 @@ https://github.com/heygen-com/hyperframes
 - 2026-11-09 fc13420d fix(skills): await the player seek in seam-gate (#7454)
 - 2026-11-09 0ca2b1ae fix(cli): label SVG contact sheet thumbnails by file name on Windows (#6732)
 
-Adopt only after review: `ceh upstream sync CEH-0014 --approve`. Nothing is merged automatically.
+### Required verification
+- Inspect changed APIs, renamed/deleted features and each downstream skill or adapter named above.
+- Review new-revision dependency, security and licence evidence; inspect assets separately.
+- Run `uv run pytest -q` in CEH; run the configured VF regression suite for affected VF components.
+- Run an isolated representative render with the proposed revision, compare visual/audio QA and record exact versions.
+- A passing installed VF baseline does not verify the proposed upstream revision.
+
+### Recommendation and rollback
+Keep the current pin `01c6f6004a00ecfa6e77ab4025b47a46a5e925fc`. Review and verify the proposed revision before requesting adoption. No adoption is performed by this report.
+After explicit adoption, CEH pin rollback is `ceh upstream sync CEH-0014 --approve --to 01c6f6004a00ecfa6e77ab4025b47a46a5e925fc`. This restores CEH metadata only; restore the separately reviewed consumer catalog and configuration if those were changed, then rerun regressions. Working trees and production pins are never merged automatically.
