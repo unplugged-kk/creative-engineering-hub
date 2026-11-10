@@ -124,6 +124,10 @@ def build() -> argparse.ArgumentParser:
     sk.add_argument("action", choices=["list", "validate", "enable", "disable", "uninstall"])
     sk.add_argument("skill", nargs="?")
 
+    cat = sub.add_parser("catalog", help="export approved versioned consumer metadata")
+    cat.add_argument("action", choices=["export"])
+    cat.add_argument("--output", type=Path, default=root() / "integrations/video-factory/catalog-v2.json")
+
     sub.add_parser("validate", help="check registry, catalog and skills integrity")
     sub.add_parser("status", help="counts by lifecycle state and attention items")
 
@@ -217,6 +221,9 @@ def run(args) -> int:
                 out(skills.uninstall(args.skill), j)
             else:
                 out(skills.set_enabled(args.skill, args.action == "enable"), j)
+        case "catalog":
+            from .catalog_publish import export_catalog
+            out(export_catalog(reg, args.output), j)
         case "validate":
             probs = validate_all(reg)
             out(probs or f"ok: {len(reg.all())} resources, {len(skills.all_skills())} skills, catalog consistent", j)

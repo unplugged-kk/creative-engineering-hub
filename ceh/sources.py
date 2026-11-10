@@ -187,12 +187,20 @@ def git_copy_state(path: Path) -> dict:
     """HEAD, branch and uncommitted changes of an existing local clone. Reads only."""
     if not (path / ".git").exists():
         return {"git": False}
+    index_path = Path(git("rev-parse", "--git-path", "index", cwd=path, check=False))
+    if not index_path.is_absolute():
+        index_path = path / index_path
+    object_only = not index_path.exists()
     dirty = git("status", "--porcelain", cwd=path, check=False).splitlines()
+    if object_only:
+        # --no-checkout clones have no index: Git reports every committed path as staged deleted.
+        dirty = [line for line in dirty if not line.startswith("D ")]
     return {
         "git": True,
         "head": git("rev-parse", "HEAD", cwd=path, check=False),
         "branch": git("rev-parse", "--abbrev-ref", "HEAD", cwd=path, check=False),
         "origin": git("config", "--get", "remote.origin.url", cwd=path, check=False),
+        "checkout": "object-only" if object_only else "working-tree",
         "uncommitted": dirty[:50],
         "uncommitted_count": len(dirty),
     }

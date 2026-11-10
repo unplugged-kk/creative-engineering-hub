@@ -13,7 +13,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from .sources import GIT_ENV, gh_api, git, lab_dir, open_tree, remote_head
+from .sources import GIT_ENV, gh_api, git, git_copy_state, lab_dir, open_tree, remote_head
 from .store import CehError, Registry, github_slug, now, policy, root, write_yaml
 
 MANIFESTS = ("package.json", "package-lock.json", "requirements.txt", "pyproject.toml", "Cargo.toml", "go.mod")
@@ -28,7 +28,8 @@ FLAG_TEXT = {
     "unmaintained": "No longer maintained",
     "archived": "Upstream archived",
     "unreachable": "Upstream unreachable or deleted",
-    "local-conflict": "Local modifications conflict with upstream",
+    "local-conflict": "Local modifications plus upstream changes (heuristic signal)",
+    "local-unverified": "Local copy state could not be verified",
     "rejected": "Update evaluated and rejected",
     "approved-not-integrated": "Update approved but not integrated",
     "integrated": "Update successfully integrated",
@@ -48,9 +49,25 @@ def _up(rec: dict) -> dict:
     return up
 
 
+def _refresh_local_state(rec: dict) -> None:
+    local = rec.setdefault("local", {"paths": []})
+    states = {}
+    for p in local.get("paths", []):
+        path = Path(p).expanduser()
+        state = git_copy_state(path) if path.is_dir() else {"git": False}
+        if not state.get("git"):
+            state["unverified"] = True
+        states[p] = state
+    local["state"] = states
+    dirty = any(s.get("uncommitted_count", 0) for s in states.values())
+    unknown = any(s.get("unverified") for s in states.values())
+    local["modified"] = True if dirty else None if unknown else False
+
+
 def check(rec: dict) -> dict:
     """Cheap remote check: ls-remote plus GitHub metadata. No objects are downloaded."""
     up = _up(rec)
+    _refresh_local_state(rec)
     up["default_branch"] = up.get("default_branch") or default_branch(up["remote"])
     latest = remote_head(up["remote"], up.get("default_branch"))
     flags = []
@@ -84,6 +101,8 @@ def check(rec: dict) -> dict:
             newest = max(a.get("published_at", "") for a in adv)
             if newest > (up.get("last_checked") or ""):
                 flags.append("security-update")
+    if rec.get("local", {}).get("modified") is None:
+        flags.append("local-unverified")
     if rec.get("local", {}).get("modified") and "new-commits" in flags:
         flags.append("local-conflict")
     up["latest_commit"] = latest
@@ -125,6 +144,7 @@ def _blob(repo: Path, rev: str, path: str) -> str | None:
 def diff(rec: dict) -> dict:
     """What changed between the pin and the latest upstream commit, and what in CEH and Video Factory it touches."""
     up = _up(rec)
+    _refresh_local_state(rec)
     repo, latest = fetch(rec)
     pin = up.get("pinned_commit")
     if not pin:
@@ -157,7 +177,8 @@ def diff(rec: dict) -> dict:
         "files_changed": len(files), "deleted": [f["path"] for f in files if f["status"] == "D"][:100],
         "breaking": breaking, "licence_files_changed": lic_changed, "manifests": manifests,
         "impacted_skills": impacted_skills(rec["id"]), "impacted_video_factory": impacted_video_factory(rec),
-        "local_modifications": {p: s.get("uncommitted_count", 0) for p, s in rec.get("local", {}).get("state", {}).items()},
+        "local_modifications": {p: None if s.get("unverified") else s.get("uncommitted_count", 0)
+                                for p, s in rec.get("local", {}).get("state", {}).items()},
     }
     return result
 
@@ -208,8 +229,23 @@ def analysis_markdown(rec: dict, d: dict | None = None) -> str:
                  ("Latest release", (up.get("latest_release") or {}).get("tag")), ("Forks", ", ".join(up.get("forks", [])) or "—"),
                  ("Last checked", up.get("last_checked")), ("Flags", ", ".join(FLAG_TEXT.get(f, f) for f in up.get("flags", [])) or "—")))]
     md = "\n".join(lines) + "\n"
+    md += ("\n## Assessment scope\n\n"
+           "- Local modification flags are heuristic signals, not proof of a merge conflict. "
+           "No merge or semantic overlap analysis was performed.\n"
+           "- Compatibility: UNKNOWN for the proposed upstream revision until targeted regression and rendered QA evidence exists.\n"
+           "- Security: UNKNOWN for the proposed revision; advisory flags and historical scans are not a new-revision audit.\n"
+           "- Licence suitability: UNKNOWN for the proposed revision until code, bundled assets and transitive terms are reviewed.\n"
+           "- Breaking signals use commit subjects and package major versions; deleted files are observations, "
+           "not verified deleted features. No semantic API compatibility analysis is claimed.\n")
     if d:
         md += f"\n## Change summary {d['pinned'][:10]} → {d['latest'][:10]}\n\n{d['commit_count']} commits, {d['files_changed']} files changed.\n\n"
+        md += f"- Exact old commit: `{d['pinned']}`\n- Exact proposed commit: `{d['latest']}`\n"
+        slug = github_slug(up["remote"])
+        if slug:
+            compare_url = f"https://github.com/{slug}/compare/{d['pinned']}...{d['latest']}"
+            md += f"- [Source comparison]({compare_url})\n\n"
+        else:
+            md += f"- Source remote: `{up['remote']}`; inspect the exact git comparison above.\n\n"
         md += "### Breaking signals\n" + ("\n".join(f"- {c['sha'][:8]} {c['subject']}" for c in d["breaking"]) or "- none detected") + "\n\n"
         md += "### Licence files changed\n" + ("\n".join(f"- {p}" for p in d["licence_files_changed"]) or "- none") + "\n\n"
         md += "### Dependency manifests\n```json\n" + json.dumps(d["manifests"], indent=2) + "\n```\n\n"
@@ -220,7 +256,17 @@ def analysis_markdown(rec: dict, d: dict | None = None) -> str:
         if d.get("regression"):
             md += f"- Video Factory regression: {d['regression']['result']} (`{d['regression']['command']}`)\n"
         md += "\n### Recent commits\n" + "\n".join(f"- {c['date']} {c['sha'][:8]} {c['subject']}" for c in d["commits"][:40]) + "\n"
-        md += f"\nAdopt only after review: `ceh upstream sync {rec['id']} --approve`. Nothing is merged automatically.\n"
+        md += ("\n### Required verification\n"
+               "- Inspect changed APIs, renamed/deleted features and each downstream skill or adapter named above.\n"
+               "- Review new-revision dependency, security and licence evidence; inspect assets separately.\n"
+               "- Run `uv run pytest -q` in CEH; run the configured VF regression suite for affected VF components.\n"
+               "- Run an isolated representative render with the proposed revision, compare visual/audio QA and record exact versions.\n"
+               "- A passing installed VF baseline does not verify the proposed upstream revision.\n")
+        md += (f"\n### Recommendation and rollback\nKeep the current pin `{d['pinned']}`. "
+               "Review and verify the proposed revision before requesting adoption. No adoption is performed by this report.\n"
+               f"After explicit adoption, CEH pin rollback is `ceh upstream sync {rec['id']} --approve --to {d['pinned']}`. "
+               "This restores CEH metadata only; restore the separately reviewed consumer catalog and configuration if those "
+               "were changed, then rerun regressions. Working trees and production pins are never merged automatically.\n")
     return md
 
 
