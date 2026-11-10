@@ -5,7 +5,7 @@ Engineering Hub (CEH)" prompt (phases 1-9, acceptance criteria 1-15). Read that 
 
 ## Where things are
 
-- Repo: `~/git/creative-engineering-hub` (git init done, **nothing committed yet**). Python 3.14 via `uv` (`uv sync`, `uv run ceh ...`, `uv run pytest`).
+- Repo: `~/git/creative-engineering-hub` (initialized and committed; see current status below). Python 3.14 via `uv` (`uv sync`, `uv run ceh ...`, `uv run pytest`).
 - Video Factory (VF): `~/git/video-factory`. **Do not modify it.** It has the user's own uncommitted WIP (16 files: lang/, docs, tests). Leave it.
 
 ## Done
@@ -27,7 +27,7 @@ Phase 1 audit (evidence gathered, encoded as data):
   (`tests/test_lang.py::test_real_hindi_audio...`, `asr_binary_missing` although `/opt/homebrew/bin/whisper-cli` exists; the test file is
   the user's uncommitted WIP). Node tests pass. Report this to the user; not ours to fix.
 
-Phases 2-7 code (written, **not yet run or tested**):
+Phases 2-7 implementation (now exercised by CLI regression tests):
 - `ceh/store.py` registry (one YAML per resource in `registry/resources/CEH-NNNN.yaml`), URL normalisation, dedupe (url, forks, aliases), lifecycle (`set_status`; APPROVED/PRODUCTION gated to approve/integrate).
 - `ceh/sources.py` git/gh helpers, `Tree` (reads git objects without checkout), local-clone scan (`policy.local_copies.roots`), lab clones `lab/clones/<id>` (`--no-checkout --depth 1 --filter=blob:limit=1m`).
 - `ceh/analyze.py` classify (taxonomy keywords), licence (SPDX + fingerprints, asset separation), deps, security (secrets, risky scripts, install hooks, binaries, osv.dev), agent/renderer compatibility.
@@ -37,7 +37,7 @@ Phases 2-7 code (written, **not yet run or tested**):
 - `ceh/skills.py` library skills, symlink install into agent dirs from `registry/compatibility.yaml`, never overwrite foreign dirs.
 - `ceh/search.py` search/compare/recommend. `ceh/migrate.py` leads -> records + `reports/historical-migration/REPORT.md`.
 - `ceh/cli.py` all commands (`ceh --help`). Data: `registry/{capabilities,renderers,compatibility}.yaml`, `policies/policy.yaml`.
-- Tests: `tests/conftest.py`, `tests/test_ceh.py` (hermetic: file:// upstreams, CEH_OFFLINE, fake agent homes). Not yet run.
+- Tests: `tests/conftest.py`, `tests/test_ceh.py` (hermetic: file:// upstreams, CEH_OFFLINE, fake agent homes). See current validation results below.
 
 ## Progress log (newest last)
 
@@ -45,24 +45,79 @@ Phases 2-7 code (written, **not yet run or tested**):
 - Written: README.md, AGENTS.md, ARCHITECTURE.md, ROADMAP.md, CHANGELOG.md, .gitignore, docs/adr/0001-0005,
   policies/{licensing,security,promotion,upstream}.md, integrations/video-factory/{README,artifact-contract}.md.
 - Canonical skill `library/skills/creative-engineering-hub/` written and validates. NOT installed into real agent dirs yet (ask user).
-- `ceh migrate` running against real network (first two runs crashed: "BAD" blob size, then zsh glob no-match in my shell chain;
-  third run in progress). Output: `/private/tmp/claude-501/ceh-migrate.{out,log}`. If interrupted, re-run:
-  `rm -rf registry/resources lab/clones && mkdir -p registry/resources lab/clones && uv run ceh migrate` (idempotent anyway).
+- Historical migration initially required fixes for partial clones and batch blob reads. It is now complete.
+  Reuse existing registry records and clones; never delete them to resume migration.
 
-## Next steps, in order
+- Migration completed (47 records, 0 failed, 2 unresolved: OpenSEO, CannerAI). Live findings: anything2explainer is
+  PolyForm-Noncommercial (RESTRICTED); OpenMontage moved to OpenMontageInc (alias kept); hyperframes-student-kit renamed
+  herk-edit-kit (alias kept); Remotion licence fingerprinted as Remotion-License.
+- `ceh upstream check --all --report` ran (reports/upstream/2026-11-10.md). HyperFrames pin 01c6f600 vs main: 1858 commits,
+  3 breaking (incl. "publish seven knowledge skills ... retire the workflow skills", which affects VF's pinned hyperframes-core/
+  animation/keyframes skills). VF impact detected via lockfile, package.json, renderer adapter. Local clone untouched.
+- New-repo E2E: `ceh add https://github.com/motion-canvas/motion-canvas` -> CEH-0048 renderer, MIT; evaluate/search/compare/recommend all work.
+- Quality fixes after real data: head-weighted capability matching (score >= 3), tighter taxonomy keywords, type rule
+  (renderer before agent-skill; SKILL.md must be depth <= 2), placeholder keys ignored, secret-shaped strings in tests/docs/comments
+  downgraded to review (genuine high kept, e.g. rea's eval(Buffer.from(base64))), curated type/capabilities in leads.yaml,
+  `--json` accepted anywhere, `unpinned` flag, websites stay DISCOVERED.
+- Known: the 7 historical PRODUCTION entries (hyperframes, agent-reach, last30days, kokoro-onnx, youtube-agent-skill, whisper.cpp,
+  ffmpeg) are grandfathered; they are not in catalog.json because they never went through `ceh approve`. Tell the user.
+- Commits so far: 7eacea1 (code), abc2484 (docs), 0b3e3dd (perf + ruff clean: `uvx ruff check ceh tests --select F,E9,B`).
 
-1. (done) tests green.
-2. (done) docs. Remaining from original list below if any: ROADMAP.md, CHANGELOG.md, `policies/{licensing,security,promotion,upstream}.md`, `docs/adr/0001..` (one-file-per-record
-   registry; CEH never edits VF, catalog.json is the contract; fetch into refs/ceh only; static-only inspection), `.gitignore` (lab/clones, .venv).
-3. Canonical skill `library/skills/creative-engineering-hub/` (SKILL.md, skill.yaml, references/, scripts/, examples/, evals/, README.md)
-   teaching agents the CEH workflows; `ceh install creative-engineering-hub` (ask user before touching real agent dirs).
-4. `integrations/video-factory/README.md` + `artifact-contract.md` (manifest.json{schema,renderer,output}, output.mp4, optional preview.mp4, assets/, sources.json, render-log.json, quality-report.json).
-5. `uv run ceh migrate` (real network, clones ~40 repos into lab/, minutes). Review `reports/historical-migration/REPORT.md`; `ceh validate`.
-6. E2E demos: historical (e.g. cth9191/animate or heygen-com/hyperframes: `upstream check/diff/report`), new repo (`ceh add <unknown github url>`, evaluate, search, compare, recommend).
-7. Commit in small conventional commits (no Claude co-author per user's CLAUDE.md; no em dashes). Confirm VF tests still at baseline.
-8. Offer: weekly `ceh upstream check --all --report` schedule (scheduled task or launchd), and a VF-side reader of catalog.json (needs user approval; VF change).
+- Final migration re-run done with curated leads (48 records incl. CEH-0048 motion-canvas). `ceh validate` = ok. Tests 11 passed.
+- Recommend demo now picks HyperFrames (PRODUCTION) for kinetic-typography/cinematography; festive + Indian-festival
+  capabilities are honest GAPS (nothing registered covers them yet).
+
+## Current state and next steps
+
+The progress log above is historical. The latest continuation below supersedes its earlier test counts and pending work.
+
+- Regression coverage, lint cleanup, documented VF test command, taxonomy and historical lead review are complete.
+- Real CEH skill installation is authorized by the user's continuation request and complete across configured agents.
+- No resource has been newly approved or integrated. The catalog remains empty; seven historical PRODUCTION records
+  describe recovered usage, not a new CEH approval.
+- The historical inventory accounts for all 47 URL leads plus CEH-0048, with OpenSEO and CannerAI explicitly unresolved.
+- Remaining approval decisions: select a real candidate for approve/integrate, decide how to ratify historical production
+  entries, approve execution of resource code for benchmarks, and authorize any VF-side catalog reader.
+- Remaining CEH development: curate canonical creative skills from the ADAPT evidence; record actual agent invocation
+  evidence beyond installation; add rendered benchmark evidence. Optional dashboard remains unstarted.
+- Weekly monitoring is configurable in policy but no scheduled automation has been created.
+- HyperFrames upgrade needs a separate decision after reading reports/CEH-0014/upstream-analysis.md. No pin is advanced.
 
 ## Rules from the user
-
 Never overwrite existing projects or local work; no installs/execution of untrusted code; approval before production or destructive
 actions; add != integrate; non-commercial never approved; prefer graft for code exploration (`graft ask/grep/skeleton/callers`).
+
+## Codex continuation - 2026-11-10
+
+- Verified live state: 48 resources, 1 canonical skill, empty VF catalog; `ceh validate --json` passes.
+- Read mission, handover and existing uncommitted diffs. Existing work preserved.
+- Added 15 CLI regression cases covering secret placeholders/context, dangerous execution in docs, capability prominence,
+  SKILL.md depth, metadata-only lifecycle, manual type persistence, unpinned upstreams and trailing `--json`.
+- Reproduced and fixed a scanner false negative through `ceh add`: a placeholder on the preceding line suppressed a
+  separate credential-shaped value. Placeholder detection now checks the matched value only.
+- Removed unused classifier variable; configured VF test command to the documented dedicated Python environment.
+- Validation: 26 tests pass; `uvx ruff check ceh tests --select F,E9,B` passes; `git diff --check` passes.
+- No real agent installation, approval, integration, upstream pin adoption or VF modification performed.
+- VF baseline failure remains a historical handover finding, not reverified this session.
+- Next: review/commit accumulated work, refresh upstream report, then curate candidate skills. Real installs,
+  benchmarks running resource code and production promotion still require explicit user authorization.
+
+## Latest completed continuation - 2026-11-10
+
+- Commits: 16a28dd fixes static inspection and adds CLI regression coverage; 1a262b4 refines taxonomy and historical leads.
+- Added another E2E reproduction: a commented credential must not hide an executable credential later in the same file.
+  Scanner now evaluates each match with independent severity. Total: 27 tests pass; focused ruff checks pass.
+- CEH skill installation: installed Claude Code, Codex, OpenCode and Antigravity links; generic link already existed.
+  `ceh skills list --json` confirms all five locations. This verifies exposure, not agent runtime behavior.
+- Historical lead audit: all 47 URL leads resolve to existing records; resource 48 is Motion Canvas. Two unresolved names remain.
+- Refreshed all 45 tracked upstreams: 12 need attention. The check uses local-modified + new-commits as its conflict signal;
+  that flag is not proof of a merge conflict. No pin adopted. HyperFrames report refreshed: 1858 commits, 3 breaking signals.
+- VF baseline re-run completed: 1023 passed, 8 skipped in 140.70s using ~/.contentos/venv/bin/python -m pytest tests -q.
+  The prior whisper-cli failure did not reproduce. No VF source edits were made.
+- CEH-0018 re-inspected with the fixed scanner: licence/security gates pass; candidate remains unapproved.
+  Other historical static scans retain their original scan timestamps and have not all been rerun with the final scanner.
+- Prepared docs/reviews/2026-11-10-promotion-readiness.md for a specific user decision, including overlap and evidence gaps.
+- Registry validation passes: 48 resources, 1 skill, catalog consistent. Generated registry/reports are committed as a snapshot.
+- Local graft index is excluded via .git/info/exclude; .ignore keeps it searchable. No generated graph files were edited.
+- Remaining work is listed in Current state and next steps. This continuation is complete; the overall mission still has
+  benchmark, creative skill curation, real-agent invocation and production acceptance work outstanding.
