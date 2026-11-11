@@ -1,5 +1,45 @@
 # CEH handover
 
+## Latest production-acceptance checkpoint - 2026-11-11
+
+This section supersedes older status claims below; historical records are preserved.
+
+- Acceptance package: reports/acceptance/2026-11-11/ contains all seven requested reports plus a non-consumable release
+  proposal and proposed metadata preview. No implementation or canonical creative skill was changed in this acceptance mission.
+- Reverified CEH main baseline 1ac01c3;104 tests pass in10.54s, focused Ruff/registry/skill validation pass. Fresh VF consumer
+  focus71 passes; producer/consumer contract bytes match SHA256944eda73e49eb8b2aeb22b08878d8a223c973fd0fc042d333da43d51ba85c2cd.
+- Actual consumer code remains b1befad73b4285ce461eb48861e5559c069d2776 on codex/ceh-catalog-consumer at /tmp/ceh-vf-consumer.
+  The desktop managed worktree at ~/.codex/worktrees/ceh-catalog-consumer/video-factory eventually appeared but is detached
+  at baseline36bb558 and has NO consumer implementation. Do not confuse a folder name with the reviewed commit.
+- User separately authorized commit/push. VF origin/codex/ceh-catalog-consumer was pushed and remote-ref verified at b1befad.
+  It remains unmerged and disabled. CEH has no Git remote; owner was asked for the destination. No repository was invented.
+- Fresh zero-entry export was written only to /tmp for testing. Real catalogs, lifecycle approvals and production pins unchanged.
+  Original VF tracked diff and untracked filename list compare unchanged across acceptance work; no untracked-content audit invented.
+- Media reverified:3 readable six-second H264/AAC outputs have the same dd5e82dd97a73e4fce1bc1f091ed5b37f17215bb3896d701ce80f868119e2c54
+  SHA256; QA8PASS1WARN. Durable copied evidence is under ~/Desktop/VideoFactory-Workspace/reports/ceh-acceptance/2026-11-10/
+  kinetic-type-review-165236Z-1c37485d. Later helper trace is authoritative; first plan omitted a trailing period and is preserved as evidence.
+- Root independently viewed durable contact-sheet samples: clear title/no visible clipping; small support/footer copy. No normal-speed,
+  listening or OWNER acceptance claimed. Human judgement checklist is in media-review-package.md.
+- Credential-free, externally network-blocked CLI attempts: Codex0.167.0 transport blocked/timeout; Claude2.1.316 not logged in,
+  zero API usage reported; OpenCode2.2.7 transport blocked/timeout. No verified plan output/discovery or global candidate installation.
+  Antigravity executable absent in PATH. Agent interoperability remains unverified, not PASS.
+- Preferred first candidate remains kinetic-type-planning0.1.0, conditionally; sound-pass stays research-only. Current canonical
+  kinetic bundle fingerprint942d06fc400fdf44beb9767d0300f6313cf8366372190325ad6c87799410c679 is unchanged.
+- Proposed post-approval metadata was staged outside the library: exact prospective bundle
+  addfcc1b9a8f19cc3ba1c28b03abdfb25f954dc29208e96414515a7f9ee300b0. It proposes internal commercial planning/no skill redistribution;
+  no usage permission or activation is granted today. All non-metadata bytes and source pins unchanged, independently checked.
+- Review proposal envelope fingerprint d25916755faded6bd83e4c4be9e3dd540fddfd307fb1d63e606fa89e5637143c is canonical envelope JSON
+  excluding proposal_digest. It is NOT the final owner-approved entry/catalog fingerprint; approval actor/time/evidence are pending.
+- The VF reader validates metadata/digest references but never opens/verifies/uses the skill artifact itself. Metadata engineering
+  is merge-reviewable; the full approved-artifact production milestone is not yet demonstrated.
+
+Stop point: Decision A must separately accept media/usage scope and exact named capability release/publication, including the
+current producer's explicit CEH-0018 parent-resource bookkeeping scope. Only after A may final entry/catalog fingerprints be
+presented for Decision B (exact VF commit/protected merge and explicit metadata opt-in). A does not authorize B or job gates.
+If artifact consumption is required rather than metadata discovery, hold activation until the approved local bundle is verified
+and deliberately used in a normal gated VF job. See runbook for conditional actions, withdrawal and rollback. No approval,
+capability publication, merge, activation, HyperFrames upgrade, ContentForge change, paid call or credential change occurred.
+
 ## Latest integration checkpoint - read first
 
 2026-11-10 continuation mission implemented and verified a strict v2 catalog and isolated metadata-only VF consumer.

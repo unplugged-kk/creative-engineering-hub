@@ -1,0 +1,145 @@
+{
+  "scope": "NON-CONSUMABLE OWNER-REVIEW PROPOSAL; no capability approval or publication; original canonical bundle is unchanged",
+  "entry": {
+    "id": "kinetic-type-planning",
+    "name": "Kinetic type planning",
+    "description": "Original instruction-only planning guidance complementing existing HyperFrames; first-release scope is manually reviewed English vertical title planning.",
+    "version": "0.1.0",
+    "status": "CANDIDATE",
+    "capabilities": [
+      "kinetic-typography",
+      "motion-graphics"
+    ],
+    "categories": [
+      "motion"
+    ],
+    "tags": [
+      "kinetic typography",
+      "instruction-only",
+      "manual-review"
+    ],
+    "resources": [
+      {
+        "id": "CEH-0018",
+        "url": "https://github.com/LottieFiles/motion-design-skill",
+        "pinned_commit": "f9a8a041b85185ee4881b3471d3415e939aac772"
+      },
+      {
+        "id": "CEH-0002",
+        "url": "https://github.com/charlie947/motion-graphics-skills",
+        "pinned_commit": "229022ebca76972e119e36ada23a1648d51665ab"
+      }
+    ],
+    "skills": [
+      {
+        "name": "kinetic-type-planning",
+        "version": "0.1.0",
+        "digest": "addfcc1b9a8f19cc3ba1c28b03abdfb25f954dc29208e96414515a7f9ee300b0"
+      }
+    ],
+    "approval": {
+      "status": "PENDING_OWNER_DECISION",
+      "by": null,
+      "at": null,
+      "evidence": []
+    },
+    "licence": {
+      "spdx": "LicenseRef-CEH-Internal-Commercial-Guidance",
+      "commercial": true,
+      "restrictions": [
+        "PROPOSED owner permission only; not yet granted.",
+        "Internal planning for commercial video production only; no redistribution or sublicensing of the original CEH skill.",
+        "Preserve both upstream MIT notices and pinned attribution.",
+        "No rights to fonts, footage, models or audio are granted."
+      ],
+      "review_evidence": [
+        "reports/acceptance/2026-11-11/first-capability-decision.md"
+      ]
+    },
+    "requirements": {
+      "runtimes": {
+        "node": "==24.22.1"
+      },
+      "dependencies": {
+        "hyperframes": "==0.8.114"
+      }
+    },
+    "renderers": [
+      "hyperframes"
+    ],
+    "agents": [],
+    "inputs": {
+      "approved_copy": {
+        "type": "string",
+        "required": true
+      },
+      "brand_and_font": {
+        "type": "object",
+        "required": true
+      },
+      "dimensions": {
+        "type": "object",
+        "required": true
+      },
+      "fps": {
+        "type": "number",
+        "required": true
+      },
+      "duration_seconds": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "outputs": [
+      "ceh-kinetic-type-plan/1",
+      "review checklist"
+    ],
+    "assets": [],
+    "compatibility": {
+      "languages": [
+        "en"
+      ],
+      "output_formats": [
+        "mp4"
+      ]
+    },
+    "evaluation": {
+      "evidence": [
+        "reports/acceptance/2026-11-11/first-capability-decision.md",
+        "docs/reviews/skill-invocation-codex.md"
+      ],
+      "benchmarks": [
+        "reports/acceptance/2026-11-11/media-review-package.md",
+        "sha256:dd5e82dd97a73e4fce1bc1f091ed5b37f17215bb3896d701ce80f868119e2c54"
+      ],
+      "visual_quality": null,
+      "performance": null
+    },
+    "limitations": [
+      "No named agent CLI has produced independently verified output in this acceptance run; agents list intentionally empty.",
+      "Authorised human/agent planning only, no automatic skill loading or code execution.",
+      "Only six-second 1080x1920/30fps English fixture benchmarked; other languages, brand fonts, narration and full jobs unverified.",
+      "Owner full-speed visual/listening acceptance is pending.",
+      "Consumer currently returns fingerprint references, not verified bundle bytes; actual approved-artifact handoff remains unverified.",
+      "No production gate, QA or publication permission is granted by this metadata."
+    ],
+    "deprecation": {
+      "deprecated": false,
+      "replacement": null,
+      "reason": ""
+    },
+    "workflow": {
+      "kind": "guidance",
+      "steps": [
+        "Verify the approved local canonical bundle fingerprint before an explicitly authorised planner reads it; do not use mutable name/version alone.",
+        "Produce bounded integer-frame typography plan preserving exact approved copy, brand/font blockers and reading hold.",
+        "Use the existing HyperFrames composition workflow and existing job approvals; never execute catalog text.",
+        "Apply existing technical QA and independent visual/audio review before any production use."
+      ]
+    }
+  },
+  "proposal_digest": "d25916755faded6bd83e4c4be9e3dd540fddfd307fb1d63e606fa89e5637143c",
+  "current_candidate_bundle_digest": "942d06fc400fdf44beb9767d0300f6313cf8366372190325ad6c87799410c679",
+  "proposed_release_bundle_digest": "addfcc1b9a8f19cc3ba1c28b03abdfb25f954dc29208e96414515a7f9ee300b0",
+  "proposed_metadata": "reports/acceptance/2026-11-11/proposed-skill-metadata.yaml (comment header excluded from canonical preview)"
+}
