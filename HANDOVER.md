@@ -1,5 +1,12 @@
 # CEH handover
 
+## Repository delivery update - 2026-11-11
+
+Private GitHub repository created at https://github.com/unplugged-kk/creative-engineering-hub.
+`origin` is configured and main, including acceptance checkpoint 5c9eab0, has been pushed.
+Earlier statements that CEH has no remote describe the historical pre-creation state.
+Capability Decision A and VF merge/activation Decision B remain pending; neither is granted by repository delivery.
+
 ## Latest production-acceptance checkpoint - 2026-11-11
 
 This section supersedes older status claims below; historical records are preserved.
